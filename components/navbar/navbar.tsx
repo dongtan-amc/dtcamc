@@ -1,5 +1,5 @@
-import Image from "next/image";
 import logo from "@/public/logo.png";
+import Image from "next/image";
 
 const SECTIONS = [
   {
@@ -26,12 +26,16 @@ const SECTIONS = [
 
 export default function Navbar() {
   return (
-    <header className="shadow-lg">
+    <header className="shadow-lg fixed bg-white w-full">
       <nav className="flex items-center justify-between max-w-7xl mx-auto">
-        <Image alt="logo" src={logo} width={80} height={80} />
+        <a href="#landing">
+          <Image alt="logo" src={logo} width={80} height={80} />
+        </a>
         <ul className="flex gap-4">
           {SECTIONS.map((section) => (
-            <li key={section.value}>{section.label}</li>
+            <li key={section.value}>
+              <a href={`#${section.value}`}>{section.label}</a>
+            </li>
           ))}
         </ul>
       </nav>
