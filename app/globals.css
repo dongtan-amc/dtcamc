@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-color: #688f32;
+  --primary-hover: #4a6427;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -73,4 +78,24 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* SCROLL BAR */
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth !important;
+  line-height: 1;
+}
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-hover);
 }
