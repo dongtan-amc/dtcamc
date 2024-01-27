@@ -7,10 +7,7 @@ import Blur from "./blur";
 
 export default function Landing() {
   return (
-    <section
-      className="h-[90vh] relative bg-golden-dream-500 z-10"
-      id="landing"
-    >
+    <section className="h-[90vh] relative bg-golden-dream-500 z-10">
       <Container>
         <Blur />
         <Heading />
