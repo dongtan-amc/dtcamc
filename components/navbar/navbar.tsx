@@ -1,9 +1,12 @@
 import logo from "@/public/logo.png";
 import Image from "next/image";
+import Container from "../common/container";
+import { NAVBAR_HEIGHT } from "@/constants/constants";
+import Link from "next/link";
 
 const SECTIONS = [
   {
-    label: "진료안내",
+    label: "병원소개",
     value: "info",
   },
   {
@@ -26,19 +29,26 @@ const SECTIONS = [
 
 export default function Navbar() {
   return (
-    <header className="shadow-lg fixed bg-white w-full">
-      <nav className="flex items-center justify-between max-w-7xl mx-auto">
-        <a href="#landing">
-          <Image alt="logo" src={logo} width={80} height={80} />
-        </a>
-        <ul className="flex gap-4">
-          {SECTIONS.map((section) => (
-            <li key={section.value}>
-              <a href={`#${section.value}`}>{section.label}</a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+    <header className="shadow-lg fixed bg-white w-full z-50">
+      <Container>
+        <nav
+          className="flex items-center justify-between"
+          style={{ height: NAVBAR_HEIGHT }}
+        >
+          <Link href="#landing">
+            <Image alt="logo" src={logo} unoptimized className="h-20 w-auto" />
+          </Link>
+          <ul className="flex gap-12">
+            {SECTIONS.map((section) => (
+              <li key={section.value}>
+                <Link href={`#${section.value}`} className="font-semibold">
+                  {section.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </Container>
     </header>
   );
 }
