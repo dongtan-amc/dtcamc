@@ -1,6 +1,6 @@
 import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
-import Profile from "@/components/common/profile";
+import Vet from "@/app/introduction/vets/vet";
 import { VETS } from "@/constants/constants";
 
 export default function VetsPage() {
@@ -15,7 +15,7 @@ export default function VetsPage() {
       <Container>
         <ul className="grid grid-cols-2 gap-8 pt-10 pb-12">
           {VETS.map((vet) => (
-            <Profile key={vet.name} {...vet} isVet />
+            <Vet key={vet.name} {...vet} />
           ))}
         </ul>
       </Container>

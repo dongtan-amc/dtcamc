@@ -36,7 +36,7 @@ export default function ProfileDetailModal({
               {name} <span className="text-olive-drab-600">{title}</span>
             </p>
           </DialogTitle>
-          <DialogDescription className="space-y-3">
+          <DialogDescription className="space-y-6">
             <Image alt={`${name} 프로필 사진`} src={image} />
             <div>
               <p className="text-olive-drab-600 text-lg pb-1 font-bold">약력</p>
