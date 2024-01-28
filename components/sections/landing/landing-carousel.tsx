@@ -17,12 +17,13 @@ import Image from "next/image";
 const LANDING_IMAGES = [landing1, landing2, landing3];
 
 export function LandingCarousel() {
-  const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
+  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: false }));
 
   return (
     <Carousel
       opts={{
         loop: true,
+        align: "start",
       }}
       plugins={[plugin.current]}
       className="w-[500px] h-[500px] absolute top-[120px] right-10 z-10"

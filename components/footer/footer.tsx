@@ -13,8 +13,10 @@ import {
 export default function Footer() {
   return (
     <footer className="bg-olive-drab-950 text-white h-32 flex items-center">
-      <div className="max-w-7xl mx-auto flex justify-between w-full">
-        <Image alt="logo" src={logo} width={80} height={80} />
+      <div className="max-w-7xl mx-auto flex justify-between w-full items-center">
+        <div className="w-24 h-24 bg-white flex items-center justify-center">
+          <Image alt="logo" src={logo} width={80} height={80} />
+        </div>
         <div>
           <h2>{NAME}</h2>
           <p>

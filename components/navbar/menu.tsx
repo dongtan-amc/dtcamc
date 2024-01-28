@@ -15,7 +15,7 @@ const SECTIONS = [
         route: "/salute",
       },
       {
-        label: "의료진 소개",
+        label: "수의사 소개",
         route: "/vets",
       },
       {

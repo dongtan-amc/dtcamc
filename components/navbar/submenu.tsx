@@ -14,7 +14,6 @@ export default function Submenu({
   currentPage: boolean;
 }) {
   const [isHovered, setIsHovered] = useState(false);
-  console.log(currentPage);
 
   return (
     <div
