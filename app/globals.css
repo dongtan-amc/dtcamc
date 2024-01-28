@@ -102,3 +102,24 @@ html {
 .vets_banner {
   background-image: url("../public/photo/treatment-room.jpeg");
 }
+.staffs_banner {
+  background-image: url("../public/photo/reception.jpeg");
+}
+.internal_banner {
+  background-image: url("../public/photo/reception.jpeg");
+}
+.surgery_banner {
+  background-image: url("../public/photo/reception.jpeg");
+}
+.dental_banner {
+  background-image: url("../public/photo/reception.jpeg");
+}
+.ophthalmology_banner {
+  background-image: url("../public/photo/reception.jpeg");
+}
+.vaccine_banner {
+  background-image: url("../public/photo/reception.jpeg");
+}
+.radiology_banner {
+  background-image: url("../public/photo/reception.jpeg");
+}

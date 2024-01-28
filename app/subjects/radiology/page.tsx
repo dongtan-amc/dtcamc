@@ -1,5 +1,13 @@
-import React from "react";
+import Banner from "@/components/common/banner";
 
 export default function RadiologyPage() {
-  return <div>RadiologyPage</div>;
+  return (
+    <main>
+      <Banner
+        imageClassName="internal_banner"
+        title="영상의학과"
+        subTitle="진료안내 > 영상의학과"
+      />
+    </main>
+  );
 }

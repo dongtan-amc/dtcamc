@@ -47,7 +47,7 @@ const SECTIONS = [
       },
       {
         label: "안과",
-        route: "/Ophthalmology",
+        route: "/ophthalmology",
       },
       {
         label: "치과",
