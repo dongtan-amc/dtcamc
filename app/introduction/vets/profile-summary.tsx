@@ -10,7 +10,7 @@ export default function ProfileSummary({
   return (
     <div className="space-y-4">
       <p className="text-2xl font-bold">
-        {name} <span className="text-olive-drab-600">{title}</span>
+        {name} <span className="text-olive-drab-600 text-xl">{title}</span>
       </p>
 
       <div>

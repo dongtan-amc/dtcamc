@@ -9,7 +9,7 @@ export default function VetsPage() {
       <Banner
         imageClassName="vets_banner"
         title="수의사 소개"
-        subTitle="각분야 최고의 전문가들이 함께합니다"
+        subTitle="병원소개 > 수의사 소개"
       />
 
       <Container>

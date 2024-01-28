@@ -6,8 +6,8 @@ export default function SalutePage() {
     <main>
       <Banner
         imageClassName="salute_banner"
-        subTitle="대표원장 인사말"
         title="인사말"
+        subTitle="병원소개 > 인사말"
       />
 
       <Paragraph />

@@ -117,3 +117,47 @@ export const VETS = [
     ],
   },
 ];
+
+// staff infos
+export const STAFFS = [
+  {
+    name: "김철수",
+    title: "리셉션",
+    image: dummy,
+  },
+  {
+    name: "박희수",
+    title: "리셉션",
+    image: dummy,
+  },
+  {
+    name: "김수지",
+    title: "수의테크니션",
+    image: dummy,
+  },
+  {
+    name: "장그래",
+    title: "수의테크니션",
+    image: dummy,
+  },
+  {
+    name: "홍길동",
+    title: "수의테크니션",
+    image: dummy,
+  },
+  {
+    name: "김철수",
+    title: "수의테크니션",
+    image: dummy,
+  },
+  {
+    name: "이영희",
+    title: "수의테크니션",
+    image: dummy,
+  },
+  {
+    name: "박동자",
+    title: "수의테크니션",
+    image: dummy,
+  },
+];
