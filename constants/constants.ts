@@ -1,3 +1,73 @@
+// navigation
+export const SUBJECTS_MENUS = [
+  {
+    label: "내과",
+    route: "/internal",
+  },
+  {
+    label: "외과",
+    route: "/surgery",
+  },
+  {
+    label: "영상의학과",
+    route: "/radiology",
+  },
+  {
+    label: "안과",
+    route: "/ophthalmology",
+  },
+  {
+    label: "치과",
+    route: "/dental",
+  },
+  {
+    label: "예방의학",
+    route: "/vaccine",
+  },
+];
+
+export const NAV_MENUS = [
+  {
+    label: "병원소개",
+    route: "/introduction",
+    submenu: [
+      {
+        label: "인사말",
+        route: "/salute",
+      },
+      {
+        label: "수의사 소개",
+        route: "/vets",
+      },
+      {
+        label: "스태프 소개",
+        route: "/staffs",
+      },
+      {
+        label: "시설&장비 소개",
+        route: "/facility",
+      },
+    ],
+  },
+  {
+    label: "진료서비스",
+    route: "/subjects",
+    submenu: SUBJECTS_MENUS,
+  },
+  {
+    label: "공지사항",
+    route: "/notice",
+  },
+  {
+    label: "미용안내",
+    route: "/grooming",
+  },
+  {
+    label: "오시는 길",
+    route: "/map",
+  },
+];
+
 // hos infos
 export const NAME = "동탄시티동물의료센터";
 export const ADDRESS = "경기도 화성시 동탄지성로 126, 정일 프라자 2층";
