@@ -1,17 +1,17 @@
+import Vet from "@/app/introduction/vets/vet";
 import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
-import Vet from "@/app/introduction/vets/vet";
-import { SUBJECTS_SUBMENUS, VETS } from "@/constants/constants";
+import { COMMUNITY_SUBMENUS, VETS } from "@/constants/constants";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
 
-export default function InternalPage() {
+export default function NoticePage() {
   return (
     <main>
       <Banner
         image={vetBanner}
-        upperRoute="진료 과목"
-        subRoute="영상의학과"
-        subMenus={SUBJECTS_SUBMENUS}
+        upperRoute="커뮤니티"
+        subRoute="공지사항"
+        subMenus={COMMUNITY_SUBMENUS}
       />
 
       <Container>

@@ -16,7 +16,7 @@ export default function Menu({ isScrollTop }: { isScrollTop: boolean }) {
           ? menu.route === `/${path.split("/")[1]}`
           : menu.route === path;
         return (
-          <li key={menu.label} className="h-full">
+          <li key={menu.label} className="h-full flex items-center">
             {menu.submenu ? (
               <Submenu
                 isScrollTop={isScrollTop}
@@ -31,7 +31,7 @@ export default function Menu({ isScrollTop }: { isScrollTop: boolean }) {
                 className={cn(
                   isScrollTop && "text-white",
                   currentPage && "border-b-2 border-olive-drab-600",
-                  "font-semibold px-2 py-2 hover:text-olive-drab-600 transition text-xl h-full flex items-center"
+                  "font-semibold px-2 py-2 hover:text-olive-drab-600 transition text-lg"
                 )}
               >
                 {menu.label}

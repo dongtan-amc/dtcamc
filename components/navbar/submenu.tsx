@@ -29,7 +29,7 @@ export default function Submenu({
         className={cn(
           isScrollTop && "text-white",
           currentPage && "border-b-2 border-olive-drab-600",
-          "font-semibold px-2 py-2 hover:text-olive-drab-600 transition text-xl group-hover:text-olive-drab-600"
+          "font-semibold px-2 py-2 hover:text-olive-drab-600 transition text-lg group-hover:text-olive-drab-600"
         )}
         onClick={() => push(`${mainRoute}${submenu[0].route}`)}
       >

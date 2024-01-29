@@ -20,19 +20,19 @@ export default function LandinCarousel({
 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex + 1 === images.length ? 0 : prevIndex + 1
-    );
-  };
-
-  const handlePrevious = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
   useEffect(() => {
+    const handleNext = () => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex + 1 === images.length ? 0 : prevIndex + 1
+      );
+    };
+
+    const handlePrevious = () => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1
+      );
+    };
+
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "ArrowRight") {
         handleNext();
@@ -43,8 +43,7 @@ export default function LandinCarousel({
 
     window.addEventListener("keydown", handleKeyDown);
 
-    // autoplay
-    let interval: any;
+    let interval: NodeJS.Timeout;
     if (autoplay) {
       interval = setInterval(() => {
         handleNext();
@@ -55,7 +54,7 @@ export default function LandinCarousel({
       window.removeEventListener("keydown", handleKeyDown);
       clearInterval(interval);
     };
-  }, []);
+  }, [autoplay, images.length]);
 
   const slideVariants = {
     initial: {

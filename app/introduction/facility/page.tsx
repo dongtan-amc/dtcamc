@@ -1,11 +1,10 @@
 import Banner from "@/components/common/banner";
-import React from "react";
-import FacilitySection from "./facility-section";
 import Container from "@/components/common/container";
+import FacilitySection from "./facility-section";
 
 import lobby1 from "@/public/photo/entrance.jpeg";
-import lobby2 from "@/public/photo/reception.jpeg";
 import lobby3 from "@/public/photo/feeds.jpeg";
+import lobby2 from "@/public/photo/reception.jpeg";
 
 import consulting1 from "@/public/photo/consulting-room.jpeg";
 import consulting2 from "@/public/photo/consulting-room1.jpeg";
@@ -20,6 +19,7 @@ import operation1 from "@/public/photo/operation-room.jpeg";
 import operation2 from "@/public/photo/operation-room1.jpeg";
 import operation3 from "@/public/photo/operation-room2.jpeg";
 
+import { INTRODUCTION_MENUS } from "@/constants/constants";
 import icu1 from "@/public/photo/icu.jpeg";
 import icu2 from "@/public/photo/icu1.jpeg";
 import icu3 from "@/public/photo/icu2.jpeg";
@@ -89,7 +89,12 @@ const FACILITY_SECTIONS = [
 export default function FacilityPage() {
   return (
     <main>
-      <Banner image={consulting2} upperRoute="병원 소개" subRoute="시설 소개" />
+      <Banner
+        image={consulting2}
+        upperRoute="병원 소개"
+        subRoute="시설 소개"
+        subMenus={INTRODUCTION_MENUS}
+      />
 
       <Container>
         <div className="space-y-10 pt-10 pb-12">

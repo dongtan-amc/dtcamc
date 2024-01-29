@@ -6,29 +6,35 @@ export default function Banner({
   image,
   upperRoute,
   subRoute,
+  subMenus,
 }: {
   image: StaticImageData;
-  upperRoute: string;
+  upperRoute?: string;
   subRoute: string;
+  subMenus?: {
+    upperRoute: string;
+    label: string;
+    route: string;
+  }[];
 }) {
   return (
     <div className="relative flex items-center justify-center h-[560px] text-white group overflow-hidden">
       <Image
-        alt=""
+        alt="banner image"
         src={image}
         fill
         className="object-cover group-hover:scale-[1.01] transition duration-500"
       />
-      <div className="absolute h-full w-full bg-black/40" />
+      <div className="absolute h-full w-full bg-black/50" />
       <div className="z-10 flex flex-col items-center gap-10 relative font-bold ">
         <h2 className="text-5xl">{subRoute}</h2>
-        {subRoute && (
+        {subRoute && upperRoute && (
           <div className="flex gap-4">
             {upperRoute} <span>&gt;</span> {subRoute}
           </div>
         )}
       </div>
-      <BannerSubnavbar />
+      <BannerSubnavbar subMenus={subMenus} />
     </div>
   );
 }

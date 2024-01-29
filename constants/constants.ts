@@ -1,70 +1,81 @@
 // navigation
 export const SUBJECTS_SUBMENUS = [
   {
+    upperRoute: "/subjects",
     label: "내과",
     route: "/internal",
   },
   {
+    upperRoute: "/subjects",
     label: "피부과",
     route: "/dermal",
   },
   {
-    label: "일반 외과",
+    upperRoute: "/subjects",
+    label: "일반외과",
     route: "/surgery",
   },
   {
-    label: "정형 외과",
-    route: "/surgery",
+    upperRoute: "/subjects",
+    label: "정형외과",
+    route: "/orthopedics",
   },
   {
-    label: "신경 외과",
-    route: "/surgery",
+    upperRoute: "/subjects",
+    label: "신경외과",
+    route: "/neurosurgery",
   },
   {
+    upperRoute: "/subjects",
     label: "영상의학과",
     route: "/radiology",
   },
   {
+    upperRoute: "/subjects",
     label: "안과",
     route: "/ophthalmology",
   },
   {
+    upperRoute: "/subjects",
     label: "치과",
     route: "/dental",
   },
   {
+    upperRoute: "/subjects",
     label: "응급의학과",
     route: "/emergency",
   },
 ];
 export const EXPERTY_SUBMENUS = [
   {
+    upperRoute: "/experty",
     label: "수술 센터",
     route: "/operation",
   },
   {
-    label: "신장 투석 센터",
-    route: "/",
+    upperRoute: "/experty",
+    label: "신장투석 센터",
+    route: "/dialysis",
   },
   {
-    label: "일반 외과",
-    route: "/surgery",
-  },
-  {
+    upperRoute: "/experty",
     label: "영상의학센터 / CT 촬영 의뢰",
     route: "/ct",
   },
 ];
 export const COMMUNITY_SUBMENUS = [
   {
+    upperRoute: "/community",
     label: "공지 사항",
     route: "/notice",
   },
   {
+    upperRoute: "/community",
     label: "병원 소식",
     route: "/news",
   },
   {
+    upperRoute: "/community",
     label: "진료 케이스",
     route: "/case",
   },
@@ -77,7 +88,7 @@ export const INTRODUCTION_MENUS = [
     route: "/salute",
   },
   {
-    label: "진료 안내",
+    label: "진료시간 안내",
     upperRoute: "/introduction",
     route: "/time",
   },
