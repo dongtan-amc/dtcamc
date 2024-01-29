@@ -4,6 +4,8 @@ import MyNaverMap from "./my-naver-map";
 import MapInfo from "./map-info";
 import mapBanner from "@/public/photo/feeds.jpeg";
 
+export const dynamic = "force-dynamic";
+
 export default function MapPage() {
   return (
     <main>
