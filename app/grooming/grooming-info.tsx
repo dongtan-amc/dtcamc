@@ -1,14 +1,8 @@
-import { Button } from "@/components/ui/button";
-import { PHONE } from "@/constants/constants";
-import mapPinLineIcon from "@/public/icons/map-pin-line.svg";
 import clockIcon from "@/public/icons/clock.svg";
+import mapPinLineIcon from "@/public/icons/map-pin-line.svg";
 import phoenIcon from "@/public/icons/phone.svg";
-import infoIcon from "@/public/icons/Info.svg";
-import parkingIcon from "@/public/icons/parking.svg";
-import toiletIcon from "@/public/icons/toiletsvg.svg";
 import Image from "next/image";
 import { FaPaw } from "react-icons/fa6";
-import Link from "next/link";
 
 export default function GroomingInfo() {
   return (

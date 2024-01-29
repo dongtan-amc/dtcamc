@@ -1,12 +1,6 @@
 "use client";
 
-import {
-  NavermapsProvider,
-  Container as MapDiv,
-  NaverMap,
-  Marker,
-  useNavermaps,
-} from "react-naver-maps";
+import { NavermapsProvider } from "react-naver-maps";
 
 export default function NaverMapProvider({
   children,

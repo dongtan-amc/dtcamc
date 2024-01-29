@@ -1,10 +1,10 @@
+import Vet from "@/app/introduction/vets/vet";
 import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
-import Vet from "@/app/introduction/vets/vet";
 import { SUBJECTS_SUBMENUS, VETS } from "@/constants/constants";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
 
-export default function InternalPage() {
+export default function RadiologyPage() {
   return (
     <main>
       <Banner

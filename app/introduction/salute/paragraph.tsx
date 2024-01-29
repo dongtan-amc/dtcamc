@@ -1,6 +1,4 @@
 import Container from "@/components/common/container";
-import dummyProfile from "@/public/vets/dummy.png";
-import Image from "next/image";
 
 export default function Paragraph() {
   return (

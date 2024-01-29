@@ -1,8 +1,7 @@
 import Banner from "@/components/common/banner";
-import React from "react";
-import GroomingInfo from "./grooming-info";
-import GroomingCarousel from "./grooming-carousel";
 import groomingBanner from "@/public/grooming/grooming2.jpeg";
+import GroomingCarousel from "./grooming-carousel";
+import GroomingInfo from "./grooming-info";
 
 export default function GroomingPage() {
   return (

@@ -1,8 +1,8 @@
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar/navbar";
 import type { Metadata } from "next";
 import { Nanum_Gothic } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar/navbar";
-import Footer from "@/components/footer";
 
 const font = Nanum_Gothic({ subsets: ["latin"], weight: ["400", "700"] });
 

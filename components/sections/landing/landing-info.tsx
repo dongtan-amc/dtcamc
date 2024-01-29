@@ -1,11 +1,10 @@
-import Image from "next/image";
-import { FaPhoneAlt } from "react-icons/fa";
-
 import { Separator } from "@/components/ui/separator";
 import kakao from "@/public/icons/kakao.svg";
 import map from "@/public/icons/map.png";
 import naverBlog from "@/public/icons/navar-blog.png";
+import Image from "next/image";
 import Link from "next/link";
+import { FaPhoneAlt } from "react-icons/fa";
 
 export default function LandingInfo() {
   return (

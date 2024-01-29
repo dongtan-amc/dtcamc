@@ -1,5 +1,5 @@
-import Image from "next/image";
 import mask from "@/public/landing/mask.png";
+import Image from "next/image";
 
 export default function Mask() {
   return (

@@ -1,5 +1,5 @@
-import Image from "next/image";
 import logo from "@/public/main-logo.png";
+import Image from "next/image";
 
 export default function Loading() {
   return (

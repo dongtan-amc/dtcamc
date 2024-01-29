@@ -8,7 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
 import { useEffect, useState } from "react";
 import CarouselIndex from "./carousel-index";
 import ImageDialog from "./image-dialog";

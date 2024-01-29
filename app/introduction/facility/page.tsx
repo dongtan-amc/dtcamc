@@ -11,7 +11,6 @@ import consulting2 from "@/public/photo/consulting-room1.jpeg";
 import consulting3 from "@/public/photo/consulting-room2.jpeg";
 import consulting4 from "@/public/photo/treatment-room.jpeg";
 
-import cat1 from "@/public/photo/cat-room.jpeg";
 import cat2 from "@/public/photo/cat-room1.jpeg";
 import cat3 from "@/public/photo/cat-room2.jpeg";
 
@@ -50,7 +49,7 @@ const FACILITY_SECTIONS = [
   },
   {
     title: "고양이 진료",
-    images: [cat1, cat2, cat3],
+    images: [cat2, cat3],
     description: (
       <>
         밝고 따뜻한 분위기의 대기실에는 보호자분들이 편히 대기하실 수 있는

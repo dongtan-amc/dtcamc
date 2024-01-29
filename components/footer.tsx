@@ -1,5 +1,3 @@
-import Image from "next/image";
-import logo from "@/public/logo.png";
 import {
   ADDRESS,
   BOSS,
@@ -9,6 +7,8 @@ import {
   NAME,
   PHONE,
 } from "@/constants/constants";
+import logo from "@/public/logo.png";
+import Image from "next/image";
 import Container from "./common/container";
 
 export default function Footer() {

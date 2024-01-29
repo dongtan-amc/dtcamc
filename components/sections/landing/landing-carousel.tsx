@@ -1,9 +1,9 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function LandinCarousel({
   images,

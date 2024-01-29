@@ -4,7 +4,7 @@ import Container from "@/components/common/container";
 import { EXPERTY_SUBMENUS, VETS } from "@/constants/constants";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
 
-export default function OperationPage() {
+export default function CtPage() {
   return (
     <main>
       <Banner

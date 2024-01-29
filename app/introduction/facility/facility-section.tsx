@@ -1,8 +1,6 @@
-import FacilityCarousel from "./facility-carousel";
-
 import { StaticImageData } from "next/image";
+import FacilityCarousel from "./facility-carousel";
 import FacilityCopy from "./facility-copy";
-import { cn } from "@/lib/utils";
 
 export default function FacilitySection({
   title,

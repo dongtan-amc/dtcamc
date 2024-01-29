@@ -1,10 +1,10 @@
 "use client";
 
-import Link from "next/link";
-import Submenu from "./submenu";
-import { usePathname } from "next/navigation";
-import { cn } from "@/lib/utils";
 import { NAV_MENUS } from "@/constants/constants";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import Submenu from "./submenu";
 
 export default function Menu({ isScrollTop }: { isScrollTop: boolean }) {
   const path = usePathname();
