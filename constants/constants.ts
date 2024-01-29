@@ -5,7 +5,19 @@ export const SUBJECTS_MENUS = [
     route: "/internal",
   },
   {
-    label: "외과",
+    label: "피부과",
+    route: "/dermal",
+  },
+  {
+    label: "일반 외과",
+    route: "/surgery",
+  },
+  {
+    label: "정형 외과",
+    route: "/surgery",
+  },
+  {
+    label: "신경 외과",
     route: "/surgery",
   },
   {
@@ -21,8 +33,40 @@ export const SUBJECTS_MENUS = [
     route: "/dental",
   },
   {
-    label: "예방의학",
-    route: "/vaccine",
+    label: "응급의학과",
+    route: "/emergency",
+  },
+];
+export const EXPERTY_MENUS = [
+  {
+    label: "수술 센터",
+    route: "/operation",
+  },
+  {
+    label: "신장 투석 센터",
+    route: "/",
+  },
+  {
+    label: "일반 외과",
+    route: "/surgery",
+  },
+  {
+    label: "영상의학센터 / CT 촬영 의뢰",
+    route: "/ct",
+  },
+];
+export const COMMUNITY_MENUS = [
+  {
+    label: "공지 사항",
+    route: "/notice",
+  },
+  {
+    label: "병원 소식",
+    route: "/news",
+  },
+  {
+    label: "진료 케이스",
+    route: "/case",
   },
 ];
 
@@ -36,27 +80,37 @@ export const NAV_MENUS = [
         route: "/salute",
       },
       {
+        label: "진료 안내",
+        route: "/time",
+      },
+      {
+        label: "시설 소개",
+        route: "/facility",
+      },
+      {
+        label: "장비 소개",
+        route: "/tools",
+      },
+      {
         label: "수의사 소개",
         route: "/vets",
-      },
-      {
-        label: "스태프 소개",
-        route: "/staffs",
-      },
-      {
-        label: "시설&장비 소개",
-        route: "/facility",
       },
     ],
   },
   {
-    label: "진료서비스",
+    label: "진료 과목",
     route: "/subjects",
     submenu: SUBJECTS_MENUS,
   },
   {
-    label: "공지사항",
-    route: "/notice",
+    label: "전문 진료",
+    route: "/experty",
+    submenu: EXPERTY_MENUS,
+  },
+  {
+    label: "커뮤니티",
+    route: "/community",
+    submenu: COMMUNITY_MENUS,
   },
   {
     label: "미용안내",

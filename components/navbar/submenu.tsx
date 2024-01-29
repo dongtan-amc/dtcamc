@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function Submenu({
+  isScrollTop,
   submenu,
   menuLabel,
   mainRoute,
@@ -12,25 +13,27 @@ export default function Submenu({
   menuLabel: string;
   mainRoute: string;
   currentPage: boolean;
+  isScrollTop: boolean;
 }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div
-      className="relative px-2 cursor-pointer"
+      className="relative px cursor-pointer h-full flex items-center group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div
         className={cn(
+          isScrollTop && "text-white",
           currentPage && "border-b-2 border-olive-drab-600",
-          "font-semibold px-2 py-2 hover:text-olive-drab-600 transition"
+          "font-semibold px-2 py-2 hover:text-olive-drab-600 transition text-xl group-hover:text-olive-drab-600"
         )}
       >
         {menuLabel}
       </div>
       {isHovered && (
-        <ul className="absolute bg-white flex flex-col w-[150px] shadow-2xl border top-8">
+        <ul className="absolute bg-white flex flex-col w-[150px] shadow-2xl border top-20">
           {submenu.map((menu) => (
             <li key={menu.label}>
               <Link

@@ -1,42 +1,125 @@
 "use client";
 
-import Autoplay from "embla-carousel-autoplay";
+import { cn } from "@/lib/utils";
+import { motion, AnimatePresence } from "framer-motion";
+import Image, { StaticImageData } from "next/image";
+import React, { useEffect, useState } from "react";
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
-import { useRef } from "react";
+export default function LandinCarousel({
+  images,
+  overlayClassName,
+  className,
+  autoplay = true,
+  direction = "up",
+}: {
+  images: StaticImageData[];
+  overlayClassName?: string;
+  className?: string;
+  autoplay?: boolean;
+  direction?: "up" | "down";
+}) {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-import landing1 from "@/public/landing/landing1.png";
-import landing2 from "@/public/landing/landing2.png";
-import landing3 from "@/public/landing/landing3.png";
-import Image from "next/image";
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex + 1 === images.length ? 0 : prevIndex + 1
+    );
+  };
 
-const LANDING_IMAGES = [landing1, landing2, landing3];
+  const handlePrevious = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
 
-export function LandingCarousel() {
-  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: false }));
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "ArrowRight") {
+        handleNext();
+      } else if (event.key === "ArrowLeft") {
+        handlePrevious();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    // autoplay
+    let interval: any;
+    if (autoplay) {
+      interval = setInterval(() => {
+        handleNext();
+      }, 5000);
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      clearInterval(interval);
+    };
+  }, []);
+
+  const slideVariants = {
+    initial: {
+      scale: 0,
+      opacity: 0,
+      rotateX: 45,
+    },
+    visible: {
+      scale: 1,
+      rotateX: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.7,
+        ease: [0.645, 0.045, 0.355, 1.0],
+      },
+    },
+    upExit: {
+      opacity: 1,
+      y: "-150%",
+      transition: {
+        duration: 1,
+      },
+    },
+    downExit: {
+      opacity: 1,
+      y: "150%",
+      transition: {
+        duration: 1,
+      },
+    },
+  };
 
   return (
-    <Carousel
-      opts={{
-        loop: true,
-        align: "start",
+    <div
+      className={cn(
+        "overflow-hidden h-full w-full relative flex items-center justify-center",
+        className
+      )}
+      style={{
+        perspective: "1000px",
       }}
-      plugins={[plugin.current]}
-      className="w-[500px] h-[500px] absolute top-[120px] right-10 z-10"
-      onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}
     >
-      <CarouselContent>
-        {LANDING_IMAGES.map((image, index) => (
-          <CarouselItem key={index}>
-            <Image src={image} alt="landing image" width={500} height={500} />
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-    </Carousel>
+      <div
+        className={cn("absolute inset-0 bg-black/60 z-40", overlayClassName)}
+      />
+
+      <AnimatePresence>
+        <motion.div
+          key={currentIndex}
+          initial="initial"
+          animate="visible"
+          exit={direction === "up" ? "upExit" : "downExit"}
+          variants={slideVariants}
+          className="h-full w-full absolute inset-0 object-cover object-center"
+        >
+          <Image
+            alt="landing image"
+            src={images[currentIndex]}
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+        </motion.div>
+      </AnimatePresence>
+    </div>
   );
 }
