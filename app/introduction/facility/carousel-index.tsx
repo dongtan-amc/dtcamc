@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Dispatch, SetStateAction } from "react";
 
@@ -10,8 +9,6 @@ export default function CarouselIndex({
   current: number;
   setCurrent: Dispatch<SetStateAction<number>>;
 }) {
-  console.log({ count, current });
-
   return (
     <div className="absolute bottom-5 left-[calc(50%-40px)] flex gap-2 w-full mx-auto">
       {new Array(count).fill(0).map((_, index) => (

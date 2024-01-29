@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function Submenu({
@@ -16,6 +17,7 @@ export default function Submenu({
   isScrollTop: boolean;
 }) {
   const [isHovered, setIsHovered] = useState(false);
+  const { push } = useRouter();
 
   return (
     <div
@@ -29,6 +31,7 @@ export default function Submenu({
           currentPage && "border-b-2 border-olive-drab-600",
           "font-semibold px-2 py-2 hover:text-olive-drab-600 transition text-xl group-hover:text-olive-drab-600"
         )}
+        onClick={() => push(`${mainRoute}${submenu[0].route}`)}
       >
         {menuLabel}
       </div>

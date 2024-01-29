@@ -17,7 +17,7 @@ export default function Landing() {
       <LandingCopy />
       <LandingInfo />
       {/* <Blur /> */}
-      <Mask />
+      {/* <Mask /> */}
     </section>
   );
 }

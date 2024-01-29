@@ -1,5 +1,5 @@
 // navigation
-export const SUBJECTS_MENUS = [
+export const SUBJECTS_SUBMENUS = [
   {
     label: "내과",
     route: "/internal",
@@ -37,7 +37,7 @@ export const SUBJECTS_MENUS = [
     route: "/emergency",
   },
 ];
-export const EXPERTY_MENUS = [
+export const EXPERTY_SUBMENUS = [
   {
     label: "수술 센터",
     route: "/operation",
@@ -55,7 +55,7 @@ export const EXPERTY_MENUS = [
     route: "/ct",
   },
 ];
-export const COMMUNITY_MENUS = [
+export const COMMUNITY_SUBMENUS = [
   {
     label: "공지 사항",
     route: "/notice",
@@ -70,47 +70,54 @@ export const COMMUNITY_MENUS = [
   },
 ];
 
+export const INTRODUCTION_MENUS = [
+  {
+    label: "인사말",
+    upperRoute: "/introduction",
+    route: "/salute",
+  },
+  {
+    label: "진료 안내",
+    upperRoute: "/introduction",
+    route: "/time",
+  },
+  {
+    label: "시설 소개",
+    upperRoute: "/introduction",
+    route: "/facility",
+  },
+  {
+    label: "장비 소개",
+    upperRoute: "/introduction",
+    route: "/tools",
+  },
+  {
+    label: "수의사 소개",
+    upperRoute: "/introduction",
+    route: "/vets",
+  },
+];
+
 export const NAV_MENUS = [
   {
-    label: "병원소개",
+    label: "병원 소개",
     route: "/introduction",
-    submenu: [
-      {
-        label: "인사말",
-        route: "/salute",
-      },
-      {
-        label: "진료 안내",
-        route: "/time",
-      },
-      {
-        label: "시설 소개",
-        route: "/facility",
-      },
-      {
-        label: "장비 소개",
-        route: "/tools",
-      },
-      {
-        label: "수의사 소개",
-        route: "/vets",
-      },
-    ],
+    submenu: INTRODUCTION_MENUS,
   },
   {
     label: "진료 과목",
     route: "/subjects",
-    submenu: SUBJECTS_MENUS,
+    submenu: SUBJECTS_SUBMENUS,
   },
   {
     label: "전문 진료",
     route: "/experty",
-    submenu: EXPERTY_MENUS,
+    submenu: EXPERTY_SUBMENUS,
   },
   {
     label: "커뮤니티",
     route: "/community",
-    submenu: COMMUNITY_MENUS,
+    submenu: COMMUNITY_SUBMENUS,
   },
   {
     label: "미용안내",
