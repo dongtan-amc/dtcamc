@@ -1,29 +1,27 @@
-import { cn } from "@/lib/utils";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 
 export default function Banner({
-  imageClassName,
+  image,
   title,
   subTitle,
 }: {
-  imageClassName: string;
+  image: StaticImageData;
   title: string;
   subTitle?: React.ReactNode;
 }) {
   return (
-    <div
-      className={cn(
-        imageClassName,
-        "relative flex items-center justify-center h-[360px] bg-fixed bg-center bg-cover"
-      )}
-    >
-      {/* <div className="absolute h-full w-full bg-black/40" /> */}
-      <div className="z-10 flex flex-col items-center gap-4 relative font-bold ">
-        {/* <div className="w-[400px] h-full bg-olive-drab-50 absolute blur-2xl rounded-full -z-10" /> */}
-        <h2 className="text-xl sm:text-3xl text-olive-drab-600">{title}</h2>
-        {subTitle && (
-          <div className="text-sm sm:text-base text-gray-800">{subTitle}</div>
-        )}
+    <div className="relative flex items-center justify-center h-[560px] text-white group overflow-hidden">
+      <Image
+        alt=""
+        src={image}
+        fill
+        className="object-cover group-hover:scale-[1.01] transition duration-500"
+      />
+      <div className="absolute h-full w-full bg-black/40" />
+      <div className="z-10 flex flex-col items-center gap-10 relative font-bold ">
+        <h2 className="text-5xl">{title}</h2>
+        {subTitle && <div className="">{subTitle}</div>}
       </div>
     </div>
   );

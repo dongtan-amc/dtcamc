@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FaPhoneAlt } from "react-icons/fa";
-import VerticalDivider from "./vertical-divider";
 
+import { Separator } from "@/components/ui/separator";
 import kakao from "@/public/icons/kakao.svg";
 import map from "@/public/icons/map.png";
 import naverBlog from "@/public/icons/navar-blog.png";
@@ -34,7 +34,7 @@ export default function LandingInfo() {
         </div>
       </div>
 
-      <VerticalDivider />
+      <Separator orientation="vertical" />
 
       <Link
         className="flex items-center font-bold gap-3"
@@ -45,7 +45,7 @@ export default function LandingInfo() {
         <p className="text-lg">수술&진료 사례</p>
       </Link>
 
-      <VerticalDivider />
+      <Separator orientation="vertical" />
 
       <Link
         className="flex items-center font-bold gap-3"
@@ -56,7 +56,7 @@ export default function LandingInfo() {
         <p className="font-bold text-lg">카카오톡 채널</p>
       </Link>
 
-      <VerticalDivider />
+      <Separator orientation="vertical" />
 
       <Link className="flex items-center font-bold gap-1" href="/map">
         <Image alt="naver blog" src={map} width={44} />
