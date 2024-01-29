@@ -4,10 +4,10 @@ import Vet from "@/app/introduction/vets/vet";
 import { VETS } from "@/constants/constants";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
 
-export default function VetsPage() {
+export default function ToolsPage() {
   return (
     <main>
-      <Banner image={vetBanner} upperRoute="병원 소개" subRoute="수의사 소개" />
+      <Banner image={vetBanner} upperRoute="병원 소개" subRoute="장비 소개" />
 
       <Container>
         <ul className="grid grid-cols-2 gap-8 pt-10 pb-12">

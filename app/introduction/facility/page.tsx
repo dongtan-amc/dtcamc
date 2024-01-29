@@ -89,11 +89,7 @@ const FACILITY_SECTIONS = [
 export default function FacilityPage() {
   return (
     <main>
-      <Banner
-        imageClassName="salute_banner"
-        title="시설&장비소개"
-        subTitle="병원소개 > 시설&장비소개"
-      />
+      <Banner image={consulting2} upperRoute="병원 소개" subRoute="시설 소개" />
 
       <Container>
         <div className="space-y-10 pt-10 pb-12">
