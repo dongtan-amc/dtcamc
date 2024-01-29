@@ -8,8 +8,8 @@ export default function MainLogo() {
       <Image alt="logo" src={mainLogo} unoptimized className="h-16 w-auto" />
       <div>
         <div className="text-xl font-bold">
-          <p className="text-golden-dream-500">동탄시티</p>
-          <p className="text-primary">동물의료센터</p>
+          <p className="text-golden-dream-500">24시동탄시티</p>
+          <p className="text-primary tracking-wider">동물의료센터</p>
         </div>
         <p className="text-golden-dream-600 text-[6px]">
           DONGTAN CITY ANIMAL MEDICAL CENTER
