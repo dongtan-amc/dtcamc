@@ -10,9 +10,9 @@ export default function Staff({
   image: StaticImageData;
 }) {
   return (
-    <li className="gap-4 relative">
+    <li>
       <Image alt={`${name} 프로필 사진`} src={image} />
-      <p className="text-2xl font-bold">
+      <p className="text-2xl font-bold p-2 w-full">
         {name} <span className="text-olive-drab-600 text-xl">{title}</span>
       </p>
     </li>

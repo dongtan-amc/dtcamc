@@ -10,12 +10,7 @@ export default function MyNaverMap() {
   const navermaps = useNavermaps();
 
   return (
-    <MapDiv
-      style={{
-        width: "50%",
-        height: "600px",
-      }}
-    >
+    <MapDiv className="w-1/2 h-[600px]">
       <NaverMap
         scaleControl
         logoControl

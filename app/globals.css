@@ -123,3 +123,9 @@ html {
 .radiology_banner {
   background-image: url("../public/photo/reception.jpeg");
 }
+.grooming_banner {
+  background-image: url("../public/photo/reception.jpeg");
+}
+.mask {
+  background-image: url("../public/mask2.png");
+}

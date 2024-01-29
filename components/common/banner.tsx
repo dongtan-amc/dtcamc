@@ -17,12 +17,13 @@ export default function Banner({
         "relative flex items-center justify-center h-[360px] bg-fixed bg-center bg-cover"
       )}
     >
-      <div className="absolute h-full w-full bg-black/40" />
-      <div className="z-10 flex flex-col items-center gap-4 text-white">
-        <h2 className="text-xl font-bold sm:text-3xl text-olive-drab-500">
-          {title}
-        </h2>
-        {subTitle && <div className="text-sm sm:text-base">{subTitle}</div>}
+      {/* <div className="absolute h-full w-full bg-black/40" /> */}
+      <div className="z-10 flex flex-col items-center gap-4 relative font-bold ">
+        {/* <div className="w-[400px] h-full bg-olive-drab-50 absolute blur-2xl rounded-full -z-10" /> */}
+        <h2 className="text-xl sm:text-3xl text-olive-drab-600">{title}</h2>
+        {subTitle && (
+          <div className="text-sm sm:text-base text-gray-800">{subTitle}</div>
+        )}
       </div>
     </div>
   );
