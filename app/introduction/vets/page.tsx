@@ -16,14 +16,14 @@ export default function VetsPage() {
       />
 
       <Container>
-        <ul className="grid grid-cols-2 gap-8 pt-10 pb-12">
+        <ul className="grid grid-cols-2 gap-10 pt-10 pb-12">
           {VETS.map((vet) => (
             <Vet key={vet.name} {...vet} />
           ))}
         </ul>
       </Container>
 
-      <SubBanner imageClassName="salute_banner" />
+      <SubBanner imageClassName="vets_subbanner" />
     </main>
   );
 }

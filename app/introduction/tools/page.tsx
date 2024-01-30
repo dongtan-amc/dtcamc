@@ -4,6 +4,7 @@ import Container from "@/components/common/container";
 import SubBanner from "@/components/common/sub-banner";
 import { INTRODUCTION_MENUS, VETS } from "@/constants/constants";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
+import Tools from "./tools";
 
 export default function ToolsPage() {
   return (
@@ -16,14 +17,10 @@ export default function ToolsPage() {
       />
 
       <Container>
-        <ul className="grid grid-cols-2 gap-8 pt-10 pb-12">
-          {VETS.map((vet) => (
-            <Vet key={vet.name} {...vet} />
-          ))}
-        </ul>
+        <Tools />
       </Container>
 
-      <SubBanner imageClassName="salute_banner" />
+      <SubBanner imageClassName="tools_subbanner" />
     </main>
   );
 }

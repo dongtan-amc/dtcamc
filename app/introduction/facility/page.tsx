@@ -23,6 +23,7 @@ import icu1 from "@/public/photo/icu.jpeg";
 import icu2 from "@/public/photo/icu1.jpeg";
 import icu3 from "@/public/photo/icu2.jpeg";
 import icu4 from "@/public/photo/icu3.jpeg";
+import SubBanner from "@/components/common/sub-banner";
 
 const FACILITY_SECTIONS = [
   {
@@ -102,6 +103,8 @@ export default function FacilityPage() {
           ))}
         </div>
       </Container>
+
+      <SubBanner imageClassName="facility_subbanner" />
     </main>
   );
 }
