@@ -14,13 +14,7 @@ export default function EmergencPage() {
         subMenus={SUBJECTS_SUBMENUS}
       />
 
-      <Container>
-        <ul className="grid grid-cols-2 gap-8 pt-10 pb-12">
-          {VETS.map((vet) => (
-            <Vet key={vet.name} {...vet} />
-          ))}
-        </ul>
-      </Container>
+      <Container>응급</Container>
     </main>
   );
 }

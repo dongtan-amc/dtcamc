@@ -444,18 +444,18 @@ import xray from "@/public/tools/xray.jpeg";
 import aniscan from "@/public/tools/aniscan.jpeg";
 import elctrovet from "@/public/tools/electrovet.jpeg";
 import cbc from "@/public/tools/cbc.jpeg";
-import gas from "@/public/tools/gas.jpeg";
+import gas from "@/public/tools/gas.png";
 import vetChroma from "@/public/tools/vet-chroma.jpeg";
 import chem from "@/public/tools/chem.jpeg";
-import ammonia from "@/public/tools/ammonia.jpeg";
-import urine from "@/public/tools/urine.jpeg";
+import ammonia from "@/public/tools/ammonia.png";
+import urine from "@/public/tools/urine.png";
 
 import v100 from "@/public/tools/v100.jpeg";
 import ear from "@/public/tools/ear.png";
 import woodlamp from "@/public/tools/woodlamp.jpeg";
 
 import drill from "@/public/tools/drill.jpeg";
-import plasma from "@/public/tools/plasma.jpeg";
+import plasma from "@/public/tools/plasma.png";
 import scaling from "@/public/tools/scaling.jpeg";
 
 import masimo from "@/public/tools/masimo.png";

@@ -51,19 +51,25 @@ export default function TimeTable() {
               <TableRow>
                 <TableCell className="text-center">야간진료</TableCell>
                 <TableCell className="text-center">
-                  오후 9시 - 익일 오전 9시
+                  오후 9시 - 오전 1시
                 </TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="text-center">면회시간</TableCell>
+                <TableCell className="text-center">심야진료</TableCell>
                 <TableCell className="text-center">
-                  오전 9시 - 오후 9시
+                  오전 1시 - 오전 9시
                 </TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="text-center">추가내용</TableCell>
+                <TableCell className="text-center">점심시간</TableCell>
                 <TableCell className="text-center">
-                  추가내용(회진, 식사시간 등)
+                  오후 12시 - 오후 1시
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="text-center">회진시간</TableCell>
+                <TableCell className="text-center">
+                  오후 ??시 - 오후 ??시
                 </TableCell>
               </TableRow>
             </TableBody>
