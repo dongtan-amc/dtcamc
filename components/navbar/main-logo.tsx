@@ -5,7 +5,13 @@ import Link from "next/link";
 export default function MainLogo() {
   return (
     <Link href="/" className="flex gap-2 items-end hover:opacity-80 transition">
-      <Image alt="logo" src={mainLogo} unoptimized className="h-16 w-auto" />
+      <Image
+        alt="logo"
+        src={mainLogo}
+        unoptimized
+        className="h-16 w-auto"
+        priority
+      />
       <div>
         <div className="text-xl font-bold">
           <p className="text-golden-dream-500">24시동탄시티</p>

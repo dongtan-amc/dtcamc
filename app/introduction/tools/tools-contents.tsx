@@ -20,6 +20,7 @@ export default function ToolsContents({ category }: { category: string }) {
                   src={tool.image}
                   fill
                   className="object-contain"
+                  placeholder="blur"
                 />
               </div>
 

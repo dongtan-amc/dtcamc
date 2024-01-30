@@ -11,10 +11,10 @@ export default function ImageDialog({
   return (
     <Dialog>
       <DialogTrigger>
-        <Image src={image} alt={`carousel image${index}`} />
+        <Image src={image} alt={`carousel image${index}`} placeholder="blur" />
       </DialogTrigger>
       <DialogContent className="p-0 rounded-none max-w-5xl">
-        <Image src={image} alt={`carousel image${index}`} />
+        <Image src={image} alt={`carousel image${index}`} placeholder="blur" />
       </DialogContent>
     </Dialog>
   );

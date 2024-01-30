@@ -19,7 +19,7 @@ export default function Vet({
 }) {
   return (
     <li className="flex gap-4 relative">
-      <Image alt={`${name} 프로필 사진`} src={image} />
+      <Image alt={`${name} 프로필 사진`} src={image} placeholder="blur" />
       <ProfileSummary name={name} title={title} history={history} />
       <ProfileDetailModal
         name={name}

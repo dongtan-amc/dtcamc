@@ -42,7 +42,7 @@ export default function ProfileDetailModal({
             </p>
           </DialogTitle>
           <DialogDescription className="space-y-6">
-            <Image alt={`${name} 프로필 사진`} src={image} />
+            <Image alt={`${name} 프로필 사진`} src={image} placeholder="blur" />
             <div>
               <p className="text-olive-drab-600 text-lg pb-1 font-bold">약력</p>
               <ul className="space-y-2 text-sm">

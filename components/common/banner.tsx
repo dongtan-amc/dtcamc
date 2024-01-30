@@ -23,6 +23,7 @@ export default function Banner({
         src={image}
         fill
         className="object-cover group-hover:scale-[1.01] transition duration-500"
+        placeholder="blur"
       />
       <div className="absolute h-full w-full bg-black/50" />
       <div className="z-10 flex flex-col items-center gap-10 relative font-bold ">

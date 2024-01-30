@@ -17,7 +17,7 @@ export default function Footer() {
       <Container>
         <div className="flex items-center gap-10 h-full">
           <div className="w-24 h-24 bg-white flex items-center justify-center">
-            <Image alt="logo" src={logo} width={80} height={80} />
+            <Image alt="logo" src={logo} width={80} height={80} unoptimized />
           </div>
           <div>
             <h2 className="pb-2 font-bold">{NAME}</h2>

@@ -19,7 +19,11 @@ export default function GroomingCarousel() {
       <CarouselContent>
         {GROOMING_IMAGES.map((image, index) => (
           <CarouselItem key={index}>
-            <Image src={image} alt={`grooming image${index}`} />
+            <Image
+              src={image}
+              alt={`grooming image${index}`}
+              placeholder="blur"
+            />
           </CarouselItem>
         ))}
       </CarouselContent>

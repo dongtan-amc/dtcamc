@@ -40,7 +40,7 @@ export default function LandingInfo() {
         href="https://blog.naver.com/PostList.naver?blogId=dtctamc&from=postList&categoryNo=6"
         target="_blank"
       >
-        <Image alt="naver blog" src={naverBlog} width={32} />
+        <Image alt="naver blog" src={naverBlog} width={32} unoptimized />
         <p className="text-lg">수술&진료 사례</p>
       </Link>
 
@@ -51,14 +51,14 @@ export default function LandingInfo() {
         href="https://pf.kakao.com/_RLdib"
         target="_blank"
       >
-        <Image alt="naver blog" src={kakao} width={32} />
+        <Image alt="naver blog" src={kakao} width={32} unoptimized />
         <p className="font-bold text-lg">카카오톡 채널</p>
       </Link>
 
       <Separator orientation="vertical" />
 
       <Link className="flex items-center font-bold gap-1" href="/map">
-        <Image alt="naver blog" src={map} width={44} />
+        <Image alt="naver blog" src={map} width={44} unoptimized />
         <p className="font-bold text-lg">오시는 길</p>
       </Link>
     </div>

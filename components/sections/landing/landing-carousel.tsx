@@ -116,6 +116,8 @@ export default function LandinCarousel({
             fill
             className="object-cover"
             sizes="100vw"
+            placeholder="blur"
+            priority
           />
         </motion.div>
       </AnimatePresence>
