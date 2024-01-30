@@ -95,37 +95,10 @@ html {
   fill: #fdffeb;
 }
 
-/* BANNER IMAGE */
-.salute_banner {
-  background-image: url("../public/photo/entrance.jpeg");
+/* SUBBANNER IMAGE */
+.salute_subbanner {
+  background-image: url("../public/unsplash/salute-subbanner.jpg");
 }
-.vets_banner {
-  background-image: url("../public/photo/treatment-room.jpeg");
-}
-.staffs_banner {
-  background-image: url("../public/photo/reception.jpeg");
-}
-.internal_banner {
-  background-image: url("../public/photo/reception.jpeg");
-}
-.surgery_banner {
-  background-image: url("../public/photo/reception.jpeg");
-}
-.dental_banner {
-  background-image: url("../public/photo/reception.jpeg");
-}
-.ophthalmology_banner {
-  background-image: url("../public/photo/reception.jpeg");
-}
-.vaccine_banner {
-  background-image: url("../public/photo/reception.jpeg");
-}
-.radiology_banner {
-  background-image: url("../public/photo/reception.jpeg");
-}
-.grooming_banner {
-  background-image: url("../public/photo/reception.jpeg");
-}
-.mask {
-  background-image: url("../public/mask2.png");
+.time_subbanner {
+  background-image: url("../public/unsplash/time-subbanner.jpg");
 }
