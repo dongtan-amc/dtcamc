@@ -4,6 +4,7 @@ import Container from "@/components/common/container";
 import SubBanner from "@/components/common/sub-banner";
 import { INTRODUCTION_MENUS, VETS } from "@/constants/constants";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
+import TimeTable from "./time-table";
 
 export default function TimePage() {
   return (
@@ -16,11 +17,9 @@ export default function TimePage() {
       />
 
       <Container>
-        <ul className="grid grid-cols-2 gap-8 pt-10 pb-12">
-          {VETS.map((vet) => (
-            <Vet key={vet.name} {...vet} />
-          ))}
-        </ul>
+        <div className="pt-10 pb-12">
+          <TimeTable />
+        </div>
       </Container>
 
       <SubBanner imageClassName="time_subbanner" />

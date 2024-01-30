@@ -1,6 +1,7 @@
 import Vet from "@/app/introduction/vets/vet";
 import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
+import SubBanner from "@/components/common/sub-banner";
 import { INTRODUCTION_MENUS, VETS } from "@/constants/constants";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
 
@@ -21,6 +22,8 @@ export default function VetsPage() {
           ))}
         </ul>
       </Container>
+
+      <SubBanner imageClassName="salute_banner" />
     </main>
   );
 }
