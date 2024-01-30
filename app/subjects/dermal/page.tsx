@@ -1,8 +1,9 @@
-import Vet from "@/app/introduction/vets/vet";
 import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
-import { SUBJECTS_SUBMENUS, VETS } from "@/constants/constants";
+import SubBanner from "@/components/common/sub-banner";
+import { SUBJECTS_SUBMENUS } from "@/constants/subjects";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
+import Categories from "../categories";
 
 export default function DermalPage() {
   return (
@@ -14,7 +15,11 @@ export default function DermalPage() {
         subMenus={SUBJECTS_SUBMENUS}
       />
 
-      <Container>피부과</Container>
+      <Container>
+        <Categories subject="피부과" />
+      </Container>
+
+      <SubBanner imageClassName="internal_subbanner" />
     </main>
   );
 }

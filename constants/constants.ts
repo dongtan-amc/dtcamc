@@ -1,51 +1,3 @@
-// navigation
-export const SUBJECTS_SUBMENUS = [
-  {
-    upperRoute: "/subjects",
-    label: "내과",
-    route: "/internal",
-  },
-  {
-    upperRoute: "/subjects",
-    label: "피부과",
-    route: "/dermal",
-  },
-  {
-    upperRoute: "/subjects",
-    label: "일반외과",
-    route: "/surgery",
-  },
-  {
-    upperRoute: "/subjects",
-    label: "정형외과",
-    route: "/orthopedics",
-  },
-  {
-    upperRoute: "/subjects",
-    label: "신경외과",
-    route: "/neurosurgery",
-  },
-  {
-    upperRoute: "/subjects",
-    label: "영상의학과",
-    route: "/radiology",
-  },
-  {
-    upperRoute: "/subjects",
-    label: "안과",
-    route: "/ophthalmology",
-  },
-  {
-    upperRoute: "/subjects",
-    label: "치과",
-    route: "/dental",
-  },
-  {
-    upperRoute: "/subjects",
-    label: "응급의학과",
-    route: "/emergency",
-  },
-];
 export const EXPERTY_SUBMENUS = [
   {
     upperRoute: "/experty",
@@ -473,6 +425,7 @@ import ventil from "@/public/tools/ventil.gif";
 import gaymar from "@/public/tools/gaymar.jpeg";
 import monitor from "@/public/tools/monitor.jpeg";
 import iop from "@/public/tools/iop.png";
+import { SUBJECTS_SUBMENUS } from "./subjects";
 
 export const TOOLS = [
   {

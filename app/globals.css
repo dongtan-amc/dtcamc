@@ -7,6 +7,10 @@
   --primary-hover: #4a6427;
 }
 
+html {
+  scroll-padding-top: 92px;
+}
+
 @layer base {
   :root {
     /* CSS: .bg-gradient { background: var(--gradient) } */
@@ -109,5 +113,9 @@ html {
   background-image: url("../public/unsplash/tools-subbanner.jpg");
 }
 .vets_subbanner {
+  background-image: url("../public/unsplash/vets-subbanner.jpg");
+}
+
+.internal_subbanner {
   background-image: url("../public/unsplash/vets-subbanner.jpg");
 }
