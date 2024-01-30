@@ -27,7 +27,12 @@ export default function ProfileDetailModal({
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="absolute right-0 px-2 h-7">자세히</Button>
+        <Button
+          className="absolute right-0 px-2 h-7 border-primary text-primary hover:text-primary"
+          variant="outline"
+        >
+          자세히
+        </Button>
       </DialogTrigger>
       <DialogContent className="h-[80vh] w-[800px] overflow-y-auto ">
         <DialogHeader>
