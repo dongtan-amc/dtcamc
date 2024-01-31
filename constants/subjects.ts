@@ -113,7 +113,7 @@ export const SUBJECTS_SUBMENUS = [
         tags: ["간지러움", "탈모", "화농성피부염", "링웜", "모낭충"],
       },
       {
-        categoryName: "자가면역성 ",
+        categoryName: "자가면역성",
         image: immuneMediated,
         imageDescription: "개 낙엽천포창(pemphigus foliaceus) 환자",
         intro:
@@ -176,7 +176,7 @@ export const SUBJECTS_SUBMENUS = [
         tags: ["간지러움", "탈모", "화농성피부염", "링웜", "모낭충"],
       },
       {
-        categoryName: "자가면역성 ",
+        categoryName: "자가면역성",
         image: immuneMediated,
         imageDescription: "개 낙엽천포창(pemphigus foliaceus) 환자",
         intro:
@@ -230,7 +230,7 @@ export const SUBJECTS_SUBMENUS = [
         tags: ["간지러움", "탈모", "화농성피부염", "링웜", "모낭충"],
       },
       {
-        categoryName: "자가면역성 ",
+        categoryName: "자가면역성",
         image: immuneMediated,
         imageDescription: "개 낙엽천포창(pemphigus foliaceus) 환자",
         intro:
@@ -284,7 +284,7 @@ export const SUBJECTS_SUBMENUS = [
         tags: ["간지러움", "탈모", "화농성피부염", "링웜", "모낭충"],
       },
       {
-        categoryName: "자가면역성 ",
+        categoryName: "자가면역성",
         image: immuneMediated,
         imageDescription: "개 낙엽천포창(pemphigus foliaceus) 환자",
         intro:
@@ -338,7 +338,7 @@ export const SUBJECTS_SUBMENUS = [
         tags: ["간지러움", "탈모", "화농성피부염", "링웜", "모낭충"],
       },
       {
-        categoryName: "자가면역성 ",
+        categoryName: "자가면역성",
         image: immuneMediated,
         imageDescription: "개 낙엽천포창(pemphigus foliaceus) 환자",
         intro:
@@ -392,7 +392,7 @@ export const SUBJECTS_SUBMENUS = [
         tags: ["간지러움", "탈모", "화농성피부염", "링웜", "모낭충"],
       },
       {
-        categoryName: "자가면역성 ",
+        categoryName: "자가면역성",
         image: immuneMediated,
         imageDescription: "개 낙엽천포창(pemphigus foliaceus) 환자",
         intro:
@@ -446,7 +446,7 @@ export const SUBJECTS_SUBMENUS = [
         tags: ["간지러움", "탈모", "화농성피부염", "링웜", "모낭충"],
       },
       {
-        categoryName: "자가면역성 ",
+        categoryName: "자가면역성",
         image: immuneMediated,
         imageDescription: "개 낙엽천포창(pemphigus foliaceus) 환자",
         intro:
@@ -500,7 +500,7 @@ export const SUBJECTS_SUBMENUS = [
         tags: ["간지러움", "탈모", "화농성피부염", "링웜", "모낭충"],
       },
       {
-        categoryName: "자가면역성 ",
+        categoryName: "자가면역성",
         image: immuneMediated,
         imageDescription: "개 낙엽천포창(pemphigus foliaceus) 환자",
         intro:
