@@ -1,5 +1,5 @@
 import Banner from "@/components/common/banner";
-import { INTRODUCTION_MENUS } from "@/constants/constants";
+import { INTRODUCTION_MENUS } from "@/constants/nav-menues";
 import saluteBanner from "@/public/photo/entrance.jpeg";
 import Paragraph from "./paragraph";
 import SubBanner from "@/components/common/sub-banner";

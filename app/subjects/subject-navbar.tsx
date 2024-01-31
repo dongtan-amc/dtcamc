@@ -1,9 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { TOOLS } from "@/constants/constants";
 import { cn } from "@/lib/utils";
 import { StaticImageData } from "next/image";
 import Link from "next/link";
-import React, { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction } from "react";
 
 export default function SubjectNavbar({
   category,

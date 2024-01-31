@@ -2,7 +2,7 @@ import Vet from "@/app/introduction/vets/vet";
 import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
 import SubBanner from "@/components/common/sub-banner";
-import { INTRODUCTION_MENUS } from "@/constants/constants";
+import { INTRODUCTION_MENUS } from "@/constants/nav-menues";
 import { VETS } from "@/constants/vets";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
 

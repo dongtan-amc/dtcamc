@@ -18,7 +18,7 @@ import operation1 from "@/public/photo/operation-room.jpeg";
 import operation2 from "@/public/photo/operation-room1.jpeg";
 import operation3 from "@/public/photo/operation-room2.jpeg";
 
-import { INTRODUCTION_MENUS } from "@/constants/constants";
+import { INTRODUCTION_MENUS } from "@/constants/nav-menues";
 import icu1 from "@/public/photo/icu.jpeg";
 import icu2 from "@/public/photo/icu1.jpeg";
 import icu3 from "@/public/photo/icu2.jpeg";

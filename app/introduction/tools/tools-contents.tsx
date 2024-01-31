@@ -1,4 +1,4 @@
-import { TOOLS } from "@/constants/constants";
+import { TOOLS } from "@/constants/tools";
 import Image from "next/image";
 import { useMemo } from "react";
 
