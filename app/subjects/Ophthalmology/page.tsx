@@ -18,8 +18,6 @@ export default function OphthalmologyPage() {
       <Container>
         <Categories subject="안과" />
       </Container>
-
-      <SubBanner imageClassName="internal_subbanner" />
     </main>
   );
 }

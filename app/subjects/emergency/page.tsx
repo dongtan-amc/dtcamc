@@ -18,8 +18,6 @@ export default function EmergencyPage() {
       <Container>
         <Categories subject="응급의학과" />
       </Container>
-
-      <SubBanner imageClassName="internal_subbanner" />
     </main>
   );
 }

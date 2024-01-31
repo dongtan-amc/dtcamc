@@ -14,7 +14,7 @@ export default function SubContentsMenus({
   }[];
 }) {
   return (
-    <div className="h-[560px]">
+    <div className="h-[560px] subcontents_bg bg-contain">
       <Container>
         <div className="flex justify-between items-center h-full text-white">
           {subcontents.map((contents) => (

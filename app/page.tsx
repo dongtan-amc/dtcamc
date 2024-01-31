@@ -4,10 +4,9 @@ export default function Home() {
   return (
     <>
       <Landing />
-      {/* <Vet />
-      <Facility />
-      <Grooming />
-      <Map /> */}
+      <div className="h-screen bg-olive-drab-100"></div>
+      <div className="h-screen bg-olive-drab-200"></div>
+      <div className="h-screen bg-olive-drab-100"></div>
     </>
   );
 }

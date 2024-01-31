@@ -18,8 +18,6 @@ export default function DermalPage() {
       <Container>
         <Categories subject="피부과" />
       </Container>
-
-      <SubBanner imageClassName="internal_subbanner" />
     </main>
   );
 }

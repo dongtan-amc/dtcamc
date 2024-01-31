@@ -116,6 +116,11 @@ html {
   background-image: url("../public/unsplash/vets-subbanner.jpg");
 }
 
-.internal_subbanner {
+.subject_subbanner {
   background-image: url("../public/unsplash/vets-subbanner.jpg");
+}
+
+/* subcontens */
+.subcontents_bg {
+  background-image: url("../public/mask.png");
 }

@@ -2,13 +2,13 @@ import { StaticImageData } from "next/image";
 import CategoryContents from "./category-contents";
 
 export default function SubjectContents({
-  category,
   categories,
 }: {
   category: string;
   categories: {
     categoryName: string;
     image: StaticImageData;
+    imageDescription: string;
     intro: string;
     description: string;
     tags: string[];
@@ -20,7 +20,7 @@ export default function SubjectContents({
         {categories.map((element) => (
           <li
             key={element.categoryName}
-            className=" bg-golden-dream-50-50 rounded-xl ring-1 ring-primary"
+            className="rounded-xl ring-1 ring-primary"
             id={element.categoryName}
           >
             <CategoryContents {...element} />

@@ -18,8 +18,6 @@ export default function OrthopedicsPage() {
       <Container>
         <Categories subject="정형외과" />
       </Container>
-
-      <SubBanner imageClassName="internal_subbanner" />
     </main>
   );
 }

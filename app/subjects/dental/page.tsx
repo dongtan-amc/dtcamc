@@ -18,8 +18,6 @@ export default function DentalPage() {
       <Container>
         <Categories subject="치과" />
       </Container>
-
-      <SubBanner imageClassName="internal_subbanner" />
     </main>
   );
 }

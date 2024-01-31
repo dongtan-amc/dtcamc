@@ -18,8 +18,6 @@ export default function RadiologyPage() {
       <Container>
         <Categories subject="영상의학과" />
       </Container>
-
-      <SubBanner imageClassName="internal_subbanner" />
     </main>
   );
 }

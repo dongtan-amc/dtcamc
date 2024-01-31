@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { TriangleDownIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -33,7 +34,9 @@ export default function Submenu({
         )}
         onClick={() => push(`${mainRoute}${submenu[0].route}`)}
       >
-        {menuLabel}
+        <div className="flex items-center gap-1">
+          {menuLabel} <TriangleDownIcon />
+        </div>
       </div>
       {isHovered && (
         <ul className="absolute bg-white flex flex-col w-[150px] shadow-2xl border top-20">

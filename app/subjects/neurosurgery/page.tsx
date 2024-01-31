@@ -18,8 +18,6 @@ export default function NeurosurgeryPage() {
       <Container>
         <Categories subject="신경외과" />
       </Container>
-
-      <SubBanner imageClassName="internal_subbanner" />
     </main>
   );
 }

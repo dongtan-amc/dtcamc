@@ -18,8 +18,6 @@ export default function InternalPage() {
       <Container>
         <Categories subject="내과" />
       </Container>
-
-      <SubBanner imageClassName="internal_subbanner" />
     </main>
   );
 }
