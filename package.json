@@ -18,6 +18,8 @@
     "embla-carousel-autoplay": "^8.0.0-rc21",
     "embla-carousel-react": "^8.0.0-rc21",
     "framer-motion": "^11.0.3",
+    "gray-matter": "^4.0.3",
+    "markdown-to-jsx": "^7.4.1",
     "next": "latest",
     "react": "^18",
     "react-dom": "^18",
@@ -28,6 +30,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

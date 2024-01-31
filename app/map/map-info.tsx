@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { PHONE } from "@/constants/constants";
 import mapPinLineIcon from "@/public/icons/map-pin-line.svg";
 import phoenIcon from "@/public/icons/phone.svg";
 import infoIcon from "@/public/icons/Info.svg";
@@ -8,6 +7,7 @@ import toiletIcon from "@/public/icons/toiletsvg.svg";
 import Image from "next/image";
 import { FaPaw } from "react-icons/fa6";
 import Link from "next/link";
+import { PHONE } from "@/constants/general-info";
 
 export default function MapInfo() {
   return (

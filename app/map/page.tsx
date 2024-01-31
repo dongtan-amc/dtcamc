@@ -1,8 +1,8 @@
 import Banner from "@/components/common/banner";
-import NaverMapProvider from "./naver-map-provider";
-import MyNaverMap from "./my-naver-map";
-import MapInfo from "./map-info";
 import mapBanner from "@/public/photo/feeds.jpeg";
+import MapInfo from "./map-info";
+import MyNaverMap from "./my-naver-map";
+import NaverMapProvider from "./naver-map-provider";
 
 export const dynamic = "force-dynamic";
 

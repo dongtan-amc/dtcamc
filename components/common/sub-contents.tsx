@@ -20,7 +20,10 @@ export default function SubContents({
     >
       <Icon size={40} className="pb-4" />
       <p className="text-2xl pb-8">{title}</p>
-      <p className="text-sm" dangerouslySetInnerHTML={formattedDescription}></p>
+      <p
+        className="text-sm text-center"
+        dangerouslySetInnerHTML={formattedDescription}
+      ></p>
     </Link>
   );
 }

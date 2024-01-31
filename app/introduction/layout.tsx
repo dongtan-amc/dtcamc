@@ -1,5 +1,5 @@
 import SubContentsMenus from "@/components/common/sub-contents-menus";
-import { INTRODUCTION_SUBCONTENTS } from "@/constants/constants";
+import { INTRODUCTION_SUBCONTENTS } from "@/constants/subcontents";
 import React from "react";
 
 export default function IntroductionLayout({

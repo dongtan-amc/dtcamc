@@ -7,7 +7,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { NAME } from "@/constants/constants";
+import { NAME } from "@/constants/general-info";
 
 export default function TimeTable() {
   return (

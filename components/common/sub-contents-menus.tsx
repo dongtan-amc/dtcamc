@@ -1,4 +1,3 @@
-import { INTRODUCTION_SUBCONTENTS } from "@/constants/constants";
 import { IconType } from "react-icons/lib";
 import Container from "./container";
 import SubContents from "./sub-contents";
@@ -14,7 +13,7 @@ export default function SubContentsMenus({
   }[];
 }) {
   return (
-    <div className="h-[560px] subcontents_bg bg-contain">
+    <div className="h-[560px] subcontents_bg bg-center ">
       <Container>
         <div className="flex justify-between items-center h-full text-white">
           {subcontents.map((contents) => (

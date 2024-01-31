@@ -1,3 +1,5 @@
+import { SUBJECTS_SUBMENUS } from "./subjects";
+
 export const EXPERTY_SUBMENUS = [
   {
     upperRoute: "/experty",
@@ -89,42 +91,5 @@ export const NAV_MENUS = [
   {
     label: "오시는 길",
     route: "/map",
-  },
-];
-
-import {
-  FaUserDoctor,
-  FaClock,
-  FaHospital,
-  FaMapLocationDot,
-} from "react-icons/fa6";
-import { ADDRESS, NAME } from "./general-info";
-import { SUBJECTS_SUBMENUS } from "./subjects";
-
-export const INTRODUCTION_SUBCONTENTS = [
-  {
-    title: "수의사 소개",
-    description: `${NAME}의 최고의 수의사들을 소개합니다.`,
-    Icon: FaUserDoctor,
-    href: "/introduction/vets",
-  },
-  {
-    title: "진료시간 안내",
-    description:
-      "주간 : 오전 9시 - 오후 9시 <br/> 야간 : 오후 9시 - 익일 오전 9시",
-    Icon: FaClock,
-    href: "/introduction/time",
-  },
-  {
-    title: "시설 안내",
-    description: `${NAME}의 시설을 소개합니다.`,
-    Icon: FaHospital,
-    href: "/introduction/facility",
-  },
-  {
-    title: "오시는 길",
-    description: `${ADDRESS}`,
-    Icon: FaMapLocationDot,
-    href: "/map",
   },
 ];

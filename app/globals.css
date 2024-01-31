@@ -119,6 +119,9 @@ html {
 .subject_subbanner {
   background-image: url("../public/unsplash/vets-subbanner.jpg");
 }
+.community_subbanner {
+  background-image: url("../public/unsplash/vets-subbanner.jpg");
+}
 
 /* subcontens */
 .subcontents_bg {
