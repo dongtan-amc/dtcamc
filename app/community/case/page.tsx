@@ -2,6 +2,7 @@ import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
 import { COMMUNITY_SUBMENUS } from "@/constants/nav-menues";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
+import CasesGrid from "./cases-grid";
 
 export default function CasePage() {
   return (
@@ -13,7 +14,9 @@ export default function CasePage() {
         subMenus={COMMUNITY_SUBMENUS}
       />
 
-      <Container>케이스</Container>
+      <Container>
+        <CasesGrid />
+      </Container>
     </main>
   );
 }

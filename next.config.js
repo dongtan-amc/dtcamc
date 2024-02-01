@@ -9,6 +9,14 @@ const nextConfig = {
 
     return config;
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "postfiles.pstatic.net",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

@@ -1,6 +1,5 @@
 import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
-import SubBanner from "@/components/common/sub-banner";
 import { SUBJECTS_SUBMENUS } from "@/constants/subjects";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
 import Categories from "../categories";
@@ -18,8 +17,6 @@ export default function SurgeryPage() {
       <Container>
         <Categories subject="일반외과" />
       </Container>
-
-      <SubBanner imageClassName="internal_subbanner" />
     </main>
   );
 }
