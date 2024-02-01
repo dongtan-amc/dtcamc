@@ -6,3 +6,6 @@ export const BUSINESS_NUMBER = "123-45-67890";
 export const PHONE = "031-8003-7533";
 export const EMAIL = "123@naver.com";
 export const COPY_RIGHTS = "ⓒ2024 동탄시티동물의료센터 All Rights Reserved.";
+export const NAVER_BLOG =
+  "https://blog.naver.com/prologue/PrologueList.naver?blogId=dtctamc";
+export const KAKAO = "https://pf.kakao.com/_RLdib";

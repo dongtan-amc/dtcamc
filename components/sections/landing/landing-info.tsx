@@ -1,4 +1,5 @@
 import { Separator } from "@/components/ui/separator";
+import { KAKAO, NAVER_BLOG } from "@/constants/general-info";
 import kakao from "@/public/icons/kakao.svg";
 import map from "@/public/icons/map.png";
 import naverBlog from "@/public/icons/navar-blog.png";
@@ -37,8 +38,7 @@ export default function LandingInfo() {
 
       <Link
         className="flex items-center font-bold gap-3"
-        href="https://blog.naver.com/PostList.naver?blogId=dtctamc&from=postList&categoryNo=6"
-        target="_blank"
+        href="/community/case"
       >
         <Image alt="naver blog" src={naverBlog} width={32} unoptimized />
         <p className="text-lg">수술&진료 사례</p>
@@ -48,17 +48,18 @@ export default function LandingInfo() {
 
       <Link
         className="flex items-center font-bold gap-3"
-        href="https://pf.kakao.com/_RLdib"
+        href={KAKAO}
         target="_blank"
+        rel="noopener noreferrer"
       >
-        <Image alt="naver blog" src={kakao} width={32} unoptimized />
+        <Image alt="kako" src={kakao} width={32} unoptimized />
         <p className="font-bold text-lg">카카오톡 채널</p>
       </Link>
 
       <Separator orientation="vertical" />
 
       <Link className="flex items-center font-bold gap-1" href="/map">
-        <Image alt="naver blog" src={map} width={44} unoptimized />
+        <Image alt="map" src={map} width={44} unoptimized />
         <p className="font-bold text-lg">오시는 길</p>
       </Link>
     </div>

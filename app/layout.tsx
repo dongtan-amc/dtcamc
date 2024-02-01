@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Nanum_Gothic } from "next/font/google";
 import "./globals.css";
 import ScrollTopButton from "@/components/scroll-top-button";
+import FloatingInfos from "@/components/common/floating-infos";
 
 const font = Nanum_Gothic({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        <FloatingInfos />
         <ScrollTopButton />
       </body>
     </html>
