@@ -2,16 +2,21 @@ import { NAME } from "@/constants/general-info";
 import InfiniteCards from "./infinite-cards";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 export default function Facility() {
   return (
-    <div className="bg-slate-950">
-      <div className="pt-10 pb-8 flex justify-center">
+    <div className="bg-slate-950 py-20">
+      <div className="pb-4 flex justify-center">
         <div className="flex items-end gap-2">
           <h2 className="text-4xl text-slate-50 font-bold">{NAME} 시설</h2>
           <Link href="/introduction/facility" className="inline">
-            <Button variant="outline" className="bg-transparent text-slate-50">
-              자세히
+            <Button
+              variant="outline"
+              size="icon"
+              className="bg-transparent text-slate-50 rounded-full border-2"
+            >
+              <ArrowRightIcon />
             </Button>
           </Link>
         </div>

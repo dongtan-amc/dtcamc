@@ -1,0 +1,46 @@
+import Container from "@/components/common/container";
+import { Separator } from "@/components/ui/separator";
+import { NAV_MENUS } from "@/constants/nav-menues";
+import Link from "next/link";
+
+export default function Sitemap() {
+  return (
+    <div className="bg-slate-950 text-slate-50 py-20">
+      <Container>
+        <ul className="flex gap-10 justify-evenly">
+          {NAV_MENUS.map((menu) => {
+            return (
+              <li key={menu.label} className="h-full flex">
+                {menu.submenu ? (
+                  <div>
+                    <ColumnHeader label={menu.label} />
+                    <ul className="flex flex-col gap-4">
+                      {menu.submenu.map((sub) => (
+                        <li key={sub.label}>
+                          <Link href={`${menu.route}/${sub.route}`}>
+                            {sub.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : (
+                  <div>
+                    <ColumnHeader label={menu.label} />
+                    <Link href={menu.route}>{menu.label}</Link>
+                  </div>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </Container>
+    </div>
+  );
+}
+
+const ColumnHeader = ({ label }: { label: string }) => (
+  <div className="pb-5">
+    <p className="font-semibold text-xl">{label}</p>
+  </div>
+);

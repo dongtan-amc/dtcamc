@@ -13,7 +13,7 @@ export const EXPERTY_SUBMENUS = [
   },
   {
     upperRoute: "/experty",
-    label: "영상의학센터 / CT 촬영 의뢰",
+    label: "CT 촬영 의뢰",
     route: "/ct",
   },
 ];
