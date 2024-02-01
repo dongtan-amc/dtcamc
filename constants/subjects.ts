@@ -361,7 +361,7 @@ export const SUBJECTS_SUBMENUS = [
   {
     upperRoute: "/subjects",
     label: "안과",
-    route: "/ophthalmology",
+    route: "/eye",
     contents: [
       {
         categoryName: "알러지성",

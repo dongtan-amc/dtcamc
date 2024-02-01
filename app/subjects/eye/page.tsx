@@ -5,7 +5,7 @@ import { SUBJECTS_SUBMENUS } from "@/constants/subjects";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
 import Categories from "../categories";
 
-export default function OphthalmologyPage() {
+export default function EyePage() {
   return (
     <main>
       <Banner
