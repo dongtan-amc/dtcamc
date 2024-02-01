@@ -8,8 +8,8 @@ export default function FloatingInfos() {
     <div className="fixed right-0 top-[30%] z-40 border-primary bg-white shadow-2xl ring-1 ring-primary px-1 py-4 rounded-tl-xl rounded-bl-xl">
       <ul className="flex flex-col gap-4">
         {FLOATING_INFOS.map((info, index) => (
-          <>
-            <li key={info.label} className="p-1">
+          <div key={info.label}>
+            <li className="p-1">
               <Link
                 href={info.href}
                 target={
@@ -26,7 +26,7 @@ export default function FloatingInfos() {
               </Link>
             </li>
             {index !== 3 && <Separator />}
-          </>
+          </div>
         ))}
       </ul>
     </div>
