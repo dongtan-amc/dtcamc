@@ -29,12 +29,7 @@ export default function SubjectNavbar({
             <Link href={`/subjects${subjectRoute}/#${el.categoryName}`}>
               <Button
                 onClick={() => setCategory(el.categoryName)}
-                className={cn(
-                  category === el.categoryName
-                    ? "bg-olive-drab-600 text-white"
-                    : "bg-olive-drab-100 text-olive-drab-700 hover:bg-olive-drab-100/80",
-                  " px-4 py-2 rounded-full font-bold"
-                )}
+                className="bg-olive-drab-100 text-olive-drab-700 hover:bg-olive-drab-100/80 px-4 py-2 rounded-full font-bold"
               >
                 {el.categoryName}
               </Button>

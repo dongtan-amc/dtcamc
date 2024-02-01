@@ -4,7 +4,9 @@ import Posts from "../posts";
 export default function NoticePage() {
   return (
     <Container>
-      <Posts folderPath="markdown/notice/" type="notice" />
+      <div className="min-h-[50vh]">
+        <Posts folderPath="markdown/notice/" type="notice" />
+      </div>
     </Container>
   );
 }

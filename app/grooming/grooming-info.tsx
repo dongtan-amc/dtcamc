@@ -6,7 +6,7 @@ import { FaPaw } from "react-icons/fa6";
 
 export default function GroomingInfo() {
   return (
-    <div className="w-1/2 px-14 text-olive-drab-950 bg-golden-dream-100 mask bg-cover bg-center">
+    <div className="w-1/2 px-14 text-olive-drab-95">
       <div className="h-full flex flex-col justify-center">
         <div className="flex items-center gap-2 text-2xl font-bold pb-3">
           <FaPaw />

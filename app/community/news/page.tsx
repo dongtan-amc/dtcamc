@@ -7,7 +7,9 @@ import Posts from "../posts";
 export default function NewsPage() {
   return (
     <Container>
-      <Posts folderPath="markdown/news/" type="news" />
+      <div className="min-h-[50vh]">
+        <Posts folderPath="markdown/news/" type="news" />
+      </div>
     </Container>
   );
 }

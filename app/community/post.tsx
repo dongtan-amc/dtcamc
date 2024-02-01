@@ -2,6 +2,7 @@ import Container from "@/components/common/container";
 import { Button } from "@/components/ui/button";
 import { getPostContents, getPostMetadata } from "@/lib/utils";
 import profile from "@/public/main-logo.png";
+import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import Markdown from "markdown-to-jsx";
 import Image from "next/image";
 import Link from "next/link";
@@ -34,7 +35,9 @@ export default function Post({
             <div className="flex items-center gap-4 z-10">
               <p>작성일 : {metadata.date}</p>
               <Link href={`/community/${route}`}>
-                <Button>목록</Button>
+                <Button size="icon" variant="outline">
+                  <HamburgerMenuIcon />
+                </Button>
               </Link>
             </div>
           </div>

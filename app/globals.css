@@ -123,6 +123,10 @@ html {
   background-image: url("../public/unsplash/vets-subbanner.jpg");
 }
 
+.map_subbanner {
+  background-image: url("../public/unsplash/time-subbanner.jpg");
+}
+
 /* subcontens */
 .subcontents_bg {
   background-image: url("../public/mask.png");

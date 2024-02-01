@@ -1,4 +1,7 @@
 import Banner from "@/components/common/banner";
+import SubBanner from "@/components/common/sub-banner";
+import SubContentsMenus from "@/components/common/sub-contents-menus";
+import { GROOMING_SUBCONTENTS } from "@/constants/subcontents";
 import groomingBanner from "@/public/grooming/grooming2.jpeg";
 import GroomingCarousel from "./grooming-carousel";
 import GroomingInfo from "./grooming-info";
@@ -8,10 +11,14 @@ export default function GroomingPage() {
     <main>
       <Banner image={groomingBanner} subRoute="미용안내" />
 
-      <div className="flex">
+      <div className="flex pt-10 pb-8">
         <GroomingCarousel />
         <GroomingInfo />
       </div>
+
+      <SubBanner imageClassName="map_subbanner" />
+
+      <SubContentsMenus subcontents={GROOMING_SUBCONTENTS} />
     </main>
   );
 }
