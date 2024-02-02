@@ -7,7 +7,14 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { NAME } from "@/constants/general-info";
+import {
+  DAY_TIME,
+  LATE_NIGHT_TIME,
+  LUNCH_TIME,
+  NAME,
+  NIGHT_TIME,
+  SUNDAY_TIME,
+} from "@/constants/general-info";
 
 export default function TimeTable() {
   return (
@@ -27,11 +34,15 @@ export default function TimeTable() {
                   ※ 진료시간이 변경될 경우 홈페이지를 통해 공지하겠습니다.
                 </p>
                 <p className="bg-olive-drab-50 px-4 py-2">
-                  ※ 야간 응급진료 시간에 내원하시는 경우, 기본 야간 진료비가
+                  ※ 야간 및 심야진료 시간에 내원하시는 경우, 추가 진료비가
                   청구됩니다.
                 </p>
                 <p className="bg-olive-drab-50 px-4 py-2">
-                  ※ 추가적인 안내사항
+                  ※ 일요일은 야간진료를 하지 않습니다. 입원환자 관리는
+                  정상적으로 운영됩니다.
+                </p>
+                <p className="bg-olive-drab-50 px-4 py-2">
+                  ※ 심야진료는 기존 고객만 가능합니다.
                 </p>
               </div>
             </TableCaption>
@@ -44,33 +55,27 @@ export default function TimeTable() {
             <TableBody>
               <TableRow>
                 <TableCell className="text-center">주간진료</TableCell>
-                <TableCell className="text-center">
-                  오전 9시 - 오후 9시
-                </TableCell>
+                <TableCell className="text-center">{DAY_TIME}</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="text-center">야간진료</TableCell>
+                <TableCell className="text-center">{NIGHT_TIME}</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="text-center text-red-500">
+                  일요일
+                </TableCell>
                 <TableCell className="text-center">
-                  오후 9시 - 오전 1시
+                  {SUNDAY_TIME} <br />※ 일요일은 야간진료를 하지 않습니다.
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="text-center">심야진료</TableCell>
-                <TableCell className="text-center">
-                  오전 1시 - 오전 9시
-                </TableCell>
+                <TableCell className="text-center">{LATE_NIGHT_TIME}</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="text-center">점심시간</TableCell>
-                <TableCell className="text-center">
-                  오후 12시 - 오후 1시
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="text-center">회진시간</TableCell>
-                <TableCell className="text-center">
-                  오후 ??시 - 오후 ??시
-                </TableCell>
+                <TableCell className="text-center">{LUNCH_TIME}</TableCell>
               </TableRow>
             </TableBody>
           </Table>

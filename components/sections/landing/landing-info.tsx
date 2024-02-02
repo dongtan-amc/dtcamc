@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import { KAKAO, NAVER_BLOG } from "@/constants/general-info";
+import { KAKAO, NAVER_BLOG, PHONE } from "@/constants/general-info";
 import kakao from "@/public/icons/kakao.svg";
 import map from "@/public/icons/map.png";
 import naverBlog from "@/public/icons/navar-blog.png";
@@ -10,28 +10,12 @@ import { FaPhoneAlt } from "react-icons/fa";
 export default function LandingInfo() {
   return (
     <div className="absolute h-[120px] bottom-0 w-[1280px] flex justify-evenly items-center bg-slate-950 left-[calc(50%-640px)] text-white py-5 rounded-t-xl">
-      <div className="space-y-2 font-bold">
-        <div className="text-primary flex items-center text-2xl gap-2 font-extrabold tracking-tight">
+      <div className="flex gap-4 font-bold items-center">
+        <div className="text-primary flex items-center text-4xl gap-2  tracking-tight">
           <FaPhoneAlt />
-          <p>031.8003.7533</p>
+          <p>{PHONE}</p>
         </div>
-
-        <div className="flex items-center justify-between gap-4">
-          <div className="text-lg leading-tight ">
-            <div>
-              주간: 오전 <span className="text-primary">9시</span> - 오후{" "}
-              <span className="text-primary">9시</span>
-            </div>
-            <div>
-              야간: 오후 <span className="text-primary">9시</span> - 익일 오전{" "}
-              <span className="text-primary">9시</span>
-            </div>
-          </div>
-
-          <div className="text-white bg-primary rounded-full px-4 py-1 text-lg">
-            365일 연중무휴
-          </div>
-        </div>
+        <div className="text-white text-center text-lg">365일 연중무휴</div>
       </div>
 
       <Separator orientation="vertical" />

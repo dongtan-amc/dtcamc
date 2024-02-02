@@ -13,8 +13,13 @@ export const EXPERTY_SUBMENUS = [
   },
   {
     upperRoute: "/experty",
-    label: "CT 촬영 의뢰",
+    label: "CT 센터",
     route: "/ct",
+  },
+  {
+    upperRoute: "/experty",
+    label: "진료 의뢰",
+    route: "/referral",
   },
 ];
 export const COMMUNITY_SUBMENUS = [

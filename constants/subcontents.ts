@@ -18,8 +18,7 @@ export const HOME_SUBCONTENTS = [
   },
   {
     title: "진료시간 안내",
-    description:
-      "주간 : 오전 9시 - 오후 9시<br/>야간 : 오후 9시 - 오전 1시<br/>심야 : 오전 1시 - 오전 9시",
+    description: `${NAME}의 진료시간을 안내해드립니다.`,
     Icon: FaClock,
     href: "/introduction/time",
   },
@@ -46,8 +45,7 @@ export const INTRODUCTION_SUBCONTENTS = [
   },
   {
     title: "진료시간 안내",
-    description:
-      "주간 : 오전 9시 - 오후 9시<br/>야간 : 오후 9시 - 오전 1시<br/>심야 : 오전 1시 - 오전 9시",
+    description: `${NAME}의 진료시간을 안내해드립니다.`,
     Icon: FaClock,
     href: "/introduction/time",
   },
@@ -74,8 +72,7 @@ export const COMMUNITY_SUBCONTENTS = [
   },
   {
     title: "진료시간 안내",
-    description:
-      "주간 : 오전 9시 - 오후 9시<br/>야간 : 오후 9시 - 오전 1시<br/>심야 : 오전 1시 - 오전 9시",
+    description: `${NAME}의 진료시간을 안내해드립니다.`,
     Icon: FaClock,
     href: "/introduction/time",
   },
@@ -101,8 +98,7 @@ export const MAP_SUBCONTENTS = [
   },
   {
     title: "진료시간 안내",
-    description:
-      "주간 : 오전 9시 - 오후 9시<br/>야간 : 오후 9시 - 오전 1시<br/>심야 : 오전 1시 - 오전 9시",
+    description: `${NAME}의 진료시간을 안내해드립니다.`,
     Icon: FaClock,
     href: "/introduction/time",
   },
@@ -128,8 +124,7 @@ export const GROOMING_SUBCONTENTS = [
   },
   {
     title: "진료시간 안내",
-    description:
-      "주간 : 오전 9시 - 오후 9시<br/>야간 : 오후 9시 - 오전 1시<br/>심야 : 오전 1시 - 오전 9시",
+    description: `${NAME}의 진료시간을 안내해드립니다.`,
     Icon: FaClock,
     href: "/introduction/time",
   },

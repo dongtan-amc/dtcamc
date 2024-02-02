@@ -10,12 +10,12 @@ export default function SurgeryPage() {
       <Banner
         image={vetBanner}
         upperRoute="진료 과목"
-        subRoute="일반외과"
+        subRoute="외과"
         subMenus={SUBJECTS_SUBMENUS}
       />
 
       <Container>
-        <Categories subject="일반외과" />
+        <Categories subject="외과" />
       </Container>
     </main>
   );

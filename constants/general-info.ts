@@ -9,3 +9,9 @@ export const COPY_RIGHTS = "ⓒ2024 동탄시티동물의료센터 All Rights Re
 export const NAVER_BLOG =
   "https://blog.naver.com/prologue/PrologueList.naver?blogId=dtctamc";
 export const KAKAO = "https://pf.kakao.com/_RLdib";
+export const DAY_TIME = "오전 9시 - 오후 9시";
+export const NIGHT_TIME = "오후 9시 - 오전 12시";
+export const SUNDAY_TIME = "오전 9시 - 오후 7시";
+export const LATE_NIGHT_TIME =
+  "※ 밤 12시부터는 입원환자 관리를 위해 기존 고객이 아닌 경우 진료가 제한됩니다. ";
+export const LUNCH_TIME = "오후 12시 - 오후 1시";
