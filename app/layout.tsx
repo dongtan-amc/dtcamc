@@ -5,6 +5,7 @@ import { Nanum_Gothic } from "next/font/google";
 import "./globals.css";
 import ScrollTopButton from "@/components/scroll-top-button";
 import FloatingInfos from "@/components/common/floating-infos";
+import MobileBottomButtons from "@/components/mobile-bottom-buttons";
 
 const font = Nanum_Gothic({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
         <Footer />
         <FloatingInfos />
         <ScrollTopButton />
+        <MobileBottomButtons />
       </body>
     </html>
   );
