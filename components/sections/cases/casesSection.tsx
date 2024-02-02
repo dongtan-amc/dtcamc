@@ -1,4 +1,5 @@
 import Container from "@/components/common/container";
+import SectionTitle from "@/components/common/section-title";
 import { Button } from "@/components/ui/button";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { CASES } from "@/constants/cases";
@@ -9,22 +10,8 @@ import Link from "next/link";
 export default function CasesSection() {
   return (
     <div className="py-20">
-      <div className="flex justify-center pb-4">
-        <div className="flex items-end gap-2">
-          <h2 className="text-4xl text-slate-950 font-bold">
-            {NAME} 진료케이스
-          </h2>
-          <Link href="/community/case" className="inline">
-            <Button
-              variant="outline"
-              size="icon"
-              className="bg-transparent text-slate-950 rounded-full border hover:bg-slate-950 hover:text-slate-50 border-slate-950"
-            >
-              <ArrowRightIcon />
-            </Button>
-          </Link>
-        </div>
-      </div>
+      <SectionTitle link="/community/case" theme="light" title="진료케이스" />
+
       <Container>
         <HoverEffect items={recentCases} />
       </Container>
