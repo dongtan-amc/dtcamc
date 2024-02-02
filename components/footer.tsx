@@ -13,7 +13,7 @@ import Container from "./common/container";
 
 export default function Footer() {
   return (
-    <footer className="bg-olive-drab-950 text-olive-drab-50 lg:h-32 py-4">
+    <footer className="bg-olive-drab-950 text-olive-drab-50 lg:h-32 py-4 pb-16 lg:pb-0">
       <Container>
         <div className="flex flex-col lg:flex-row lg:items-center gap-10 h-full justify-between">
           <div className="w-24 h-24 bg-white lg:flex items-center justify-center hidden">
@@ -30,7 +30,7 @@ export default function Footer() {
             <p className="text-sm">{COPY_RIGHTS}</p>
           </div>
 
-          <div className="text-3xl font-bold">{PHONE}</div>
+          <div className="text-3xl font-bold hidden lg:block">{PHONE}</div>
         </div>
       </Container>
     </footer>

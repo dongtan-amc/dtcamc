@@ -13,9 +13,9 @@ export default function SubContentsMenus({
   }[];
 }) {
   return (
-    <div className="h-[560px] mask bg-center ">
+    <div className="lg:h-[560px] mask bg-center py-4">
       <Container>
-        <div className="flex justify-between items-center h-full text-white">
+        <div className="flex lg:flex-row gap-4 flex-col justify-between items-center h-full text-white">
           {subcontents.map((contents) => (
             <SubContents {...contents} key={contents.title} />
           ))}
