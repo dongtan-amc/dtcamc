@@ -21,7 +21,7 @@ export default function SectionTitle({
         "pb-4 flex justify-center "
       )}
     >
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 pb-8">
         <h2 className={cn("text-4xl  font-bold")}>
           {NAME} {title}
         </h2>

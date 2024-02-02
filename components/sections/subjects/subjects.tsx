@@ -1,13 +1,12 @@
 import Container from "@/components/common/container";
 import SubjectsBentoGrid from "./subjects-bento-grid";
 import { NAME } from "@/constants/general-info";
+import SectionTitle from "@/components/common/section-title";
 
-export default function Subjects() {
+export default function SubjectsSection() {
   return (
-    <div className="py-10">
-      <h2 className="text-4xl text-slate-950 font-bold text-center">
-        진료 과목
-      </h2>
+    <div className="py-20">
+      <SectionTitle link="/subjects/internal" theme="light" title="진료과목" />
       <Container>
         <SubjectsBentoGrid />
       </Container>
