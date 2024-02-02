@@ -5,6 +5,7 @@ import Container from "../common/container";
 import MainLogo from "./main-logo";
 import Menu from "./menu";
 import { cn } from "@/lib/utils";
+import MobileMenu from "./mobile-menu";
 
 export default function Navbar() {
   const { isScrollTop } = useScrollPosition();
@@ -19,10 +20,12 @@ export default function Navbar() {
       )}
     >
       <Container>
-        <nav className="flex items-center justify-between h-20">
+        <nav className="flex items-center justify-between lg:h-20 h-14 ">
           <MainLogo />
 
           <Menu isScrollTop={isScrollTop} />
+
+          <MobileMenu isScrollTop={isScrollTop} />
         </nav>
       </Container>
     </header>

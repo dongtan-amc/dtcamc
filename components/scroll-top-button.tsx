@@ -18,7 +18,7 @@ export default function ScrollTopButton() {
     <Button
       className={cn(
         isScrollTop ? "opacity-0" : "opacity-100",
-        "transition duration-500 fixed bottom-10 right-10 z-30"
+        "transition duration-500 fixed lg:bottom-10 lg:right-10 bottom-4 right-4 z-30"
       )}
       size="icon"
       onClick={scrollToTop}

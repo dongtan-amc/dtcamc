@@ -5,11 +5,11 @@ import SectionTitle from "@/components/common/section-title";
 
 export default function SubjectsSection() {
   return (
-    <div className="py-20">
+    <div className="py-20 min-h-screen">
       <SectionTitle link="/subjects/internal" theme="light" title="진료과목" />
-      <Container>
+      {/* <Container>
         <SubjectsBentoGrid />
-      </Container>
+      </Container> */}
     </div>
   );
 }

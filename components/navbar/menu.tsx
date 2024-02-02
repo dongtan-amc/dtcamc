@@ -10,7 +10,7 @@ export default function Menu({ isScrollTop }: { isScrollTop: boolean }) {
   const path = usePathname();
 
   return (
-    <ul className="flex gap-10 items-center h-full">
+    <ul className="lg:flex gap-10 items-center h-full hidden">
       {NAV_MENUS.map((menu) => {
         const currentPage = menu.submenu
           ? menu.route === `/${path.split("/")[1]}`

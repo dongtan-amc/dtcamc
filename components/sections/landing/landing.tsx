@@ -10,7 +10,7 @@ const LANDING_IMAGES = [consulting1, consulting2, consulting3, consulting4];
 
 export default function Landing() {
   return (
-    <section className="h-screen bg-slate-100 relative overflow-hidden">
+    <section className="landing_height bg-slate-100 relative overflow-hidden">
       <LandinCarousel images={LANDING_IMAGES} />
       <LandingCopy />
       <LandingInfo />

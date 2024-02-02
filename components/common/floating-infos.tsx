@@ -5,7 +5,7 @@ import { Separator } from "../ui/separator";
 
 export default function FloatingInfos() {
   return (
-    <div className="fixed right-0 top-[30%] z-40 border-primary bg-white shadow-2xl ring-1 ring-primary px-1 rounded-tl-xl rounded-bl-xl">
+    <div className="hidden lg:block fixed right-0 top-[30%] z-40 border-primary bg-white shadow-2xl ring-1 ring-primary px-1 rounded-tl-xl rounded-bl-xl">
       <ul className="flex flex-col gap-4 py-4">
         {FLOATING_INFOS.map((info, index) => (
           <div key={info.label}>

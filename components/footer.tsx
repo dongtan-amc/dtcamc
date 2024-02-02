@@ -13,10 +13,10 @@ import Container from "./common/container";
 
 export default function Footer() {
   return (
-    <footer className="bg-olive-drab-950 text-olive-drab-50 h-32">
+    <footer className="bg-olive-drab-950 text-olive-drab-50 lg:h-32 py-4">
       <Container>
-        <div className="flex items-center gap-10 h-full justify-between">
-          <div className="w-24 h-24 bg-white flex items-center justify-center">
+        <div className="flex flex-col lg:flex-row lg:items-center gap-10 h-full justify-between">
+          <div className="w-24 h-24 bg-white lg:flex items-center justify-center hidden">
             <Image alt="logo" src={logo} width={80} height={80} unoptimized />
           </div>
 

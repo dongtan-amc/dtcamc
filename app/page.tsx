@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <>
       <Landing />
-      <SubjectsSection />
-      <FacilitySection />
-      <CasesSection />
-      <CommunitySection />
-      <SubContentsMenus subcontents={HOME_SUBCONTENTS} />
-      <Sitemap />
+      {/* <SubjectsSection /> */}
+      {/* <FacilitySection /> */}
+      {/* <CasesSection /> */}
+      {/* <CommunitySection /> */}
+      {/* <SubContentsMenus subcontents={HOME_SUBCONTENTS} /> */}
+      {/* <Sitemap /> */}
     </>
   );
 }
