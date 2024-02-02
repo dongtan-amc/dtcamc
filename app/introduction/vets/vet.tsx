@@ -1,6 +1,7 @@
-import Image, { StaticImageData } from "next/image";
-import ProfileSummary from "./profile-summary";
 import ProfileDetailModal from "@/app/introduction/vets/profile-detail-dialog";
+import { StaticImageData } from "next/image";
+import ProfileSummary from "./profile-summary";
+import VetImage from "./vet-image";
 
 export default function Vet({
   name,
@@ -9,9 +10,11 @@ export default function Vet({
   history,
   expert,
   education,
+  subjects,
 }: {
   name: string;
   title: string;
+  subjects: string[];
   image: StaticImageData;
   history: string[];
   expert: string[];
@@ -19,8 +22,14 @@ export default function Vet({
 }) {
   return (
     <li className="flex gap-4 relative">
-      <Image alt={`${name} 프로필 사진`} src={image} placeholder="blur" />
-      <ProfileSummary name={name} title={title} history={history} />
+      <VetImage image={image} name={name} />
+
+      <ProfileSummary
+        name={name}
+        title={title}
+        history={history}
+        subjects={subjects}
+      />
       <ProfileDetailModal
         name={name}
         title={title}
@@ -28,6 +37,7 @@ export default function Vet({
         history={history}
         expert={expert}
         education={education}
+        subjects={subjects}
       />
     </li>
   );
