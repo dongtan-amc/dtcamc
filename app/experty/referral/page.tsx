@@ -1,5 +1,6 @@
 import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
+import NotReadyPage from "@/components/common/not-ready-page";
 import { EXPERTY_SUBMENUS } from "@/constants/nav-menues";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
 
@@ -13,7 +14,9 @@ export default function OperationPage() {
         subMenus={EXPERTY_SUBMENUS}
       />
 
-      <Container>리퍼럴</Container>
+      <Container>
+        <NotReadyPage />
+      </Container>
     </main>
   );
 }
