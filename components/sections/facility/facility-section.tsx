@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
-export default function Facility() {
+export default function FacilitySection() {
   return (
     <div className="bg-slate-950 py-20">
       <div className="pb-4 flex justify-center">
@@ -14,7 +14,7 @@ export default function Facility() {
             <Button
               variant="outline"
               size="icon"
-              className="bg-transparent text-slate-50 rounded-full border-2"
+              className="bg-transparent text-slate-50 rounded-full border"
             >
               <ArrowRightIcon />
             </Button>
