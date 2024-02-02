@@ -127,7 +127,6 @@ html {
   background-image: url("../public/unsplash/time-subbanner.jpg");
 }
 
-/* subcontens */
-.subcontents_bg {
+.mask {
   background-image: url("../public/mask.png");
 }

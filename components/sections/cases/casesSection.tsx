@@ -1,15 +1,11 @@
 import Container from "@/components/common/container";
 import SectionTitle from "@/components/common/section-title";
-import { Button } from "@/components/ui/button";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { CASES } from "@/constants/cases";
-import { NAME } from "@/constants/general-info";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
-import Link from "next/link";
 
 export default function CasesSection() {
   return (
-    <div className="py-20">
+    <div className="py-20 mask">
       <SectionTitle link="/community/case" theme="light" title="진료케이스" />
 
       <Container>
