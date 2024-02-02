@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge";
 import Badges from "./badges";
 
 export default function ProfileSummary({

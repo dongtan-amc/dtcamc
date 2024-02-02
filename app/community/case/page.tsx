@@ -3,6 +3,7 @@ import Container from "@/components/common/container";
 import { COMMUNITY_SUBMENUS } from "@/constants/nav-menues";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
 import CasesGrid from "./cases-grid";
+import Cases from "./cases";
 
 export default function CasePage() {
   return (
@@ -15,7 +16,7 @@ export default function CasePage() {
       />
 
       <Container>
-        <CasesGrid />
+        <Cases />
       </Container>
     </main>
   );
