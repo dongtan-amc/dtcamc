@@ -17,7 +17,7 @@ export default function ProfileSummary({
       <div>
         <div className="flex items-center gap-2">
           <p className="text-2xl font-bold">
-            {name} <span className="text-olive-drab-600 text-xl">{title}</span>
+            {name} <span className="text-lg">{title}</span>
           </p>
         </div>
 

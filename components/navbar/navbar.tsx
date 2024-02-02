@@ -14,7 +14,7 @@ export default function Navbar() {
       className={cn(
         isScrollTop
           ? "bg-transparent shadow-none"
-          : "bg-white text-olive-drab-900",
+          : "bg-white text-olive-drab-800",
         " fixed w-full z-50 transition duration-500 border-b-[1px]"
       )}
     >
