@@ -22,21 +22,19 @@ export default function SubjectNavbar({
   subjectRoute: string;
 }) {
   return (
-    <div>
-      <ul className="flex gap-4">
-        {categories.map((el) => (
-          <li key={el.categoryName}>
-            <Link href={`/subjects${subjectRoute}/#${el.categoryName}`}>
-              <Button
-                onClick={() => setCategory(el.categoryName)}
-                className="bg-olive-drab-100 text-olive-drab-700 hover:bg-olive-drab-100/80 px-4 py-2 rounded-full font-bold"
-              >
-                {el.categoryName}
-              </Button>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className="flex gap-4 overflow-auto scrollbar-hide pb-2">
+      {categories.map((el) => (
+        <li key={el.categoryName}>
+          <Link href={`/subjects${subjectRoute}/#${el.categoryName}`}>
+            <Button
+              onClick={() => setCategory(el.categoryName)}
+              className="bg-olive-drab-100 text-olive-drab-700 hover:bg-olive-drab-100/80 px-4 py-2 rounded-full font-bold"
+            >
+              {el.categoryName}
+            </Button>
+          </Link>
+        </li>
+      ))}
+    </ul>
   );
 }

@@ -15,7 +15,7 @@ export default function SubjectContents({
   }[];
 }) {
   return (
-    <div className="pt-10">
+    <div className="pt-8">
       <ul className="space-y-10">
         {categories.map((element) => (
           <li

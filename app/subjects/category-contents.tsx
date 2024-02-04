@@ -19,12 +19,13 @@ export default function CategoryContents({
   const formattedDescription = { __html: description };
 
   return (
-    <div className="flex gap-60 p-10">
-      <h2 className="text-3xl font-bold shrink-0 text-primary">
+    <div className="flex flex-col lg:flex-row p-5 lg:p-10 overflow-hidden">
+      <h2 className="text-2xl font-bold shrink-0 text-primary lg:w-1/3 pb-2">
         {categoryName}
       </h2>
+
       <div className="break-keep w-full">
-        <div className="relative h-[440px] w-full rounded-lg overflow-hidden">
+        <div className="relative h-[240px] lg:h-[440px] w-full rounded-lg overflow-hidden">
           <Image
             alt={categoryName}
             src={image}
@@ -45,7 +46,7 @@ export default function CategoryContents({
             className="leading-relaxed"
           />
         </div>
-        <ul className="flex gap-2 pt-6">
+        <ul className="flex gap-2 pt-6 flex-wrap">
           {tags.map((tag) => (
             <li key={tag}>
               <Badge className="bg-slate-950 hover:bg-slate-800 text-base">
