@@ -7,18 +7,16 @@ import toiletIcon from "@/public/icons/toiletsvg.svg";
 import Image from "next/image";
 import { FaPaw } from "react-icons/fa6";
 import Link from "next/link";
-import { PHONE } from "@/constants/general-info";
+import { ADDRESS, NAME, PHONE } from "@/constants/general-info";
 
 export default function MapInfo() {
   return (
     <div className="p-4 md:px-14 h-full my-auto text-olive-drab-950 md:w-1/2 md:py-10">
       <div className="flex items-center gap-2 text-2xl font-bold pb-3">
         <FaPaw />
-        <h1>24시 동탄시티 동물의료센터</h1>
+        <h1>{NAME}</h1>
       </div>
-      <p className="text-xl pb-10 font-bold">
-        경기도 화성시 동탄지성로 126, 정일프라자 2층
-      </p>
+      <p className="text-xl pb-10 font-bold">{ADDRESS}</p>
 
       <div className="pb-6">
         <div className="flex items-center gap-2 font-bold pb-3">

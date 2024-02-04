@@ -42,7 +42,7 @@ export default function Posts({
       <TableBody>
         {importantPosts.map((post) => (
           <TableRow key={post.title} className="font-bold bg-olive-drab-50">
-            <TableCell className="text-center">공지</TableCell>
+            <TableCell className="text-center">중요</TableCell>
             <TableCell>
               <Link href={`${type}/${post.slug}`}>{post.title}</Link>
             </TableCell>

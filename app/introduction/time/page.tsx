@@ -16,9 +16,7 @@ export default function TimePage() {
       />
 
       <Container>
-        <div className="pt-10 pb-12">
-          <TimeTable />
-        </div>
+        <TimeTable />
       </Container>
 
       <SubBanner imageClassName="time_subbanner" />

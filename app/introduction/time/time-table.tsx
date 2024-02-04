@@ -20,11 +20,11 @@ export default function TimeTable() {
   return (
     <div className="space-y-12 leading-8 pb-12 pt-10">
       <div className="flex flex-col lg:flex-row gap-4 lg:gap-16">
-        <h2 className="shrink-0 text-2xl font-bold text-olive-drab-600">
+        <h2 className="shrink-0 text-xl font-bold text-olive-drab-600">
           진료시간 안내
         </h2>
         <div className="w-full">
-          <h3 className="text-slate-950 font-bold text-xl mt-1">
+          <h3 className="text-slate-950 font-bold text-xl">
             {NAME}는 365일 연중 무휴입니다.
           </h3>
           <Table className="mt-8 border text-base lg:text-lg">
@@ -85,11 +85,11 @@ export default function TimeTable() {
       </div>
 
       <div className="flex flex-col lg:flex-row gap-4 lg:gap-16 w-full">
-        <h2 className="shrink-0 text-2xl font-bold text-olive-drab-600">
+        <h2 className="shrink-0 text-xl font-bold text-olive-drab-600">
           미용시간 안내
         </h2>
         <div className="w-full">
-          <h3 className="text-slate-950 font-bold text-xl mt-1">
+          <h3 className="text-slate-950 font-bold text-xl">
             시티독 애견미용은 예약제로 운영됩니다.
           </h3>
           <Table className="mt-8 border text-base lg:text-lg">

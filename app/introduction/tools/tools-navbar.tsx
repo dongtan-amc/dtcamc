@@ -11,7 +11,7 @@ export default function ToolsNavbar({
   setCategory: Dispatch<SetStateAction<string>>;
 }) {
   return (
-    <ul className="flex gap-4 overflow-auto scrollbar-hide pb-2">
+    <ul className="flex gap-4 overflow-auto scrollbar-hide pb-2 relative">
       {TOOLS.map((tool) => (
         <li key={tool.category}>
           <Button

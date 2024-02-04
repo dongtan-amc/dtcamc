@@ -32,7 +32,7 @@ export default function Footer() {
           {/* mobile */}
           <div className="sm:hidden text-center space-y-3">
             <h2 className="pb-2 font-bold">{NAME}</h2>
-            <p>{ADDRESS}</p>
+            <p className="tracking-tighter">{ADDRESS}</p>
             <p>대표자 : {BOSS}</p>
             <p>사업자등록번호 : {BUSINESS_NUMBER} </p>
             <p>E-mail : {EMAIL}</p>

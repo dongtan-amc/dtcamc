@@ -62,7 +62,7 @@ export const TOOLS = [
     ],
   },
   {
-    category: "내과/종양",
+    category: "내과 / 종양",
     tools: [
       {
         image: aniscan,
@@ -112,7 +112,7 @@ export const TOOLS = [
     ],
   },
   {
-    category: "피부/호르몬",
+    category: "피부 / 호르몬",
     tools: [
       {
         image: vetChroma,
@@ -139,7 +139,7 @@ export const TOOLS = [
     ],
   },
   {
-    category: "정형외과/치과",
+    category: "정형외과 / 치과",
     tools: [
       {
         image: drill,
@@ -168,7 +168,7 @@ export const TOOLS = [
     ],
   },
   {
-    category: "중환자/고양이케어",
+    category: "중환자 / 고양이케어",
     tools: [
       {
         image: masimo,

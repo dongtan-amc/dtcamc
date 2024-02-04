@@ -38,7 +38,7 @@ export default function FacilityCarousel({
   return (
     <Carousel
       setApi={setApi}
-      className="lg:w-2/3 w-full"
+      className="lg:w-2/3 overflow-hidden"
       opts={{
         align: "start",
         loop: true,
@@ -51,8 +51,8 @@ export default function FacilityCarousel({
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="absolute left-6" />
-      <CarouselNext className="absolute right-6" />
+      <CarouselPrevious className="absolute left-6 sm:flex hidden" />
+      <CarouselNext className="absolute right-6 sm:flex hidden" />
       <CarouselIndex count={count} current={current} setCurrent={setCurrent} />
     </Carousel>
   );
