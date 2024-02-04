@@ -8,8 +8,8 @@ export default function CommunityBoard() {
   const notices = getPostsMetadata("markdown/notice/").slice(0, 5);
 
   return (
-    <div className="flex w-full pt-4 rounded-2xl">
-      <div className="bg-olive-drab-900 flex-1 p-10 pb-24 rounded-l-xl">
+    <div className="flex pt-4 rounded-2xl flex-col lg:flex-row">
+      <div className="bg-olive-drab-900 flex-1 p-5 lg:p-10 rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none">
         <div className="text-2xl flex items-center justify-between pb-10 text-slate-50">
           <h2 className="text-2xl font-bold">공지사항</h2>
           <Button
@@ -23,7 +23,7 @@ export default function CommunityBoard() {
         <Posts posts={notices} category="notice" theme="primary" />
       </div>
 
-      <div className="bg-white flex-1 p-10 text-olive-drab-900 rounded-r-xl">
+      <div className="bg-white flex-1 p-5 lg:p-10 text-olive-drab-900 rounded-b-xl lg:rounded-r-xl lg:rounded-bl-none">
         <div className="text-2xl flex items-center justify-between pb-10 ">
           <h2 className="text-2xl font-bold">병원소식</h2>
           <Button
@@ -66,7 +66,7 @@ const Posts = ({
         <li key={notice.slug}>
           <Link
             href={`/community/${category}/${notice.slug}`}
-            className="flex items-center justify-between mt-4 py-2"
+            className="flex items-center justify-between mt-4 py-2 text-sm lg:text-base"
           >
             <p>{notice.title}</p>
             <p>{notice.date}</p>

@@ -5,7 +5,7 @@ import { CASES } from "@/constants/cases";
 
 export default function CasesSection() {
   return (
-    <div className="py-20">
+    <div className="py-10 lg:py-20">
       <SectionTitle link="/community/case" theme="light" title="진료케이스" />
 
       <Container>

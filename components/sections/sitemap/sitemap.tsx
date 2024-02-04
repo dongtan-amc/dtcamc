@@ -1,11 +1,10 @@
 import Container from "@/components/common/container";
-import { Separator } from "@/components/ui/separator";
 import { NAV_MENUS } from "@/constants/nav-menues";
 import Link from "next/link";
 
 export default function Sitemap() {
   return (
-    <div className="bg-slate-950 text-slate-50 py-20">
+    <div className="bg-slate-950 text-slate-50 py-10 lg:py-20 hidden md:block">
       <Container>
         <ul className="flex gap-10 justify-evenly">
           {NAV_MENUS.map((menu) => {

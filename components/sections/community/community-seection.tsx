@@ -4,7 +4,7 @@ import Container from "@/components/common/container";
 
 export default function CommunitySection() {
   return (
-    <div className="bg-slate-950 py-20">
+    <div className="bg-slate-950 py-10 lg:py-20">
       <SectionTitle link="/community/notice" theme="dark" title="커뮤니티" />
       <Container>
         <CommunityBoard />
