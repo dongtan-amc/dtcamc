@@ -12,10 +12,7 @@ export default function Cases() {
         searchKeyword={searchKeyword}
         setSearchKeyword={setSearchKeyword}
       />
-      <CasesGrid
-        searchKeyword={searchKeyword}
-        setSearchKeyword={setSearchKeyword}
-      />
+      <CasesGrid searchKeyword={searchKeyword} />
     </div>
   );
 }

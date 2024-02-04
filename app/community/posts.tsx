@@ -25,16 +25,16 @@ export default function Posts({
     <Table className="mt-10 mb-12">
       <TableHeader>
         <TableRow>
-          <TableHead className="text-center text-primary font-bold">
+          <TableHead className="text-center text-primary font-bold text-nowrap">
             번호
           </TableHead>
-          <TableHead className="text-center text-primary font-bold">
+          <TableHead className="text-center text-primary font-bold text-nowrap">
             제목
           </TableHead>
-          <TableHead className="text-center text-primary font-bold">
+          <TableHead className="text-center text-primary font-bold text-nowrap">
             작성자
           </TableHead>
-          <TableHead className="text-center text-primary font-bold">
+          <TableHead className="text-center text-primary font-bold text-nowrap">
             등록일
           </TableHead>
         </TableRow>
@@ -57,7 +57,9 @@ export default function Posts({
               <Link href={`${type}/${post.slug}`}>{post.title}</Link>
             </TableCell>
             <TableCell className="text-center">{post.author}</TableCell>
-            <TableCell className="text-center">{post.date}</TableCell>
+            <TableCell className="text-center text-nowrap">
+              {post.date}
+            </TableCell>
           </TableRow>
         ))}
       </TableBody>

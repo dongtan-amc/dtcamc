@@ -8,10 +8,8 @@ import NoResult from "./no-result";
 
 export default function CasesGrid({
   searchKeyword,
-  setSearchKeyword,
 }: {
   searchKeyword: string;
-  setSearchKeyword: Dispatch<SetStateAction<string>>;
 }) {
   const debouncedSearchKeyword = useDebounce(searchKeyword, 500);
 
@@ -30,10 +28,14 @@ export default function CasesGrid({
   }
 
   return (
-    <ul className="grid grid-cols-4 pb-12 gap-12">
+    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pb-12 gap-12">
       {filteredCase.map((singleCase) => (
         <li key={singleCase.link}>
-          <Link href={singleCase.link} target="_blank">
+          <Link
+            href={singleCase.link}
+            target="_blank"
+            className="flex justify-center"
+          >
             <div>
               <Image
                 alt={`${singleCase.title} image`}
@@ -42,7 +44,8 @@ export default function CasesGrid({
                 height={290}
                 className="rounded-lg"
               />
-              <div className="flex items-center gap-2 pt-2 pl-2">
+
+              <div className="flex items-center gap-2 pt-2 pl-2 justify-center sm:justify-start">
                 <Image alt="naver blog" src={naverBlog} width={24} />
                 <h2 className="text-lg font-bold text-slate-950">
                   {singleCase.title}
