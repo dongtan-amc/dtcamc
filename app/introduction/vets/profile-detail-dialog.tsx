@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -8,7 +7,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
 import Badges from "./badges";
 import VetImage from "./vet-image";
 
@@ -33,13 +32,13 @@ export default function ProfileDetailModal({
     <Dialog>
       <DialogTrigger asChild>
         <Button
-          className="absolute right-0 px-2 h-7 border-primary text-primary hover:text-primary"
+          className="px-2 h-7 border-primary text-primary hover:text-primary"
           variant="outline"
         >
           자세히
         </Button>
       </DialogTrigger>
-      <DialogContent className="h-[80vh] w-[800px] overflow-y-auto ">
+      <DialogContent className="h-[70vh] sm:w-[800px] overflow-y-auto ">
         <DialogHeader>
           <DialogTitle className="pb-3">
             <p className="text-2xl font-bold">

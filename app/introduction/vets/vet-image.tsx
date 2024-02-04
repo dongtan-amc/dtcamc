@@ -9,11 +9,10 @@ export default function VetImage({
 }) {
   return (
     <Image
-      width={250}
       alt={`${name} 프로필 사진`}
       src={image}
       placeholder="blur"
-      className="rounded-md"
+      className="rounded-lg lg:w-1/3 w-full shrink-0"
     />
   );
 }

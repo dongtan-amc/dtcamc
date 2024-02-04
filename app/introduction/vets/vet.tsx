@@ -1,4 +1,3 @@
-import ProfileDetailModal from "@/app/introduction/vets/profile-detail-dialog";
 import { StaticImageData } from "next/image";
 import ProfileSummary from "./profile-summary";
 import VetImage from "./vet-image";
@@ -21,7 +20,7 @@ export default function Vet({
   education: string[];
 }) {
   return (
-    <li className="flex gap-4 relative">
+    <li className="flex gap-4 flex-col lg:flex-row relative">
       <VetImage image={image} name={name} />
 
       <ProfileSummary
@@ -29,15 +28,9 @@ export default function Vet({
         title={title}
         history={history}
         subjects={subjects}
-      />
-      <ProfileDetailModal
-        name={name}
-        title={title}
-        image={image}
-        history={history}
-        expert={expert}
         education={education}
-        subjects={subjects}
+        expert={expert}
+        image={image}
       />
     </li>
   );
