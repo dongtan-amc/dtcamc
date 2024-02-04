@@ -20,7 +20,7 @@ export default function Navbar() {
       )}
     >
       <Container>
-        <nav className="flex items-center justify-between lg:h-20 h-14 ">
+        <nav className="flex items-center justify-between lg:h-20 h-14">
           <MainLogo />
 
           <Menu isScrollTop={isScrollTop} />

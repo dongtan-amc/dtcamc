@@ -10,7 +10,7 @@ export default function CommunityBoard() {
   return (
     <div className="flex pt-4 rounded-2xl flex-col lg:flex-row">
       <div className="bg-olive-drab-900 flex-1 p-5 lg:p-10 rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none">
-        <div className="text-2xl flex items-center justify-between pb-10 text-slate-50">
+        <div className="text-2xl flex items-center justify-between pb-2 lg:pb-4 text-slate-50">
           <h2 className="text-2xl font-bold">공지사항</h2>
           <Button
             size="icon"
@@ -24,7 +24,7 @@ export default function CommunityBoard() {
       </div>
 
       <div className="bg-white flex-1 p-5 lg:p-10 text-olive-drab-900 rounded-b-xl lg:rounded-r-xl lg:rounded-bl-none">
-        <div className="text-2xl flex items-center justify-between pb-10 ">
+        <div className="text-2xl flex items-center justify-between pb-2 lg:pb-4 ">
           <h2 className="text-2xl font-bold">병원소식</h2>
           <Button
             size="icon"

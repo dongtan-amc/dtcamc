@@ -18,22 +18,28 @@ export default function BannerSubnavbar({
   return (
     <>
       {subMenus && (
-        <div className="absolute h-[80px] bottom-0 w-[1280px] flex justify-evenly items-center bg-slate-950 left-[calc(50%-640px)] text-white py-5 rounded-t-xl">
+        <ul className="absolute lg:h-20 h-14 bottom-0 lg:max-w-7xl w-full flex lg:justify-evenly items-center bg-slate-950 text-white lg:rounded-t-xl overflow-x-auto gap-10 px-10">
           {subMenus.map((menu) => {
             const currentSub = menu.route === `/${subRoute}`;
             return (
-              <Link
-                key={menu.label}
-                className="flex items-center font-bold gap-3 hover:text-primary transition"
-                href={`${menu.upperRoute}${menu.route}`}
-              >
-                <p className={cn("text-lg", currentSub && "text-primary")}>
-                  {menu.label}
-                </p>
-              </Link>
+              <li key={menu.label}>
+                <Link
+                  className="hover:text-primary transition"
+                  href={`${menu.upperRoute}${menu.route}`}
+                >
+                  <p
+                    className={cn(
+                      "text-base lg:text-lg font-bold text-nowrap",
+                      currentSub && "text-primary"
+                    )}
+                  >
+                    {menu.label}
+                  </p>
+                </Link>
+              </li>
             );
           })}
-        </div>
+        </ul>
       )}
     </>
   );

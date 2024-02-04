@@ -19,15 +19,15 @@ import {
 export default function TimeTable() {
   return (
     <div className="space-y-12 leading-8 pb-12 pt-10">
-      <div className="flex gap-16">
-        <h2 className="shrink-0 text-4xl font-bold text-olive-drab-600">
+      <div className="flex flex-col lg:flex-row gap-4 lg:gap-16">
+        <h2 className="shrink-0 text-2xl font-bold text-olive-drab-600">
           진료시간 안내
         </h2>
         <div className="w-full">
-          <h3 className="text-slate-950 font-bold text-3xl mt-1">
-            {NAME}는 365일 연중 무휴, 24시 진료 가능합니다
+          <h3 className="text-slate-950 font-bold text-xl mt-1">
+            {NAME}는 365일 연중 무휴입니다.
           </h3>
-          <Table className="mt-8 border text-lg">
+          <Table className="mt-8 border text-base lg:text-lg">
             <TableCaption>
               <div className="text-left text-slate-950 space-y-2">
                 <p className="bg-olive-drab-50 px-4 py-2">
@@ -47,14 +47,16 @@ export default function TimeTable() {
               </div>
             </TableCaption>
             <TableHeader className="bg-olive-drab-700">
-              <TableRow className="">
+              <TableRow>
                 <TableHead className="text-white text-center">구분</TableHead>
                 <TableHead className="text-white text-center">시간</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
-                <TableCell className="text-center">주간진료</TableCell>
+                <TableCell className="text-center text-nowrap">
+                  주간진료
+                </TableCell>
                 <TableCell className="text-center">{DAY_TIME}</TableCell>
               </TableRow>
               <TableRow>
@@ -82,15 +84,15 @@ export default function TimeTable() {
         </div>
       </div>
 
-      <div className="flex gap-16 w-full">
-        <h2 className="shrink-0 text-4xl font-bold text-olive-drab-600">
+      <div className="flex flex-col lg:flex-row gap-4 lg:gap-16 w-full">
+        <h2 className="shrink-0 text-2xl font-bold text-olive-drab-600">
           미용시간 안내
         </h2>
         <div className="w-full">
-          <h3 className="text-slate-950 font-bold text-3xl mt-1">
+          <h3 className="text-slate-950 font-bold text-xl mt-1">
             시티독 애견미용은 예약제로 운영됩니다.
           </h3>
-          <Table className="mt-8 border text-lg">
+          <Table className="mt-8 border text-base lg:text-lg">
             <TableCaption>
               <div className="text-left text-slate-950 space-y-2">
                 <p className="bg-olive-drab-50 px-4 py-2">
@@ -102,7 +104,7 @@ export default function TimeTable() {
               </div>
             </TableCaption>
             <TableHeader className="bg-olive-drab-700">
-              <TableRow className="">
+              <TableRow>
                 <TableHead className="text-white text-center">구분</TableHead>
                 <TableHead className="text-white text-center">시간</TableHead>
               </TableRow>
