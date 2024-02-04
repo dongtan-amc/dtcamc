@@ -47,7 +47,7 @@ const FacilityList = ({
         return (
           <div
             key={card.id}
-            className="shrink-0 w-[500px] h-[300px] rounded-lg overflow-hidden relative"
+            className="shrink-0 w-[250px] h-[150px] lg:w-[500px] lg:h-[300px] rounded-lg overflow-hidden relative"
           >
             <Image
               sizes="30vw"

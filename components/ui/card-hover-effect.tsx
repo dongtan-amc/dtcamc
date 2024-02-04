@@ -23,7 +23,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4",
+        "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4",
         className
       )}
     >
@@ -32,14 +32,14 @@ export const HoverEffect = ({
           target={index !== 7 ? "_blank" : "_parent"}
           href={item.link}
           key={item.link}
-          className="relative group block p-2 h-full w-full"
+          className="relative group block p-2 lg:p-4"
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <AnimatePresence>
             {hoveredIndex === index && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-olive-drab-300 block rounded-2xl"
+                className="absolute inset-0 h-full w-full bg-olive-drab-300 block rounded-2xl "
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -53,6 +53,7 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
+
           <Card className="relative">
             {item.image ? (
               <Image
@@ -83,7 +84,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-xl h-[280px] w-full overflow-hidden border border-transparent group-hover:border-slate-900 z-10",
+        "rounded-xl h-[150px] md:h-[240px] lg:h-[280px] w-full overflow-hidden z-10 ring ring-slate-950",
         className
       )}
     >

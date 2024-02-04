@@ -15,11 +15,11 @@ export default function SubContentsMenus({
   return (
     <div className="lg:h-[560px] mask bg-center py-4">
       <Container>
-        <div className="flex lg:flex-row gap-4 flex-col justify-between items-center h-full text-white">
+        <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 lg:gap-10 items-center justify-center h-full">
           {subcontents.map((contents) => (
             <SubContents {...contents} key={contents.title} />
           ))}
-        </div>
+        </ul>
       </Container>
     </div>
   );

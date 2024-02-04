@@ -16,10 +16,12 @@ export default function CasesSection() {
 }
 
 const recentCases = [
-  ...CASES.slice(0, 7).map((singleCase) => ({
-    title: singleCase.title,
-    image: singleCase.image,
-    link: singleCase.link,
-  })),
+  ...CASES.sort(() => 0.5 - Math.random())
+    .slice(0, 7)
+    .map((singleCase) => ({
+      title: singleCase.title,
+      image: singleCase.image,
+      link: singleCase.link,
+    })),
   { title: "더보기", image: null, link: "community/case" },
 ];

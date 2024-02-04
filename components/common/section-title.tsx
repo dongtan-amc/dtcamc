@@ -22,8 +22,8 @@ export default function SectionTitle({
       )}
     >
       <div className="flex items-center gap-2 pb-8">
-        <h2 className={cn("text-4xl  font-bold")}>
-          {NAME} {title}
+        <h2 className="text-lg lg:text-4xl md:text-2xl font-bold">
+          {NAME} <span className="text-primary">{title}</span>
         </h2>
         <Link href={link} className="inline">
           <Button

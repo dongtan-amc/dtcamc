@@ -12,10 +12,11 @@ export default function Home() {
     <>
       <Landing />
       {/* <SubjectsSection /> */}
-      {/* <FacilitySection /> */}
-      {/* <CasesSection /> */}
+      <div className="h-screen bg-olive-drab-50"></div>
+      <FacilitySection />
+      <CasesSection />
       {/* <CommunitySection /> */}
-      {/* <SubContentsMenus subcontents={HOME_SUBCONTENTS} /> */}
+      <SubContentsMenus subcontents={HOME_SUBCONTENTS} />
       {/* <Sitemap /> */}
     </>
   );
