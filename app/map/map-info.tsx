@@ -11,7 +11,7 @@ import { PHONE } from "@/constants/general-info";
 
 export default function MapInfo() {
   return (
-    <div className="px-14 h-full my-auto text-olive-drab-950 w-1/2 py-10">
+    <div className="p-4 md:px-14 h-full my-auto text-olive-drab-950 md:w-1/2 md:py-10">
       <div className="flex items-center gap-2 text-2xl font-bold pb-3">
         <FaPaw />
         <h1>24시 동탄시티 동물의료센터</h1>

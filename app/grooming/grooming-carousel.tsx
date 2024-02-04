@@ -19,7 +19,7 @@ const GROOMING_IMAGES = [groomning1, groomning2, groomning3, groomning4];
 export default function GroomingCarousel() {
   return (
     <Carousel
-      className="w-1/2"
+      className="md:w-1/2"
       plugins={[
         Autoplay({
           delay: 2000,

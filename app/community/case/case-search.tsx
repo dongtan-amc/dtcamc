@@ -1,6 +1,5 @@
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { CASES } from "@/constants/cases";
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import { Dispatch, SetStateAction } from "react";
 
@@ -11,8 +10,6 @@ export default function CaseSearch({
   searchKeyword: string;
   setSearchKeyword: Dispatch<SetStateAction<string>>;
 }) {
-  const casesLength = CASES.length;
-
   return (
     <div className="pt-10 mb-4 pb-2 border-b">
       <div className="flex gap-2 items-center">

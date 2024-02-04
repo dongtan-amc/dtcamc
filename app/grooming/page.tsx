@@ -11,7 +11,7 @@ export default function GroomingPage() {
     <main>
       <Banner image={groomingBanner} subRoute="미용안내" />
 
-      <div className="flex pt-10 pb-8">
+      <div className="flex flex-col md:flex-row pt-10 pb-8">
         <GroomingCarousel />
         <GroomingInfo />
       </div>

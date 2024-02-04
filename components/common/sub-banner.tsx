@@ -7,10 +7,7 @@ export default function SubBanner({
 }) {
   return (
     <div
-      className={cn(
-        "h-[300px] lg:h-[400px] bg-center bg-fixed",
-        imageClassName
-      )}
+      className={cn("h-[300px] lg:h-[400px] bg-cover bg-fixed", imageClassName)}
     />
   );
 }
