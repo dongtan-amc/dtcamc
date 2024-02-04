@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { StaticImageData } from "next/image";
 import FacilityCarousel from "./facility-carousel";
 import FacilityCopy from "./facility-copy";
@@ -10,11 +11,16 @@ export default function FacilitySection({
 }: {
   title: string;
   images: StaticImageData[];
-  description: JSX.Element;
+  description: string;
   index: number;
 }) {
   return (
-    <div className="flex gap-10">
+    <div
+      className={cn(
+        "flex gap-5 lg:gap-10 flex-col lg:flex-row ",
+        index !== 4 && "border-b pb-10"
+      )}
+    >
       <FacilityCarousel images={images} />
       <FacilityCopy title={title} description={description} />
     </div>

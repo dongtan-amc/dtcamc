@@ -3,12 +3,12 @@ export default function FacilityCopy({
   description,
 }: {
   title: string;
-  description: JSX.Element;
+  description: string;
 }) {
   return (
-    <div className="w-1/3">
+    <div className="w-full lg:w-1/3">
       <h2 className="text-2xl font-bold text-primary">{title}</h2>
-      <div className="pt-6 leading-relaxed">{description}</div>
+      <div className="pt-6 leading-snug">{description}</div>
     </div>
   );
 }

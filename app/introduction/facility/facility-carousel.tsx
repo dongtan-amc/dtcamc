@@ -38,7 +38,7 @@ export default function FacilityCarousel({
   return (
     <Carousel
       setApi={setApi}
-      className="w-2/3"
+      className="lg:w-2/3 w-full"
       opts={{
         align: "start",
         loop: true,
