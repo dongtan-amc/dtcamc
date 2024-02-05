@@ -28,17 +28,25 @@ export default function MobileBottomButtons() {
         transition: "background 500ms ease-in-out",
       }}
     >
-      <Link href="/introduction/time" className="p-3">
+      <Link href="/introduction/time" className="p-3 flex items-center gap-2">
         <RiTimer2Fill size={30} />
+        <p className="hidden sm:block">진료시간</p>
       </Link>
-      <Link href="/map" className="p-3">
+      <Link href="/map" className="p-3 flex items-center gap-2">
         <RiMapPin2Fill size={30} />
+        <p className="hidden sm:block">오시는길</p>
       </Link>
-      <Link href={`tel:${PHONE}`} className="p-3">
+      <Link href={`tel:${PHONE}`} className="p-3 flex items-center gap-2">
         <RiPhoneFill size={30} />
+        <p className="hidden sm:block">전화안내</p>
       </Link>
-      <Link href={KAKAO} target="_blank" className="p-3">
+      <Link
+        href={KAKAO}
+        target="_blank"
+        className="p-3 flex items-center gap-2"
+      >
         <RiKakaoTalkFill size={30} />
+        <p className="hidden sm:block">카카오톡</p>
       </Link>
     </div>
   );

@@ -63,13 +63,13 @@ const Posts = ({
       )}
     >
       {posts.map((notice) => (
-        <li key={notice.slug}>
+        <li key={notice.slug} className="break-keep text-sm lg:text-base ">
           <Link
             href={`/community/${category}/${notice.slug}`}
-            className="flex items-center justify-between mt-4 py-2 text-sm lg:text-base"
+            className=" flex justify-between mt-4 py-2 gap-2"
           >
             <p>{notice.title}</p>
-            <p>{notice.date}</p>
+            <p className="text-nowrap">{notice.date}</p>
           </Link>
         </li>
       ))}

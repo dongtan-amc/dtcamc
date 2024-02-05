@@ -21,19 +21,18 @@ export default function Post({
   return (
     <div className="pt-10 pb-12">
       <Container>
-        <div className="border-b pb-4 px-4">
+        <h2 className="font-bold text-xl text-center w-full flex justify-center pb-4">
+          {metadata.title}
+        </h2>
+        <div className="border-t pt-2 px-4">
           <div className="flex items justify-between items-center relative">
             <div className="flex items-center gap-2">
               <Image alt="profile" src={profile} unoptimized width={40} />
               <p>{metadata.author}</p>
             </div>
 
-            <h2 className="font-bold text-xl text-center absolute w-full flex justify-center">
-              {metadata.title}
-            </h2>
-
             <div className="flex items-center gap-4 z-10">
-              <p>작성일 : {metadata.date}</p>
+              <p>{metadata.date}</p>
               <Link href={`/community/${route}`}>
                 <Button size="icon" variant="outline">
                   <HamburgerMenuIcon />
@@ -43,7 +42,7 @@ export default function Post({
           </div>
         </div>
 
-        <article className="prose pt-10 max-w-7xl">
+        <article className="prose max-w-7xl">
           <Markdown>{contents.content}</Markdown>
         </article>
       </Container>

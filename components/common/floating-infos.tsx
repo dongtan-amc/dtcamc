@@ -12,11 +12,7 @@ export default function FloatingInfos() {
             <li>
               <Link
                 href={info.href}
-                target={
-                  info.label === "블로그" || info.label === "카톡상담"
-                    ? "_blank"
-                    : "_parent"
-                }
+                target={info.label === "카톡상담" ? "_blank" : "_parent"}
                 rel="noopener noreferrer"
               >
                 <div className="flex flex-col items-center gap-2 text-[10px] text-slate-950">

@@ -30,8 +30,8 @@ export default function Menu({ isScrollTop }: { isScrollTop: boolean }) {
                 href={menu.route}
                 className={cn(
                   isScrollTop && "text-white",
-                  currentPage && "border-b-2 border-olive-drab-600",
-                  "font-semibold px-2 py-2 hover:text-olive-drab-600 transition text-lg"
+                  currentPage && "border-b-2 border-primary",
+                  "font-semibold px-2 py-2 hover:text-primary border-primary transition text-lg"
                 )}
               >
                 {menu.label}

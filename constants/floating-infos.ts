@@ -1,8 +1,7 @@
-import { FaClock, FaPhoneAlt } from "react-icons/fa";
+import { FaMapLocationDot, FaRightLong, FaClock } from "react-icons/fa6";
 import { RiKakaoTalkFill } from "react-icons/ri";
 import { SiNaver } from "react-icons/si";
-import { KAKAO, NAVER_BLOG, PHONE } from "./general-info";
-import { FaMapLocationDot } from "react-icons/fa6";
+import { KAKAO } from "./general-info";
 
 export const FLOATING_INFOS = [
   {
@@ -18,10 +17,10 @@ export const FLOATING_INFOS = [
     size: 20,
   },
   {
-    href: NAVER_BLOG,
-    icon: SiNaver,
-    label: "블로그",
-    size: 16,
+    href: "/experty/referral",
+    icon: FaRightLong,
+    label: "진료의뢰",
+    size: 20,
   },
   {
     href: KAKAO,
