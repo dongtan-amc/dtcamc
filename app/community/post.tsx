@@ -1,11 +1,16 @@
 import Container from "@/components/common/container";
 import { Button } from "@/components/ui/button";
-import { getPostContents, getPostMetadata } from "@/lib/utils";
+import {
+  getPostContents,
+  getPostMetadata,
+  getPostsFileNames,
+} from "@/lib/utils";
 import profile from "@/public/main-logo.png";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import Markdown from "markdown-to-jsx";
 import Image from "next/image";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export default function Post({
   slug,
@@ -16,8 +21,14 @@ export default function Post({
   filePath: string;
   route: string;
 }) {
+  const slugs = getPostsFileNames(filePath);
+  if (!slugs.includes(slug)) {
+    notFound();
+  }
+
   const contents = getPostContents(slug, filePath);
   const metadata = getPostMetadata(slug, filePath);
+
   return (
     <div className="pt-10 pb-12">
       <Container>
