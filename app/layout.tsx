@@ -6,13 +6,11 @@ import "./globals.css";
 import ScrollTopButton from "@/components/scroll-top-button";
 import FloatingInfos from "@/components/common/floating-infos";
 import MobileBottomButtons from "@/components/mobile-bottom-buttons";
-import { BASE_URL } from "@/constants/base-url";
 import { NAME } from "@/constants/general-info";
 
 const font = Nanum_Gothic({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(BASE_URL),
   title: {
     default: NAME,
     template: `%s - ${NAME} `,
