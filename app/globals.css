@@ -127,6 +127,9 @@ html {
 .map_subbanner {
   background-image: url("../public/unsplash/time-subbanner.jpg");
 }
+.experty_banner {
+  background-image: url("../public/unsplash/vets-subbanner.jpg");
+}
 
 .mask {
   background-image: url("../public/mask.png");

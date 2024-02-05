@@ -4,9 +4,14 @@ import {
   FaMapLocationDot,
   FaUserDoctor,
   FaRegMessage,
+  FaMaskFace,
   FaRegNewspaper,
   FaList,
+  FaArrowRightToCity,
+  FaRadiation,
 } from "react-icons/fa6";
+import { GiKidneys } from "react-icons/gi";
+
 import { ADDRESS, NAME } from "./general-info";
 
 export const HOME_SUBCONTENTS = [
@@ -139,5 +144,31 @@ export const GROOMING_SUBCONTENTS = [
     description: `${NAME}의 새로운 소식을 전합니다.`,
     Icon: FaRegNewspaper,
     href: "/community/news",
+  },
+];
+export const EXPERTY_SUBCONTENTS = [
+  {
+    title: "수술 센터",
+    description: `${NAME}의 전문 수술센터를 소개함니다`,
+    Icon: FaMaskFace,
+    href: "/experty/operation",
+  },
+  {
+    title: "신장투석 센터",
+    description: `${NAME}의 신장투석 센터를 소개함니다`,
+    Icon: GiKidneys,
+    href: "/experty/dialysis",
+  },
+  {
+    title: "CT촬영 센터",
+    description: `${NAME}의 CT촬영 센터를 소개합니다.`,
+    Icon: FaRadiation,
+    href: "/experty/ct",
+  },
+  {
+    title: "진료 의뢰",
+    description: "2차 진료과정을 안내합니다.",
+    Icon: FaArrowRightToCity,
+    href: "/experty/referral",
   },
 ];

@@ -1,25 +1,19 @@
-import Image from "next/image";
-import React from "react";
-import { FaPaw } from "react-icons/fa6";
-import clockIcon from "@/public/icons/clock.svg";
-import mapPinLineIcon from "@/public/icons/map-pin-line.svg";
-import phoenIcon from "@/public/icons/phone.svg";
+import { Button } from "@/components/ui/button";
+import { NAME, PHONE } from "@/constants/general-info";
 import referral from "@/public/photo/referral.jpg";
-import { EMAIL, NAME, PHONE } from "@/constants/general-info";
+import Image from "next/image";
+import Link from "next/link";
 import {
   TbClock24,
-  TbRadioactive,
   TbMailForward,
   TbPhone,
+  TbRadioactive,
 } from "react-icons/tb";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import EmailCopy from "./email-copy";
 
 export default function ReferralInfos() {
   return (
-    <div className="flex py-10 break-keep flex-col md:flex-row">
+    <div className="flex py-10 flex-col md:flex-row">
       <div className="relative md:w-2/5 h-[200px] md:h-auto rounded-2xl overflow-hidden">
         <Image
           src={referral}

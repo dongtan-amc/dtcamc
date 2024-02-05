@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="ko" suppressHydrationWarning>
       <body className={`${font.className} antialiased`}>
         <Navbar />
-        <main>{children}</main>
+        <main className="break-keep">{children}</main>
         <Footer />
         <FloatingInfos />
         <ScrollTopButton />
