@@ -6,13 +6,13 @@ import { FaPaw } from "react-icons/fa6";
 
 export default function GroomingInfo() {
   return (
-    <div className="md:w-1/2 p-4 md:px-14 text-olive-drab-95">
+    <div className="md:w-1/2 p-4 md:px-14 text-slate-950">
       <div className="h-full flex flex-col justify-center">
-        <div className="flex items-center gap-2 text-2xl font-bold pb-3">
+        <div className="flex items-center gap-2 text-xl text-primary font-bold pb-3">
           <FaPaw />
           <h1>시티독 애견미용</h1>
         </div>
-        <p className="text-xl pb-10 font-bold">
+        <p className="text-lg pb-10 font-bold">
           반려동물의 스트레스 없는 미용을노력하는 부속미용실 시티독입니다
         </p>
 

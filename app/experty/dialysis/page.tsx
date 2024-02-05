@@ -10,7 +10,7 @@ export default function DialysisPage() {
       <Banner
         image={vetBanner}
         upperRoute="전문 진료"
-        subRoute="신장 투석 센터"
+        subRoute="신장투석 센터"
         subMenus={EXPERTY_SUBMENUS}
       />
 

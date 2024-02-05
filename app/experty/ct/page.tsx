@@ -10,7 +10,7 @@ export default function CtPage() {
       <Banner
         image={vetBanner}
         upperRoute="전문 진료"
-        subRoute="영상의학센터 / CT 촬영 의뢰"
+        subRoute="CT 촬영 센터"
         subMenus={EXPERTY_SUBMENUS}
       />
 

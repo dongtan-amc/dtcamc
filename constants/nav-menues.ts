@@ -1,8 +1,8 @@
-import { SUBJECTS_SUBMENUS } from "./subjects";
 import sub1 from "@/public/subjects/dermal.jpg";
 import sub2 from "@/public/subjects/hormonal.jpg";
 import sub3 from "@/public/subjects/respir.jpg";
 import sub4 from "@/public/subjects/skincancer.jpg";
+import { SUBJECTS_SUBMENUS } from "./subjects";
 
 export const EXPERTY_SUBMENUS = [
   {
@@ -24,7 +24,7 @@ export const EXPERTY_SUBMENUS = [
   {
     id: 3,
     upperRoute: "/experty",
-    label: "CT 센터",
+    label: "CT 촬영 센터",
     description: "CT센터에 대한 간략한 소개",
     route: "/ct",
     imgSrc: sub3,
@@ -32,8 +32,8 @@ export const EXPERTY_SUBMENUS = [
   {
     id: 4,
     upperRoute: "/experty",
-    label: "의뢰 진료",
-    description: "의뢰진료에 대한 간략한 소개",
+    label: "진료 의뢰",
+    description: "진료의뢰에 대한 간략한 소개",
     route: "/referral",
     imgSrc: sub4,
   },
