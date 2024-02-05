@@ -21,7 +21,6 @@ export default function EmailClipboard() {
         alert("이메일이 클립보드에 복사되었습니다.");
       }
     } catch (err) {
-      console.error("Unable to copy to clipboard:", err);
       alert("이메일 복사 중 오류가 발생했습니다.");
     }
   };
