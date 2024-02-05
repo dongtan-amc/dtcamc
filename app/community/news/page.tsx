@@ -1,8 +1,10 @@
-import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
-import { COMMUNITY_SUBMENUS } from "@/constants/nav-menues";
-import vetBanner from "@/public/photo/consulting-room.jpeg";
+import { Metadata } from "next";
 import Posts from "../posts";
+
+export const metadata: Metadata = {
+  title: "병원소식",
+};
 
 export default function NewsPage() {
   return (

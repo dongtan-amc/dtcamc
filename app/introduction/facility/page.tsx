@@ -5,6 +5,11 @@ import { FACILITY_SECTIONS } from "@/constants/facilities";
 import { INTRODUCTION_MENUS } from "@/constants/nav-menues";
 import consulting2 from "@/public/photo/consulting-room1.jpeg";
 import FacilitySection from "./facility-section";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "시설소개",
+};
 
 export default function FacilityPage() {
   return (

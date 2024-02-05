@@ -9,7 +9,7 @@ import {
   TbPhone,
   TbRadioactive,
 } from "react-icons/tb";
-import EmailCopy from "./email-copy";
+import EmailClipboard from "./email-clipboard";
 
 export default function ReferralInfos() {
   return (
@@ -79,7 +79,7 @@ export default function ReferralInfos() {
               최근 검사 자료 및 환자 정보는 이메일로 보내주시면 진료에 큰 도움이
               됩니다.
             </p>
-            <EmailCopy />
+            <EmailClipboard />
           </div>
         </div>
       </div>

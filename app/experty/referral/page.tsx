@@ -4,6 +4,11 @@ import { EXPERTY_SUBMENUS } from "@/constants/nav-menues";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
 import ReferralInfos from "./referral-infos";
 import ReferralProcedures from "./referral-procedures";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "진료의뢰",
+};
 
 export default function OperationPage() {
   return (

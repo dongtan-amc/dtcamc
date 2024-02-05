@@ -1,12 +1,15 @@
 import Banner from "@/components/common/banner";
 import SubBanner from "@/components/common/sub-banner";
 import SubContentsMenus from "@/components/common/sub-contents-menus";
+import { MAP_SUBCONTENTS } from "@/constants/subcontents";
 import mapBanner from "@/public/photo/feeds.jpeg";
+import { Metadata } from "next";
 import GoogleMap from "./google-map";
 import MapInfo from "./map-info";
-import { MAP_SUBCONTENTS } from "@/constants/subcontents";
 
-export const dynamic = "force-dynamic";
+export const metadata: Metadata = {
+  title: "오시는길",
+};
 
 export default function MapPage() {
   return (

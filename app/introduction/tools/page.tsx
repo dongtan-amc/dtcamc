@@ -4,6 +4,11 @@ import SubBanner from "@/components/common/sub-banner";
 import { INTRODUCTION_MENUS } from "@/constants/nav-menues";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
 import Tools from "./tools";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "장비소개",
+};
 
 export default function ToolsPage() {
   return (

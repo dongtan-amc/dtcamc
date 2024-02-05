@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { EMAIL } from "@/constants/general-info";
 
-export default function EmailCopy() {
+export default function EmailClipboard() {
   const handleCopy = async () => {
     try {
       // PC환경

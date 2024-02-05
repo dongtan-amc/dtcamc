@@ -5,6 +5,11 @@ import { GROOMING_SUBCONTENTS } from "@/constants/subcontents";
 import groomingBanner from "@/public/grooming/grooming2.jpeg";
 import GroomingCarousel from "./grooming-carousel";
 import GroomingInfo from "./grooming-info";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "미용안내",
+};
 
 export default function GroomingPage() {
   return (
