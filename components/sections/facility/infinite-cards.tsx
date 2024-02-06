@@ -54,6 +54,7 @@ const FacilityList = ({
               src={card.img}
               className="object-cover"
               fill
+              placeholder="blur"
               sizes="(min-width: 1040px) 500px, 250px"
             />
           </div>
