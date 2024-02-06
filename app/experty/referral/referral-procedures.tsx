@@ -18,6 +18,7 @@ export default function ReferralProcedures() {
           >
             <div className="relative md:w-1/2 w-full aspect-video shrink-0 rounded-lg overflow-hidden">
               <Image
+                placeholder="blur"
                 alt="procedure image"
                 src={procedure.image}
                 fill

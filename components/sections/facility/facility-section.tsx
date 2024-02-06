@@ -1,6 +1,5 @@
 import SectionTitle from "@/components/common/section-title";
 import InfiniteCards from "./infinite-cards";
-import Blur from "@/components/common/blur";
 
 export default function FacilitySection() {
   return (

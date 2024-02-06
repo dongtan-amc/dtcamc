@@ -16,6 +16,7 @@ export default function ReferralInfos() {
     <div className="flex py-10 flex-col md:flex-row">
       <div className="relative md:w-2/5 h-[200px] md:h-auto rounded-2xl overflow-hidden">
         <Image
+          placeholder="blur"
           src={referral}
           alt="referral image"
           fill
