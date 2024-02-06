@@ -22,7 +22,6 @@ export default function CaseSearch({
         </Label>
 
         <Input
-          placeholder="질병명을 입력해주세요"
           id="search"
           value={searchKeyword}
           onChange={(e) => setSearchKeyword(e.target.value)}
