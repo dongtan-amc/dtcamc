@@ -7,6 +7,7 @@ import ScrollTopButton from "@/components/scroll-top-button";
 import FloatingInfos from "@/components/common/floating-infos";
 import MobileBottomButtons from "@/components/mobile-bottom-buttons";
 import { NAME } from "@/constants/general-info";
+import og from "@/public/icons/navar-blog.png";
 
 const font = Nanum_Gothic({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -57,7 +58,11 @@ export const metadata: Metadata = {
   category: "동물병원",
   classification: "동물병원",
   creator: "howoo",
-  verification: { google: "wY3QAZW61pL73SdqLV6UUTaurZT61xSioIaQYOilQ2o" },
+  // verification: { google: "wY3QAZW61pL73SdqLV6UUTaurZT61xSioIaQYOilQ2o" },
+  openGraph: {
+    images:
+      "https://dtct-homepage-7m5r3mv2t-howooking.vercel.app/opengraph-image.png?0b9fa481777a3281",
+  },
 };
 
 export default function RootLayout({
