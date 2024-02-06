@@ -4,7 +4,7 @@ import ExpertiesAccordion from "./experties-accordion";
 
 export default function ExpertiesSection() {
   return (
-    <div className="py-10 lg:py-20">
+    <div className="py-10 lg:py-20 relative overflow-hidden">
       <SectionTitle link="/experty/operation" theme="light" title="전문진료" />
       <Container>
         <ExpertiesAccordion />

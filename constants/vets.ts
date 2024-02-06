@@ -59,6 +59,7 @@ export const VETS = [
       " NAVER 강아지 질병백과 감수 : 강아지 고관절이형성증",
       " NAVER 고양이 질병백과 감수 : 고양이 만성 치은 구내염, 고양이 장염, 고양이 상상 임신",
       " SBS 세상에 이런일이 ‘누워서 먹는 신기한 강아지 모카’ 방송 출현",
+      "PennHIP 인증 수의사",
     ],
     education: [
       "2021 춘계 대한수의사회 학회 포스터 발표 : Postoperative Application of Fentanyl Transdermal Patch in Lynx with Tibial Fracture",

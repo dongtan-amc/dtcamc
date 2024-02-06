@@ -1,27 +1,25 @@
 import Link from "next/link";
-
 import { FLOATING_INFOS } from "@/constants/floating-infos";
-import { Separator } from "../ui/separator";
 
 export default function FloatingInfos() {
   return (
-    <div className="hidden lg:block fixed right-0 top-[30%] z-40 border-primary bg-white shadow-2xl ring-1 ring-primary px-1 rounded-tl-xl rounded-bl-xl">
+    <div className="hidden lg:block fixed right-3 top-[30%] z-40">
       <ul className="flex flex-col gap-4 py-4">
-        {FLOATING_INFOS.map((info, index) => (
+        {FLOATING_INFOS.map((info) => (
           <div key={info.label}>
             <li>
               <Link
                 href={info.href}
                 target={info.label === "카톡상담" ? "_blank" : "_parent"}
                 rel="noopener noreferrer"
+                className="bg-slate-950 rounded-full w-16 h-16 flex items-center justify-center opacity-50 hover:bg-olive-drab-800 hover:opacity-100 transition hover:ring ring-white"
               >
-                <div className="flex flex-col items-center gap-2 text-[10px] text-slate-950">
+                <div className="flex flex-col items-center gap-1 text-[10px] text-white">
                   <info.icon size={info.size} />
                   <p>{info.label}</p>
                 </div>
               </Link>
             </li>
-            {index !== 3 && <Separator className="mt-4" />}
           </div>
         ))}
       </ul>
