@@ -5,7 +5,7 @@ import {
   getPostMetadata,
   getPostsFileNames,
 } from "@/lib/utils";
-import profile from "@/public/main-logo.png";
+import logo from "@/public/main-logo.png";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import Markdown from "markdown-to-jsx";
 import Image from "next/image";
@@ -38,7 +38,7 @@ export default function Post({
         <div className="border-t pt-2 px-4">
           <div className="flex items justify-between items-center relative">
             <div className="flex items-center gap-2">
-              <Image alt="profile" src={profile} unoptimized width={40} />
+              <Image alt="profile" src={logo} unoptimized width={40} />
               <p>{metadata.author}</p>
             </div>
 

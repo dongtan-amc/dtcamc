@@ -20,6 +20,7 @@ export default function ReferralInfos() {
           alt="referral image"
           fill
           className="object-cover"
+          sizes="(min-width: 1360px) 512px, (min-width: 780px) 38.04vw, calc(100vw - 32px)"
         />
       </div>
 

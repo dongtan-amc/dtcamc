@@ -17,7 +17,12 @@ export default function ReferralProcedures() {
             )}
           >
             <div className="relative md:w-1/2 w-full aspect-video shrink-0 rounded-lg overflow-hidden">
-              <Image alt="procedure image" src={procedure.image} fill />
+              <Image
+                alt="procedure image"
+                src={procedure.image}
+                fill
+                sizes="(min-width: 1360px) 640px, (min-width: 780px) 47.5vw, calc(100vw - 32px)"
+              />
             </div>
             <div className="py-2 md:p-10 break-keep">
               <div className="text-lg font-bold flex items-center gap-2 pb-4">

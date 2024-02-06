@@ -16,10 +16,16 @@ export default function ImageDialog({
           alt={`carousel image${index}`}
           placeholder="blur"
           className="rounded-xl"
+          sizes="(min-width: 1360px) 827px, (min-width: 1040px) 60.67vw, calc(100vw - 32px)"
         />
       </DialogTrigger>
       <DialogContent className="p-0 rounded-none max-w-5xl">
-        <Image src={image} alt={`carousel image${index}`} placeholder="blur" />
+        <Image
+          src={image}
+          alt={`carousel image${index}`}
+          placeholder="blur"
+          sizes="80vw"
+        />
       </DialogContent>
     </Dialog>
   );

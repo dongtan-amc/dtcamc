@@ -23,6 +23,7 @@ export default function ToolsContents({ category }: { category: string }) {
                 fill
                 className="object-contain"
                 placeholder="blur"
+                sizes="200px"
               />
             </div>
 

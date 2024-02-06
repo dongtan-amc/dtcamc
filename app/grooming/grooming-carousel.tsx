@@ -49,6 +49,7 @@ export default function GroomingCarousel() {
               src={image}
               alt={`grooming image${index}`}
               placeholder="blur"
+              sizes="(min-width: 2900px) 1375px, (min-width: 780px) calc(46.9vw + 24px), 100vw"
             />
           </CarouselItem>
         ))}

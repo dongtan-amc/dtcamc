@@ -43,10 +43,16 @@ export default function CasesGrid({
                 width={290}
                 height={290}
                 className="rounded-lg"
+                sizes="(min-width: 1360px) 284px, (min-width: 1040px) calc(22.67vw - 20px), (min-width: 780px) calc(30.42vw - 20px), (min-width: 380px) 290px, calc(36.67vw + 158px)"
               />
 
               <div className="flex items-center gap-2 pt-2">
-                <Image alt="naver blog" src={naverBlog} width={24} />
+                <Image
+                  alt="naver blog"
+                  src={naverBlog}
+                  width={24}
+                  unoptimized
+                />
                 <h2 className="text-lg font-bold text-slate-950">
                   {singleCase.title}
                 </h2>

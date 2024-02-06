@@ -32,6 +32,7 @@ export default function CategoryContents({
             fill
             className="object-cover"
             placeholder="blur"
+            sizes="(min-width: 1360px) 800px, (min-width: 1040px) 60.33vw, calc(100vw - 72px)"
           />
           <div className="text-white absolute bottom-0 right-0 rounded-tl-lg bg-slate-950 px-2 py-1">
             {imageDescription}
