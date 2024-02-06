@@ -1,14 +1,7 @@
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { NAV_MENUS } from "@/constants/nav-menues";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { Button } from "../ui/button";
-import { NAV_MENUS } from "@/constants/nav-menues";
-import Link from "next/link";
 import DrawerMenu from "./drawer-menu";
 
 export default function MobileMenu({ isScrollTop }: { isScrollTop: boolean }) {

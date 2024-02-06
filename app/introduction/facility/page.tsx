@@ -4,8 +4,8 @@ import SubBanner from "@/components/common/sub-banner";
 import { FACILITY_SECTIONS } from "@/constants/facilities";
 import { INTRODUCTION_MENUS } from "@/constants/nav-menues";
 import consulting2 from "@/public/photo/consulting-room1.jpeg";
-import FacilitySection from "./facility-section";
 import { Metadata } from "next";
+import FacilitySection from "./facility-section";
 
 export const metadata: Metadata = {
   title: "시설소개",
@@ -24,7 +24,12 @@ export default function FacilityPage() {
       <Container>
         <div className="space-y-10 pt-10 pb-12">
           {FACILITY_SECTIONS.map((section, index) => (
-            <FacilitySection key={index} {...section} index={index} />
+            <FacilitySection
+              key={index}
+              {...section}
+              index={index}
+              lastIndex={FACILITY_SECTIONS.length - 1}
+            />
           ))}
         </div>
       </Container>

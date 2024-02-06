@@ -6,8 +6,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   RiKakaoTalkFill,
-  RiPhoneFill,
   RiMapPin2Fill,
+  RiPhoneFill,
   RiTimer2Fill,
 } from "react-icons/ri";
 

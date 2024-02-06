@@ -1,6 +1,6 @@
 "use client";
 
-import { cards } from "@/constants/infinite-cards";
+import { INFINITE_IMAGES } from "@/constants/infinite-cards";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -11,14 +11,14 @@ export default function InfiniteCards() {
         <div className="absolute top-0 bottom-0 left-0 w-24 z-10 bg-gradient-to-r from-slate-900 to-transparent" />
 
         <div className="flex items-center mb-8">
-          <FacilityList list={cards.top} duration={125} />
-          <FacilityList list={cards.top} duration={125} />
-          <FacilityList list={cards.top} duration={125} />
+          <FacilityList list={INFINITE_IMAGES.top} duration={125} />
+          <FacilityList list={INFINITE_IMAGES.top} duration={125} />
+          <FacilityList list={INFINITE_IMAGES.top} duration={125} />
         </div>
         <div className="flex items-center mb-4">
-          <FacilityList list={cards.middle} duration={75} reverse />
-          <FacilityList list={cards.middle} duration={75} reverse />
-          <FacilityList list={cards.middle} duration={75} reverse />
+          <FacilityList list={INFINITE_IMAGES.middle} duration={75} reverse />
+          <FacilityList list={INFINITE_IMAGES.middle} duration={75} reverse />
+          <FacilityList list={INFINITE_IMAGES.middle} duration={75} reverse />
         </div>
 
         <div className="absolute top-0 bottom-0 right-0 w-24 z-10 bg-gradient-to-l from-slate-900 to-transparent" />
@@ -32,7 +32,7 @@ const FacilityList = ({
   reverse = false,
   duration = 50,
 }: {
-  list: typeof cards.top;
+  list: typeof INFINITE_IMAGES.top;
   reverse?: boolean;
   duration?: number;
 }) => {

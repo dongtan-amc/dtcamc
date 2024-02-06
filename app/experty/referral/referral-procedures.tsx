@@ -1,8 +1,8 @@
+import { cn } from "@/lib/utils";
+import p3 from "@/public/photo/consulting-room.jpeg";
 import p1 from "@/public/photo/reception.jpeg";
 import p2 from "@/public/photo/referal2.jpg";
-import p3 from "@/public/photo/consulting-room.jpeg";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
 
 export default function ReferralProcedures() {
   return (

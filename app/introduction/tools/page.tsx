@@ -3,8 +3,8 @@ import Container from "@/components/common/container";
 import SubBanner from "@/components/common/sub-banner";
 import { INTRODUCTION_MENUS } from "@/constants/nav-menues";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
-import Tools from "./tools";
 import { Metadata } from "next";
+import Tools from "./tools";
 
 export const metadata: Metadata = {
   title: "장비소개",

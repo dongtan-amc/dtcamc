@@ -1,6 +1,5 @@
-import { FaMapLocationDot, FaRightLong, FaClock } from "react-icons/fa6";
+import { FaClock, FaMapLocationDot, FaRightLong } from "react-icons/fa6";
 import { RiKakaoTalkFill } from "react-icons/ri";
-import { SiNaver } from "react-icons/si";
 import { KAKAO } from "./general-info";
 
 export const FLOATING_INFOS = [

@@ -1,6 +1,6 @@
 import { getPostsMetadata } from "@/lib/utils";
-import Post from "../../post";
 import { Metadata } from "next";
+import Post from "../../post";
 
 export function generateStaticParams() {
   const posts = getPostsMetadata("markdown/news/");

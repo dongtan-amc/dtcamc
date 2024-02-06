@@ -8,17 +8,19 @@ export default function FacilitySection({
   images,
   description,
   index,
+  lastIndex,
 }: {
   title: string;
   images: StaticImageData[];
   description: string;
   index: number;
+  lastIndex: number;
 }) {
   return (
     <div
       className={cn(
         "flex gap-5 lg:gap-10 flex-col lg:flex-row ",
-        index !== 4 && "border-b pb-10"
+        index !== lastIndex && "border-b pb-10"
       )}
     >
       <FacilityCarousel images={images} />

@@ -17,9 +17,6 @@ export default function MapPage() {
       <Banner image={mapBanner} subRoute="오시는 길" />
 
       <div className="flex py-10 flex-col md:flex-row ">
-        {/* <NaverMapProvider>
-          <MyNaverMap />
-        </NaverMapProvider> */}
         <GoogleMap />
         <MapInfo />
       </div>

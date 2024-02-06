@@ -2,9 +2,9 @@ import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
 import { EXPERTY_SUBMENUS } from "@/constants/nav-menues";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
+import { Metadata } from "next";
 import ReferralInfos from "./referral-infos";
 import ReferralProcedures from "./referral-procedures";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "진료의뢰",

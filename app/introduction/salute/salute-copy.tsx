@@ -1,6 +1,6 @@
 import Container from "@/components/common/container";
 
-export default function Paragraph() {
+export default function SaluteCopy() {
   return (
     <Container>
       <div className="space-y-8 leading-8 break-keep pt-10 pb-12">

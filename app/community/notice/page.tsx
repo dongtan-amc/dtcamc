@@ -1,6 +1,6 @@
 import Container from "@/components/common/container";
-import Posts from "../posts";
 import { Metadata } from "next";
+import Posts from "../posts";
 
 export const metadata: Metadata = {
   title: "공지사항",

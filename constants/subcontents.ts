@@ -1,14 +1,14 @@
 import {
+  FaArrowRightToCity,
   FaClock,
   FaHospital,
-  FaMapLocationDot,
-  FaUserDoctor,
-  FaRegMessage,
-  FaMaskFace,
-  FaRegNewspaper,
   FaList,
-  FaArrowRightToCity,
+  FaMapLocationDot,
+  FaMaskFace,
   FaRadiation,
+  FaRegMessage,
+  FaRegNewspaper,
+  FaUserDoctor,
 } from "react-icons/fa6";
 import { GiKidneys } from "react-icons/gi";
 

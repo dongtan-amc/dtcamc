@@ -7,12 +7,12 @@ import CasesGrid from "./cases-grid";
 export default function Cases() {
   const [searchKeyword, setSearchKeyword] = useState("");
   return (
-    <div>
+    <>
       <CaseSearch
         searchKeyword={searchKeyword}
         setSearchKeyword={setSearchKeyword}
       />
       <CasesGrid searchKeyword={searchKeyword} />
-    </div>
+    </>
   );
 }

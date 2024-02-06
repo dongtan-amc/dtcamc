@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import { KAKAO, NAVER_BLOG, PHONE } from "@/constants/general-info";
+import { KAKAO, PHONE } from "@/constants/general-info";
 import kakao from "@/public/icons/kakao.svg";
 import map from "@/public/icons/map.png";
 import naverBlog from "@/public/icons/navar-blog.png";

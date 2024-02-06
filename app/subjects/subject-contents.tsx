@@ -4,7 +4,6 @@ import CategoryContents from "./category-contents";
 export default function SubjectContents({
   categories,
 }: {
-  category: string;
   categories: {
     categoryName: string;
     image: StaticImageData;

@@ -11,7 +11,7 @@ export default function CaseSearch({
   setSearchKeyword: Dispatch<SetStateAction<string>>;
 }) {
   return (
-    <div className="pt-10 mb-4 pb-2 border-b">
+    <div className="pt-10 pb-4 border-b">
       <div className="flex gap-2 items-center">
         <Label
           htmlFor="search"
@@ -20,7 +20,9 @@ export default function CaseSearch({
           <MagnifyingGlassIcon width={20} height={20} />
           케이스 검색
         </Label>
+
         <Input
+          placeholder="질병명을 입력해주세요"
           id="search"
           value={searchKeyword}
           onChange={(e) => setSearchKeyword(e.target.value)}

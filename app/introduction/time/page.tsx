@@ -3,8 +3,8 @@ import Container from "@/components/common/container";
 import SubBanner from "@/components/common/sub-banner";
 import { INTRODUCTION_MENUS } from "@/constants/nav-menues";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
-import TimeTable from "./time-table";
 import { Metadata } from "next";
+import TimeTable from "./time-table";
 
 export const metadata: Metadata = {
   title: "진료시간안내",

@@ -1,9 +1,9 @@
 import { CASES } from "@/constants/cases";
+import useDebounce from "@/hooks/useDebouce";
+import naverBlog from "@/public/icons/navar-blog.png";
 import Image from "next/image";
 import Link from "next/link";
-import naverBlog from "@/public/icons/navar-blog.png";
-import { Dispatch, SetStateAction, useMemo } from "react";
-import useDebounce from "@/hooks/useDebouce";
+import { useMemo } from "react";
 import NoResult from "./no-result";
 
 export default function CasesGrid({
@@ -28,7 +28,7 @@ export default function CasesGrid({
   }
 
   return (
-    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pb-12 gap-12">
+    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pb-12 pt-10 gap-12">
       {filteredCase.map((singleCase) => (
         <li key={singleCase.link}>
           <Link

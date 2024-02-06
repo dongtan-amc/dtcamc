@@ -1,6 +1,6 @@
 // vet infos
-import dummy from "@/public/vets/dummy.png";
 import chae from "@/public/vets/chae.jpg";
+import dummy from "@/public/vets/dummy.png";
 
 export const VETS = [
   {

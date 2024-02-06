@@ -8,16 +8,11 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import groomning1 from "@/public/grooming/grooming1.png";
-import groomning2 from "@/public/grooming/grooming2.jpeg";
-import groomning3 from "@/public/grooming/grooming3.jpeg";
-import groomning4 from "@/public/grooming/grooming4.jpeg";
+import { GROOMING_IMAGES } from "@/constants/grooming-images";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
-import CarouselIndex from "../introduction/facility/carousel-index";
 import { useEffect, useState } from "react";
-
-const GROOMING_IMAGES = [groomning1, groomning2, groomning3, groomning4];
+import CarouselIndex from "../introduction/facility/carousel-index";
 
 export default function GroomingCarousel() {
   const [api, setApi] = useState<CarouselApi>();

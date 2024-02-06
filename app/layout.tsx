@@ -1,13 +1,12 @@
+import FloatingInfos from "@/components/common/floating-infos";
 import Footer from "@/components/footer";
+import MobileBottomButtons from "@/components/mobile-bottom-buttons";
 import Navbar from "@/components/navbar/navbar";
+import ScrollTopButton from "@/components/scroll-top-button";
+import { NAME } from "@/constants/general-info";
 import type { Metadata } from "next";
 import { Nanum_Gothic } from "next/font/google";
 import "./globals.css";
-import ScrollTopButton from "@/components/scroll-top-button";
-import FloatingInfos from "@/components/common/floating-infos";
-import MobileBottomButtons from "@/components/mobile-bottom-buttons";
-import { NAME } from "@/constants/general-info";
-import og from "@/public/icons/navar-blog.png";
 
 const font = Nanum_Gothic({ subsets: ["latin"], weight: ["400", "700"] });
 

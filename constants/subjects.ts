@@ -1,13 +1,12 @@
-import digestive from "@/public/subjects/digestive.jpg";
 import circular from "@/public/subjects/circular.jpg";
-import respir from "@/public/subjects/respir.jpg";
+import digestive from "@/public/subjects/digestive.jpg";
 import hormonal from "@/public/subjects/hormonal.png";
 import urinary from "@/public/subjects/urinary.jpg";
 
-import immuneMediated from "@/public/subjects/immune-mediated-dermal.jpg";
 import allergy from "@/public/subjects/allergy.jpg";
 import demodex from "@/public/subjects/demodex.jpg";
 import hormonalDerm from "@/public/subjects/hormonal.jpg";
+import immuneMediated from "@/public/subjects/immune-mediated-dermal.jpg";
 import skincancer from "@/public/subjects/skincancer.jpg";
 
 export const SUBJECTS_SUBMENUS = [

@@ -1,7 +1,7 @@
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { SheetClose } from "../ui/sheet";
 import DrawerAccordion from "./drawer-accordion";
-import { cn } from "@/lib/utils";
 
 export default function DrawerMenu({
   menu,

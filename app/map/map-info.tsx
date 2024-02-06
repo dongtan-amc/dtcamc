@@ -1,13 +1,19 @@
 import { Button } from "@/components/ui/button";
-import mapPinLineIcon from "@/public/icons/map-pin-line.svg";
-import phoenIcon from "@/public/icons/phone.svg";
+import {
+  ADDRESS,
+  KAKAO_MAP,
+  NAME,
+  NAVER_MAP,
+  PHONE,
+} from "@/constants/general-info";
 import infoIcon from "@/public/icons/Info.svg";
+import mapPinLineIcon from "@/public/icons/map-pin-line.svg";
 import parkingIcon from "@/public/icons/parking.svg";
+import phoenIcon from "@/public/icons/phone.svg";
 import toiletIcon from "@/public/icons/toiletsvg.svg";
 import Image from "next/image";
-import { FaPaw } from "react-icons/fa6";
 import Link from "next/link";
-import { ADDRESS, NAME, PHONE } from "@/constants/general-info";
+import { FaPaw } from "react-icons/fa6";
 
 export default function MapInfo() {
   return (
@@ -67,19 +73,12 @@ export default function MapInfo() {
           className="text-white bg-[#03C75A] hover:bg-[hsla(147,97%,40%,0.9)]"
           asChild
         >
-          <Link
-            href="https://map.naver.com/p/entry/place/1954210980?c=19.00,0,0,0,dh"
-            target="_blank"
-          >
+          <Link href={NAVER_MAP} target="_blank">
             네이버 지도로 보기
           </Link>
         </Button>
         <Button className="text-black bg-[#FAE200] hover:bg-[hsla(54,100%,49%,0.9)]">
-          <Link
-            href="
-            https://map.kakao.com/?urlX=513717&urlY=1030622&urlLevel=3&itemId=1809300423&q=24%EC%8B%9C%EB%8F%99%ED%83%84%EC%8B%9C%ED%8B%B0%EB%8F%99%EB%AC%BC%EC%9D%98%EB%A3%8C%EC%84%BC%ED%84%B0&srcid=1809300423&map_type=TYPE_MAP"
-            target="_blank"
-          >
+          <Link href={KAKAO_MAP} target="_blank">
             카카오 지도로 보기
           </Link>
         </Button>

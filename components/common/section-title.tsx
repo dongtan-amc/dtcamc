@@ -1,9 +1,8 @@
-import Link from "next/link";
-import React from "react";
-import { Button } from "../ui/button";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { NAME } from "@/constants/general-info";
 import { cn } from "@/lib/utils";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
+import Link from "next/link";
+import { Button } from "../ui/button";
 
 export default function SectionTitle({
   theme,

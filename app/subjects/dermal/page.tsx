@@ -2,8 +2,8 @@ import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
 import { SUBJECTS_SUBMENUS } from "@/constants/subjects";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
-import Categories from "../categories";
 import { Metadata } from "next";
+import Categories from "../categories";
 
 export const metadata: Metadata = {
   title: "피부과",

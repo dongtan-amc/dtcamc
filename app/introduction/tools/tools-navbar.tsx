@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { TOOLS } from "@/constants/tools";
 import { cn } from "@/lib/utils";
-import React, { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction } from "react";
 
 export default function ToolsNavbar({
   category,

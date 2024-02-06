@@ -2,40 +2,38 @@ import dentalXray from "@/public/tools/dental-xray.jpg";
 import ultrasound from "@/public/tools/ultrasound.jpeg";
 import xray from "@/public/tools/xray.jpeg";
 
-import aniscan from "@/public/tools/aniscan.jpeg";
-import elctrovet from "@/public/tools/electrovet.jpeg";
-import cbc from "@/public/tools/cbc.jpeg";
-import gas from "@/public/tools/gas.png";
-import vetChroma from "@/public/tools/vet-chroma.jpeg";
-import chem from "@/public/tools/chem.jpeg";
 import ammonia from "@/public/tools/ammonia.png";
+import aniscan from "@/public/tools/aniscan.jpeg";
+import cbc from "@/public/tools/cbc.jpeg";
+import chem from "@/public/tools/chem.jpeg";
+import elctrovet from "@/public/tools/electrovet.jpeg";
+import gas from "@/public/tools/gas.png";
 import urine from "@/public/tools/urine.png";
+import vetChroma from "@/public/tools/vet-chroma.jpeg";
 
-import v100 from "@/public/tools/v100.jpeg";
 import ear from "@/public/tools/ear.png";
+import v100 from "@/public/tools/v100.jpeg";
 import woodlamp from "@/public/tools/woodlamp.jpeg";
 
 import drill from "@/public/tools/drill.jpeg";
 import plasma from "@/public/tools/plasma.png";
 import scaling from "@/public/tools/scaling.jpeg";
 
+import aneth from "@/public/tools/aneth.jpeg";
+import doppler from "@/public/tools/doppler.png";
 import masimo from "@/public/tools/masimo.png";
 import oxus from "@/public/tools/oxus.png";
 import pump from "@/public/tools/pump.jpeg";
-import syringe from "@/public/tools/syringe.jpeg";
-import aneth from "@/public/tools/aneth.jpeg";
 import quickvet from "@/public/tools/quickvet.jpeg";
-import doppler from "@/public/tools/doppler.png";
+import syringe from "@/public/tools/syringe.jpeg";
 
 import covidien from "@/public/tools/covidien.jpeg";
+import gaymar from "@/public/tools/gaymar.jpeg";
+import iop from "@/public/tools/iop.png";
 import ligasure from "@/public/tools/ligasure.jpeg";
 import ligasure2 from "@/public/tools/ligasure2.jpeg";
-import ventil from "@/public/tools/ventil.jpg";
-import gaymar from "@/public/tools/gaymar.jpeg";
 import monitor from "@/public/tools/monitor.jpeg";
-import iop from "@/public/tools/iop.png";
-import { SUBJECTS_SUBMENUS } from "./subjects";
-import { ADDRESS, NAME } from "./general-info";
+import ventil from "@/public/tools/ventil.jpg";
 
 export const TOOLS = [
   {

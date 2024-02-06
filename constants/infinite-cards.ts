@@ -11,7 +11,7 @@ import p10 from "@/public/photo/icu2.jpeg";
 import p11 from "@/public/photo/icu3.jpeg";
 import p12 from "@/public/photo/operation-room.jpeg";
 
-export const cards = {
+export const INFINITE_IMAGES = {
   top: [
     {
       id: 1,
