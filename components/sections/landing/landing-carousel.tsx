@@ -111,7 +111,7 @@ export default function LandinCarousel({
           className="h-full w-full absolute inset-0 object-cover object-center"
         >
           <Image
-            quality={10}
+            quality={20}
             alt="landing image"
             src={images[currentIndex]}
             fill

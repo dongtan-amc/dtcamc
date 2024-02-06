@@ -50,7 +50,7 @@ const FacilityList = ({
             className="shrink-0 w-[250px] h-[150px] lg:w-[500px] lg:h-[300px] rounded-lg overflow-hidden relative"
           >
             <Image
-              sizes="30vw"
+              sizes="(min-width: 1040px) 500px, 250px"
               alt="facility image"
               src={card.img}
               className="object-cover"

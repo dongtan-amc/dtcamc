@@ -60,6 +60,7 @@ export const HoverEffect = ({
                 alt={item.title}
                 src={item.image}
                 fill
+                sizes="(min-width: 1360px) 288px, (min-width: 1040px) calc(22.67vw - 16px), (min-width: 780px) calc(33.33vw - 27px), calc(50vw - 32px)"
                 className="object-center"
               />
             ) : (

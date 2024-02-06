@@ -48,7 +48,7 @@ export default function ReferralInfos() {
               <h2>CT 촬영 의뢰</h2>
             </div>
             <p className="ml-8 pb-2 leading-6">
-              진역 병원으로부터 CT촬영 의뢰를 받고있습니다.
+              지역 병원으로부터 CT촬영 의뢰를 받고있습니다.
             </p>
             <Link href="/experty/ct" className="ml-8">
               <Button variant="secondary">자세히 보기</Button>
