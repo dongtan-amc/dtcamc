@@ -7,6 +7,7 @@ import consulting2 from "@/public/photo/consulting-room1.jpeg";
 import consulting3 from "@/public/photo/consulting-room2.jpeg";
 import consulting4 from "@/public/photo/treatment-room.jpeg";
 
+import cat1 from "@/public/photo/cat-room.jpeg";
 import cat2 from "@/public/photo/cat-room1.jpeg";
 import cat3 from "@/public/photo/cat-room2.jpeg";
 
@@ -34,7 +35,7 @@ export const FACILITY_SECTIONS = [
   },
   {
     title: "고양이 진료",
-    images: [cat2, cat3],
+    images: [cat1, cat2, cat3],
     description:
       "고양이 전용의 처치,시술실입니다. 모든 진료 및 처치공간마다 응급상황시 산소를 공급할 수 있는 시설이 별도로 갖추어져 있습니다.",
   },
