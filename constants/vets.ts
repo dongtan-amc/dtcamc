@@ -41,7 +41,7 @@ export const VETS = [
   },
   {
     name: "김경채",
-    title: "정형외과과장",
+    title: "정형외과 과장",
     subjects: ["정형외과", "일반외과"],
     image: chae,
     history: [
@@ -93,7 +93,7 @@ export const VETS = [
   },
   {
     name: "최한일",
-    title: "일반외과수의사",
+    title: "일반외과 과장",
     subjects: ["일반외과", "정형외과"],
     image: dummy,
     history: [
