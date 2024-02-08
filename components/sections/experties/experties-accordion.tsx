@@ -27,6 +27,7 @@ export default function ExpertiesAccordion() {
               alt="subject image"
               src={imgSrc!}
               fill
+              priority
               placeholder="blur"
               className="object-cover"
               sizes="(min-width: 1320px) 728px, (min-width: 1040px) calc(104.62vw - 632px), calc(100vw - 32px)"

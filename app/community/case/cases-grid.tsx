@@ -42,7 +42,6 @@ export default function CasesGrid({
                 src={singleCase.image}
                 width={290}
                 height={290}
-                placeholder="blur"
                 className="rounded-lg"
                 sizes="(min-width: 1360px) 284px, (min-width: 1040px) calc(22.67vw - 20px), (min-width: 780px) calc(30.42vw - 20px), (min-width: 380px) 290px, calc(36.67vw + 158px)"
               />
