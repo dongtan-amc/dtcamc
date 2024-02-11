@@ -43,7 +43,7 @@ export const VETS = [
     name: "김경채",
     title: "정형외과 과장",
     subjects: ["정형외과", "일반외과"],
-    image: chae,
+    image: dummy,
     history: [
       "충북대학교 수의학과 학사 졸업",
       "충북대학교 임상수의학 (외과) 석사 졸업",
