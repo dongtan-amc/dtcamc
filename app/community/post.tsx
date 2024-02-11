@@ -53,7 +53,7 @@ export default function Post({
           </div>
         </div>
 
-        <article className="prose max-w-7xl">
+        <article className="prose max-w-7xl min-h-[50vh] py-10">
           <Markdown>{contents.content}</Markdown>
         </article>
       </Container>
