@@ -57,6 +57,11 @@ export const metadata: Metadata = {
   category: "동물병원",
   classification: "동물병원",
   creator: "howoo",
+  verification: {
+    other: {
+      "naver-site-verification": "03cc0cb9f6b79e54b2cd62ecf6287c7db8e3fd6e",
+    },
+  },
   // verification: { google: "wY3QAZW61pL73SdqLV6UUTaurZT61xSioIaQYOilQ2o" },
 };
 
