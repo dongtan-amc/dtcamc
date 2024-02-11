@@ -61,8 +61,8 @@ export const metadata: Metadata = {
     other: {
       "naver-site-verification": "03cc0cb9f6b79e54b2cd62ecf6287c7db8e3fd6e",
     },
+    google: "kCICzOgF-iOJ1DjKSZfn9ubgPKWdOrwj79Yq1XO0Yqs",
   },
-  // verification: { google: "wY3QAZW61pL73SdqLV6UUTaurZT61xSioIaQYOilQ2o" },
 };
 
 export default function RootLayout({
