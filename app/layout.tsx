@@ -63,6 +63,11 @@ export const metadata: Metadata = {
     },
     google: "kCICzOgF-iOJ1DjKSZfn9ubgPKWdOrwj79Yq1XO0Yqs",
   },
+  openGraph: {
+    type: "website",
+    images:
+      "https://dtct-homepage-ev3zhcjnm-howooking.vercel.app/opengraph-image.png?0b9fa481777a3281",
+  },
 };
 
 export default function RootLayout({
