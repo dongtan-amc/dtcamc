@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "수술센터",
 };
 
-export default function OperationPage() {
+export default function BiliaryPage() {
   return (
     <main>
       <Banner

@@ -8,9 +8,17 @@ export const EXPERTY_SUBMENUS = [
   {
     id: 1,
     upperRoute: "/experty",
-    label: "수술 센터",
+    label: "정형외과 센터",
     description: "수술센터에 대한 간략한 소개",
-    route: "/operation",
+    route: "/orthopedic",
+    imgSrc: sub1,
+  },
+  {
+    id: 1,
+    upperRoute: "/experty",
+    label: "간담도 수술 센터",
+    description: "수술센터에 대한 간략한 소개",
+    route: "/biliary",
     imgSrc: sub1,
   },
   {

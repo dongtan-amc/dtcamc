@@ -38,20 +38,25 @@ export default function Submenu({
           {menuLabel} <TriangleDownIcon />
         </div>
       </div>
-      {isHovered && (
-        <ul className="absolute bg-white flex flex-col w-[150px] shadow-2xl border top-20">
-          {submenu.map((menu) => (
-            <li key={menu.label}>
-              <Link
-                href={`${mainRoute}${menu.route}`}
-                className="block border p-4 hover:bg-olive-drab-600 hover:text-white"
-              >
-                {menu.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
+      <ul
+        className={cn(
+          "absolute bg-white flex flex-col w-[150px] shadow-2xl border top-20 transition-opacity duration-300",
+          isHovered
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
+        )}
+      >
+        {submenu.map((menu) => (
+          <li key={menu.label}>
+            <Link
+              href={`${mainRoute}${menu.route}`}
+              className="block border p-4 hover:bg-olive-drab-600 hover:text-white"
+            >
+              {menu.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
