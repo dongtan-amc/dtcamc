@@ -3,14 +3,14 @@ import fracture1 from "@/public/experty/fracture1.png";
 import fracture2 from "@/public/experty/fracture2.png";
 import fixin from "@/public/experty/implant.png";
 import Image from "next/image";
-import Paragraph from "./paragraph";
-import SectionTitle from "./section-title";
+import Paragraph from "../paragraph";
+import SectionTitle from "../section-title";
 
 export default function FractureSection() {
   return (
-    <section className="text-xl leading-relaxed bg-slate-100 py-10">
+    <section className="bg-slate-100 py-10">
       <Container>
-        <SectionTitle title="# 골절 수술" />
+        <SectionTitle title="골절 수술" />
 
         <div className="flex gap-4 my-4">
           <Image alt="fracture image" src={fracture1} height={320} />

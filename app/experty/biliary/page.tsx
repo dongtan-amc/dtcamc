@@ -1,9 +1,9 @@
 import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
-import NotReadyPage from "@/components/common/not-ready-page";
 import { EXPERTY_SUBMENUS } from "@/constants/nav-menues";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
 import { Metadata } from "next";
+import Biliary from "./biliary";
 
 export const metadata: Metadata = {
   title: "수술센터",
@@ -19,9 +19,7 @@ export default function BiliaryPage() {
         subMenus={EXPERTY_SUBMENUS}
       />
 
-      <Container>
-        <NotReadyPage />
-      </Container>
+      <Biliary />
     </main>
   );
 }

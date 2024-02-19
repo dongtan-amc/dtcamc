@@ -2,14 +2,14 @@ import Container from "@/components/common/container";
 import cclr1 from "@/public/experty/cclr1.png";
 import cclr2 from "@/public/experty/cclr2.png";
 import Image from "next/image";
-import Paragraph from "./paragraph";
-import SectionTitle from "./section-title";
+import Paragraph from "../paragraph";
+import SectionTitle from "../section-title";
 
 export default function CclrSection() {
   return (
-    <section className="py-10 text-xl leading-relaxedpy-10">
+    <section className="py-10">
       <Container>
-        <SectionTitle title="# 십자인대 수술" />
+        <SectionTitle title="십자인대 수술" />
 
         <div className="flex gap-4 my-4">
           <Image alt="fracture image" src={cclr1} height={320} />

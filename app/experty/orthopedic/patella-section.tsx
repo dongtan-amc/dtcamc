@@ -1,12 +1,12 @@
 import Container from "@/components/common/container";
-import Paragraph from "./paragraph";
-import SectionTitle from "./section-title";
+import Paragraph from "../paragraph";
+import SectionTitle from "../section-title";
 
 export default function PatellaSection() {
   return (
-    <section className="text-xl leading-relaxed bg-slate-100 py-10">
+    <section className="bg-slate-100 py-10">
       <Container>
-        <SectionTitle title="# 슬개골탈구수술" />
+        <SectionTitle title="슬개골탈구수술" />
 
         <Paragraph>
           강아지에서 흔하게 발생하는 무릎 관절 질환인 슬개골 탈구는, 슬개골 탈구

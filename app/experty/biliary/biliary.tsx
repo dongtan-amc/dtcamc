@@ -1,6 +1,7 @@
 import Title from "@/components/common/title";
 import { NAME } from "@/constants/general-info";
-import { LuBone } from "react-icons/lu";
+import { GiLiver } from "react-icons/gi";
+import ResectionSection from "./resection-section";
 
 const TAGS = [
   {
@@ -23,16 +24,17 @@ export default function Biliary() {
       <Title
         description={
           <>
-            {NAME}는 연간{" "}
-            <span className="text-primary font-bold text-2xl">1,000건</span>의
-            정형외과 수술 실적을 가지고 있습니다. 국내 동물병원 중 최고의 수술
-            시스템을 자랑하며 환자 각자에게 가장 적합한 수술 환경을 제공합니다.
+            {NAME}는 최신 장비와 우수한 외과 전문의들이 간담도계 수술을
+            진행합니다. 높은 수술 성공률 그리고 수술 후 케어까지
+            동탄시티동물의료센터만의 수술은 특별합니다.
           </>
         }
         title="간·담도 수술센터"
-        Icon={LuBone}
+        Icon={GiLiver}
         tags={TAGS}
       />
+
+      <ResectionSection />
     </div>
   );
 }

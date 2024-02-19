@@ -1,13 +1,13 @@
 import Container from "@/components/common/container";
-import SectionTitle from "./section-title";
+import SectionTitle from "../section-title";
 
 export default function RehabilitationSection() {
   return (
-    <section className="mt-10 text-xl leading-relaxedpy-10">
+    <section className="py-10">
       <Container>
-        <SectionTitle title="#  정형외과 재활치료" />
+        <SectionTitle title="정형외과 재활치료" />
 
-        <p className="py-6 text-sm lg:text-base">
+        <p className="py-6 text-base">
           <span className="lg:text-3xl font-bold text-primary text-2xl">
             1.{" "}
           </span>
@@ -18,7 +18,7 @@ export default function RehabilitationSection() {
           진정없이 안전하게 치료할 수 있습니다.
         </p>
 
-        <p className="py-6 text-sm lg:text-base">
+        <p className="py-6 text-base">
           <span className="lg:text-3xl font-bold text-primary text-2xl">
             2.{" "}
           </span>
@@ -29,7 +29,7 @@ export default function RehabilitationSection() {
           통증관리에 특화된 치료입니다.
         </p>
 
-        <p className="py-6 text-sm lg:text-base">
+        <p className="py-6 text-base">
           <span className="lg:text-3xl font-bold text-primary text-2xl">
             3.{" "}
           </span>{" "}
@@ -37,7 +37,7 @@ export default function RehabilitationSection() {
           증가와, 산소공급을 증가시키고 스트레칭을 통해 근육의 위축을 막아 빠른
           회복을 돕습니다. 특히 내인성 엔도르핀을 유발하여 통증을 감소시킵니다.
         </p>
-        <p className="py-6 text-sm lg:text-base">
+        <p className="py-6 text-base">
           <span className="lg:text-3xl font-bold text-primary text-2xl">
             4.{" "}
           </span>
@@ -45,7 +45,7 @@ export default function RehabilitationSection() {
           최대한 약물을 줄일 수 있고, 뇌로 가는 통증 신호를 줄이거나 비침습적
           요법으로 염증을 감소시킬 수 있다.
         </p>
-        <p className="py-6 text-sm lg:text-base">
+        <p className="py-6 text-base">
           <span className="lg:text-3xl font-bold text-primary text-2xl">
             5.{" "}
           </span>{" "}
