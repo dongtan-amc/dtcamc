@@ -11,7 +11,7 @@ export const EXPERTY_SUBMENUS = [
     upperRoute: "/experty",
     label: "정형외과 센터",
     description:
-      "골절부터 슬개골탈구, 십자인대파열, 고관절탈구 등 다양한 정영외과 수술을 진행하고 있습니다.",
+      "골절부터 슬개골탈구, 십자인대파열, 고관절탈구 등 다양한 정형외과 수술을 진행하고 있습니다.",
     route: "/orthopedic",
     imgSrc: ortho,
     ready: true,
@@ -20,7 +20,8 @@ export const EXPERTY_SUBMENUS = [
     id: 1,
     upperRoute: "/experty",
     label: "간담도 수술 센터",
-    description: "간담도계 수술이 가능한 전문 의료진이 함께합니다.",
+    description:
+      "강엽절제술, 담석제거술 등 간담도계수술 전문가들이 함께합니다.",
     route: "/biliary",
     imgSrc: liver,
     ready: true,
