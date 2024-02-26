@@ -1,49 +1,57 @@
-import sub1 from "@/public/subjects/dermal.jpg";
-import sub2 from "@/public/subjects/hormonal.jpg";
-import sub3 from "@/public/subjects/respir.jpg";
-import sub4 from "@/public/subjects/skincancer.jpg";
+import ortho from "@/public/experty/ortho.jpg";
+import liver from "@/public/experty/liver.png";
+import mri from "@/public/experty/mri.jpg";
+import kidney from "@/public/experty/kidney.jpg";
+import referral from "@/public/experty/referral.jpg";
 import { SUBJECTS_SUBMENUS } from "./subjects";
 
 export const EXPERTY_SUBMENUS = [
   {
-    id: 1,
+    id: 0,
     upperRoute: "/experty",
     label: "정형외과 센터",
-    description: "수술센터에 대한 간략한 소개",
+    description:
+      "골절부터 슬개골탈구, 십자인대파열, 고관절탈구 등 다양한 정영외과 수술을 진행하고 있습니다.",
     route: "/orthopedic",
-    imgSrc: sub1,
+    imgSrc: ortho,
+    ready: true,
   },
   {
     id: 1,
     upperRoute: "/experty",
     label: "간담도 수술 센터",
-    description: "수술센터에 대한 간략한 소개",
+    description: "간담도계 수술이 가능한 전문 의료진이 함께합니다.",
     route: "/biliary",
-    imgSrc: sub1,
+    imgSrc: liver,
+    ready: true,
   },
   {
     id: 2,
     upperRoute: "/experty",
     label: "신장투석 센터",
-    description: "신장투석센터에 대한 간략한 소개",
+    description: "준비중입니다.",
     route: "/dialysis",
-    imgSrc: sub2,
+    imgSrc: kidney,
+    ready: false,
   },
   {
     id: 3,
     upperRoute: "/experty",
     label: "CT 촬영 센터",
-    description: "CT센터에 대한 간략한 소개",
+    description: "준비중입니다.",
     route: "/ct",
-    imgSrc: sub3,
+    imgSrc: mri,
+    ready: false,
   },
   {
     id: 4,
     upperRoute: "/experty",
-    label: "진료 의뢰",
-    description: "진료의뢰에 대한 간략한 소개",
+    label: "2차 진료 의뢰",
+    description:
+      "동탄시티동물의료센터는 지역병원에서 의뢰를 받아 진료 및 치료를 실시하고 있습니다.",
     route: "/referral",
-    imgSrc: sub4,
+    imgSrc: referral,
+    ready: true,
   },
 ];
 export const COMMUNITY_SUBMENUS = [

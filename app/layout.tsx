@@ -12,11 +12,12 @@ const font = Nanum_Gothic({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: {
-    default: NAME,
+    default: `${NAME} 홈페이지`,
     template: `%s - ${NAME} `,
   },
-  description: "동탄 24시동물병원",
+  description: "동탄시티동물병원",
   keywords: [
+    "동탄시티동물병원",
     "동탄동물병원",
     "동물병원",
     "동탄24시동물병원",
@@ -62,11 +63,6 @@ export const metadata: Metadata = {
       "naver-site-verification": "03cc0cb9f6b79e54b2cd62ecf6287c7db8e3fd6e",
     },
     google: "kCICzOgF-iOJ1DjKSZfn9ubgPKWdOrwj79Yq1XO0Yqs",
-  },
-  openGraph: {
-    type: "website",
-    images:
-      "https://dtct-homepage-ev3zhcjnm-howooking.vercel.app/opengraph-image.png?0b9fa481777a3281",
   },
 };
 

@@ -148,10 +148,10 @@ export const GROOMING_SUBCONTENTS = [
 ];
 export const EXPERTY_SUBCONTENTS = [
   {
-    title: "수술 센터",
+    title: "정형외과 센터",
     description: `${NAME}의 전문 수술센터를 소개함니다`,
     Icon: FaMaskFace,
-    href: "/experty/operation",
+    href: "/experty/orthopedics",
   },
   {
     title: "신장투석 센터",

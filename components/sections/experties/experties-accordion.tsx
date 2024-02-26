@@ -28,6 +28,7 @@ export default function ExpertiesAccordion() {
               src={imgSrc!}
               fill
               priority
+              quality={50}
               placeholder="blur"
               className="object-cover"
               sizes="(min-width: 1320px) 728px, (min-width: 1040px) calc(104.62vw - 632px), calc(100vw - 32px)"
@@ -100,7 +101,7 @@ const Expert = ({
             animate={{
               opacity: isOpen ? 1 : 0,
             }}
-            className="mt-4 text-slate-600"
+            className="mt-4 text-slate-600 leading-6"
           >
             {description}
           </motion.p>
