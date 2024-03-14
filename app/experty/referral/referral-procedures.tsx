@@ -22,6 +22,7 @@ export default function ReferralProcedures() {
                 alt="procedure image"
                 src={procedure.image}
                 fill
+                className="object-cover"
                 sizes="(min-width: 1360px) 640px, (min-width: 780px) 47.5vw, calc(100vw - 32px)"
               />
             </div>

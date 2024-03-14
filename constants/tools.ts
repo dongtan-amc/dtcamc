@@ -1,46 +1,33 @@
-import dentalXray from "@/public/tools/dental-xray.jpg";
-import ultrasound from "@/public/tools/ultrasound.png";
-import xray from "@/public/tools/xray.jpeg";
-
-import ammonia from "@/public/tools/ammonia.png";
-import aniscan from "@/public/tools/aniscan.jpeg";
-import procyte from "@/public/tools/procyte.png";
-import chem from "@/public/tools/chem.jpeg";
-import elctrovet from "@/public/tools/electrovet.jpeg";
-import gas from "@/public/tools/gas.png";
-import catalystOne from "@/public/tools/catalystOne.png";
-
-import urine from "@/public/tools/urine.png";
-import vetChroma from "@/public/tools/vet-chroma.jpeg";
-
-import ear from "@/public/tools/ear.png";
-import v100 from "@/public/tools/v100.jpeg";
-import woodlamp from "@/public/tools/woodlamp.jpeg";
-
-import drill from "@/public/tools/drill.jpeg";
-import plasma from "@/public/tools/plasma.png";
-import dentalUnit from "@/public/tools/dental-unit.png";
-import scaling from "@/public/tools/scaling.jpeg";
-import myvetray from "@/public/tools/myvetray.png";
-import fixin from "@/public/tools/fixin.png";
-
 import aneth from "@/public/tools/aneth.jpeg";
-import doppler from "@/public/tools/doppler.png";
-import masimo from "@/public/tools/masimo.png";
-import masimoPatient from "@/public/tools/masimo-patient.png";
-import oxus from "@/public/tools/oxus.png";
-import pump from "@/public/tools/pump.jpeg";
-import quickvet from "@/public/tools/quickvet.jpeg";
-import syringe from "@/public/tools/syringe.jpeg";
-
+import catalystOne from "@/public/tools/catalystOne.png";
 import covidien from "@/public/tools/covidien.png";
+import dentalUnit from "@/public/tools/dental-unit.png";
+import dentalXray from "@/public/tools/dental-xray.jpg";
+import doppler from "@/public/tools/doppler.png";
+import drill from "@/public/tools/drill.jpeg";
+import ear from "@/public/tools/ear.png";
+import elctrovet from "@/public/tools/electrovet.jpeg";
+import fixin from "@/public/tools/fixin.png";
+import gas from "@/public/tools/gas.png";
 import gaymar from "@/public/tools/gaymar.jpeg";
 import iop from "@/public/tools/iop.png";
 import ligasure from "@/public/tools/ligasure.jpeg";
 import ligasure2 from "@/public/tools/ligasure2.jpeg";
-import monitor from "@/public/tools/monitor.jpeg";
-import ventil from "@/public/tools/ventil.jpg";
+import masimoPatient from "@/public/tools/masimo-patient.png";
+import masimo from "@/public/tools/masimo.png";
+import myvetray from "@/public/tools/myvetray.png";
+import oxus from "@/public/tools/oxus.png";
+import plasma from "@/public/tools/plasma.png";
+import procyte from "@/public/tools/procyte.png";
+import pump from "@/public/tools/pump.jpeg";
+import quickvet from "@/public/tools/quickvet.jpeg";
 import sonocure from "@/public/tools/sonocure.png";
+import syringe from "@/public/tools/syringe.jpeg";
+import ultrasound from "@/public/tools/ultrasound.png";
+import urine from "@/public/tools/urine.png";
+import ventil from "@/public/tools/ventil.jpg";
+import vetChroma from "@/public/tools/vet-chroma.jpeg";
+import xray from "@/public/tools/xray.jpeg";
 
 export const TOOLS = [
   {
