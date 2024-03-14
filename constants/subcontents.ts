@@ -151,7 +151,7 @@ export const EXPERTY_SUBCONTENTS = [
     title: "정형외과 센터",
     description: `${NAME}의 전문 수술센터를 소개함니다`,
     Icon: FaMaskFace,
-    href: "/experty/orthopedics",
+    href: "/experty/orthopedic",
   },
   {
     title: "신장투석 센터",
