@@ -72,7 +72,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko" suppressHydrationWarning>
+    <html lang="ko" suppressHydrationWarning className="!scroll-smooth">
       <body className={`${font.className} antialiased`}>
         <Navbar />
         <main className="break-keep">{children}</main>

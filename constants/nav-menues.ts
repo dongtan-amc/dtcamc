@@ -122,10 +122,10 @@ export const NAV_MENUS = [
     route: "/community",
     submenu: COMMUNITY_SUBMENUS,
   },
-  {
-    label: "미용안내",
-    route: "/grooming",
-  },
+  // {
+  //   label: "미용안내",
+  //   route: "/grooming",
+  // },
   {
     label: "오시는 길",
     route: "/map",

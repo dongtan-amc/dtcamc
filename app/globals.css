@@ -57,10 +57,7 @@ html {
   }
 }
 
-/* SCROLL BAR */
 html {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth !important;
   line-height: 1;
 }
 
