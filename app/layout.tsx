@@ -11,6 +11,7 @@ import "./globals.css";
 const font = Nanum_Gothic({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.dtctamc.com"),
   title: {
     default: `${NAME} 홈페이지`,
     template: `%s - ${NAME} `,
@@ -54,7 +55,7 @@ export const metadata: Metadata = {
     "강아지미용",
     "강아지목욕",
   ],
-  applicationName: `${NAME} 홈페이지`,
+  applicationName: `24시${NAME} 홈페이지`,
   category: "동물병원",
   classification: "동물병원",
   creator: "howoo",
