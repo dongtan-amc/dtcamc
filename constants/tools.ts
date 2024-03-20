@@ -11,7 +11,7 @@ import fixin from "@/public/tools/fixin.png";
 import gas from "@/public/tools/gas.png";
 import gaymar from "@/public/tools/gaymar.jpeg";
 import iop from "@/public/tools/iop.png";
-import ligasure from "@/public/tools/ligasure.jpeg";
+import ligasure from "@/public/tools/ligasure.png";
 import ligasure2 from "@/public/tools/ligasure2.jpeg";
 import masimoPatient from "@/public/tools/masimo-patient.png";
 import masimo from "@/public/tools/masimo.png";
@@ -230,7 +230,7 @@ export const TOOLS = [
       },
       {
         image: plasma,
-        name: "플리즈마 멸균기",
+        name: "플라즈마 멸균기",
         description:
           "고온고압방식의 오토클레이브와 다르게 고급장비 및 빠른 멸균시간이 가능",
       },
