@@ -76,13 +76,13 @@ export default function RootLayout({
   return (
     <html lang="ko" suppressHydrationWarning className="!scroll-smooth">
       <body className={`${font.className} antialiased`}>
-        {/* <Navbar />
-        
+        <Navbar />
+
         <Footer />
         <FloatingInfos />
         <ScrollTopButton />
-        <MobileBottomButtons /> */}
-        <Building />
+        <MobileBottomButtons />
+        {/* <Building /> */}
       </body>
     </html>
   );
