@@ -7,7 +7,6 @@ import { NAME } from "@/constants/general-info";
 import type { Metadata } from "next";
 import { Nanum_Gothic } from "next/font/google";
 import "./globals.css";
-import Building from "./building";
 
 const font = Nanum_Gothic({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -76,13 +75,13 @@ export default function RootLayout({
   return (
     <html lang="ko" suppressHydrationWarning className="!scroll-smooth">
       <body className={`${font.className} antialiased`}>
-        {/* <Navbar />
-
+        <Navbar />
+        <main className="break-keep">{children}</main>
         <Footer />
         <FloatingInfos />
         <ScrollTopButton />
-        <MobileBottomButtons /> */}
-        <Building />
+        <MobileBottomButtons />
+        {/* <Building /> */}
       </body>
     </html>
   );
