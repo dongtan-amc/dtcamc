@@ -56,7 +56,12 @@ export default function Building() {
                 className="flex flex-col items-center gap-2 hover:scale-110 transition"
               >
                 <div className="relative w-10 h-10">
-                  <Image src={contact.icon} alt={contact.title} fill />
+                  <Image
+                    src={contact.icon}
+                    alt={contact.title}
+                    fill
+                    quality={30}
+                  />
                 </div>
                 <p>{contact.title}</p>
               </Link>
