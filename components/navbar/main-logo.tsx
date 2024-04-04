@@ -4,10 +4,7 @@ import Link from "next/link";
 
 export default function MainLogo() {
   return (
-    <Link
-      href="/"
-      className="flex gap-2 items-center hover:opacity-80 transition"
-    >
+    <Link href="/" className="flex gap-2 items-center">
       <Image
         alt="logo"
         src={mainLogo}

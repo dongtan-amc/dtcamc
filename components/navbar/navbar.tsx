@@ -11,13 +11,9 @@ export default function Navbar() {
   const { isScrollTop } = useScrollPosition();
 
   return (
-    <header
-      className={cn(
-        "bg-white w-full z-50 transition duration-500 border-b-[1px]"
-      )}
-    >
+    <header className="bg-white z-50 border-y-2">
       <Container>
-        <nav className="flex items-center justify-between lg:h-20 h-14">
+        <nav className="flex justify-between lg:h-24 h-14 w-full">
           <MainLogo />
 
           <Menu isScrollTop={isScrollTop} />

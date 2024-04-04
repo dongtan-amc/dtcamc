@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function Submenu({
-  isScrollTop,
   submenu,
   menuLabel,
   mainRoute,
@@ -22,35 +21,33 @@ export default function Submenu({
 
   return (
     <div
-      className="relative px cursor-pointer h-full flex items-center group"
+      className="relative cursor-pointer group z-50 w-[160px] h-24 flex justify-center items-center"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div
         className={cn(
-          isScrollTop && "text-gray-800",
-          currentPage && "border-b-2 border-olive-drab-600",
-          "font-semibold px-2 py-2 hover:text-olive-drab-600 transition text-lg group-hover:text-olive-drab-600"
+          currentPage && "text-primary",
+          "hover:text-primary transition group-hover:text-primary text-center font-bold"
         )}
         onClick={() => push(`${mainRoute}${submenu[0].route}`)}
       >
-        <div className="flex items-center gap-1">
-          {menuLabel} <TriangleDownIcon />
-        </div>
+        {menuLabel}
       </div>
       <ul
         className={cn(
-          "absolute bg-white flex flex-col w-[150px] shadow-2xl border top-20 transition-opacity duration-300",
+          "absolute bg-white flex flex-col w-[160px] shadow-2xl border top-[88px] transition-opacity duration-300",
           isHovered
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
         )}
       >
+        <div className="h-2 bg-primary" />
         {submenu.map((menu) => (
           <li key={menu.label}>
             <Link
               href={`${mainRoute}${menu.route}`}
-              className="block border p-4 hover:bg-olive-drab-600 hover:text-white"
+              className="block border p-4 hover:bg-olive-drab-600 hover:text-white text-sm w-[160px] text-center"
             >
               {menu.label}
             </Link>

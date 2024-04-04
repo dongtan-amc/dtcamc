@@ -85,7 +85,7 @@ export const INTRODUCTION_MENUS = [
     route: "/time",
   },
   {
-    label: "수의사 소개",
+    label: "의료진 소개",
     upperRoute: "/introduction",
     route: "/vets",
   },
@@ -99,35 +99,33 @@ export const INTRODUCTION_MENUS = [
     upperRoute: "/introduction",
     route: "/tools",
   },
+  {
+    label: "오시는 길",
+    upperRoute: "/introduction",
+    route: "/map",
+  },
 ];
 
 export const NAV_MENUS = [
   {
-    label: "병원 소개",
+    label: "병원소개",
     route: "/introduction",
     submenu: INTRODUCTION_MENUS,
   },
+
   {
-    label: "진료 과목",
-    route: "/subjects",
-    submenu: SUBJECTS_SUBMENUS,
-  },
-  {
-    label: "전문 진료",
+    label: "특성화센터",
     route: "/experty",
     submenu: EXPERTY_SUBMENUS,
+  },
+  {
+    label: "진료안내",
+    route: "/subjects",
+    submenu: SUBJECTS_SUBMENUS,
   },
   {
     label: "커뮤니티",
     route: "/community",
     submenu: COMMUNITY_SUBMENUS,
-  },
-  // {
-  //   label: "미용안내",
-  //   route: "/grooming",
-  // },
-  {
-    label: "오시는 길",
-    route: "/map",
   },
 ];
