@@ -10,13 +10,13 @@ import { HOME_SUBCONTENTS } from "@/constants/subcontents";
 export default function Home() {
   return (
     <>
-      <Landing />
-      <ExpertiesSection />
-      <FacilitySection />
-      <CasesSection />
-      <CommunitySection />
-      <SubContentsMenus subcontents={HOME_SUBCONTENTS} />
-      <Sitemap />
+      {/* <Landing /> */}
+      {/* <ExpertiesSection /> */}
+      {/* <FacilitySection /> */}
+      {/* <CasesSection /> */}
+      {/* <CommunitySection /> */}
+      {/* <SubContentsMenus subcontents={HOME_SUBCONTENTS} /> */}
+      {/* <Sitemap /> */}
     </>
   );
 }

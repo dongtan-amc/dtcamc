@@ -52,8 +52,6 @@ export const metadata: Metadata = {
     "강아지수혈",
     "고양이수혈",
     "강아지재활센터",
-    "강아지미용",
-    "강아지목욕",
   ],
   applicationName: `24시${NAME} 홈페이지`,
   category: "동물병원",
@@ -76,7 +74,7 @@ export default function RootLayout({
     <html lang="ko" suppressHydrationWarning className="!scroll-smooth">
       <body className={`${font.className} antialiased`}>
         <Navbar />
-        <main className="break-keep">{children}</main>
+        <main className="break-keep min-h-screen">{children}</main>
         <Footer />
         <FloatingInfos />
         <ScrollTopButton />
