@@ -10,7 +10,7 @@ import { HOME_SUBCONTENTS } from "@/constants/subcontents";
 export default function Home() {
   return (
     <>
-      {/* <Landing /> */}
+      <Landing />
       {/* <ExpertiesSection /> */}
       {/* <FacilitySection /> */}
       {/* <CasesSection /> */}

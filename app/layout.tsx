@@ -76,7 +76,7 @@ export default function RootLayout({
         <Navbar />
         <main className="break-keep min-h-screen">{children}</main>
         <Footer />
-        <FloatingInfos />
+        {/* <FloatingInfos /> */}
         <ScrollTopButton />
         <MobileBottomButtons />
         {/* <Building /> */}
