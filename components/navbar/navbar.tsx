@@ -12,13 +12,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={cn(
-        isScrollTop ? "bg-transparent shadow-none" : "bg-white text-slate-950",
-        " fixed w-full z-50 transition duration-500 border-b-[1px]"
-      )}
+      className={cn("w-full z-50 transition duration-500 border-b-[1px]")}
     >
       <Container>
-        <nav className="flex items-center justify-between lg:h-20 h-14">
+        <nav className="flex items-center justify-between h-24">
           <MainLogo />
 
           <Menu isScrollTop={isScrollTop} />

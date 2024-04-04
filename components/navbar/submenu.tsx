@@ -28,9 +28,9 @@ export default function Submenu({
     >
       <div
         className={cn(
-          isScrollTop && "text-white",
-          currentPage && "border-b-2 border-olive-drab-600",
-          "font-semibold px-2 py-2 hover:text-olive-drab-600 transition text-lg group-hover:text-olive-drab-600"
+          isScrollTop && "text-gray-900",
+          currentPage && "border-b-2 border-olive-drab-600 text-primary",
+          "font-semibold tracking-wide px-2 py-2 hover:text-olive-drab-600 transition group-hover:text-olive-drab-600"
         )}
         onClick={() => push(`${mainRoute}${submenu[0].route}`)}
       >
@@ -50,7 +50,7 @@ export default function Submenu({
           <li key={menu.label}>
             <Link
               href={`${mainRoute}${menu.route}`}
-              className="block border p-4 hover:bg-olive-drab-600 hover:text-white"
+              className="text-sm block border p-4 hover:bg-olive-drab-600 hover:text-white transition"
             >
               {menu.label}
             </Link>
