@@ -78,7 +78,7 @@ export default function RootLayout({
         <Navbar />
         <main className="break-keep">{children}</main>
         <Footer />
-        <FloatingInfos />
+        {/* <FloatingInfos /> */}
         <ScrollTopButton />
         <MobileBottomButtons />
         {/* <Building /> */}

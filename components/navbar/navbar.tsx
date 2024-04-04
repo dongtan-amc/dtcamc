@@ -13,8 +13,7 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        isScrollTop ? "bg-transparent shadow-none" : "bg-white text-slate-950",
-        " fixed w-full z-50 transition duration-500 border-b-[1px]"
+        "bg-white w-full z-50 transition duration-500 border-b-[1px]"
       )}
     >
       <Container>
