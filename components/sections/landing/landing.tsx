@@ -7,7 +7,7 @@ export default function Landing() {
     <section className="landing_height bg-slate-100 relative overflow-hidden">
       <LandingCarousel />
       {/* <LandingCopy /> */}
-      {/* <LandingInfo /> */}
+      <LandingInfo />
     </section>
   );
 }

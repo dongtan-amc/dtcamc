@@ -63,10 +63,13 @@ export default function LandingCarousel() {
             </CarouselItem>
           ))}
         </CarouselContent>
+
+        {/* 슬라이드 버튼 */}
         <div className="absolute top-[10%] right-[10%]">
           <CarouselPrevious className="bg-transparent rounded-md text-white w-10 h-10" />
           <CarouselNext className="bg-transparent rounded-md text-white w-10 h-10" />
         </div>
+
         <div className="absolute bottom-[5%] left-[calc(50%-40px)] text-white flex gap-4">
           {Array.from({ length: count }).map((element, index) => (
             <div
