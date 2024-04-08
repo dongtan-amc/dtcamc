@@ -131,8 +131,3 @@ html {
 .mask {
   background-image: url("../public/mask.png");
 }
-
-.landing_height {
-  height: 100vh;
-  height: 100svh;
-}

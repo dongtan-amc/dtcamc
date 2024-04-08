@@ -11,7 +11,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 export default function LandingInfo() {
   return (
     <Container>
-      <div className="hidden lg:flex h-[120px] justify-evenly items-center left-[calc(50%-640px)] py-5 rounded-t-xl">
+      <div className="hidden lg:flex h-[120px] justify-evenly items-center left-[calc(50%-640px)] py-10 rounded-t-xl">
         <div className="flex gap-4 items-center">
           <div className="text-primary flex items-center text-2xl gap-2  tracking-tight">
             <FaPhoneAlt />

@@ -4,7 +4,7 @@ import LandingInfo from "./landing-info";
 
 export default function Landing() {
   return (
-    <section className="landing_height bg-slate-100 relative overflow-hidden">
+    <section className="relative overflow-hidden">
       <LandingCarousel />
       {/* <LandingCopy /> */}
       <LandingInfo />
