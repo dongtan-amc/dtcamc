@@ -39,10 +39,12 @@ export default function MoreSection() {
 
                 <Button
                   asChild
-                  className="mt-5 border-primary text-xs font-bold text-primary hover:text-primary"
+                  className="mt-5 border-primary text-xs font-bold text-primary hover:text-primary hover:bg-olive-drab-100"
                   variant="outline"
                 >
-                  <Link href={more.href}>MORE</Link>
+                  <Link href={more.href} className="w-24">
+                    MORE
+                  </Link>
                 </Button>
               </li>
             ))}
