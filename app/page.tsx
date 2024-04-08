@@ -6,6 +6,7 @@ import FacilitySection from "@/components/sections/facility/facility-section";
 import Landing from "@/components/sections/landing/landing";
 import MoreSection from "@/components/sections/more/more-section";
 import Sitemap from "@/components/sections/sitemap/sitemap";
+import SubjectSection from "@/components/sections/subject/subject-section";
 import { HOME_SUBCONTENTS } from "@/constants/subcontents";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
     <>
       <Landing />
       <MoreSection />
+      <SubjectSection />
       {/* <ExpertiesSection /> */}
       {/* <FacilitySection /> */}
       {/* <CasesSection /> */}
