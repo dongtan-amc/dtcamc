@@ -15,10 +15,10 @@ export default function Home() {
       <Landing />
       <MoreSection />
       <SubjectSection />
+      <CommunitySection />
       {/* <ExpertiesSection /> */}
       {/* <FacilitySection /> */}
       {/* <CasesSection /> */}
-      {/* <CommunitySection /> */}
       {/* <SubContentsMenus subcontents={HOME_SUBCONTENTS} /> */}
       {/* <Sitemap /> */}
     </>

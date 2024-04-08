@@ -4,8 +4,7 @@ import CommunityBoard from "./community-board";
 
 export default function CommunitySection() {
   return (
-    <div className="bg-slate-950 py-10 lg:py-20">
-      <SectionTitle link="/community/notice" theme="dark" title="커뮤니티" />
+    <div className="py-10 lg:py-20">
       <Container>
         <CommunityBoard />
       </Container>

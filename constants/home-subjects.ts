@@ -24,8 +24,8 @@ export const HOME_SUBJECTS = [
     image: sub3,
   },
   {
-    title: "24시 응급의학과",
-    subtitle: "혈액검사, 세포검사 등 진단 및 원인 관련 진료",
+    title: "응급의학과",
+    subtitle: "신속하고 정확한 응급환자진료",
     href: "/subjects/emergency",
     image: sub4,
   },
