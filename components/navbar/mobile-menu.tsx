@@ -11,15 +11,9 @@ export default function MobileMenu({ isScrollTop }: { isScrollTop: boolean }) {
         <Button
           size="icon"
           variant="ghost"
-          className="text-white w-10 h-10 hover:bg-transparent"
+          className="w-10 h-10 hover:bg-transparent"
         >
-          <HamburgerMenuIcon
-            className="w-8 h-8"
-            style={{
-              color: isScrollTop ? "#fff" : "#0f172a",
-              transition: "color 200ms ease-in-out",
-            }}
-          />
+          <HamburgerMenuIcon className="w-8 h-8" />
         </Button>
       </SheetTrigger>
 

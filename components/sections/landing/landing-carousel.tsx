@@ -47,7 +47,7 @@ export default function LandingCarousel() {
         <CarouselContent>
           {HERO_IMAGES.map((image) => (
             <CarouselItem key={image.title}>
-              <div className="relative h-[70vh] flex justify-end">
+              <div className="relative h-[30vh] md:h-[70vh] flex justify-end">
                 <div className="bg-gradient-to-r from-black/40 via-black/10 to-black/10 absolute inset-0 z-20" />
                 {/* text
                 <div className="z-40 absolute top-1/3 left-[20%] text-white">
@@ -67,12 +67,12 @@ export default function LandingCarousel() {
         </CarouselContent>
 
         {/* 슬라이드 버튼 */}
-        <div className="absolute top-[10%] right-[10%]">
+        <div className="absolute top-[10%] right-[10%] md:block hidden">
           <CarouselPrevious className="bg-transparent rounded-md text-white w-10 h-10" />
           <CarouselNext className="bg-transparent rounded-md text-white w-10 h-10" />
         </div>
 
-        <div className="absolute bottom-[5%] left-[calc(50%-40px)] text-white flex gap-4">
+        <div className="absolute bottom-[5%] left-[calc(50%-30px)] text-white flex gap-4">
           {Array.from({ length: count }).map((element, index) => (
             <div
               key={index}
@@ -85,17 +85,5 @@ export default function LandingCarousel() {
         </div>
       </Carousel>
     </div>
-
-    // <CarouselContent>
-    //   {HERO_IMAGES.map((image) => (
-    //     <Container key={image.title}>
-    //       <CarouselItem className="w-full">
-    //         <Image src={image.src} alt="landing image" />
-    //       </CarouselItem>
-    //     </Container>
-    //   ))}
-    // </CarouselContent>
-    // <CarouselPrevious />
-    // <CarouselNext />
   );
 }

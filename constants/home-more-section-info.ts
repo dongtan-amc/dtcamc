@@ -12,7 +12,7 @@ export const MORES = [
   },
   {
     title: "의료진 소개",
-    subtitle: "실력있는 석박사 전문 의료진들이 함께합니다.",
+    subtitle: "실력있는 석박사출신 전문 의료진들이 함께합니다.",
     href: "/introduction/vets",
     image: more2,
   },

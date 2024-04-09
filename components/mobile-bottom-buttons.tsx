@@ -20,13 +20,8 @@ export default function MobileBottomButtons() {
   return (
     <div
       className={
-        "fixed bottom-0 z-50 flex w-full items-center justify-around border-t text-white lg:hidden"
+        "fixed bottom-0 z-50 flex w-full items-center justify-around border-t bg-white lg:hidden"
       }
-      style={{
-        color: isScrollTop && isRoot ? "#fff" : "#1f2937",
-        background: isScrollTop && isRoot ? "transparent" : "white",
-        transition: "background 500ms ease-in-out",
-      }}
     >
       <Link href="/introduction/time" className="p-3 flex items-center gap-2">
         <RiTimer2Fill size={30} />

@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <header className="bg-white z-50 border-y-2">
       <Container>
-        <nav className="flex justify-between lg:h-24 h-14 w-full">
+        <nav className="flex justify-between items-center lg:h-24 h-14 w-full">
           <MainLogo />
 
           <Menu isScrollTop={isScrollTop} />
