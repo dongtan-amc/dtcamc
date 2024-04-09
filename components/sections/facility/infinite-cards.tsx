@@ -6,9 +6,9 @@ import Image from "next/image";
 
 export default function InfiniteCards() {
   return (
-    <div className="bg-slate-950">
+    <div className="bg-slate-100">
       <div className="p-4 overflow-x-hidden relative">
-        <div className="absolute top-0 bottom-0 left-0 w-24 z-10 bg-gradient-to-r from-slate-900 to-transparent" />
+        <div className="absolute top-0 bottom-0 left-0 w-24 z-10 bg-gradient-to-r from-slate-50 to-transparent" />
 
         <div className="flex items-center mb-8">
           <FacilityList list={INFINITE_IMAGES.top} duration={125} />
@@ -21,7 +21,7 @@ export default function InfiniteCards() {
           <FacilityList list={INFINITE_IMAGES.middle} duration={75} reverse />
         </div>
 
-        <div className="absolute top-0 bottom-0 right-0 w-24 z-10 bg-gradient-to-l from-slate-900 to-transparent" />
+        <div className="absolute top-0 bottom-0 right-0 w-24 z-10 bg-gradient-to-l from-slate-50 to-transparent" />
       </div>
     </div>
   );

@@ -1,4 +1,6 @@
+import CasesSection from "@/components/sections/cases/cases-section";
 import CommunitySection from "@/components/sections/community/community-seection";
+import FacilitySection from "@/components/sections/facility/facility-section";
 import Landing from "@/components/sections/landing/landing";
 import MapSection from "@/components/sections/map/map-section";
 import MoreSection from "@/components/sections/more/more-section";
@@ -9,14 +11,10 @@ export default function Home() {
     <>
       <Landing />
       <MoreSection />
+      <FacilitySection />
       <SubjectSection />
       <CommunitySection />
       <MapSection />
-      {/* <ExpertiesSection /> */}
-      {/* <FacilitySection /> */}
-      {/* <CasesSection /> */}
-      {/* <SubContentsMenus subcontents={HOME_SUBCONTENTS} /> */}
-      {/* <Sitemap /> */}
     </>
   );
 }

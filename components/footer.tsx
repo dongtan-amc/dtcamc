@@ -13,20 +13,20 @@ import Container from "./common/container";
 
 export default function Footer() {
   return (
-    <footer className="bg-olive-drab-950 text-olive-drab-50 py-10 sm:pb-24 lg:pb-10">
+    <footer className="bg-olive-drab-950 text-olive-drab-50 py-8 sm:pb-24 lg:pb-10">
       <Container>
         <div className="flex flex-col sm:flex-row sm:items-center gap-10 h-full justify-between">
           <div className="w-24 h-24 bg-white mx-auto flex items-center justify-center shrink-0">
             <Image alt="logo" src={logo} width={80} height={80} unoptimized />
           </div>
 
-          <div className="hidden sm:block">
-            <h2 className="pb-2 font-bold text-lg">{NAME}</h2>
-            <p className="pb-4 text-sm tracking-wide">
+          <div className="hidden sm:block flex-1 text-xs">
+            <h2 className="pb-2 font-bold">{NAME}</h2>
+            <p className="pb-2">
               {ADDRESS} | 대표자 : {BOSS} | 사업자등록번호 : {BUSINESS_NUMBER} |
               Email : {EMAIL}
             </p>
-            <p className="text-sm">{COPY_RIGHTS}</p>
+            <p>{COPY_RIGHTS}</p>
           </div>
 
           {/* mobile */}
@@ -39,7 +39,7 @@ export default function Footer() {
             <p className="text-sm">{COPY_RIGHTS}</p>
           </div>
 
-          <div className="text-3xl font-bold text-center pb-10 sm:pb-0">
+          <div className="text-xl font-bold text-center pb-10 sm:pb-0">
             {PHONE}
           </div>
         </div>

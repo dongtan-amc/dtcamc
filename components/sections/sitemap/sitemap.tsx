@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Sitemap() {
   return (
-    <div className="bg-slate-950 text-slate-50 py-10 lg:py-20 hidden md:block">
+    <div className="text-slate-700 py-10 lg:py-20 hidden md:block">
       <Container>
         <ul className="flex gap-10 justify-evenly">
           {NAV_MENUS.map((menu) => {
