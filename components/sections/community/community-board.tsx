@@ -17,7 +17,7 @@ export default function CommunityBoard() {
 
   return (
     <div className="flex flex-col lg:flex-row border">
-      <div className="bg-white flex-1 p-5 text-olive-drab-900 border-r">
+      <div className="bg-white flex-1 p-5 text-olive-drab-900 border-b md:border-r ">
         <div className="flex items-center justify-between pb-2 lg:pb-4 ">
           <h2 className="text-lg font-bold">공지사항</h2>
           <Button

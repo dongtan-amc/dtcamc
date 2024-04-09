@@ -16,7 +16,7 @@ export default function MapSection() {
         </MapMarker>
 
         {/* 카카오맵, 네이버맵 */}
-        <div className="absolute top-10 right-10 z-10 flex flex-col gap-2">
+        <div className="absolute top-2 right-2 md:top-10 md:right-10 z-10 flex flex-col gap-2">
           <Button
             className="text-white bg-[#03C75A] hover:bg-[hsla(147,97%,40%,0.9)]"
             asChild

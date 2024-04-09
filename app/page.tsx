@@ -11,7 +11,7 @@ export default function Home() {
       <Landing />
       <MoreSection />
       <FacilitySection />
-      <SubjectSection />
+      {/* <SubjectSection /> */}
       <CommunitySection />
       <MapSection />
     </>

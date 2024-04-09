@@ -10,7 +10,7 @@ export default function SubjectSection() {
   return (
     <div className="bg_gradient py-10 relative">
       <Container>
-        <ul className="grid grid-cols-2 justify-between bg-white relative z-20">
+        <ul className="grid grid-cols-1 md:grid-cols-2 justify-between bg-white relative z-20">
           {HOME_SUBJECTS.map((subject, index) => (
             <li
               key={subject.title}
