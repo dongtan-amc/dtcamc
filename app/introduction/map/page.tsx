@@ -16,7 +16,7 @@ export default function MapPage() {
     <main>
       <Banner image={mapBanner} subRoute="오시는 길" />
 
-      <div className="flex py-10 flex-col md:flex-row ">
+      <div className="flex flex-col md:flex-row ">
         <GoogleMap />
         <MapInfo />
       </div>

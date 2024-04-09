@@ -28,7 +28,7 @@ export default function Banner({
       />
       <div className="absolute h-full w-full bg-black/50" />
       <div className="z-10 flex flex-col items-center gap-10 relative font-bold ">
-        <h2 className="text-3xl lg:text-5xl">{subRoute}</h2>
+        <h2 className="text-xl lg:text-3xl">{subRoute}</h2>
         {subRoute && upperRoute && (
           <div className="flex gap-4">
             {upperRoute} <span>&gt;</span> {subRoute}
