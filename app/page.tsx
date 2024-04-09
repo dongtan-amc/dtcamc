@@ -1,13 +1,8 @@
-import SubContentsMenus from "@/components/common/sub-contents-menus";
-import CasesSection from "@/components/sections/cases/cases-section";
 import CommunitySection from "@/components/sections/community/community-seection";
-import ExpertiesSection from "@/components/sections/experties/experties-section";
-import FacilitySection from "@/components/sections/facility/facility-section";
 import Landing from "@/components/sections/landing/landing";
+import MapSection from "@/components/sections/map/map-section";
 import MoreSection from "@/components/sections/more/more-section";
-import Sitemap from "@/components/sections/sitemap/sitemap";
 import SubjectSection from "@/components/sections/subject/subject-section";
-import { HOME_SUBCONTENTS } from "@/constants/subcontents";
 
 export default function Home() {
   return (
@@ -16,6 +11,7 @@ export default function Home() {
       <MoreSection />
       <SubjectSection />
       <CommunitySection />
+      <MapSection />
       {/* <ExpertiesSection /> */}
       {/* <FacilitySection /> */}
       {/* <CasesSection /> */}

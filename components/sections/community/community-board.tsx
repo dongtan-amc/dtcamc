@@ -60,7 +60,10 @@ export default function CommunityBoard() {
           <div className="flex flex-col gap-2">
             <p>주간진료 : {DAY_TIME}</p>
             <p>야간진료 : {NIGHT_TIME}</p>
-            <p>일요일 : {SUNDAY_TIME}</p>
+            <p>
+              <span className="tracking-[0.09rem]">일 요 일</span> :{" "}
+              {SUNDAY_TIME}
+            </p>
             <p className="text-sm py-2">{LATE_NIGHT_TIME}</p>
           </div>
         </div>

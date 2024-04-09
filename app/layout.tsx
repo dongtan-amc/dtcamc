@@ -1,4 +1,3 @@
-import FloatingInfos from "@/components/common/floating-infos";
 import Footer from "@/components/footer";
 import MobileBottomButtons from "@/components/mobile-bottom-buttons";
 import Navbar from "@/components/navbar/navbar";
@@ -79,7 +78,6 @@ export default function RootLayout({
         {/* <FloatingInfos /> */}
         <ScrollTopButton />
         <MobileBottomButtons />
-        {/* <Building /> */}
       </body>
     </html>
   );
