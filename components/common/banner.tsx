@@ -17,7 +17,7 @@ export default function Banner({
   }[];
 }) {
   return (
-    <div className="relative flex items-center justify-center h-[320px] lg:h-[560px] text-white group overflow-hidden">
+    <div className="relative flex items-center justify-center h-[320px] lg:h-[420px] text-white group overflow-hidden">
       <Image
         alt="banner image"
         src={image}

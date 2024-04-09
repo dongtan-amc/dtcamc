@@ -6,6 +6,7 @@ import { NAME } from "@/constants/general-info";
 import type { Metadata } from "next";
 import { Nanum_Gothic } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const font = Nanum_Gothic({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -72,6 +73,12 @@ export default function RootLayout({
   return (
     <html lang="ko" suppressHydrationWarning className="!scroll-smooth">
       <body className={`${font.className} antialiased`}>
+        {/* 카카오맵  */}
+        <Script
+          src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_APP_JS_KEY}&libraries=services,clusterer&autoload=false`}
+          strategy="beforeInteractive"
+        />
+
         <Navbar />
         <main className="break-keep min-h-screen">{children}</main>
         <Footer />

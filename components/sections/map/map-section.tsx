@@ -1,17 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { KAKAO_MAP, NAME, NAVER_MAP } from "@/constants/general-info";
 import Link from "next/link";
-import Script from "next/script";
 import { Map, MapMarker } from "react-kakao-maps-sdk";
 
 export default function MapSection() {
   return (
     <section className="relative overflow-hidden">
-      {/* eslint-disable-next-line @next/next/no-before-interactive-script-outside-document */}
-      <Script
-        src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_APP_JS_KEY}&autoload=false`}
-        strategy="beforeInteractive"
-      />
       <Map
         center={{ lat: 37.209311, lng: 127.061813 }}
         style={{ width: "100%", height: "400px" }} // 지도 크기
