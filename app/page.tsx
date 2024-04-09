@@ -1,4 +1,3 @@
-import CasesSection from "@/components/sections/cases/cases-section";
 import CommunitySection from "@/components/sections/community/community-seection";
 import FacilitySection from "@/components/sections/facility/facility-section";
 import Landing from "@/components/sections/landing/landing";
