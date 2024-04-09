@@ -42,22 +42,24 @@ export default function LandingCarousel() {
         setApi={setApi}
         opts={{ loop: true }}
         plugins={[plugin.current]}
-        className="w-full h-[70vh] overflow-hidden flex items-center"
+        className="w-full overflow-hidden flex items-center"
       >
         <CarouselContent>
           {HERO_IMAGES.map((image) => (
             <CarouselItem key={image.title}>
-              <div className="relative">
-                <div className="bg-gradient-to-r from-black/70 via-black/50 to-black/10 absolute inset-0" />
-                <div className="absolute top-1/3 left-[10%] text-white">
-                  <p>Dongtan City Animal Medical Center</p>
-                  <p className="text-3xl">{image.title}</p>
+              <div className="relative h-[70vh] flex justify-end">
+                <div className="bg-gradient-to-r from-black/40 via-black/10 to-black/10 absolute inset-0 z-20" />
+                {/* text
+                <div className="z-40 absolute top-1/3 left-[20%] text-white">
+                  <p className="pb-5">Dongtan City Animal Medical Center</p>
+                  <p className="text-3xl pb-8">{image.title}</p>
                   <p>{image.subTitle}</p>
-                </div>
+                </div> */}
+                {/* 이미지 */}
                 <Image
                   src={image.src}
                   alt="landing images"
-                  className="w-full"
+                  // className="w-auto"
                 />
               </div>
             </CarouselItem>

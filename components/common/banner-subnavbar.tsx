@@ -18,7 +18,7 @@ export default function BannerSubnavbar({
   return (
     <>
       {subMenus && (
-        <ul className="absolute lg:h-20 h-14 bottom-0 lg:max-w-7xl w-full flex lg:justify-evenly items-center bg-slate-950 text-white lg:rounded-t-xl overflow-x-auto gap-10 px-10">
+        <ul className="absolute lg:h-20 h-14 bottom-0 lg:max-w-5xl w-full flex lg:justify-evenly items-center bg-slate-950 text-white lg:rounded-t-xl overflow-x-auto gap-10 px-10">
           {subMenus.map((menu) => {
             const currentSub = menu.route === `/${subRoute}`;
             return (
@@ -29,7 +29,7 @@ export default function BannerSubnavbar({
                 >
                   <p
                     className={cn(
-                      "text-base lg:text-lg font-bold text-nowrap",
+                      "text-sm lg:text-base font-bold text-nowrap",
                       currentSub && "text-primary"
                     )}
                   >

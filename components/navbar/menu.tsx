@@ -10,7 +10,7 @@ export default function Menu({ isScrollTop }: { isScrollTop: boolean }) {
   return (
     <ul className="lg:flex items-center h-full hidden">
       {NAV_MENUS.map((menu) => (
-        <li key={menu.label} className="">
+        <li key={menu.label}>
           <Submenu
             isScrollTop={isScrollTop}
             submenu={menu.submenu}
