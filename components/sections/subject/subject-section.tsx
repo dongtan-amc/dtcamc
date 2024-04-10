@@ -15,25 +15,31 @@ export default function SubjectSection() {
             <li
               key={subject.title}
               className={cn(
-                "items-center",
-                index === 2 || index === 3 ? "flex" : "flex flex-row-reverse"
+                "items-center flex",
+                index === 2 || index === 3
+                  ? "md:flex-row"
+                  : "md:flex-row-reverse",
+                index === 1 || index === 3 ? "flex-row" : "flex-row-reverse"
               )}
             >
-              <Image
-                alt="more section image"
-                src={subject.image}
-                width={256}
-                height={256}
-              />
-              <div className="flex flex-col items-center justify-center w-[256px] h-[256px] p-4">
-                <p className="text-2xl mt-8 font-bold">{subject.title}</p>
-                <p className="mt-3 text-slate-500 leading-6 text-center text-sm">
+              <div className="relative w-1/2">
+                <Image
+                  alt="more section image"
+                  src={subject.image}
+                  className="object-cover"
+                />
+              </div>
+              <div className="flex flex-col items-center justify-center w-1/2 p-1 md:p-4">
+                <p className="text-sm md:text-2xl mt-0 md:mt-8 font-bold">
+                  {subject.title}
+                </p>
+                <p className="mt-1 md:mt-3 text-slate-500 leading-6 text-center text-xs md:text-sm">
                   {subject.subtitle}
                 </p>
                 <Button
                   asChild
                   size="icon"
-                  className="mt-5 border-primary rounded-full font-bold text-primary hover:text-primary hover:bg-olive-drab-100"
+                  className="mt-2 md:mt-5 border-primary rounded-full font-bold text-primary hover:text-primary hover:bg-olive-drab-100"
                   variant="outline"
                 >
                   <Link href={subject.href}>

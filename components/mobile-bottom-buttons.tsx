@@ -27,7 +27,7 @@ export default function MobileBottomButtons() {
         <RiTimer2Fill size={30} />
         <p className="hidden sm:block">진료시간</p>
       </Link>
-      <Link href="/map" className="p-3 flex items-center gap-2">
+      <Link href="/introduction/map" className="p-3 flex items-center gap-2">
         <RiMapPin2Fill size={30} />
         <p className="hidden sm:block">오시는길</p>
       </Link>

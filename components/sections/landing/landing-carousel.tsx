@@ -47,7 +47,7 @@ export default function LandingCarousel() {
         <CarouselContent>
           {HERO_IMAGES.map((image) => (
             <CarouselItem key={image.title}>
-              <div className="relative h-[30vh] md:h-[70vh] flex justify-end">
+              <div className="relative h-[25vh] md:h-[70vh] flex justify-end">
                 <div className="bg-gradient-to-r from-black/40 via-black/10 to-black/10 absolute inset-0 z-20" />
                 {/* text
                 <div className="z-40 absolute top-1/3 left-[20%] text-white">

@@ -22,8 +22,6 @@ export default function MapPage() {
       </div>
 
       <SubBanner imageClassName="map_subbanner" />
-
-      <SubContentsMenus subcontents={MAP_SUBCONTENTS} />
     </main>
   );
 }
