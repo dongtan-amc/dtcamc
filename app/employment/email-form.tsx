@@ -48,7 +48,7 @@ const formSchema = z.object({
     required_error: "경력을 입력해주세요",
   }),
   phone: z.string({ required_error: "전화번호를 입력해주세요." }),
-  contents: z.min(1, {
+  contents: z.string().min(1, {
     message: "이력을 자유형식으로 작성해주세요.",
   }),
 });
