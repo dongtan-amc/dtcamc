@@ -13,7 +13,7 @@ export default function DrawerAccordion({
   menu: {
     label: string;
     route: string;
-    submenu: {
+    submenu?: {
       label: string;
       upperRoute: string;
       route: string;
@@ -28,7 +28,7 @@ export default function DrawerAccordion({
         </AccordionTrigger>
         <AccordionContent>
           <ul className="pl-2">
-            {menu.submenu.map((menu) => (
+            {menu.submenu?.map((menu) => (
               <li key={menu.route}>
                 <SheetClose asChild>
                   <Link

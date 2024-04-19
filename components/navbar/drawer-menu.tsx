@@ -21,7 +21,7 @@ export default function DrawerMenu({
     | {
         label: string;
         route: string;
-        submenu?: undefined;
+        submenu: null;
       };
 }) {
   return (
