@@ -10,7 +10,7 @@ export default function Submenu({
   mainRoute,
   currentPage,
 }: {
-  submenu: { label: string; route: string }[];
+  submenu: { label: string; route: string }[] | null;
   menuLabel: string;
   mainRoute: string;
   currentPage: boolean;
@@ -18,6 +18,7 @@ export default function Submenu({
 }) {
   const [isHovered, setIsHovered] = useState(false);
   const { push } = useRouter();
+  const route = submenu ? `${mainRoute}${submenu[0].route}` : mainRoute;
 
   return (
     <div
@@ -30,7 +31,7 @@ export default function Submenu({
           currentPage && "text-primary",
           "hover:text-primary transition group-hover:text-primary text-center font-bold"
         )}
-        onClick={() => push(`${mainRoute}${submenu[0].route}`)}
+        onClick={() => push(route)}
       >
         {menuLabel}
       </div>
@@ -43,7 +44,7 @@ export default function Submenu({
         )}
       >
         <div className="h-2 bg-primary" />
-        {submenu.map((menu) => (
+        {submenu?.map((menu) => (
           <li key={menu.label}>
             <Link
               href={`${mainRoute}${menu.route}`}

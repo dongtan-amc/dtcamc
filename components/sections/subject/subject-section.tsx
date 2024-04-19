@@ -24,6 +24,7 @@ export default function SubjectSection() {
             >
               <div className="relative w-1/2">
                 <Image
+                  placeholder="blur"
                   alt="more section image"
                   src={subject.image}
                   className="object-cover"

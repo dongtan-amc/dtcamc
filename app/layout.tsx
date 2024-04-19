@@ -7,6 +7,7 @@ import type { Metadata } from "next";
 import { Nanum_Gothic } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import { Toaster } from "@/components/ui/toaster";
 
 const font = Nanum_Gothic({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -75,7 +76,7 @@ export default function RootLayout({
       <body className={`${font.className} antialiased`}>
         {/* 카카오맵  */}
         <Script
-          src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_APP_JS_KEY}&libraries=services,clusterer&autoload=false`}
+          src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.KAKAO_APP_JS_KEY}&libraries=services,clusterer&autoload=false`}
           strategy="beforeInteractive"
         />
 
@@ -85,6 +86,7 @@ export default function RootLayout({
         {/* <FloatingInfos /> */}
         <ScrollTopButton />
         <MobileBottomButtons />
+        <Toaster />
       </body>
     </html>
   );
