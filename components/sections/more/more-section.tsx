@@ -34,6 +34,7 @@ export default function MoreSection() {
                   src={more.image}
                   width={280}
                   height={280}
+                  placeholder="blur"
                 />
 
                 <div className="pl-5 md:pl-0">
