@@ -34,7 +34,7 @@ const CAREER = ["신입", "2년차", "3년차", "4년차", "5년차 이상"] as 
 const MAJOR = ["내과", "외과", "영상", "기타"] as const;
 
 const formSchema = z.object({
-  name: z.string({ required_error: "이름를 입력해주세요." }).min(2, {
+  name: z.string().min(2, {
     message: "이름은 두글자 이상으로 입력해주세요.",
   }),
   email: z
@@ -48,7 +48,9 @@ const formSchema = z.object({
     required_error: "경력을 입력해주세요",
   }),
   phone: z.string({ required_error: "전화번호를 입력해주세요." }),
-  contents: z.string({ required_error: "이력을 자유형식으로 작성해주세요." }),
+  contents: z.min(1, {
+    message: "이력을 자유형식으로 작성해주세요.",
+  }),
 });
 
 export default function EmailForm() {
