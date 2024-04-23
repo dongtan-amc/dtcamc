@@ -17,8 +17,8 @@ export default function CasesGrid({
     () =>
       CASES.filter((singleCase) =>
         singleCase.title
-          .toUpperCase()
-          .includes(debouncedSearchKeyword.toUpperCase())
+          .toLocaleLowerCase()
+          .includes(debouncedSearchKeyword.toLocaleLowerCase())
       ),
     [debouncedSearchKeyword]
   );
@@ -34,7 +34,7 @@ export default function CasesGrid({
           <Link
             href={singleCase.link}
             target="_blank"
-            className="flex justify-center"
+            className="flex justify-center group"
           >
             <div>
               <Image
@@ -42,18 +42,13 @@ export default function CasesGrid({
                 src={singleCase.image}
                 width={290}
                 height={290}
-                className="rounded-lg"
+                className="rounded-lg group-hover:scale-105 duration-300"
                 sizes="(min-width: 1360px) 284px, (min-width: 1040px) calc(22.67vw - 20px), (min-width: 780px) calc(30.42vw - 20px), (min-width: 380px) 290px, calc(36.67vw + 158px)"
               />
 
-              <div className="flex items-center gap-2 pt-2">
-                <Image
-                  alt="naver blog"
-                  src={naverBlog}
-                  width={24}
-                  unoptimized
-                />
-                <h2 className="text-lg font-bold text-slate-950">
+              <div className="flex items-center gap-2 pt-2 px-1">
+                <Image alt="naver blog" src={naverBlog} width={24} />
+                <h2 className="text-sm font-bold text-slate-950 line-clamp-1">
                   {singleCase.title}
                 </h2>
               </div>

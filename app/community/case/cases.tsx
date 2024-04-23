@@ -6,6 +6,7 @@ import CasesGrid from "./cases-grid";
 
 export default function Cases() {
   const [searchKeyword, setSearchKeyword] = useState("");
+
   return (
     <>
       <CaseSearch
