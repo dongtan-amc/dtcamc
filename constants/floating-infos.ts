@@ -10,7 +10,7 @@ export const FLOATING_INFOS = [
     size: 20,
   },
   {
-    href: "/map",
+    href: "/introduction/map",
     icon: FaMapLocationDot,
     label: "오시는길",
     size: 20,

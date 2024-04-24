@@ -1,15 +1,8 @@
-import blog from "@/public/icons/navar-blog.png";
-import map from "@/public/icons/map.png";
+import { KAKAO, NAVER_BLOG, NAVER_MAP, PHONE } from "@/constants/general-info";
 import kakao from "@/public/icons/kakao.svg";
-import naver from "@/public/icons/naver.png";
+import map from "@/public/icons/map.png";
+import blog from "@/public/icons/navar-blog.png";
 import phone from "@/public/icons/phone.svg";
-import {
-  KAKAO,
-  MODOO,
-  NAVER_BLOG,
-  NAVER_MAP,
-  PHONE,
-} from "@/constants/general-info";
 import Image from "next/image";
 import Link from "next/link";
 

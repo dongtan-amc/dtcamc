@@ -8,6 +8,7 @@ import { Nanum_Gothic } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import { Toaster } from "@/components/ui/toaster";
+import FloatingInfos from "@/components/common/floating-infos";
 
 const font = Nanum_Gothic({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -83,9 +84,13 @@ export default function RootLayout({
         <Navbar />
         <main className="break-keep min-h-screen">{children}</main>
         <Footer />
-        {/* <FloatingInfos /> */}
+
+        <FloatingInfos />
+
         <ScrollTopButton />
+
         <MobileBottomButtons />
+
         <Toaster />
       </body>
     </html>
