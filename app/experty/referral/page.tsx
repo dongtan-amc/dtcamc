@@ -17,7 +17,7 @@ export default function OperationPage() {
     <main>
       <Banner
         image={vetBanner}
-        upperRoute="특성화센터"
+        upperRoute="특성화 센터"
         subRoute="2차 진료 의뢰"
         subMenus={EXPERTY_SUBMENUS}
       />

@@ -108,13 +108,13 @@ export const INTRODUCTION_MENUS = [
 
 export const NAV_MENUS = [
   {
-    label: "병원소개",
+    label: "병원 소개",
     route: "/introduction",
     submenu: INTRODUCTION_MENUS,
   },
 
   {
-    label: "특성화센터",
+    label: "특성화 센터",
     route: "/experty",
     submenu: EXPERTY_SUBMENUS,
   },

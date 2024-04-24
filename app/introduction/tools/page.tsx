@@ -5,9 +5,11 @@ import { INTRODUCTION_MENUS } from "@/constants/nav-menues";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
 import { Metadata } from "next";
 import Tools from "./tools";
+import { NAME } from "@/constants/general-info";
 
 export const metadata: Metadata = {
   title: "장비소개",
+  description: `${NAME} 장비소개`,
 };
 
 export default function ToolsPage() {
@@ -15,7 +17,7 @@ export default function ToolsPage() {
     <main>
       <Banner
         image={vetBanner}
-        upperRoute="병원소개"
+        upperRoute="병원 소개"
         subRoute="장비 소개"
         subMenus={INTRODUCTION_MENUS}
       />

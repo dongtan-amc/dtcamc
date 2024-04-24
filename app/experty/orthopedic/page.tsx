@@ -15,7 +15,7 @@ export default function OrthopedicPage() {
     <main>
       <Banner
         image={operationBanner}
-        upperRoute="특성화센터"
+        upperRoute="특성화 센터"
         subRoute="정형외과 센터"
         subMenus={EXPERTY_SUBMENUS}
       />

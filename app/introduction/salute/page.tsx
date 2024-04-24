@@ -16,7 +16,7 @@ export default function SalutePage() {
     <main>
       <Banner
         image={saluteBanner}
-        upperRoute="병원소개"
+        upperRoute="병원 소개"
         subRoute="인사말"
         subMenus={INTRODUCTION_MENUS}
       />

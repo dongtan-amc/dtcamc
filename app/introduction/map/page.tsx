@@ -17,7 +17,7 @@ export default function MapPage() {
     <main>
       <Banner
         image={mapBanner}
-        upperRoute="병원소개"
+        upperRoute="병원 소개"
         subRoute="오시는 길"
         subMenus={INTRODUCTION_MENUS}
       />

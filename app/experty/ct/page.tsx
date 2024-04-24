@@ -16,7 +16,7 @@ export default function CtPage() {
     <main>
       <Banner
         image={vetBanner}
-        upperRoute="특성화센터"
+        upperRoute="특성화 센터"
         subRoute="CT촬영센터"
         subMenus={EXPERTY_SUBMENUS}
       />

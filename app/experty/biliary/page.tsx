@@ -15,7 +15,7 @@ export default function BiliaryPage() {
     <main>
       <Banner
         image={exprtyBanner}
-        upperRoute="특성화센터"
+        upperRoute="특성화 센터"
         subRoute="간담도 수술센터"
         subMenus={EXPERTY_SUBMENUS}
       />

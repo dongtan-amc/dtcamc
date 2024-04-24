@@ -10,3 +10,7 @@
 - 진료케이스는 constants/cases.ts 에 매번 추가해야함
 
 <img width="864" alt="image" src="https://github.com/howooking/liebe-website/assets/87072568/30a771de-98d6-4930-b44b-87a6d81e83cb">
+
+# 업데이트시
+
+- 장비, 수의사 업데이트시 010-5651-4187 이정우 연락
