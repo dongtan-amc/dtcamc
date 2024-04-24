@@ -5,9 +5,11 @@ import vetBanner from "@/public/photo/consulting-room.jpeg";
 import { Metadata } from "next";
 import ReferralInfos from "./referral-infos";
 import ReferralProcedures from "./referral-procedures";
+import { NAME } from "@/constants/general-info";
 
 export const metadata: Metadata = {
-  title: "진료의뢰",
+  title: "2차진료의뢰",
+  description: `${NAME} 2차진료의뢰`,
 };
 
 export default function OperationPage() {
@@ -15,8 +17,8 @@ export default function OperationPage() {
     <main>
       <Banner
         image={vetBanner}
-        upperRoute="전문 진료"
-        subRoute="진료 의뢰"
+        upperRoute="특성화센터"
+        subRoute="2차 진료 의뢰"
         subMenus={EXPERTY_SUBMENUS}
       />
 

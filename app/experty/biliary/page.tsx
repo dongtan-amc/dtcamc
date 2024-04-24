@@ -1,21 +1,22 @@
 import Banner from "@/components/common/banner";
-import Container from "@/components/common/container";
 import { EXPERTY_SUBMENUS } from "@/constants/nav-menues";
-import vetBanner from "@/public/photo/consulting-room.jpeg";
+import exprtyBanner from "@/public/photo/operation-room.jpeg";
 import { Metadata } from "next";
 import Biliary from "./biliary";
+import { NAME } from "@/constants/general-info";
 
 export const metadata: Metadata = {
-  title: "수술센터",
+  title: "간담도 수술센터",
+  description: `${NAME} 간담도 수술센터`,
 };
 
 export default function BiliaryPage() {
   return (
     <main>
       <Banner
-        image={vetBanner}
-        upperRoute="전문 진료"
-        subRoute="수술 센터"
+        image={exprtyBanner}
+        upperRoute="특성화센터"
+        subRoute="간담도 수술센터"
         subMenus={EXPERTY_SUBMENUS}
       />
 
