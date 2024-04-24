@@ -29,5 +29,5 @@ export default function SingleNewsPage({
 }: {
   params: { slug: string };
 }) {
-  return <Post filePath="markdown/news" slug={slug} route="news" />;
+  return <Post folderPath="markdown/news/" slug={slug} route="news" />;
 }

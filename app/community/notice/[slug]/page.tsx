@@ -29,5 +29,5 @@ export default function SingleNoticePage({
 }: {
   params: { slug: string };
 }) {
-  return <Post filePath="markdown/notice" slug={slug} route="notice" />;
+  return <Post folderPath="markdown/notice/" slug={slug} route="notice" />;
 }

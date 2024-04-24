@@ -1,4 +1,4 @@
-import { type ClassValue, clsx } from "clsx";
+import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
@@ -8,21 +8,8 @@ export function cn(...inputs: ClassValue[]) {
 import fs from "fs";
 import matter from "gray-matter";
 
-export const getPostsFileNames = (folderPath: string): string[] => {
-  const files = fs.readdirSync(folderPath);
-  const markdowns = files.filter((file) => file.endsWith(".md"));
-  const slugs = markdowns.map((file) => file.replace(".md", ""));
-
-  return slugs;
-};
-
-export const getPostContents = (slug: string, folderPath: string) => {
-  const file = `${folderPath}/${slug}.md`;
-  const content = fs.readFileSync(file, "utf-8");
-  const matterResult = matter(content);
-  return matterResult;
-};
-
+// 해당 경로에 있는 포스트들의 정보를 추출
+// 포스트들의 slug 배열 추출할때 사용
 export const getPostsMetadata = (folderPath: string) => {
   const files = fs.readdirSync(folderPath);
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
@@ -43,18 +30,13 @@ export const getPostsMetadata = (folderPath: string) => {
   return postsMetadata;
 };
 
-export const getPostMetadata = (slug: string, folderPath: string) => {
-  const files = fs.readdirSync(folderPath);
+//  개별 포스트 내용 추출
+export const getPostContents = (slug: string, folderPath: string) => {
+  const file = `${folderPath}/${slug}.md`;
 
-  const fileContents = fs.readFileSync(`${folderPath}/${slug}.md`, "utf-8");
+  const content = fs.readFileSync(file, "utf-8");
 
-  const {
-    data: { title, date, author },
-  } = matter(fileContents);
+  const matterResult = matter(content);
 
-  return {
-    title,
-    date,
-    author,
-  };
+  return matterResult;
 };
