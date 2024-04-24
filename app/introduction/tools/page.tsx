@@ -15,7 +15,7 @@ export default function ToolsPage() {
     <main>
       <Banner
         image={vetBanner}
-        upperRoute="병원 소개"
+        upperRoute="병원소개"
         subRoute="장비 소개"
         subMenus={INTRODUCTION_MENUS}
       />

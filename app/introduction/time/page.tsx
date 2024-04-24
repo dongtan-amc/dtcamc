@@ -15,7 +15,7 @@ export default function TimePage() {
     <main>
       <Banner
         image={vetBanner}
-        upperRoute="병원 소개"
+        upperRoute="병원소개"
         subRoute="진료시간 안내"
         subMenus={INTRODUCTION_MENUS}
       />

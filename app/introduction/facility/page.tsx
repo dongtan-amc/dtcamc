@@ -18,7 +18,7 @@ export default function FacilityPage() {
     <main>
       <Banner
         image={consulting2}
-        upperRoute="병원 소개"
+        upperRoute="병원소개"
         subRoute="시설 소개"
         subMenus={INTRODUCTION_MENUS}
       />

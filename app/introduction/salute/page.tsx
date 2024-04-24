@@ -4,9 +4,11 @@ import { INTRODUCTION_MENUS } from "@/constants/nav-menues";
 import saluteBanner from "@/public/photo/entrance.jpeg";
 import { Metadata } from "next";
 import SaluteCopy from "./salute-copy";
+import { NAME } from "@/constants/general-info";
 
 export const metadata: Metadata = {
   title: "인사말",
+  description: `${NAME} 인사말`,
 };
 
 export default function SalutePage() {
@@ -14,7 +16,7 @@ export default function SalutePage() {
     <main>
       <Banner
         image={saluteBanner}
-        upperRoute="병원 소개"
+        upperRoute="병원소개"
         subRoute="인사말"
         subMenus={INTRODUCTION_MENUS}
       />

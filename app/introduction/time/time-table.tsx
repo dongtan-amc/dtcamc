@@ -84,7 +84,8 @@ export default function TimeTable() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-4 lg:gap-16">
+      {/* 미용 시간 안내 */}
+      {/* <div className="flex flex-col lg:flex-row gap-4 lg:gap-16">
         <h2 className="shrink-0 text-xl font-bold text-olive-drab-600">
           미용시간 안내
         </h2>
@@ -119,7 +120,7 @@ export default function TimeTable() {
             </TableBody>
           </Table>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

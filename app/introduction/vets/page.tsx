@@ -16,7 +16,7 @@ export default function VetsPage() {
     <main>
       <Banner
         image={vetBanner}
-        upperRoute="병원 소개"
+        upperRoute="병원소개"
         subRoute="수의사 소개"
         subMenus={INTRODUCTION_MENUS}
       />
