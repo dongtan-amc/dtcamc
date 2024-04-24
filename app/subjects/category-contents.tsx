@@ -20,7 +20,7 @@ export default function CategoryContents({
 
   return (
     <div className="flex flex-col lg:flex-row p-5 lg:p-10 overflow-hidden">
-      <h2 className="text-xl font-bold shrink-0 text-primary lg:w-1/3 pb-2">
+      <h2 className="text-xl font-bold shrink-0 text-primary lg:w-1/5 pb-2">
         {categoryName}
       </h2>
 

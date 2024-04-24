@@ -6,21 +6,21 @@ import { Metadata } from "next";
 import Categories from "../categories";
 
 export const metadata: Metadata = {
-  title: "치과",
+  title: "안과 & 치과",
 };
 
-export default function DentalPage() {
+export default function EyeDentalPage() {
   return (
     <main>
       <Banner
         image={vetBanner}
         upperRoute="진료 안내"
-        subRoute="치과"
+        subRoute="안과 & 치과"
         subMenus={SUBJECTS_SUBMENUS}
       />
 
       <Container>
-        <Categories subject="치과" />
+        <Categories subject="안과 & 치과" />
       </Container>
     </main>
   );

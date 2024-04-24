@@ -20,7 +20,7 @@ export default function SurgeryPage() {
       />
 
       <Container>
-        <Categories subject="외과" />
+        <Categories subject="일반외과" />
       </Container>
     </main>
   );

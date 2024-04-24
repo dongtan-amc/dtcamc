@@ -14,6 +14,16 @@ import catVaccine from "@/public/subjects/vaccine-cat.jpg";
 import heartworm from "@/public/subjects/heartworm.png";
 import tick from "@/public/subjects/tick.png";
 
+import san from "@/public/subjects/san.png";
+import intestinalsurgery from "@/public/subjects/intestinalsurgery.png";
+import hepaticsur from "@/public/subjects/hepaticsur.png";
+import urinarySur from "@/public/subjects/urinary-sur.png";
+import headSur from "@/public/subjects/head-sur.png";
+import cancer from "@/public/subjects/cancer.png";
+import herniaSur from "@/public/subjects/hernia-sur.png";
+
+import dental from "@/public/subjects/dental.png";
+
 import dummy from "@/public/vets/dummy.png";
 
 export const SUBJECTS_SUBMENUS = [
@@ -190,16 +200,92 @@ export const SUBJECTS_SUBMENUS = [
   },
   {
     upperRoute: "/subjects",
-    label: "외과",
+    label: "일반외과",
     route: "/surgery",
     contents: [
       {
-        categoryName: "준비중",
+        categoryName: "산과",
+        image: san,
+        imageDescription: "자궁 종양",
+        intro: "산과는 주로 암컷의 생식기와 관련 있습니다.",
+        description:
+          "추후 발생 가능한 생식기계 관련 질환을 예방하기 위해서 중성화 수술을 진행합니다. 중성화를 진행하지 않은 암컷에서는 추후 유선 절제술, 자궁 축농증 수술 등을 진행하고 있으며, 수컷의 경우, 전립샘 수술, 포경 감돈 수술 등을 진행하고 있습니다.",
+        tags: ["중성화", "제왕절개", "유선종양", "난소종양", "자궁축농증"],
+      },
+      {
+        categoryName: "소화기 외과",
+        image: intestinalsurgery,
+        imageDescription: "장내 이물",
+        intro: "소화장기와 관련된 수술을 진행합니다.",
+        description:
+          "소화기 질환은 보통 구토나 설사, 식욕부진과 같은 임상 증상이 나타나는데, 이런 증상들이 소화기의 물리적 폐색에 의해서 발생하는 경우 수술적 교정이 필요합니다. 식도, 위, 장내 이물이 존재하는 경우, 소화기 (식도, 위, 장) 절개 수술, 장 문합술을 진행 합니다. 또한, 소화기의 구조적인 변화에 의해서 위 확장 염전 증후군(GDV), 장중첩 등 수술을 필요로 하는 질환에서 신속한 진단 및 응급 수술을 실시하고 있습니다.",
+        tags: ["이물제거수술", "장중첩", "장폐색", "장천공"],
+      },
+      {
+        categoryName: "간담도 외과",
+        image: hepaticsur,
+        imageDescription: "담낭점액종",
+        intro:
+          "간의 이상 소견 혹은 종양 의심 소견이 있는 경우, 조직 검사 목적의 간 생검 및 절제 수술을 진행하고 있습니다",
+        description:
+          "또한, 담낭의 파열 및 담낭점액종, 담석, 담도 폐색과 같은 질환에서 담낭 수술을 진행하고 있으며, 선천적 간혈관 기형 질환인 전신문맥성 단락(PSS)에 대한 수술도 진행하고 있습니다.",
+        tags: ["담낭", "간종양", "PSS", "담석"],
+      },
+      {
+        categoryName: "비뇨기 외과",
+        image: urinarySur,
+        imageDescription: "방광결석",
+        intro: "비뇨기에 발생하는 문제를 수술로 해결합니다.",
+        description:
+          "방광, 요도의 결석 뿐 아니라 신장과 요관의 결석을 수술적 방법으로 제거하고, 고양이에서 요관의 절개가 힘들 경우 SUB (피하 요관 우회술) 수술 방법을 진행하고 있습니다. 농성·종양성 변화에 의해 기능을 상실한 신장에 대해 신장 적출술을 진행하고 있습니다. 또한, 내과적으로 관리되지 않는 고양이 하부요로기폐색(FIC) 환자 혹은 요도의 선천적 이상이 있는 환자에서 요도루 조성술 실시하여, 새로운 배뇨 통로를 확보해줍니다.",
+        tags: ["수신증", "방광결석", "FLUTD", "FIC", "SUB", "요관결석"],
+      },
+      {
+        categoryName: "두경부 외과",
+        image: headSur,
+        imageDescription: "뇌수두증",
+        intro: "머리와 목에서 발생할 수 있는 문제를 수술로써 해결합니다.",
+        description:
+          "본 원의 두경부 외과 진료에는 선천성 기형, 기도 및 식도 질환, 누공 및 낭종, 림프절 감염, 안면 외상 및 선천성 기형을 최신 수술 기법과 고해상도 영상 진단으로 가장 효과적이고 안전한 치료방법을 제공하기 위해 노력하고 있습니다.",
+        tags: ["누공", "림프절 감염", "안면외상", "뇌수두증", "뇌종양", "AAI"],
+      },
+      {
+        categoryName: "흉부 외과",
         image: dummy,
-        imageDescription: "준비중",
-        intro: "준비중",
-        description: "준비중",
-        tags: ["준비중"],
+        imageDescription: "",
+        intro: "흉부 질환은 정확한 진단과 빠른 치료가 중요한 분야로",
+        description:
+          "본 원에서는 최고 사양의 영상 장비를 통해 PDA 등의 선천적 질환부터 심장, 폐 종양, 교상이나 교통사고에 의한 흉벽 손상시  응급 수술과 더불어 안전한 마취를 통해 회복을 시키고 있습니다.",
+        tags: ["PDA", "심장", "폐종양", "교상", "무기폐"],
+      },
+      {
+        categoryName: "종양 외과",
+        image: cancer,
+        imageDescription: "종양제거수술",
+        intro:
+          "최근 수의학의 발전에 의해 반려 동물의 수명이 연장됨에 따라 종양환자의 비율이 높아지고 있습니다.",
+        description:
+          "종양외과에서는 빠른 진단과 정확한 종양 수술로 환자의 생명 연장 뿐 아니라 삶의 질을 높여주고 있습니다. 종양 수술은 조직의 침습도와 해부학적인 위치에 따라 수술의 난이도가 결정되고, 주로 노령 환자들이 대상인 만큼 섬세한 마취 모니터링이 필요합니다. 또한 최근에 도입한 64채널 CT를 통하여 종양의 범위 및 전이 소견 등을 정확히 진단하여 종양 수술을 진행하고 있습니다.",
+        tags: ["종양수술", "암세포", "노령환자", "CT"],
+      },
+      {
+        categoryName: "탈장 교정",
+        image: herniaSur,
+        imageDescription: "탈장 교정 수술",
+        intro: "선천적 이상 혹은 근육의 퇴행 변화로 약해져서 발생하는",
+        description:
+          "배꼽 탈장, 서혜부 탈장, 회음 탈장, 열공 탈장, 심낭-횡격막 탈장 (PPDH)의 교정술을 실시합니다. 탈장 부위가 넓은 경우 의료용 mesh를 이용하여 탈장 교정 수술을 진행 합니다.",
+        tags: ["배꼽탈장", "서혜부탈장", "탈장"],
+      },
+      {
+        categoryName: "신경 외과",
+        image: dummy,
+        imageDescription: "",
+        intro:
+          "일반적으로 신경외과 분야에서는 정확한 진단과 치료가 중요합니다.",
+        description:
+          "목, 허리 디스크 또는 선천적 질환으로 인한 증상시 본 원에서는 최고 사양의 수술기구를 통해 최단시간에 수술을 목표로 진행하고 있습니다.",
+        tags: ["배꼽탈장", "서혜부탈장", "탈장"],
       },
     ],
   },
@@ -221,31 +307,26 @@ export const SUBJECTS_SUBMENUS = [
 
   {
     upperRoute: "/subjects",
-    label: "안과",
-    route: "/eye",
+    label: "안과 & 치과",
+    route: "/eye-dental",
     contents: [
       {
-        categoryName: "준비중",
+        categoryName: "안과",
         image: dummy,
-        imageDescription: "준비중",
-        intro: "준비중",
-        description: "준비중",
-        tags: ["준비중"],
+        imageDescription: "",
+        intro: "반려동물의 안과 질환은 기본적으로",
+        description:
+          "각막궤양, 녹내장, 백내장 등의 질환을 포함한 본원에서는 안과 전문 수의사의 정확한 진단으로 최적의 치료를 목표로 진행하고 있습니다.",
+        tags: ["각막궤양", "녹내장", "백내장"],
       },
-    ],
-  },
-  {
-    upperRoute: "/subjects",
-    label: "치과",
-    route: "/dental",
-    contents: [
       {
-        categoryName: "준비중",
-        image: dummy,
-        imageDescription: "준비중",
-        intro: "준비중",
-        description: "준비중",
-        tags: ["준비중"],
+        categoryName: "치과",
+        image: dental,
+        imageDescription: "스케일링 및 발치",
+        intro: "치과 질환의 경우",
+        description:
+          "구강 상태의 전반적으로 확인하여 내과적 치료와 스케일링, 발치 등을 진행하여 환자에게 가장 효능적인 치료를 제공하고 있습니다.",
+        tags: ["스케일링", "구내염", "발치", "구강종양"],
       },
     ],
   },
@@ -255,12 +336,13 @@ export const SUBJECTS_SUBMENUS = [
     route: "/emergency",
     contents: [
       {
-        categoryName: "준비중",
+        categoryName: "응급의학과",
         image: dummy,
-        imageDescription: "준비중",
-        intro: "준비중",
-        description: "준비중",
-        tags: ["준비중"],
+        imageDescription: "",
+        intro: "사람과 달리 수의학에서는",
+        description:
+          "응급환자와 중환자를 모두를 포함하는 개념으로 내원시 분과진료를 통해 석박사 출신의 수의사들이 원인을 정확히 파악하고 수준높은 진료와 수술을 약속합니다. ",
+        tags: ["쇼크", "응급처치", "CPCR"],
       },
     ],
   },
