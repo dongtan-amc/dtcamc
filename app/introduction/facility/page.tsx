@@ -6,9 +6,11 @@ import { INTRODUCTION_MENUS } from "@/constants/nav-menues";
 import consulting2 from "@/public/photo/consulting-room1.jpeg";
 import { Metadata } from "next";
 import FacilitySection from "./facility-section";
+import { NAME } from "@/constants/general-info";
 
 export const metadata: Metadata = {
   title: "시설소개",
+  description: `${NAME} 시설소개`,
 };
 
 export default function FacilityPage() {
