@@ -14,7 +14,7 @@ export default function PreventivePage() {
     <main>
       <Banner
         image={vetBanner}
-        upperRoute="진료 과목"
+        upperRoute="진료 안내"
         subRoute="예방의학과"
         subMenus={SUBJECTS_SUBMENUS}
       />

@@ -14,7 +14,7 @@ export default function EmergencyPage() {
     <main>
       <Banner
         image={vetBanner}
-        upperRoute="진료 과목"
+        upperRoute="진료 안내"
         subRoute="응급의학과"
         subMenus={SUBJECTS_SUBMENUS}
       />

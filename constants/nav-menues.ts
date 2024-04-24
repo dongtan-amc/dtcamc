@@ -119,7 +119,7 @@ export const NAV_MENUS = [
     submenu: EXPERTY_SUBMENUS,
   },
   {
-    label: "진료안내",
+    label: "진료 안내",
     route: "/subjects",
     submenu: SUBJECTS_SUBMENUS,
   },

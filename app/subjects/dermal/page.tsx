@@ -14,7 +14,7 @@ export default function DermalPage() {
     <main>
       <Banner
         image={vetBanner}
-        upperRoute="진료 과목"
+        upperRoute="진료 안내"
         subRoute="피부과"
         subMenus={SUBJECTS_SUBMENUS}
       />

@@ -14,7 +14,7 @@ export default function DentalPage() {
     <main>
       <Banner
         image={vetBanner}
-        upperRoute="진료 과목"
+        upperRoute="진료 안내"
         subRoute="치과"
         subMenus={SUBJECTS_SUBMENUS}
       />

@@ -14,7 +14,7 @@ export default function RadiologyPage() {
     <main>
       <Banner
         image={vetBanner}
-        upperRoute="진료 과목"
+        upperRoute="진료 안내"
         subRoute="영상의학과"
         subMenus={SUBJECTS_SUBMENUS}
       />

@@ -96,7 +96,7 @@ export const COMMUNITY_SUBCONTENTS = [
 ];
 export const MAP_SUBCONTENTS = [
   {
-    title: "진료 과목",
+    title: "진료 안내",
     description: `${NAME} 진료과목을 소개합니다.`,
     Icon: FaList,
     href: "/subjects/internal",
