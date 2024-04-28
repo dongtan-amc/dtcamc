@@ -24,6 +24,7 @@ export default function Footer() {
             <h2 className="pb-2 font-bold">{NAME}</h2>
             <p className="pb-2">
               {ADDRESS} | 대표자 : {BOSS} | 사업자등록번호 : {BUSINESS_NUMBER} |
+              <br />
               Email : {EMAIL}
             </p>
             <p>{COPY_RIGHTS}</p>

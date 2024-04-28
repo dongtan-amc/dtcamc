@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
     const { data, error } = await resend.emails.send({
       from: `Acme <noreply@resend.dev>`,
       // TODO: use real email
-      to: "junsgk@gmail.com",
+      to: "dtctamc@gmail.com",
       subject: `[DTCT 채용] ${area} / ${name}`,
       attachments: attachments.map((file: any) => ({
         filename: file.filename,
