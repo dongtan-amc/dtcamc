@@ -40,10 +40,12 @@ export default function ProfileSummary({
       </div>
 
       <div className="pt-2">
-        <p className="text-olive-drab-600 pb-1 font-bold">약력</p>
+        <p className="text-olive-drab-600 font-bold text-lg pb-2">약력</p>
         <ul className="space-y-1 text-sm">
           {history.map((his) => (
-            <li key={his}>- {his}</li>
+            <li key={his} className="text-lg">
+              - {his}
+            </li>
           ))}
         </ul>
       </div>

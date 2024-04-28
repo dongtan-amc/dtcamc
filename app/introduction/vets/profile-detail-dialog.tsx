@@ -54,7 +54,9 @@ export default function ProfileDetailModal({
               <p className="text-olive-drab-600 text-lg pb-1 font-bold">약력</p>
               <ul className="space-y-2 text-sm">
                 {history.map((his) => (
-                  <li key={his}>- {his}</li>
+                  <li key={his} className="text-lg">
+                    - {his}
+                  </li>
                 ))}
               </ul>
             </div>
@@ -64,7 +66,9 @@ export default function ProfileDetailModal({
               </p>
               <ul className="space-y-2 text-sm">
                 {expert.map((his) => (
-                  <li key={his}>- {his}</li>
+                  <li key={his} className="text-lg">
+                    - {his}
+                  </li>
                 ))}
               </ul>
             </div>
@@ -74,7 +78,9 @@ export default function ProfileDetailModal({
               </p>
               <ul className="space-y-2 text-sm">
                 {education.map((his) => (
-                  <li key={his}>- {his}</li>
+                  <li key={his} className="text-lg">
+                    - {his}
+                  </li>
                 ))}
               </ul>
             </div>
