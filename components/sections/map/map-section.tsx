@@ -10,6 +10,7 @@ export default function MapSection() {
         center={{ lat: 37.209311, lng: 127.061813 }}
         style={{ width: "100%", height: "400px" }} // 지도 크기
         level={3}
+        scrollwheel={false}
       >
         <MapMarker position={{ lat: 37.209311, lng: 127.061813 }}>
           <p className="text-[11px] pt-1.5 text-center pl-1">{NAME}</p>

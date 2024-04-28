@@ -13,10 +13,10 @@ export default function MainLogo() {
         priority
       />
       <div>
-        <p className="text-primary text-lg font-bold leading-5">
+        <p className="text-primary text-xl font-bold leading-5">
           24시동탄시티 동물의료센터
         </p>
-        <p className="text-golden-dream-600 text-xs tracking-wide">
+        <p className="text-golden-dream-600 text-sm">
           Dongtan City Animal Medical Center
         </p>
       </div>

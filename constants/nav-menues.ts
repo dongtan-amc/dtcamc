@@ -80,7 +80,7 @@ export const INTRODUCTION_MENUS = [
     route: "/salute",
   },
   {
-    label: "진료시간 안내",
+    label: "진료 안내",
     upperRoute: "/introduction",
     route: "/time",
   },
@@ -89,21 +89,21 @@ export const INTRODUCTION_MENUS = [
     upperRoute: "/introduction",
     route: "/vets",
   },
+  // {
+  //   label: "시설 소개",
+  //   upperRoute: "/introduction",
+  //   route: "/facility",
+  // },
   {
-    label: "시설 소개",
-    upperRoute: "/introduction",
-    route: "/facility",
-  },
-  {
-    label: "장비 소개",
+    label: "보유 장비",
     upperRoute: "/introduction",
     route: "/tools",
   },
-  {
-    label: "오시는 길",
-    upperRoute: "/introduction",
-    route: "/map",
-  },
+  // {
+  //   label: "오시는 길",
+  //   upperRoute: "/introduction",
+  //   route: "/map",
+  // },
 ];
 
 export const NAV_MENUS = [
@@ -118,16 +118,16 @@ export const NAV_MENUS = [
     route: "/experty",
     submenu: EXPERTY_SUBMENUS,
   },
-  {
-    label: "진료 안내",
-    route: "/subjects",
-    submenu: SUBJECTS_SUBMENUS,
-  },
-  {
-    label: "커뮤니티",
-    route: "/community",
-    submenu: COMMUNITY_SUBMENUS,
-  },
+  // {
+  //   label: "진료 안내",
+  //   route: "/subjects",
+  //   submenu: SUBJECTS_SUBMENUS,
+  // },
+  // {
+  //   label: "커뮤니티",
+  //   route: "/community",
+  //   submenu: COMMUNITY_SUBMENUS,
+  // },
   {
     label: "채용",
     route: "/employment",

@@ -12,7 +12,7 @@ import { GROOMING_IMAGES } from "@/constants/grooming-images";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import CarouselIndex from "../introduction/facility/carousel-index";
+import CarouselIndex from "../introduction/facility(x)/carousel-index";
 
 export default function GroomingCarousel() {
   const [api, setApi] = useState<CarouselApi>();

@@ -46,7 +46,7 @@ export default function Banner({
           </div>
         )}
       </div>
-      <BannerSubnavbar subMenus={subMenus} />
+      {/* <BannerSubnavbar subMenus={subMenus} /> */}
     </div>
   );
 }

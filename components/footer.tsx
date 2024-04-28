@@ -16,11 +16,11 @@ export default function Footer() {
     <footer className="bg-olive-drab-950 text-olive-drab-50 py-8 sm:pb-24 lg:pb-10">
       <Container>
         <div className="flex flex-col sm:flex-row sm:items-center gap-10 h-full justify-between">
-          <div className="w-24 h-24 bg-white mx-auto flex items-center justify-center shrink-0">
-            <Image alt="logo" src={logo} width={80} height={80} unoptimized />
+          <div className="w-48 h-w-48 bg-white mx-auto flex items-center justify-center shrink-0">
+            <Image alt="logo" src={logo} width={160} height={160} unoptimized />
           </div>
 
-          <div className="hidden sm:block flex-1 text-xs">
+          <div className="hidden sm:block flex-1 text-lg">
             <h2 className="pb-2 font-bold">{NAME}</h2>
             <p className="pb-2">
               {ADDRESS} | 대표자 : {BOSS} | 사업자등록번호 : {BUSINESS_NUMBER} |
@@ -39,7 +39,7 @@ export default function Footer() {
             <p>{COPY_RIGHTS}</p>
           </div>
 
-          <div className="text-xl font-bold text-center pb-10 sm:pb-0">
+          <div className="text-2xl font-bold text-center pb-10 sm:pb-0">
             {PHONE}
           </div>
         </div>

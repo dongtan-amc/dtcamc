@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -19,14 +18,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
-import {
-  AREA,
-  CAREER,
-  MAJOR,
-  employmentFormSchema,
-} from "@/constants/employment";
+import { AREA, employmentFormSchema } from "@/constants/employment";
 import emailLottie from "@/public/email-lottie.json";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
@@ -44,10 +37,8 @@ export default function EmailForm() {
       name: "",
       email: "",
       area: undefined,
-      major: undefined,
-      career: undefined,
-      contents: "",
       phone: undefined,
+      attachments: undefined,
     },
   });
 
@@ -114,7 +105,7 @@ export default function EmailForm() {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>이메일</FormLabel>
+                  <FormLabel>이메일 주소</FormLabel>
                   <FormControl>
                     <Input placeholder="dtct@example.com" {...field} />
                   </FormControl>
@@ -149,60 +140,6 @@ export default function EmailForm() {
                 </FormItem>
               )}
             />
-            <FormField
-              control={form.control}
-              name="major"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>전공</FormLabel>
-                  <Select
-                    onValueChange={field.onChange}
-                    defaultValue={field.value}
-                  >
-                    <FormControl>
-                      <SelectTrigger>
-                        <SelectValue placeholder="학위자만 선택" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent>
-                      {MAJOR.map((element) => (
-                        <SelectItem value={element} key={element}>
-                          {element}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="career"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>경력</FormLabel>
-                  <Select
-                    onValueChange={field.onChange}
-                    defaultValue={field.value}
-                  >
-                    <FormControl>
-                      <SelectTrigger>
-                        <SelectValue placeholder="경력" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent>
-                      {CAREER.map((element) => (
-                        <SelectItem value={element} key={element}>
-                          {element}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
 
             <FormField
               control={form.control}
@@ -220,25 +157,36 @@ export default function EmailForm() {
 
             <FormField
               control={form.control}
-              name="contents"
+              name="attachments"
               render={({ field }) => (
                 <FormItem className="col-span-2">
-                  <FormLabel>이력</FormLabel>
+                  <FormLabel>이력서 첨부</FormLabel>
                   <FormControl>
-                    <Textarea
-                      rows={10}
-                      placeholder="안녕하세요..."
-                      className="resize-none"
-                      {...field}
+                    <Input
+                      type="file"
+                      multiple
+                      onChange={(e) => {
+                        const files = e.target.files;
+                        if (files) {
+                          Promise.all(
+                            Array.from(files).map(async (file) => ({
+                              filename: file.name,
+                              content: Buffer.from(
+                                await file.arrayBuffer()
+                              ).toString("base64"),
+                            }))
+                          ).then((filesArray) => {
+                            field.onChange(filesArray);
+                          });
+                        }
+                      }}
                     />
                   </FormControl>
-                  <FormDescription>
-                    이력을 자유형식으로 작성해주세요.
-                  </FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
             />
+
             <Button type="submit" className="col-span-2" disabled={isSending}>
               {isSending ? "전송중..." : "전송"}
             </Button>

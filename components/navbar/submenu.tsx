@@ -22,14 +22,14 @@ export default function Submenu({
 
   return (
     <div
-      className="relative cursor-pointer group z-50 w-[150px] h-24 flex justify-center items-center"
+      className="relative cursor-pointer group z-50 w-[120px] h-24 flex justify-center items-center"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div
         className={cn(
           currentPage && "text-primary",
-          "hover:text-primary transition group-hover:text-primary text-center font-bold"
+          "hover:text-primary transition group-hover:text-primary text-center font-bold text-lg"
         )}
         onClick={() => push(route)}
       >
@@ -37,7 +37,7 @@ export default function Submenu({
       </div>
       <ul
         className={cn(
-          "absolute bg-white flex flex-col w-[150px] shadow-2xl border top-[88px] transition-opacity duration-300",
+          "absolute bg-white flex flex-col w-[120px] shadow-2xl border top-[88px] transition-opacity duration-300",
           isHovered
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -48,7 +48,7 @@ export default function Submenu({
           <li key={menu.label}>
             <Link
               href={`${mainRoute}${menu.route}`}
-              className="block border p-4 hover:bg-olive-drab-600 hover:text-white text-sm w-[150px] text-center"
+              className="block border p-4 hover:bg-olive-drab-600 hover:text-white text-sm w-[120px] text-center"
             >
               {menu.label}
             </Link>

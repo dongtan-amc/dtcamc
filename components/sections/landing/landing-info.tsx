@@ -13,18 +13,18 @@ export default function LandingInfo() {
     <Container>
       <div className="hidden lg:flex h-[120px] justify-evenly items-center left-[calc(50%-640px)] py-10 rounded-t-xl">
         <div className="flex gap-4 items-center">
-          <div className="text-primary flex items-center text-2xl gap-2  tracking-tight">
+          <div className="text-primary flex items-center text-3xl gap-2  tracking-tight">
             <FaPhoneAlt />
             <p className="font-bold">{PHONE}</p>
           </div>
-          <div>365일 연중무휴</div>
+          <div className="text-xl">365일 연중무휴</div>
         </div>
 
         <Separator orientation="vertical" />
 
         <Link className="flex items-center gap-3" href="/community/case">
           <Image alt="naver blog" src={naverBlog} width={32} unoptimized />
-          <p>수술&진료 사례</p>
+          <p className="text-xl">수술&진료 사례</p>
         </Link>
 
         <Separator orientation="vertical" />
@@ -36,14 +36,14 @@ export default function LandingInfo() {
           rel="noopener noreferrer"
         >
           <Image alt="kako" src={kakao} width={32} unoptimized />
-          <p>카카오톡 채널</p>
+          <p className="text-xl">카카오톡 채널</p>
         </Link>
 
         <Separator orientation="vertical" />
 
-        <Link className="flex items-center gap-1" href="/map">
+        <Link className="flex items-center gap-1" href="/introduction/time">
           <Image alt="map" src={map} width={44} unoptimized />
-          <p>오시는 길</p>
+          <p className="text-xl">오시는 길</p>
         </Link>
       </div>
     </Container>

@@ -1,17 +1,11 @@
 import { TOOLS } from "@/constants/tools";
 import Image from "next/image";
-import { useMemo } from "react";
 
-export default function ToolsContents({ category }: { category: string }) {
-  const tools = useMemo(
-    () => TOOLS.filter((tool) => tool.category === category)[0].tools,
-    [category]
-  );
-
+export default function ToolsContents() {
   return (
     <div className="pt-8">
       <ul className="grid md:grid-cols-2 gap-16">
-        {tools.map((tool) => (
+        {TOOLS.map((tool) => (
           <li
             key={tool.name}
             className="flex flex-col items-center md:items-start md:flex-row "

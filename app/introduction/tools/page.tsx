@@ -8,8 +8,8 @@ import Tools from "./tools";
 import { NAME } from "@/constants/general-info";
 
 export const metadata: Metadata = {
-  title: "장비소개",
-  description: `${NAME} 장비소개`,
+  title: "보유 장비",
+  description: `${NAME} 보유 장비`,
 };
 
 export default function ToolsPage() {
@@ -18,7 +18,7 @@ export default function ToolsPage() {
       <Banner
         image={vetBanner}
         upperRoute="병원 소개"
-        subRoute="장비 소개"
+        subRoute="보유 장비"
         subMenus={INTRODUCTION_MENUS}
       />
 
