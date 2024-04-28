@@ -1,6 +1,6 @@
 import Container from "@/components/common/container";
 import { Separator } from "@/components/ui/separator";
-import { KAKAO, PHONE } from "@/constants/general-info";
+import { KAKAO, NAVER_BLOG, PHONE } from "@/constants/general-info";
 import kakao from "@/public/icons/kakao.svg";
 import map from "@/public/icons/map.png";
 import naverBlog from "@/public/icons/navar-blog.png";
@@ -22,7 +22,11 @@ export default function LandingInfo() {
 
         <Separator orientation="vertical" />
 
-        <Link className="flex items-center gap-3" href="/community/case">
+        <Link
+          className="flex items-center gap-3"
+          target="_blank"
+          href={NAVER_BLOG}
+        >
           <Image alt="naver blog" src={naverBlog} width={32} unoptimized />
           <p className="text-xl">수술&진료 사례</p>
         </Link>
