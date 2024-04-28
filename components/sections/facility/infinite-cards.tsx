@@ -11,14 +11,14 @@ export default function InfiniteCards() {
         <div className="absolute top-0 bottom-0 left-0 w-24 z-10 bg-gradient-to-r from-slate-50 to-transparent" />
 
         <div className="flex items-center mb-8">
-          <FacilityList list={INFINITE_IMAGES.top} duration={125} />
-          <FacilityList list={INFINITE_IMAGES.top} duration={125} />
-          <FacilityList list={INFINITE_IMAGES.top} duration={125} />
+          <FacilityList list={INFINITE_IMAGES.top} duration={0} />
+          <FacilityList list={INFINITE_IMAGES.top} duration={0} />
+          <FacilityList list={INFINITE_IMAGES.top} duration={0} />
         </div>
         <div className="flex items-center mb-4">
-          <FacilityList list={INFINITE_IMAGES.middle} duration={75} reverse />
-          <FacilityList list={INFINITE_IMAGES.middle} duration={75} reverse />
-          <FacilityList list={INFINITE_IMAGES.middle} duration={75} reverse />
+          <FacilityList list={INFINITE_IMAGES.middle} duration={0} reverse />
+          <FacilityList list={INFINITE_IMAGES.middle} duration={0} reverse />
+          <FacilityList list={INFINITE_IMAGES.middle} duration={0} reverse />
         </div>
 
         <div className="absolute top-0 bottom-0 right-0 w-24 z-10 bg-gradient-to-l from-slate-50 to-transparent" />

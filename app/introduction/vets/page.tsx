@@ -24,7 +24,7 @@ export default function VetsPage() {
       />
 
       <Container>
-        <ul className="grid grid-col-1 gap-10 pt-10 pb-12">
+        <ul className="grid grid-col-1 gap-20 pt-10 pb-12">
           {VETS.map((vet) => (
             <Vet key={vet.name} {...vet} />
           ))}

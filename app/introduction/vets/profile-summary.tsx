@@ -21,7 +21,7 @@ export default function ProfileSummary({
   subjects: string[];
 }) {
   return (
-    <div className="flex flex-col justify-between flex-1">
+    <div className="flex flex-col justify-between flex-1 p-5">
       <div className="flex items-center gap-2">
         <div className="text-xl font-bold flex justify-between items-center w-full">
           <p>
