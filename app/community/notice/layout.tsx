@@ -1,6 +1,3 @@
-import Banner from "@/components/common/banner";
-import { COMMUNITY_SUBMENUS } from "@/constants/sections";
-import noticeBanner from "@/public/unsplash/notice-banner.jpg";
 import React from "react";
 
 export default function NoticeLayout({
@@ -10,12 +7,12 @@ export default function NoticeLayout({
 }) {
   return (
     <div>
-      <Banner
+      {/* <Banner
         image={noticeBanner}
         upperRoute="커뮤니티"
         subRoute="공지사항"
         subMenus={COMMUNITY_SUBMENUS}
-      />
+      /> */}
       {children}
     </div>
   );

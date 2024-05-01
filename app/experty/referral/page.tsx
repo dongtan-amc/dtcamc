@@ -1,6 +1,5 @@
 import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
-import { EXPERTY_SUBMENUS } from "@/constants/sections";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
 import { Metadata } from "next";
 import ReferralInfos from "./referral-infos";
@@ -15,12 +14,12 @@ export const metadata: Metadata = {
 export default function OperationPage() {
   return (
     <main>
-      <Banner
+      {/* <Banner
         image={vetBanner}
         upperRoute="특성화 센터"
         subRoute="2차 진료 의뢰"
         subMenus={EXPERTY_SUBMENUS}
-      />
+      /> */}
 
       <Container>
         <ReferralInfos />

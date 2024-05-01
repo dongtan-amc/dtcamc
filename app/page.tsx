@@ -7,12 +7,14 @@ import IntroSection from "@/components/sections/intro/intro";
 import LandingSection from "@/components/sections/landing/landing";
 import OrthopedicSection from "@/components/sections/orthopedic/orthopedics";
 import RefferalSection from "@/components/sections/refferal/refferal";
+import SubjectSection from "@/components/sections/subject/subject";
 import ToolsSection from "@/components/sections/tools/tools";
 
 export default function Home() {
   return (
     <>
       <LandingSection />
+      <SubjectSection />
       <IntroSection />
       <InfoSection />
       <OrthopedicSection />

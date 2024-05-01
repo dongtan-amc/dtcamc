@@ -2,7 +2,6 @@ import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
 import SubBanner from "@/components/common/sub-banner";
 import { FACILITY_SECTIONS } from "@/constants/facilities";
-import { INTRODUCTION_MENUS } from "@/constants/sections";
 import consulting2 from "@/public/photo/consulting-room1.jpeg";
 import { Metadata } from "next";
 import FacilitySection from "./facility-section";
@@ -16,12 +15,12 @@ export const metadata: Metadata = {
 export default function FacilityPage() {
   return (
     <main>
-      <Banner
+      {/* <Banner
         image={consulting2}
         upperRoute="병원 소개"
         subRoute="시설 소개"
         subMenus={INTRODUCTION_MENUS}
-      />
+      /> */}
 
       <Container>
         <div className="space-y-10 pt-10 pb-12">

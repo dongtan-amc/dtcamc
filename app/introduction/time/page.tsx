@@ -2,7 +2,6 @@ import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
 import SubBanner from "@/components/common/sub-banner";
 import { NAME } from "@/constants/general-info";
-import { INTRODUCTION_MENUS } from "@/constants/sections";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
 import { Metadata } from "next";
 import GoogleMap from "./google-map";
@@ -17,12 +16,12 @@ export const metadata: Metadata = {
 export default function TimePage() {
   return (
     <main>
-      <Banner
+      {/* <Banner
         image={vetBanner}
         upperRoute="병원 소개"
         subRoute="진료 안내"
         subMenus={INTRODUCTION_MENUS}
-      />
+      /> */}
 
       <Container>
         <TimeTable />

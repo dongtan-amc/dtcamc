@@ -1,7 +1,6 @@
 import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
 import SubBanner from "@/components/common/sub-banner";
-import { INTRODUCTION_MENUS } from "@/constants/sections";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
 import { Metadata } from "next";
 import Tools from "./tools";
@@ -15,12 +14,12 @@ export const metadata: Metadata = {
 export default function ToolsPage() {
   return (
     <main>
-      <Banner
+      {/* <Banner
         image={vetBanner}
         upperRoute="병원 소개"
         subRoute="보유 장비"
         subMenus={INTRODUCTION_MENUS}
-      />
+      /> */}
 
       <Container>
         <Tools />

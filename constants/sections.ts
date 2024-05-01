@@ -13,7 +13,7 @@ export const SECTIONS = [
     hash: "#orthopedic",
   },
   {
-    sectionTitle: "간담도수슬클리닉",
+    sectionTitle: "간담도클리닉",
     hash: "#biliary",
   },
   {
@@ -21,11 +21,11 @@ export const SECTIONS = [
     hash: "#dialysis",
   },
   {
-    sectionTitle: "CT촬영클리닉",
+    sectionTitle: "CT클리닉",
     hash: "#ct",
   },
   {
-    sectionTitle: "2차진료의뢰",
+    sectionTitle: "2차진료",
     hash: "#refferal",
   },
   {

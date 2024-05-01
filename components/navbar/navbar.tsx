@@ -9,9 +9,37 @@ export default function Navbar() {
   const { isScrollTop } = useScrollPosition();
 
   return (
-    <header className="fixed w-full z-50">
+    <header
+      className="fixed w-full z-50"
+      style={
+        isScrollTop
+          ? {
+              backgroundColor: "transparent",
+              transition: "all ease-in-out 500ms",
+            }
+          : {
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              transition: "all ease-in-out 500ms",
+            }
+      }
+    >
       <Container>
-        <nav className="flex justify-between items-center py-10">
+        <nav
+          className="flex justify-between items-center"
+          style={
+            isScrollTop
+              ? {
+                  paddingTop: 32,
+                  paddingBottom: 32,
+                  transition: "all ease-in-out 200ms",
+                }
+              : {
+                  paddingTop: 12,
+                  paddingBottom: 12,
+                  transition: "all ease-in-out 200ms",
+                }
+          }
+        >
           <MainLogo />
 
           <Menu isScrollTop={isScrollTop} />
