@@ -1,5 +1,5 @@
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { NAV_MENUS } from "@/constants/nav-menues";
+import { NAV_MENUS } from "@/constants/sections";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { Button } from "../ui/button";
 import DrawerMenu from "./drawer-menu";

@@ -1,6 +1,6 @@
 import Banner from "@/components/common/banner";
 import SubBanner from "@/components/common/sub-banner";
-import { INTRODUCTION_MENUS } from "@/constants/nav-menues";
+import { INTRODUCTION_MENUS } from "@/constants/sections";
 import saluteBanner from "@/public/photo/entrance.jpeg";
 import { Metadata } from "next";
 import SaluteCopy from "./salute-copy";

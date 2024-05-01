@@ -2,7 +2,7 @@ import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
 import SubBanner from "@/components/common/sub-banner";
 import { FACILITY_SECTIONS } from "@/constants/facilities";
-import { INTRODUCTION_MENUS } from "@/constants/nav-menues";
+import { INTRODUCTION_MENUS } from "@/constants/sections";
 import consulting2 from "@/public/photo/consulting-room1.jpeg";
 import { Metadata } from "next";
 import FacilitySection from "./facility-section";

@@ -2,7 +2,7 @@ import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
 import NotReadyPage from "@/components/common/not-ready-page";
 import { NAME } from "@/constants/general-info";
-import { EXPERTY_SUBMENUS } from "@/constants/nav-menues";
+import { EXPERTY_SUBMENUS } from "@/constants/sections";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
 import { Metadata } from "next";
 

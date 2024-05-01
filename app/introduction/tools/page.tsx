@@ -1,7 +1,7 @@
 import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
 import SubBanner from "@/components/common/sub-banner";
-import { INTRODUCTION_MENUS } from "@/constants/nav-menues";
+import { INTRODUCTION_MENUS } from "@/constants/sections";
 import vetBanner from "@/public/photo/consulting-room.jpeg";
 import { Metadata } from "next";
 import Tools from "./tools";

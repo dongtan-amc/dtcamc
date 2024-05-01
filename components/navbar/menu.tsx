@@ -1,23 +1,19 @@
 "use client";
 
-import { NAV_MENUS } from "@/constants/nav-menues";
+import { SECTIONS } from "@/constants/sections";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Submenu from "./submenu";
 
 export default function Menu({ isScrollTop }: { isScrollTop: boolean }) {
   const path = usePathname();
 
   return (
-    <ul className="lg:flex items-center h-full hidden">
-      {NAV_MENUS.map((menu) => (
-        <li key={menu.label}>
-          <Submenu
-            isScrollTop={isScrollTop}
-            submenu={menu.submenu}
-            menuLabel={menu.label}
-            mainRoute={menu.route}
-            currentPage={menu.route === `/${path.split("/")[1]}`}
-          />
+    <ul className="flex divide-x-2">
+      {SECTIONS.map((section) => (
+        <li key={section.sectionTitle}>
+          <Link href={`/${section.hash}`} className="text-white text-xl px-4">
+            {section.sectionTitle}
+          </Link>
         </li>
       ))}
     </ul>

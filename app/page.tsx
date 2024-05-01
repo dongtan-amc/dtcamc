@@ -1,18 +1,27 @@
-import CommunitySection from "@/components/sections/community/community-seection";
-import FacilitySection from "@/components/sections/facility/facility-section";
-import Landing from "@/components/sections/landing/landing";
-import MapSection from "@/components/sections/map/map-section";
-import MoreSection from "@/components/sections/more/more-section";
+import BiliarySection from "@/components/sections/biliary/biliary";
+import CTSection from "@/components/sections/ct/ct";
+import DialysisSection from "@/components/sections/dialysis/dialysis";
+import EmploymentSection from "@/components/sections/employment/employment";
+import InfoSection from "@/components/sections/info/info";
+import IntroSection from "@/components/sections/intro/intro";
+import LandingSection from "@/components/sections/landing/landing";
+import OrthopedicSection from "@/components/sections/orthopedic/orthopedics";
+import RefferalSection from "@/components/sections/refferal/refferal";
+import ToolsSection from "@/components/sections/tools/tools";
 
 export default function Home() {
   return (
     <>
-      <Landing />
-      <MoreSection />
-      <FacilitySection />
-      {/* <SubjectSection /> */}
-      <CommunitySection />
-      <MapSection />
+      <LandingSection />
+      <IntroSection />
+      <InfoSection />
+      <OrthopedicSection />
+      <BiliarySection />
+      <DialysisSection />
+      <CTSection />
+      <RefferalSection />
+      <ToolsSection />
+      <EmploymentSection />
     </>
   );
 }

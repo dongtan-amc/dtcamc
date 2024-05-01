@@ -1,6 +1,6 @@
 import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
-import { COMMUNITY_SUBMENUS } from "@/constants/nav-menues";
+import { COMMUNITY_SUBMENUS } from "@/constants/sections";
 import caseBanner from "@/public/unsplash/case-banner.jpg";
 import { Metadata } from "next";
 import Cases from "./cases";

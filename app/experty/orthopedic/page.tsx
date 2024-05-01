@@ -1,5 +1,5 @@
 import Banner from "@/components/common/banner";
-import { EXPERTY_SUBMENUS } from "@/constants/nav-menues";
+import { EXPERTY_SUBMENUS } from "@/constants/sections";
 import operationBanner from "@/public/photo/operation-room1.jpeg";
 import Orthopedic from "./orthopedic";
 import { Metadata } from "next";

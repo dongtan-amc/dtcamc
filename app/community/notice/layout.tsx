@@ -1,5 +1,5 @@
 import Banner from "@/components/common/banner";
-import { COMMUNITY_SUBMENUS } from "@/constants/nav-menues";
+import { COMMUNITY_SUBMENUS } from "@/constants/sections";
 import noticeBanner from "@/public/unsplash/notice-banner.jpg";
 import React from "react";
 

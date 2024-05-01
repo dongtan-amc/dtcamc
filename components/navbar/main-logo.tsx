@@ -1,22 +1,20 @@
-import mainLogo from "@/public/main-logo.png";
+import mainLogoWhite from "@/public/main-logo-white.png";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function MainLogo() {
   return (
-    <Link href="/" className="flex gap-2 items-center">
+    <Link href="/#home" className="flex gap-2 items-center">
       <Image
         alt="logo"
-        src={mainLogo}
+        src={mainLogoWhite}
         unoptimized
-        className="h-10 w-auto"
+        className="h-16 w-auto"
         priority
       />
-      <div>
-        <p className="text-primary text-xl font-bold leading-5">
-          24시동탄시티 동물의료센터
-        </p>
-        <p className="text-golden-dream-600 text-sm">
+      <div className="text-white">
+        <p className="text-3xl font-bold">24시동탄시티 동물의료센터</p>
+        <p className="text-xl tracking-wide">
           Dongtan City Animal Medical Center
         </p>
       </div>
