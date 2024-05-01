@@ -29,7 +29,7 @@ export default function Submenu({
       <div
         className={cn(
           currentPage && "text-primary",
-          "hover:text-primary transition group-hover:text-primary text-center font-bold text-lg"
+          "hover:text-primary transition group-hover:text-primary text-center text-lg"
         )}
         onClick={() => push(route)}
       >

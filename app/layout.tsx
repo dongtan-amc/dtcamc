@@ -4,13 +4,10 @@ import Navbar from "@/components/navbar/navbar";
 import ScrollTopButton from "@/components/scroll-top-button";
 import { NAME } from "@/constants/general-info";
 import type { Metadata } from "next";
-import { Nanum_Gothic } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import { Toaster } from "@/components/ui/toaster";
-import FloatingInfos from "@/components/common/floating-infos(x)";
-
-const font = Nanum_Gothic({ subsets: ["latin"], weight: ["400", "700"] });
+import localFont from "next/font/local";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.dtctamc.com"),
@@ -67,6 +64,21 @@ export const metadata: Metadata = {
   },
 };
 
+const scdream = localFont({
+  src: [
+    {
+      path: "./SCDream4.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./SCDream7.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -74,7 +86,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" suppressHydrationWarning className="!scroll-smooth">
-      <body className={`${font.className} antialiased`}>
+      <body className={`${scdream.className} antialiased`}>
         {/* 카카오맵  */}
         <Script
           src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.KAKAO_APP_JS_KEY}&libraries=services,clusterer&autoload=false`}

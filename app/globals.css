@@ -7,10 +7,6 @@
   --primary-hover: #4a6427;
 }
 
-html {
-  scroll-padding-top: 92px;
-}
-
 @layer base {
   :root {
     /* CSS: .bg-gradient { background: var(--gradient) } */
@@ -55,10 +51,6 @@ html {
   body {
     @apply bg-background text-foreground;
   }
-}
-
-html {
-  line-height: 1;
 }
 
 ::-webkit-scrollbar {
