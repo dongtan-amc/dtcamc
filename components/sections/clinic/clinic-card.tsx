@@ -4,7 +4,7 @@ import { ArrowDownIcon, PlusIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { type IconType } from "react-icons/lib";
 
-export default function SubjectCard({
+export default function ClinicCard({
   title,
   subtitle,
   icon: Icon,
@@ -22,7 +22,7 @@ export default function SubjectCard({
       className={`border pt-[130px] pb-[100px] text-white`}
       style={{ background: bg }}
     >
-      <div className="flex flex-col items-center gap-10 px-10 text-center">
+      <div className="flex flex-col items-center gap-10 px-10 text-center h-[320px]">
         <Icon size={60} />
         <h2 className="text-[30px] font-bold">{title}</h2>
         <p className="text-[21px]">{subtitle}</p>

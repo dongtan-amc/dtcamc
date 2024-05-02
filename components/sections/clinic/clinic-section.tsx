@@ -1,7 +1,7 @@
 import { NAME } from "@/constants/general-info";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
-import SubjectCard from "./subject-card";
+import ClinicCard from "./clinic-card";
 import {
   GiLiver,
   GiKidneys,
@@ -45,7 +45,7 @@ const EXPERT_CLINICS = [
 
 export default function SubjectSection() {
   return (
-    <SectionLayout hash="intro">
+    <SectionLayout>
       <div className="flex flex-col">
         <SectionTitle subtitle="석박사 출신의 전문 의료진들이 함께합니다!">
           {NAME.slice(3)}{" "}
@@ -55,7 +55,7 @@ export default function SubjectSection() {
         <ul className="grid grid-cols-4">
           {EXPERT_CLINICS.map((clinic) => (
             <li key={clinic.title}>
-              <SubjectCard
+              <ClinicCard
                 title={clinic.title}
                 subtitle={clinic.subtitle}
                 icon={clinic.icon}
