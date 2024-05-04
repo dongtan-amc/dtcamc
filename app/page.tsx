@@ -1,21 +1,23 @@
-import BiliarySection from "@/components/sections/biliary/biliary";
-import CTSection from "@/components/sections/ct/ct";
-import DialysisSection from "@/components/sections/dialysis/dialysis";
-import EmploymentSection from "@/components/sections/employment/employment";
-import InfoSection from "@/components/sections/info/info";
-import IntroSection from "@/components/sections/intro/intro";
-import LandingSection from "@/components/sections/landing/landing";
-import OrthopedicSection from "@/components/sections/orthopedic/orthopedics";
-import RefferalSection from "@/components/sections/refferal/refferal";
-import SubjectSection from "@/components/sections/clinic/clinic-section";
-import ToolsSection from "@/components/sections/tools/tools";
+import BiliarySection from "@/components/sections/biliary/biliary-section";
+import ClinicSection from "@/components/sections/clinic/clinic-section";
+import CTSection from "@/components/sections/ct/ct-section";
+import DialysisSection from "@/components/sections/dialysis/dialysis-section";
+import EmploymentSection from "@/components/sections/employment/employment-section";
+import InfoSection from "@/components/sections/info/info-section";
+import IntroSection from "@/components/sections/intro/intro-section";
+import LandingSection from "@/components/sections/landing/landing-section";
+import OrthopedicSection from "@/components/sections/orthopedic/orthopedic-section";
+import RefferalSection from "@/components/sections/refferal/refferal-section";
+import ToolsSection from "@/components/sections/tools/tools-section";
+import VetSection from "@/components/sections/vets/vet-section";
 
 export default function Home() {
   return (
     <>
       <LandingSection />
-      <SubjectSection />
+      <ClinicSection />
       <IntroSection />
+      <VetSection />
       <InfoSection />
       <OrthopedicSection />
       <BiliarySection />

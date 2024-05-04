@@ -43,7 +43,7 @@ const EXPERT_CLINICS = [
   },
 ];
 
-export default function SubjectSection() {
+export default function ClinicSection() {
   return (
     <SectionLayout>
       <div className="flex flex-col">

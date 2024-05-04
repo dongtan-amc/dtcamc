@@ -1,13 +1,17 @@
+import SectionLayout from "../section-layout";
+import SectionTitle from "../section-title";
 // vet infos
-import chae from "@/public/vets/chae.jpg";
-import dummy from "@/public/vets/dummy.png";
+import vet1 from "@/public/vets/vet1.png";
+import VetArticle from "./vet-article";
+import Container from "@/components/common/container";
 
-export const VETS = [
+const VETS = [
   {
     name: "고재진",
     title: "원장",
     subjects: ["응급의학", "외과", "내과"],
-    image: dummy,
+    image: vet1,
+    schedule: [1, 1, 1, 0, 1, 1, 1],
     history: [
       "전북대학교 수의과대학 대학원 외과학박사 졸업",
       "전북대학교 수의과대학 대학원 외과학석사 졸업",
@@ -43,7 +47,8 @@ export const VETS = [
     name: "김경채",
     title: "정형외과 과장",
     subjects: ["정형외과", "일반외과"],
-    image: dummy,
+    image: vet1,
+    schedule: [1, 1, 1, 1, 1, 0, 0],
     history: [
       "충북대학교 수의학과 학사 졸업",
       "충북대학교 임상수의학 (외과) 석사 졸업",
@@ -73,7 +78,8 @@ export const VETS = [
     name: "김준희",
     title: "내과수의사",
     subjects: ["내과", "신장투석"],
-    image: dummy,
+    image: vet1,
+    schedule: [0, 0, 1, 1, 1, 1, 1],
     history: [
       "충북대학교 수의학과 학사 졸업",
       "충북대학교 피부신경과학 실험실 근무",
@@ -95,7 +101,8 @@ export const VETS = [
     name: "최한일",
     title: "일반외과 과장",
     subjects: ["일반외과", "정형외과"],
-    image: dummy,
+    image: vet1,
+    schedule: [1, 1, 1, 0, 1, 1, 0],
     history: [
       "강원대학교 수의학과 학사 졸업",
       "강원대학교 심장내과 실험실, 동물병원 근무",
@@ -119,3 +126,29 @@ export const VETS = [
     ],
   },
 ];
+
+export default function VetSection() {
+  return (
+    <SectionLayout>
+      <div className="flex flex-col items-center">
+        <SectionTitle subtitle="아주대병원, 강남성심병원 임상교수 출신으로 임상자문의로서 대학병원과 밀접한 협진 시스템을 구축하고 있습니다.">
+          <span className="text-primary font-bold">USA, POST-DOC</span> 출신
+          대표 원장!
+          <br />
+          <span className="text-primary font-bold">석박사 출신</span> 의료진!
+          <br />
+          <span className="text-primary font-bold">최고 실력</span>의 의료진을
+          소개합니다!
+        </SectionTitle>
+
+        <ul className="w-full">
+          {VETS.map((vet) => (
+            <li key={vet.name}>
+              <VetArticle {...vet} />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </SectionLayout>
+  );
+}

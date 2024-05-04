@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 import Badges from "./badges";
-import ProfileDetailModal from "./profile-detail-dialog";
+import ProfileDetailDialog from "../../../components/sections/vets/profile-detail-dialog";
 import { useState } from "react";
 
 export default function ProfileSummary({
@@ -27,10 +27,9 @@ export default function ProfileSummary({
           <p>
             {name} <span className="text-lg">{title}</span>
           </p>
-          <ProfileDetailModal
+          <ProfileDetailDialog
             name={name}
             title={title}
-            image={image}
             history={history}
             expert={expert}
             education={education}
