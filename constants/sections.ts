@@ -3,11 +3,6 @@ export const SECTIONS = [
     sectionTitle: "병원 소개",
     hash: "#intro",
   },
-
-  {
-    sectionTitle: "진료 안내",
-    hash: "#info",
-  },
   {
     sectionTitle: "정형외과클리닉",
     hash: "#orthopedic",
@@ -32,9 +27,12 @@ export const SECTIONS = [
     sectionTitle: "보유장비",
     hash: "#tools",
   },
-
   {
     sectionTitle: "채용",
     hash: "#employment",
+  },
+  {
+    sectionTitle: "진료 안내",
+    hash: "#info",
   },
 ];

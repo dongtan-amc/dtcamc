@@ -4,7 +4,6 @@ import Link from "next/link";
 import { Map, MapMarker } from "react-kakao-maps-sdk";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
-import Container from "@/components/common/container";
 
 export default function MapSection() {
   return (

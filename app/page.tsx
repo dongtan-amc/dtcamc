@@ -19,8 +19,6 @@ export default function Home() {
       <ClinicSection />
       <IntroSection />
       <VetSection />
-      <MapSection />
-      <InfoSection />
       <OrthopedicSection />
       <BiliarySection />
       <DialysisSection />
@@ -28,6 +26,8 @@ export default function Home() {
       <RefferalSection />
       <ToolsSection />
       <EmploymentSection />
+      <MapSection />
+      <InfoSection />
     </>
   );
 }
