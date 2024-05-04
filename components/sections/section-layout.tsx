@@ -9,7 +9,7 @@ export default function SectionLayout({
   hash?: string;
 }) {
   return (
-    <section className="device_height border" id={hash}>
+    <section className="device_height" id={hash}>
       {children}
     </section>
   );

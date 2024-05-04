@@ -23,30 +23,28 @@ export default function Navbar() {
             }
       }
     >
-      <Container>
-        <nav
-          className="flex justify-between items-center"
-          style={
-            isScrollTop
-              ? {
-                  paddingTop: 32,
-                  paddingBottom: 32,
-                  transition: "all ease-in-out 200ms",
-                }
-              : {
-                  paddingTop: 12,
-                  paddingBottom: 12,
-                  transition: "all ease-in-out 200ms",
-                }
-          }
-        >
-          <MainLogo />
+      <nav
+        className="flex justify-between items-center max-w-[1780px] mx-auto"
+        style={
+          isScrollTop
+            ? {
+                paddingTop: 32,
+                paddingBottom: 32,
+                transition: "all ease-in-out 200ms",
+              }
+            : {
+                paddingTop: 12,
+                paddingBottom: 12,
+                transition: "all ease-in-out 200ms",
+              }
+        }
+      >
+        <MainLogo />
 
-          <Menu isScrollTop={isScrollTop} />
+        <Menu isScrollTop={isScrollTop} />
 
-          {/* <MobileMenu isScrollTop={isScrollTop} /> */}
-        </nav>
-      </Container>
+        {/* <MobileMenu isScrollTop={isScrollTop} /> */}
+      </nav>
     </header>
   );
 }
