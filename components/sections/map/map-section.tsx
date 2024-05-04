@@ -8,7 +8,7 @@ import SectionTitle from "../section-title";
 export default function MapSection() {
   return (
     <SectionLayout hash="info">
-      <div className="flex flex-col items-center relative">
+      <div className="flex flex-col items-center bg-olive-drab-50/50">
         <SectionTitle subtitle={`${ADDRESS} (동일 건물 주차 가능)`}>
           {NAME.slice(3)}{" "}
           <span className="text-primary font-bold">오시는길</span>

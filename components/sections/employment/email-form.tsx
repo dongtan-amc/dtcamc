@@ -85,7 +85,7 @@ export default function EmailForm() {
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="grid grid-cols-2 gap-4 py-10 md:w-4/5 w-full"
+            className="grid grid-cols-2 gap-4 w-[1024px] max-w-full"
           >
             <FormField
               control={form.control}
@@ -94,7 +94,7 @@ export default function EmailForm() {
                 <FormItem>
                   <FormLabel>성함</FormLabel>
                   <FormControl>
-                    <Input placeholder="성함" {...field} />
+                    <Input {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -107,7 +107,7 @@ export default function EmailForm() {
                 <FormItem>
                   <FormLabel>이메일 주소</FormLabel>
                   <FormControl>
-                    <Input placeholder="dtct@example.com" {...field} />
+                    <Input {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -125,7 +125,7 @@ export default function EmailForm() {
                   >
                     <FormControl>
                       <SelectTrigger>
-                        <SelectValue placeholder="지원분야" />
+                        <SelectValue />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
@@ -148,7 +148,7 @@ export default function EmailForm() {
                 <FormItem>
                   <FormLabel>연락처</FormLabel>
                   <FormControl>
-                    <Input placeholder="010-1234-5678" {...field} />
+                    <Input {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>

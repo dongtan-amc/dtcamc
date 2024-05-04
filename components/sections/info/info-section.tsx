@@ -54,17 +54,19 @@ const INFOS = [
 ];
 export default function InfoSection() {
   return (
-    <Container>
-      <ul className="flex justify-evenly my-20">
-        {INFOS.map((info) => (
-          <InfoCard
-            description={info.description}
-            icon={info.icon}
-            key={info.title}
-            title={info.title}
-          />
-        ))}
-      </ul>
-    </Container>
+    <div className="bg-olive-drab-50/50">
+      <Container>
+        <ul className="flex justify-evenly py-20">
+          {INFOS.map((info) => (
+            <InfoCard
+              description={info.description}
+              icon={info.icon}
+              key={info.title}
+              title={info.title}
+            />
+          ))}
+        </ul>
+      </Container>
+    </div>
   );
 }
