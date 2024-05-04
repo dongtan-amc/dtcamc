@@ -6,6 +6,7 @@ import EmploymentSection from "@/components/sections/employment/employment-secti
 import InfoSection from "@/components/sections/info/info-section";
 import IntroSection from "@/components/sections/intro/intro-section";
 import LandingSection from "@/components/sections/landing/landing-section";
+import MapSection from "@/components/sections/map/map-section";
 import OrthopedicSection from "@/components/sections/orthopedic/orthopedic-section";
 import RefferalSection from "@/components/sections/refferal/refferal-section";
 import ToolsSection from "@/components/sections/tools/tools-section";
@@ -18,6 +19,7 @@ export default function Home() {
       <ClinicSection />
       <IntroSection />
       <VetSection />
+      <MapSection />
       <InfoSection />
       <OrthopedicSection />
       <BiliarySection />

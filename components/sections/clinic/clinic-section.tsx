@@ -30,14 +30,14 @@ const EXPERT_CLINICS = [
     title: "신장투석클리닉",
     subtitle:
       "만성콩팥질병 환자들의 삶의 질을 올릴 수 있는 신장 투석 클리닉을 운영합니다.",
-    hash: "#biliary",
+    hash: "#dialysis",
     bg: "#4a6427",
     icon: GiKidneys,
   },
   {
     title: "CT클리닉",
     subtitle: "ㅇㅇ급 최첨단 CT촬영 장비로 진단의 질을 높입니다.",
-    hash: "#biliary",
+    hash: "#ct",
     bg: "#3d5123",
     icon: GiAbstract083,
   },

@@ -25,7 +25,7 @@ export default function VetArticle({
   schedule: number[];
 }) {
   return (
-    <article className="min-h-screen bg-olive-drab-50 pt-[90px] pb-[50px]">
+    <article className="min-h-screen pt-[90px]">
       <Container>
         <div className="flex gap-10 bg-white p-12 pb-0 rounded-t-2xl">
           <div className="w-1/2 tracking-tight relative">

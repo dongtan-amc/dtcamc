@@ -141,7 +141,7 @@ export default function VetSection() {
           소개합니다!
         </SectionTitle>
 
-        <ul className="w-full">
+        <ul className="w-full pb-[90px] bg-olive-drab-50">
           {VETS.map((vet) => (
             <li key={vet.name}>
               <VetArticle {...vet} />
