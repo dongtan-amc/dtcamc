@@ -2,7 +2,7 @@ import { type EmailFormValues } from "@/constants/employment";
 import { NextRequest } from "next/server";
 import * as React from "react";
 import { Resend } from "resend";
-import { EmailTemplate } from "../../../components/email-template";
+import { EmailTemplate } from "../../../components/sections/employment/email-template";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -15,6 +15,7 @@ export async function POST(request: NextRequest) {
       from: `Acme <noreply@resend.dev>`,
       // TODO: use real email
       to: "dtctamc@gmail.com",
+      // to: "junsgk@gmail.com",
       subject: `[DTCT 채용] ${area} / ${name}`,
       attachments: attachments.map((file: any) => ({
         filename: file.filename,

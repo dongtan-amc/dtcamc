@@ -1,15 +1,17 @@
+import { cn } from "@/lib/utils";
 import React from "react";
-import Container from "../common/container";
 
 export default function SectionLayout({
   children,
   hash,
+  className,
 }: {
   children: React.ReactNode;
   hash?: string;
+  className?: string;
 }) {
   return (
-    <section className="device_height" id={hash}>
+    <section className={cn("device_height", className)} id={hash}>
       {children}
     </section>
   );
