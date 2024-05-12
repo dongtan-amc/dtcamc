@@ -72,32 +72,30 @@ const INTRODUCCTION = [
 export default function IntroSection() {
   return (
     <SectionLayout hash="intro">
-      <div className="flex flex-col items-center">
-        <SectionTitle subtitle="전문의의 실력과 첨단 장비의 섬세함을 바탕으로 믿고 안심할 수 있는 진료를 약속드립니다.">
-          <span className="text-primary font-bold">TOP</span> 의료시설!{" "}
-          <span className="text-primary font-bold">TOP</span> 진료!{" "}
-          <span className="text-primary font-bold">TOP</span> 친절! <br />{" "}
-          청담탑정형외과가 3 TOP을 약속합니다.
-        </SectionTitle>
+      <SectionTitle subtitle="전문의의 실력과 첨단 장비의 섬세함을 바탕으로 믿고 안심할 수 있는 진료를 약속드립니다.">
+        <span className="text-primary font-bold">TOP</span> 의료시설!{" "}
+        <span className="text-primary font-bold">TOP</span> 진료!{" "}
+        <span className="text-primary font-bold">TOP</span> 친절! <br />{" "}
+        청담탑정형외과가 3 TOP을 약속합니다.
+      </SectionTitle>
 
-        <ul className="relative w-[1160px] h-[320px] mb-[120px]">
-          {INTRODUCCTION.map(({ title, icon }, index) => (
-            <IntroCircle key={index} title={title} icon={icon} index={index} />
-          ))}
-        </ul>
+      <ul className="relative w-[1160px] h-[320px] mb-[120px] mx-auto">
+        {INTRODUCCTION.map(({ title, icon }, index) => (
+          <IntroCircle key={index} title={title} icon={icon} index={index} />
+        ))}
+      </ul>
 
-        <ul className="flex flex-col gap-20 w-full">
-          {INTRODUCCTION.map(({ image, title, subtitle }, index) => (
-            <IntroCard
-              key={index}
-              index={index}
-              image={image}
-              title={title}
-              subtitle={subtitle}
-            />
-          ))}
-        </ul>
-      </div>
+      <ul className="flex flex-col gap-20 w-full">
+        {INTRODUCCTION.map(({ image, title, subtitle }, index) => (
+          <IntroCard
+            key={index}
+            index={index}
+            image={image}
+            title={title}
+            subtitle={subtitle}
+          />
+        ))}
+      </ul>
     </SectionLayout>
   );
 }

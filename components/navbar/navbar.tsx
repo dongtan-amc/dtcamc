@@ -1,9 +1,9 @@
 "use client";
 
 import useScrollPosition from "@/hooks/useScrollPosition";
-import Container from "../common/container";
 import MainLogo from "./main-logo";
 import Menu from "./menu";
+import Container from "../common/container";
 
 export default function Navbar() {
   const { isScrollTop } = useScrollPosition();
@@ -23,28 +23,30 @@ export default function Navbar() {
             }
       }
     >
-      <nav
-        className="flex justify-between items-center max-w-[1780px] mx-auto"
-        style={
-          isScrollTop
-            ? {
-                paddingTop: 32,
-                paddingBottom: 32,
-                transition: "all ease-in-out 200ms",
-              }
-            : {
-                paddingTop: 12,
-                paddingBottom: 12,
-                transition: "all ease-in-out 200ms",
-              }
-        }
-      >
-        <MainLogo />
+      <Container>
+        <nav
+          className="flex justify-between items-center max-w-[1780px] mx-auto"
+          style={
+            isScrollTop
+              ? {
+                  paddingTop: 32,
+                  paddingBottom: 32,
+                  transition: "all ease-in-out 200ms",
+                }
+              : {
+                  paddingTop: 12,
+                  paddingBottom: 12,
+                  transition: "all ease-in-out 200ms",
+                }
+          }
+        >
+          <MainLogo />
 
-        <Menu isScrollTop={isScrollTop} />
+          <Menu />
 
-        {/* <MobileMenu isScrollTop={isScrollTop} /> */}
-      </nav>
+          {/* <MobileMenu isScrollTop={isScrollTop} /> */}
+        </nav>
+      </Container>
     </header>
   );
 }
