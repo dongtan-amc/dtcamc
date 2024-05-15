@@ -77,7 +77,13 @@ export default function VetArticle({
           </div>
 
           <div className="w-1/2">
-            <Image src={image} alt={`${name} image`} placeholder="blur" />
+            <Image
+              src={image}
+              alt={`${name} image`}
+              placeholder="blur"
+              nukki-vet1
+              sizes="612px"
+            />
           </div>
         </div>
 

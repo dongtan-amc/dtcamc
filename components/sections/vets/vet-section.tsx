@@ -1,10 +1,10 @@
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
 // vet infos
-import vet1 from "@/public/vets/vet1.jpg";
-import vet2 from "@/public/vets/vet2.jpg";
-import vet3 from "@/public/vets/vet3.jpg";
-import vet4 from "@/public/vets/vet4.jpg";
+import vet1 from "@/public/vets/crop-vet1.png";
+import vet2 from "@/public/vets/crop-vet2.png";
+import vet3 from "@/public/vets/crop-vet3.png";
+import vet4 from "@/public/vets/crop-vet4.png";
 import VetArticle from "./vet-article";
 
 const VETS = [

@@ -80,12 +80,33 @@ export default function EmailForm() {
   };
   return (
     <Container>
-      <div className="flex flex-col md:flex-row items-center">
-        <Lottie loop animationData={emailLottie} play />
+      <div className="flex flex-col md:flex-row items-center gap-10">
+        {/* <Lottie loop animationData={emailLottie} play /> */}
+
+        <div className="w-1/2">
+          <p>
+            24시 동탄시티동물의료센터는 반려동물의 질환에 대해서 전문적으로
+            치료하는 병원으로 구성되어 있습니다. 세부적으로 정형외과,
+            연부조직수술, 신장/혈액투석, 종양외과를 포함한 항암치료,
+            중환자치료센터, 그리고 진단영상센터로 구성되어 있습니다. 이러한
+            구성을 통해 중증질환의 치료시에 보다 발전된 진단및 치료방식으로
+            운영되도록 노력하고 있습니다. <br />
+            <br /> 본원의 직원채용관은 인간미 있는 효율성을 중요시합니다. 따라서
+            근무자 또한 삶의 질이 유지되어야만 하며 즐거운 환경에서 근무하도록
+            노력하고 있습니다. 그에 따라 선한인성과 올바른 근무윤리를 지닌
+            인재상이 필요합니다.
+            <br />
+            <br /> 본원의 직원복지와 의무는 노무법에 따른 고용형태를 지니고
+            있습니다. <br />
+            <br />
+            감사합니다.
+          </p>
+        </div>
+
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="grid grid-cols-2 gap-4 w-[1024px] max-w-full"
+            className="grid grid-cols-2 gap-4 w-1/2"
           >
             <FormField
               control={form.control}

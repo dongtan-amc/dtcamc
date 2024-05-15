@@ -81,8 +81,8 @@ const CAROUSEL_ITEMS = [
   {
     title: (
       <>
-        대형 병원 출신의 의료진들이 반려 동물을 위해 최선을 다하는{" "}
-        <span className="text-olive-drab-400">동탄시티동물의료센터</span>
+        <span className="text-olive-drab-400">대형 병원 출신의 의료진</span>들이
+        반려 동물을 위해 최선을 다하는 동탄시티동물의료센터
       </>
     ),
     subtitle:

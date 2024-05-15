@@ -25,9 +25,9 @@ export default function Home() {
       <CTSection />
       <RefferalSection />
       <ToolsSection />
-      <EmploymentSection />
       <MapSection />
       <InfoSection />
+      <EmploymentSection />
     </>
   );
 }

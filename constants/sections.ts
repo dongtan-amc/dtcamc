@@ -28,11 +28,11 @@ export const SECTIONS = [
     hash: "#tools",
   },
   {
-    sectionTitle: "채용",
-    hash: "#employment",
-  },
-  {
     sectionTitle: "진료 안내",
     hash: "#info",
+  },
+  {
+    sectionTitle: "채용",
+    hash: "#employment",
   },
 ];
