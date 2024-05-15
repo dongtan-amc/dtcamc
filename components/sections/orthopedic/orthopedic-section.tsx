@@ -1,5 +1,7 @@
+import SubsectionNavbar from "@/components/common/subsection-navbar";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
+import OrthopedicSubSection from "./orthopedic-subsection";
 
 export default function OrthopedicSection() {
   return (
@@ -17,6 +19,8 @@ export default function OrthopedicSection() {
         은 <br />
         원인과 증상에 따른 근본있는 치료를 합니다.
       </SectionTitle>
+
+      <OrthopedicSubSection />
     </SectionLayout>
   );
 }
