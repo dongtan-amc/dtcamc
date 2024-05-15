@@ -14,13 +14,6 @@ export const metadata: Metadata = {
 export default function VetsPage() {
   return (
     <main className="pt-20">
-      {/* <Banner
-        image={vetBanner}
-        upperRoute="병원 소개"
-        subRoute="수의사 소개"
-        subMenus={INTRODUCTION_MENUS}
-      /> */}
-
       <SubBanner imageClassName="vets_subbanner" />
     </main>
   );

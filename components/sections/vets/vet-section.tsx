@@ -1,9 +1,11 @@
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
 // vet infos
-import vet1 from "@/public/vets/vet1.png";
+import vet1 from "@/public/vets/vet1.jpg";
+import vet2 from "@/public/vets/vet2.jpg";
+import vet3 from "@/public/vets/vet3.jpg";
+import vet4 from "@/public/vets/vet4.jpg";
 import VetArticle from "./vet-article";
-import Container from "@/components/common/container";
 
 const VETS = [
   {
@@ -47,7 +49,7 @@ const VETS = [
     name: "김경채",
     title: "정형외과 과장",
     subjects: ["정형외과", "일반외과"],
-    image: vet1,
+    image: vet2,
     schedule: [1, 1, 1, 1, 1, 0, 0],
     history: [
       "충북대학교 수의학과 학사 졸업",
@@ -78,7 +80,7 @@ const VETS = [
     name: "김준희",
     title: "내과수의사",
     subjects: ["내과", "신장투석"],
-    image: vet1,
+    image: vet3,
     schedule: [0, 0, 1, 1, 1, 1, 1],
     history: [
       "충북대학교 수의학과 학사 졸업",
@@ -101,7 +103,7 @@ const VETS = [
     name: "최한일",
     title: "일반외과 과장",
     subjects: ["일반외과", "정형외과"],
-    image: vet1,
+    image: vet4,
     schedule: [1, 1, 1, 0, 1, 1, 0],
     history: [
       "강원대학교 수의학과 학사 졸업",

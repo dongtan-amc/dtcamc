@@ -1,7 +1,6 @@
 import { StaticImageData } from "next/image";
-import Badges from "./badges";
 import ProfileDetailDialog from "../../../components/sections/vets/profile-detail-dialog";
-import { useState } from "react";
+import Badges from "./badges";
 
 export default function ProfileSummary({
   name,

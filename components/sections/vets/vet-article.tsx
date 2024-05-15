@@ -77,7 +77,7 @@ export default function VetArticle({
           </div>
 
           <div className="w-1/2">
-            <Image src={image} alt={`${name} image`} />
+            <Image src={image} alt={`${name} image`} placeholder="blur" />
           </div>
         </div>
 

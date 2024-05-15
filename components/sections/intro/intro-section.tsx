@@ -3,7 +3,7 @@ import { FaUserDoctor, FaMicroscope, FaBed } from "react-icons/fa6";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
 import IntroCircle from "./intro-circle";
-import vet1 from "@/public/vets/vet1.png";
+import vet1 from "@/public/vets/vet1.jpg";
 import covidien from "@/public/tools/covidien.png";
 import icu1 from "@/public/photo/icu1.jpeg";
 import hr from "@/public/vets/24hr.png";
