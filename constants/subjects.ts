@@ -9,22 +9,20 @@ import hormonalDerm from "@/public/subjects/hormonal.jpg";
 import immuneMediated from "@/public/subjects/immune-mediated-dermal.jpg";
 import skincancer from "@/public/subjects/skincancer.jpg";
 
-import dogVaccine from "@/public/subjects/vaccine-dog.jpg";
-import catVaccine from "@/public/subjects/vaccine-cat.jpg";
 import heartworm from "@/public/subjects/heartworm.png";
 import tick from "@/public/subjects/tick.png";
+import catVaccine from "@/public/subjects/vaccine-cat.jpg";
+import dogVaccine from "@/public/subjects/vaccine-dog.jpg";
 
-import san from "@/public/subjects/san.png";
-import intestinalsurgery from "@/public/subjects/intestinalsurgery.png";
-import hepaticsur from "@/public/subjects/hepaticsur.png";
-import urinarySur from "@/public/subjects/urinary-sur.png";
-import headSur from "@/public/subjects/head-sur.png";
 import cancer from "@/public/subjects/cancer.png";
+import headSur from "@/public/subjects/head-sur.png";
+import hepaticsur from "@/public/subjects/hepaticsur.png";
 import herniaSur from "@/public/subjects/hernia-sur.png";
+import intestinalsurgery from "@/public/subjects/intestinalsurgery.png";
+import san from "@/public/subjects/san.png";
+import urinarySur from "@/public/subjects/urinary-sur.png";
 
 import dental from "@/public/subjects/dental.png";
-
-import dummy from "@/public/vets/dummy.png";
 
 export const SUBJECTS_SUBMENUS = [
   {
@@ -251,7 +249,7 @@ export const SUBJECTS_SUBMENUS = [
       },
       {
         categoryName: "흉부 외과",
-        image: dummy,
+        image: headSur,
         imageDescription: "",
         intro: "흉부 질환은 정확한 진단과 빠른 치료가 중요한 분야로",
         description:
@@ -279,7 +277,7 @@ export const SUBJECTS_SUBMENUS = [
       },
       {
         categoryName: "신경 외과",
-        image: dummy,
+        image: herniaSur,
         imageDescription: "",
         intro:
           "일반적으로 신경외과 분야에서는 정확한 진단과 치료가 중요합니다.",
@@ -296,7 +294,7 @@ export const SUBJECTS_SUBMENUS = [
     contents: [
       {
         categoryName: "준비중",
-        image: dummy,
+        image: herniaSur,
         imageDescription: "준비중",
         intro: "준비중",
         description: "준비중",
@@ -312,7 +310,7 @@ export const SUBJECTS_SUBMENUS = [
     contents: [
       {
         categoryName: "안과",
-        image: dummy,
+        image: herniaSur,
         imageDescription: "",
         intro: "반려동물의 안과 질환은 기본적으로",
         description:
@@ -337,7 +335,7 @@ export const SUBJECTS_SUBMENUS = [
     contents: [
       {
         categoryName: "응급의학과",
-        image: dummy,
+        image: herniaSur,
         imageDescription: "",
         intro: "사람과 달리 수의학에서는",
         description:
