@@ -1,16 +1,13 @@
-import { Ri24HoursFill } from "react-icons/ri";
-import SectionLayout from "../section-layout";
-import { FaMicroscope, FaPhone, FaUserDoctor } from "react-icons/fa6";
-import InfoCard from "./info-card";
 import Container from "@/components/common/container";
-import { FaClock, FaParking, FaTimes } from "react-icons/fa";
 import {
   DAY_TIME,
-  LATE_NIGHT_TIME,
   NIGHT_TIME,
   PHONE,
   SUNDAY_TIME,
 } from "@/constants/general-info";
+import { FaClock, FaParking } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa6";
+import InfoCard from "./info-card";
 
 const INFOS = [
   {

@@ -1,9 +1,8 @@
+import Container from "@/components/common/container";
 import { NAME } from "@/constants/general-info";
+import { TOOLS } from "@/constants/tools";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
-import { TOOLS } from "@/constants/tools";
-import Image from "next/image";
-import Container from "@/components/common/container";
 import ToolCard from "./tool-card";
 
 export default function ToolsSection() {

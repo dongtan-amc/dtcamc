@@ -1,89 +1,122 @@
 "use client";
 
-import Container from "@/components/common/container";
-import { Card, CardContent } from "@/components/ui/card";
+import Autoplay from "embla-carousel-autoplay";
+
 import {
   Carousel,
   CarouselContent,
-  CarouselItem,
   CarouselNext,
   CarouselPrevious,
-  type CarouselApi,
 } from "@/components/ui/carousel";
-import { HERO_IMAGES } from "@/constants/hero-images";
-import { cn } from "@/lib/utils";
-import Autoplay from "embla-carousel-autoplay";
-import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import CarouselCard from "./carousel-card";
+
+const CAROUSEL_ITEMS = [
+  {
+    title: (
+      <>
+        <span className="text-olive-drab-400">시티수술센터</span> 정확한 진단 &
+        수술 계획 부터 안전한 수술과 회복까지 최선을 다하겠습니다.
+      </>
+    ),
+    subtitle:
+      "대학병원 출신 외과 수의사 선생님들의 진료 및 수술 십자인대 교정술 (TPLO/CBLO/SwiveLock), 슬개골 탈구 (재탈구/PGR/DFO), 골절 (다리, 골반, 복합&개방 골절), 어깨관절수술? 담낭 파열, 담낭 절제술, 간엽 절제술, 간 생검 Fixin System/Stryker/Arthrex/Ft10/Sonocure",
+    tags: [
+      {
+        label: "정형외과클리닉",
+        hash: "orthopedic",
+      },
+      {
+        label: "간담도계클리닉",
+        hash: "biliary",
+      },
+    ],
+  },
+  {
+    title: (
+      <>
+        <span className="text-olive-drab-400">신장/혈액투석클리닉</span> 신장
+        질환의 진단 및 치료의 A to Z
+      </>
+    ),
+    subtitle:
+      "신장 질환 환자 내원시 신속한 진단부터 빠른 처치까지 한번에 진행하게 됩니다. FMC multifiltrate pro CRRT(지속적신대체요법)",
+    tags: [
+      {
+        label: "신장/혈액투석클리닉",
+        hash: "dialysis",
+      },
+    ],
+  },
+  {
+    title: (
+      <>
+        <span className="text-olive-drab-400">종양치료 클리닉</span> 종양진단,
+        수술, 항암치료 모든 것을 원스탑으로 진행
+      </>
+    ),
+    subtitle:
+      " 정확한 종양 진단 후 수술 및 항암치료를 진행합니다. 이에 따라 맞춤형 상담을 통해 최적의 치료계획을 정하게 됩니다. 화학요법(CHOP), 메트로놈항암, 표적항암, 전기화학치료(ECT)",
+    tags: [
+      {
+        label: "종양치료 클리닉",
+        hash: "?",
+      },
+    ],
+  },
+  {
+    title: (
+      <>
+        <span className="text-olive-drab-400">진단영상 센터</span> 빠르고 꼼꼼한
+        영상 판독과 정확한 진단
+      </>
+    ),
+    subtitle: "대학병원급 고해상도 초음파를 이용하여 심장,복부 초음파 가능",
+    tags: [
+      {
+        label: "진단영상(초음파/CT)센터",
+        hash: "ct",
+      },
+    ],
+  },
+  {
+    title: (
+      <>
+        대형 병원 출신의 의료진들이 반려 동물을 위해 최선을 다하는{" "}
+        <span className="text-olive-drab-400">동탄시티동물의료센터</span>
+      </>
+    ),
+    subtitle:
+      "24시간 마시모 중환자 모니터링, FAST초음파시스템, HFNC(고유량비강산소요법), 옥서스산소시스템",
+    tags: [
+      {
+        label: "의료진 소개",
+        hash: "vets",
+      },
+    ],
+  },
+];
 
 export default function LandingCarousel() {
-  const plugin = useRef(Autoplay({ delay: 4000, stopOnInteraction: false }));
-
-  const [api, setApi] = useState<CarouselApi>();
-  const [current, setCurrent] = useState(0);
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    if (!api) {
-      return;
-    }
-
-    setCount(api.scrollSnapList().length);
-    setCurrent(api.selectedScrollSnap() + 1);
-
-    api.on("select", () => {
-      setCurrent(api.selectedScrollSnap() + 1);
-    });
-  }, [api]);
-
   return (
-    <div className=" flex justify-end">
-      <Carousel
-        setApi={setApi}
-        opts={{ loop: true }}
-        plugins={[plugin.current]}
-        className="w-full overflow-hidden flex items-center"
-      >
-        <CarouselContent>
-          {HERO_IMAGES.map((image) => (
-            <CarouselItem key={image.title}>
-              <div className="relative h-[25vh] md:h-[70vh] flex justify-end">
-                <div className="bg-gradient-to-r from-black/40 via-black/10 to-black/10 absolute inset-0 z-20" />
-                {/* text
-                <div className="z-40 absolute top-1/3 left-[20%] text-white">
-                  <p className="pb-5">Dongtan City Animal Medical Center</p>
-                  <p className="text-3xl pb-8">{image.title}</p>
-                  <p>{image.subTitle}</p>
-                </div> */}
-                {/* 이미지 */}
-                <Image
-                  src={image.src}
-                  alt="landing images"
-                  // className="w-auto"
-                />
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-
-        {/* 슬라이드 버튼 */}
-        <div className="absolute top-[10%] right-[10%] md:block hidden">
-          <CarouselPrevious className="bg-transparent rounded-md text-white w-10 h-10" />
-          <CarouselNext className="bg-transparent rounded-md text-white w-10 h-10" />
-        </div>
-
-        <div className="absolute bottom-[5%] left-[calc(50%-30px)] text-white flex gap-4">
-          {Array.from({ length: count }).map((element, index) => (
-            <div
-              key={index}
-              className={cn(
-                "w-2 h-2 rounded-full bg-white ring-0",
-                current === index + 1 && "ring-primary ring-2 bg-transparent"
-              )}
-            />
-          ))}
-        </div>
-      </Carousel>
-    </div>
+    <Carousel
+      className="w-[1370px] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30"
+      opts={{
+        align: "center",
+        loop: true,
+      }}
+      plugins={[
+        Autoplay({
+          delay: 5000,
+        }),
+      ]}
+    >
+      <CarouselContent>
+        {CAROUSEL_ITEMS.map((item, index) => (
+          <CarouselCard key={index} {...item} />
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
   );
 }

@@ -86,12 +86,6 @@ export const TOOLS = [
   },
 
   {
-    image: ear,
-    name: "디지털 검이경",
-    description: "외이염과 같은 이도의 병변을 확인가능",
-  },
-
-  {
     image: masimoPatient,
     name: "마시모 페이션트 모니터",
     description:
@@ -158,21 +152,11 @@ export const TOOLS = [
   },
 
   {
-    image: gaymar,
-    name: "가이마 스트라이커",
-    description:
-      "고양이나 장시간 수술을 받는 강아지에게 저체온증예방과 안전한 마취회복 도움",
-  },
-  {
     image: masimo,
     name: "마시모 Root system",
     description: "수술과정에서의 환자감시장치",
   },
-  {
-    image: iop,
-    name: "전자식 안압계",
-    description: "녹내장 또는 포도막염에 의한 안압의 변화를 측정",
-  },
+
   {
     image: sonocure,
     name: "SonoCure",
