@@ -106,7 +106,7 @@ export default function LandingCarousel() {
       }}
       plugins={[
         Autoplay({
-          delay: 5000,
+          delay: 7000,
         }),
       ]}
     >

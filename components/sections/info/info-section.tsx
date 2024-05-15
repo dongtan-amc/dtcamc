@@ -51,7 +51,7 @@ const INFOS = [
 ];
 export default function InfoSection() {
   return (
-    <div className="bg-olive-drab-50/50">
+    <div>
       <Container>
         <ul className="flex justify-evenly py-20">
           {INFOS.map((info) => (

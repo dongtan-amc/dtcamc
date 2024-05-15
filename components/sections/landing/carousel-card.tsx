@@ -1,4 +1,7 @@
+"use client";
+
 import { CarouselItem } from "@/components/ui/carousel";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 
@@ -12,22 +15,45 @@ export default function CarouselCard({
   tags: { label: string; hash: string }[];
 }) {
   return (
-    <CarouselItem className="p-1 select-none">
+    <CarouselItem className="p-5 select-none">
       <div className="text-white flex flex-col items-center text-center gap-12">
-        <h2 className="text-[32px] font-bold">{title}</h2>
-        <p className="text-lg">{subtitle}</p>
+        <motion.h2
+          className="text-[32px] font-bold"
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+          viewport={{ once: false }}
+        >
+          {title}
+        </motion.h2>
+        <motion.p
+          className="text-lg"
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.5, delay: 1 }}
+          viewport={{ once: false }}
+        >
+          {subtitle}
+        </motion.p>
 
-        <div className="flex gap-5">
+        <motion.div
+          className="flex gap-5"
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.5, delay: 1.2 }}
+          viewport={{ once: false }}
+        >
           {tags.map((tag) => (
-            <Link
-              href={`#${tag.hash}`}
-              key={tag.label}
-              className="border border-drab-400 text-center px-4 py-2"
-            >
-              # {tag.label} &gt;
-            </Link>
+            <motion.div key={tag.label}>
+              <Link
+                href={`#${tag.hash}`}
+                className="border border-drab-400 text-center px-4 py-2"
+              >
+                # {tag.label} &gt;
+              </Link>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </CarouselItem>
   );
