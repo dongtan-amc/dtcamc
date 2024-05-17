@@ -69,7 +69,7 @@ export default function ProfileDetailDialog({
 
               <div>
                 <p className="text-olive-drab-600 text-[21px] font-bold pb-2">
-                  전문활동사항
+                  학술활동사항
                 </p>
                 <ul className="space-y-2 text-sm">
                   {education.map((his) => (

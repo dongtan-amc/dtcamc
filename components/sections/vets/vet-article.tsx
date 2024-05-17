@@ -81,7 +81,6 @@ export default function VetArticle({
               src={image}
               alt={`${name} image`}
               placeholder="blur"
-              nukki-vet1
               sizes="612px"
             />
           </div>
