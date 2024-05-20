@@ -9,7 +9,7 @@ export default function SectionTitle({
   subtitle,
 }: {
   children: React.ReactNode;
-  subtitle: React.ReactNode;
+  subtitle?: React.ReactNode;
 }) {
   return (
     <div className="flex flex-col items-center gap-10 pt-[130px] pb-[60px]">
