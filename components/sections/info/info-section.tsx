@@ -32,8 +32,8 @@ const INFOS = [
         <p>야간 : {NIGHT_TIME}</p>
         <p>일요일 : {SUNDAY_TIME}</p>
         <p className="text-base pt-[35px]">
-          ※ 밤 12시부터는 입원환자 관리를 위해
-          <br /> 기존 고객이 아닌 경우 진료가 제한됩니다.
+          ※ 야간 진료 시간 이후에는 <br />
+          입원환자 관리에 집중하기 위해 <br /> 진료를 제한합니다.
         </p>
       </div>
     ),

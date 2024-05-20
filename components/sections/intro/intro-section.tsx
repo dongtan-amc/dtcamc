@@ -1,3 +1,4 @@
+import Container from "@/components/common/container";
 import { NAME } from "@/constants/general-info";
 import icu1 from "@/public/photo/icu1.jpeg";
 import covidien from "@/public/tools/covidien.png";
@@ -8,9 +9,7 @@ import { FaBed, FaMicroscope, FaUserDoctor } from "react-icons/fa6";
 import { Ri24HoursFill } from "react-icons/ri";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
-import IntroCard from "./intro-card";
 import IntroCircle from "./intro-circle";
-import Container from "@/components/common/container";
 
 const INTRODUCCTION = [
   {
@@ -81,7 +80,7 @@ export default function IntroSection() {
       </SectionTitle>
 
       <Container>
-        <div className="flex gap-10 items-end pb-20">
+        <div className="flex gap-10 items-end pb-40">
           <Image alt="원장님 사진" src={vet1} className="w-1/3" />
           <div className="w-2/3 space-y-10 text-2xl">
             <p>

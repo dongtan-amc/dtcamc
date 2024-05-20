@@ -1,26 +1,36 @@
-import SubsectionNavbar from "@/components/common/subsection-navbar";
+import { NAME } from "@/constants/general-info";
+import dogRunnging from "@/public/photo/dog-running.jpg";
+import ExpertSection from "../expert-section";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
-import OrthopedicSubSection from "./orthopedic-subsection";
 
 export default function OrthopedicSection() {
   return (
     <SectionLayout hash="orthopedic">
-      <SectionTitle
-        subtitle={
-          <>
-            풍부한 임상경험과 노하우를 바탕으로 정밀한 진단을 시행한 척추관절
-            1:1 맞춤치료,
-            <br /> 과잉진료 없이 꼭 필요한 치료만으로 책임지고 진료합니다.
-          </>
-        }
-      >
-        청담탑의 <span className="text-primary font-bold">정형외과클리닉</span>
-        은 <br />
-        원인과 증상에 따른 근본있는 치료를 합니다.
+      <SectionTitle>
+        {NAME} <span className="text-primary font-bold">정형외과클리닉</span>
       </SectionTitle>
 
-      <OrthopedicSubSection />
+      <ExpertSection
+        image={dogRunnging}
+        points={[
+          "십자인대 교정 (TPLO, CBLO, TTA rapid, SwiveLock)",
+          "고관절 (PennHIP, FHNO)",
+          "슬개골 탈구(재탈구 교정, DFO, PGR)",
+          "골절 (다리, 골반, 복합&개방 골절)",
+        ]}
+        text={
+          <>
+            <span className="font-bold text-primary">동탄시티동물의료센터</span>
+            에서는 많은 경험을 갖고 계신 정형외과 전공 수의사 선생님들이 진료를
+            보시고, 직접 상담 및 수술을 진행하고 있습니다. Fixin System, Arthrex
+            장비 등 최신 수술 장비들의 도입으로 정확한 정형외과 수술이
+            가능합니다. 우리 아이에게 가장 적합하고 좋은 수술 방법을 제시해주는
+            병원을 선택해주세요.
+          </>
+        }
+        title="정형외과클리닉"
+      />
     </SectionLayout>
   );
 }
