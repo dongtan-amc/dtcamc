@@ -7,16 +7,18 @@ export default function ExpertSection({
   text,
   points,
   image,
+  reverse,
 }: {
   title: string;
   text: React.ReactNode;
   points: string[];
   image: StaticImageData;
+  reverse?: boolean;
 }) {
   return (
     <Container>
       <div className="relative">
-        <div className="flex items-end">
+        <div className={cn("flex items-end", reverse && "flex-row-reverse")}>
           <div className="w-3/5">
             <div className="text-3xl leading-[44px] bg-olive-drab-50 p-5 rounded-2xl">
               {text}
@@ -40,12 +42,18 @@ export default function ExpertSection({
             </ul>
           </div>
 
-          <div className="w-[600px] h-[600px] overflow-hidden rounded-full flex-shrink-0 absolute -z-10 right-0">
+          <div
+            className={cn(
+              "w-[600px] h-[600px] overflow-hidden rounded-full flex-shrink-0 absolute -z-10",
+              reverse ? "left-0" : "right-0"
+            )}
+          >
             <Image
               fill
               alt="정형외과 이미지"
               src={image}
               className="object-cover"
+              placeholder="blur"
             />
           </div>
         </div>

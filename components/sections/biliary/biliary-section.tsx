@@ -1,22 +1,37 @@
+import { NAME } from "@/constants/general-info";
+import image from "@/public/unsplash/news-banner.jpg";
+import ExpertSection from "../expert-section";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
 
-export default function BiliarySection() {
+export default function OrthopedicSection() {
   return (
     <SectionLayout hash="biliary">
-      <SectionTitle
-        subtitle={
+      <SectionTitle>
+        {NAME} <span className="text-primary font-bold">간담도클리닉</span>
+      </SectionTitle>
+
+      <ExpertSection
+        reverse
+        image={image}
+        points={[
+          "간 종양, 간 생검 및 PSS(Portosystemic Shunt)",
+          "담낭 파열, 담낭 점액종",
+          "담석",
+          "담관 종양",
+        ]}
+        text={
           <>
-            풍부한 임상경험과 노하우를 바탕으로 정밀한 진단을 시행한 척추관절
-            1:1 맞춤치료,
-            <br /> 과잉진료 없이 꼭 필요한 치료만으로 책임지고 진료합니다.
+            간, 담도 수술은 수술뿐만 아니라, 수술 후 중환자 관리도 중요하기
+            때문에 외과와 내과의 협진이 매우 중요합니다.
+            <span className="font-bold text-primary">동탄시티동물의료센터</span>
+            에서는 최신 수술 장비의 도입으로 간담도 수술에서 출혈 및 부작용을
+            최소화 하였으며, 수술 후 협진 시스템을 통해 수술 후 관리에도 최선을
+            다하고 있습니다.
           </>
         }
-      >
-        청담탑의 <span className="text-primary font-bold">간담도클리닉</span>
-        은 <br />
-        원인과 증상에 따른 근본있는 치료를 합니다.
-      </SectionTitle>
+        title="정형외과클리닉"
+      />
     </SectionLayout>
   );
 }
