@@ -20,7 +20,7 @@ export default function ExpertSection({
       <div className="relative">
         <div className={cn("flex items-end", reverse && "flex-row-reverse")}>
           <div className="w-3/5">
-            <div className="text-3xl leading-[44px] bg-olive-drab-50 p-5 rounded-2xl">
+            <div className="text-2xl leading-[44px] bg-olive-drab-50 p-5 rounded-2xl">
               {text}
             </div>
 

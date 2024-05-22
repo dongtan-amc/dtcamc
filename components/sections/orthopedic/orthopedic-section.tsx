@@ -21,12 +21,16 @@ export default function OrthopedicSection() {
         ]}
         text={
           <>
-            <span className="font-bold text-primary">동탄시티동물의료센터</span>
-            에서는 많은 경험을 갖고 계신 정형외과 전공 수의사 선생님들이 진료를
-            보시고, 직접 상담 및 수술을 진행하고 있습니다. Fixin System, Arthrex
-            장비 등 최신 수술 장비들의 도입으로 정확한 정형외과 수술이
-            가능합니다. 우리 아이에게 가장 적합하고 좋은 수술 방법을 제시해주는
-            병원을 선택해주세요.
+            동탄시티동물의료센터 에서는 많은 경험을 갖고 계신
+            <span className="font-bold text-primary">
+              {" "}
+              정형외과 전공 수의사
+            </span>{" "}
+            선생님 들이 진료를 보시고, 직접 상담 및 수술을 진행하고 있습니다.
+            <br /> <u className="font-bold">Fixin System, Arthrex 장비</u> 등
+            최신 수술 장비들의 도입으로 정확한 정형외과 수술이 가능합니다. 우리
+            아이에게 가장 적합하고 좋은 수술 방법을 제시해주는 병원을
+            선택해주세요.
           </>
         }
         title="정형외과클리닉"
