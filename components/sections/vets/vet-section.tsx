@@ -133,7 +133,7 @@ export default function VetSection() {
   return (
     <SectionLayout hash="vets">
       <div className="flex flex-col items-center">
-        <SectionTitle subtitle="아주대병원, 강남성심병원 임상교수 출신으로 임상자문의로서 대학병원과 밀접한 협진 시스템을 구축하고 있습니다.">
+        <SectionTitle subtitle="동탄 시티병원 최고다~~~~~~~~~~~~~~~~~~~~~~!!!!!!!!!!!">
           <span className="text-primary font-bold">USA, POST-DOC</span> 출신
           대표 원장!
           <br />
