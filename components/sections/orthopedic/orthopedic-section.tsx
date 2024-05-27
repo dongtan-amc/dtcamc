@@ -1,5 +1,5 @@
 import { NAME } from "@/constants/general-info";
-import dogRunnging from "@/public/photo/dog-running.jpg";
+import image from "@/public/placeholder.jpg";
 import ExpertSection from "../expert-section";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
@@ -12,7 +12,7 @@ export default function OrthopedicSection() {
       </SectionTitle>
 
       <ExpertSection
-        image={dogRunnging}
+        image={image}
         points={[
           "십자인대 교정 (TPLO, CBLO, TTA rapid, SwiveLock)",
           "고관절 (PennHIP, FHNO)",

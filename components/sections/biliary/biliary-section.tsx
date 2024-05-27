@@ -1,5 +1,5 @@
 import { NAME } from "@/constants/general-info";
-import image from "@/public/unsplash/news-banner.jpg";
+import image from "@/public/placeholder.jpg";
 import ExpertSection from "../expert-section";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
