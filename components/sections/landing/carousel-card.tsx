@@ -18,7 +18,7 @@ export default function CarouselCard({
     <CarouselItem className="p-5 select-none">
       <div className="text-white flex flex-col items-center text-center gap-12">
         <motion.h2
-          className="text-[32px] font-bold"
+          className="text-[40px] font-bold"
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.8 }}
@@ -27,7 +27,7 @@ export default function CarouselCard({
           {title}
         </motion.h2>
         <motion.p
-          className="text-lg"
+          className="text-xl"
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 1 }}

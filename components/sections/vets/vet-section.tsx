@@ -133,23 +133,24 @@ export default function VetSection() {
   return (
     <SectionLayout hash="vets">
       <div className="flex flex-col items-center">
-        <SectionTitle subtitle="동탄 시티병원 최고다~~~~~~~~~~~~~~~~~~~~~~!!!!!!!!!!!">
-          <span className="text-primary font-bold">USA, POST-DOC</span> 출신
-          대표 원장!
-          <br />
-          <span className="text-primary font-bold">석박사 출신</span> 의료진!
-          <br />
-          <span className="text-primary font-bold">최고 실력</span>의 의료진을
-          소개합니다!
-        </SectionTitle>
-
-        <ul className="w-full pb-[90px] bg-olive-drab-50">
-          {VETS.map((vet) => (
-            <li key={vet.name}>
-              <VetArticle {...vet} />
-            </li>
-          ))}
-        </ul>
+        <div className="w-full pb-[90px] bg-olive-drab-50">
+          <SectionTitle>
+            <span className="text-primary font-bold">USA, POST-DOC</span> 출신
+            대표 원장!
+            <br />
+            <span className="text-primary font-bold">석박사 출신</span> 의료진!
+            <br />
+            <span className="text-primary font-bold">최고 실력</span>의 의료진을
+            소개합니다!
+          </SectionTitle>
+          <ul className="space-y-20">
+            {VETS.map((vet) => (
+              <li key={vet.name}>
+                <VetArticle {...vet} />
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </SectionLayout>
   );

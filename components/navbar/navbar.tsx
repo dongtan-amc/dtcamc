@@ -18,7 +18,7 @@ export default function Navbar() {
               transition: "all ease-in-out 500ms",
             }
           : {
-              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              backgroundColor: "rgba(0, 0, 0, 0.8)",
               transition: "all ease-in-out 500ms",
             }
       }
@@ -34,8 +34,8 @@ export default function Navbar() {
                   transition: "all ease-in-out 200ms",
                 }
               : {
-                  paddingTop: 12,
-                  paddingBottom: 12,
+                  paddingTop: 16,
+                  paddingBottom: 16,
                   transition: "all ease-in-out 200ms",
                 }
           }

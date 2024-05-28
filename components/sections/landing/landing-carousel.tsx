@@ -14,8 +14,8 @@ const CAROUSEL_ITEMS = [
   {
     title: (
       <>
-        <span className="text-olive-drab-400">시티수술센터</span> 정확한 진단 &
-        수술 계획 부터 안전한 수술과 회복까지 최선을 다하겠습니다.
+        <span className="text-olive-drab-400">시티수술센터</span> 진단부터
+        안전한 수술과 회복까지 최선을 다하겠습니다.
       </>
     ),
     subtitle:
@@ -50,7 +50,7 @@ const CAROUSEL_ITEMS = [
   {
     title: (
       <>
-        <span className="text-olive-drab-400">종양치료 클리닉</span> 종양진단,
+        <span className="text-olive-drab-400">종양치료클리닉</span> 종양진단,
         수술, 항암치료 모든 것을 원스탑으로 진행
       </>
     ),
@@ -81,8 +81,8 @@ const CAROUSEL_ITEMS = [
   {
     title: (
       <>
-        <span className="text-olive-drab-400">대형 병원 출신의 의료진</span>들이
-        반려 동물을 위해 최선을 다하는 동탄시티동물의료센터
+        <span className="text-olive-drab-400">대형병원출신 의료진</span>이
+        반려동물들을 위해 최선을 다합니다
       </>
     ),
     subtitle:

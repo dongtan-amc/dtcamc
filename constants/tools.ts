@@ -1,31 +1,21 @@
-import aneth from "@/public/tools/aneth.jpeg";
+import placeholder from "@/public/placeholder.jpg";
 import catalystOne from "@/public/tools/catalystOne.png";
-import covidien from "@/public/tools/covidien.png";
 import dentalUnit from "@/public/tools/dental-unit.png";
 import dentalXray from "@/public/tools/dental-xray.jpg";
-import doppler from "@/public/tools/doppler.png";
 import drill from "@/public/tools/drill.jpeg";
-import ear from "@/public/tools/ear.png";
 import elctrovet from "@/public/tools/electrovet.jpeg";
 import fixin from "@/public/tools/fixin.png";
 import gas from "@/public/tools/gas.png";
-import gaymar from "@/public/tools/gaymar.jpeg";
-import iop from "@/public/tools/iop.png";
-import ligasure from "@/public/tools/ligasure.png";
 import ligasure2 from "@/public/tools/ligasure2.jpeg";
-import masimoPatient from "@/public/tools/masimo-patient.png";
 import masimo from "@/public/tools/masimo.png";
 import myvetray from "@/public/tools/myvetray.png";
 import oxus from "@/public/tools/oxus.png";
 import plasma from "@/public/tools/plasma.png";
 import procyte from "@/public/tools/procyte.png";
-import pump from "@/public/tools/pump.jpeg";
 import quickvet from "@/public/tools/quickvet.jpeg";
 import sonocure from "@/public/tools/sonocure.png";
-import syringe from "@/public/tools/syringe.jpeg";
 import ultrasound from "@/public/tools/ultrasound.png";
 import urine from "@/public/tools/urine.png";
-import ventil from "@/public/tools/ventil.jpg";
 import vetChroma from "@/public/tools/vet-chroma.jpeg";
 import xray from "@/public/tools/xray.jpeg";
 
@@ -86,33 +76,10 @@ export const TOOLS = [
   },
 
   {
-    image: masimoPatient,
-    name: "마시모 페이션트 모니터",
-    description:
-      "실시간으로 정밀한 모니터링 측정을 가능하게 하여 보다 정확한 환자의 상태를 평가",
-  },
-  {
     image: oxus,
     name: "OXUS 산소발생기",
     description:
       "24시간 93%이상의 산소를 공급할수 있는 장치로 보다 안전한 수술 가능",
-  },
-  {
-    image: pump,
-    name: "수액펌프 Infusion pump",
-    description:
-      "정확한 수액종류와 속도를 설정, 입원기간중 안정적 수액치료를 통해 환자 회복 도움",
-  },
-  {
-    image: syringe,
-    name: "시린지펌프 Syringe pump",
-    description: "일정한 속도로 약물을 주입. 특히 중환자인 경우 적용 가능",
-  },
-  {
-    image: aneth,
-    name: "세보플루란 호흡마취기",
-    description:
-      "고양이의 진정/마취에 적용되는 마취 방식으로써 발암물질이 없어 보다 안전",
   },
 
   {
@@ -121,32 +88,14 @@ export const TOOLS = [
     description:
       "혈액의 응고장애와 관련된 질환의 여부를 평가, 중환자 및 수술의 안정성을 확인 가능",
   },
-  {
-    image: doppler,
-    name: "도플러 혈압계",
-    description:
-      "비침습적인 방법을 이용한 도플러방식의 혈압계. 다른 혈압계보다 월등히 적은 에러율",
-  },
 
-  {
-    image: covidien,
-    name: "Covidien FT10",
-    description:
-      "지혈과 절제를 동시에 진행하여 통증 및 출혈 최소화,조직손상 최소화,수술시간 단축",
-  },
-  {
-    image: ligasure,
-    name: "리가슈어 Ligasure LF2019",
-    description:
-      "리가슈어 제품중 소형견의 무통/무출혈 수술에 쉽고 빠르게 적용되는 수술기구",
-  },
   {
     image: ligasure2,
     name: "리가슈어 LigaSure Impact",
     description: "LF1212 보다 빠르고 간결한 수술을 가능하도록 함",
   },
   {
-    image: ventil,
+    image: placeholder,
     name: "호흡마취기",
     description: "주사마취와 다르게 보다 안전하고 빠른 회복이 가능한 마취기",
   },

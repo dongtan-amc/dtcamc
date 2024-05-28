@@ -11,7 +11,7 @@ export default function InfoCard({
 }) {
   return (
     <li className="flex flex-col items-center">
-      <div className="w-[240px] h-[240px] flex items-center justify-center  rounded-full border border-primary mb-[60px] ">
+      <div className="w-[180px] h-[180px] flex items-center justify-center  rounded-full border border-primary mb-[60px] ">
         <Icon size={60} className="text-primary" />
       </div>
 
@@ -19,7 +19,7 @@ export default function InfoCard({
         {title}
       </h3>
 
-      <div className="text-lg text-center">{description}</div>
+      <div className="text-lg">{description}</div>
     </li>
   );
 }

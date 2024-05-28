@@ -181,7 +181,7 @@ export default function EmailForm() {
               name="attachments"
               render={({ field }) => (
                 <FormItem className="col-span-2">
-                  <FormLabel>이력서 첨부</FormLabel>
+                  <FormLabel>이력서 첨부 ( 다수 첨부 가능 )</FormLabel>
                   <FormControl>
                     <Input
                       type="file"

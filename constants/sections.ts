@@ -1,6 +1,6 @@
 export const SECTIONS = [
   {
-    sectionTitle: "병원 소개",
+    sectionTitle: "병원소개",
     hash: "#intro",
   },
   {
@@ -16,23 +16,24 @@ export const SECTIONS = [
     hash: "#dialysis",
   },
   {
-    sectionTitle: "CT클리닉",
-    hash: "#ct",
+    sectionTitle: "종양치료클리닉",
+    hash: "#oncology",
   },
   {
-    sectionTitle: "2차진료",
-    hash: "#refferal",
+    sectionTitle: "진단영상센터",
+    hash: "#ct",
   },
+
   {
     sectionTitle: "보유장비",
     hash: "#tools",
   },
   {
-    sectionTitle: "진료 안내",
+    sectionTitle: "진료안내",
     hash: "#info",
   },
   {
-    sectionTitle: "채용",
+    sectionTitle: "채용안내",
     hash: "#employment",
   },
 ];

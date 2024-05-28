@@ -35,7 +35,7 @@ export default function MapSection() {
           height: "480px",
           margin: "0 auto",
         }} // 지도 크기
-        level={3}
+        level={2}
         scrollwheel={false}
       >
         <MapMarker position={{ lat: 37.209311, lng: 127.061813 }}>

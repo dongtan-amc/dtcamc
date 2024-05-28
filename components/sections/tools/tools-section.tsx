@@ -16,7 +16,7 @@ export default function ToolsSection() {
       </SectionTitle>
 
       <Container>
-        <ul className="grid grid-cols-1 md:grid-cols-3 gap-4 pb-20">
+        <ul className="grid grid-cols-1 md:grid-cols-3 gap-6 pb-20">
           {TOOLS.map((tool, index) => (
             <ToolCard
               index={index}
