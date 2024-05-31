@@ -3,14 +3,23 @@ import image from "@/public/placeholder.jpg";
 import ExpertSection from "../expert-section";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
+import { GiLiver } from "react-icons/gi";
 
 export default function OrthopedicSection() {
   return (
-    <SectionLayout hash="biliary">
-      <SectionTitle>
-        {NAME} <span className="text-primary font-bold">간담도클리닉</span>
+    <SectionLayout hash="biliary" className="bg-olive-drab-50">
+      <SectionTitle
+        subtitle={
+          <>간담도계 질병은 수술뿐만 아니라, 수술 후 관리도 매우 중요합니다.</>
+        }
+      >
+        <div className="flex flex-col items-center gap-4">
+          <div className="w-16 h-16 bg-olive-drab-400 rounded-full flex items-center justify-center">
+            <GiLiver className="text-white" size={40} />
+          </div>
+          간담도클리닉
+        </div>
       </SectionTitle>
-
       <ExpertSection
         reverse
         image={image}
@@ -22,9 +31,9 @@ export default function OrthopedicSection() {
         ]}
         text={
           <>
-            <span className="font-bold text-primary">간, 담도 수술</span>은
-            수술뿐만 아니라, 수술 후 중환자 관리도 중요하기 때문에{" "}
-            <u className="font-bold">외과와 내과의 협진</u>이 매우 중요합니다.
+            동탄시티동물의료센터에서는{" "}
+            <u className="font-bold">외과와 내과의 협진</u>시스템을 통해
+            간담도계 환자들을 관리하고 있습니다.
             <br />
             동탄시티동물의료센터에서는 최신 수술 장비의 도입으로 간담도 수술에서
             출혈 및 부작용을 최소화 하였으며, 수술 후 협진 시스템을 통해 수술 후

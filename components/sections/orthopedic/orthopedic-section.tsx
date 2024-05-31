@@ -3,12 +3,18 @@ import image from "@/public/placeholder.jpg";
 import ExpertSection from "../expert-section";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
+import { FaBone } from "react-icons/fa6";
 
 export default function OrthopedicSection() {
   return (
     <SectionLayout hash="orthopedic">
-      <SectionTitle>
-        {NAME} <span className="text-primary font-bold">정형외과클리닉</span>
+      <SectionTitle subtitle="정확한 진단, 신속한 수술을 통해 구체적인 치료방향을 제시합니다.">
+        <div className="flex flex-col items-center gap-4">
+          <div className="w-16 h-16 bg-olive-drab-400 rounded-full flex items-center justify-center">
+            <FaBone className="text-white" size={40} />
+          </div>
+          정형외과클리닉
+        </div>
       </SectionTitle>
 
       <ExpertSection

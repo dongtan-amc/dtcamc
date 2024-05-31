@@ -11,7 +11,10 @@ export default function SectionLayout({
   className?: string;
 }) {
   return (
-    <section className={cn("device_height scroll-mt-16", className)} id={hash}>
+    <section
+      className={cn("device_height scroll-mt-[102px]", className)}
+      id={hash}
+    >
       {children}
     </section>
   );

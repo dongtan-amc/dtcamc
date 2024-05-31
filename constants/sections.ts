@@ -20,7 +20,7 @@ export const SECTIONS = [
     hash: "#oncology",
   },
   {
-    sectionTitle: "진단영상센터",
+    sectionTitle: "영상진단센터",
     hash: "#ct",
   },
 

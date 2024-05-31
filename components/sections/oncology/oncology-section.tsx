@@ -3,22 +3,24 @@ import { GiLiver } from "react-icons/gi";
 import ExpertSection from "../expert-section";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
-import ctIcon from "@/public/icons/ct.svg";
-import Image from "next/image";
 
-export default function CTSection() {
+export default function OnncologySection() {
   return (
-    <SectionLayout hash="ct">
-      <SectionTitle subtitle={<>영상진단센터 부제목</>}>
+    <SectionLayout hash="oncology" className="bg-olive-drab-50">
+      <SectionTitle
+        subtitle={
+          <>간담도계 질병은 수술뿐만 아니라, 수술 후 관리도 매우 중요합니다.</>
+        }
+      >
         <div className="flex flex-col items-center gap-4">
           <div className="w-16 h-16 bg-olive-drab-400 rounded-full flex items-center justify-center">
-            <Image src={ctIcon} alt="ct icon" className="text-white" />
+            <GiLiver className="text-white" size={40} />
           </div>
-          영산진단센터
+          종양치료클리닉
         </div>
       </SectionTitle>
-
       <ExpertSection
+        reverse
         image={image}
         points={[
           "화학요법(CHOP)",

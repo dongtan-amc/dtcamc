@@ -24,7 +24,7 @@ import emailLottie from "@/public/email-lottie.json";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import Lottie from "react-lottie-player";
+import { LuSend } from "react-icons/lu";
 import { z } from "zod";
 
 export default function EmailForm() {
@@ -83,14 +83,15 @@ export default function EmailForm() {
       <div className="flex flex-col md:flex-row items-center gap-10">
         {/* <Lottie loop animationData={emailLottie} play /> */}
 
-        <div className="w-1/2">
+        <div className="w-1/2 text-xl">
           <p>
             24시 동탄시티동물의료센터는 반려동물의 질환에 대해서 전문적으로
-            치료하는 병원으로 구성되어 있습니다. 세부적으로 정형외과,
-            연부조직수술, 신장/혈액투석, 종양외과를 포함한 항암치료,
-            중환자치료센터, 그리고 진단영상센터로 구성되어 있습니다. 이러한
-            구성을 통해 중증질환의 치료시에 보다 발전된 진단및 치료방식으로
-            운영되도록 노력하고 있습니다. <br />
+            치료하는 병원으로 구성되어 있습니다.
+            <br />
+            <br /> 세부적으로 정형외과, 연부조직수술, 신장/혈액투석, 종양외과를
+            포함한 항암치료, 중환자치료센터, 그리고 진단영상센터로 구성되어
+            있습니다. 이러한 구성을 통해 중증질환의 치료시에 보다 발전된 진단및
+            치료방식으로 운영되도록 노력하고 있습니다. <br />
             <br /> 본원의 직원채용관은 인간미 있는 효율성을 중요시합니다. 따라서
             근무자 또한 삶의 질이 유지되어야만 하며 즐거운 환경에서 근무하도록
             노력하고 있습니다. 그에 따라 선한인성과 올바른 근무윤리를 지닌
@@ -208,8 +209,19 @@ export default function EmailForm() {
               )}
             />
 
-            <Button type="submit" className="col-span-2" disabled={isSending}>
-              {isSending ? "전송중..." : "전송"}
+            <Button
+              type="submit"
+              className="col-span-2 mt-10"
+              disabled={isSending}
+            >
+              {isSending ? (
+                "전송중..."
+              ) : (
+                <div className="flex items-center gap-2">
+                  메일 전송
+                  <LuSend />
+                </div>
+              )}
             </Button>
           </form>
         </Form>

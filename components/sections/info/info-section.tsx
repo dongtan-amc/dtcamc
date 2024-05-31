@@ -44,6 +44,7 @@ const INFOS = [
     description: (
       <div className="space-y-2">
         <p>병원 건물 주차장 무료</p>
+        <p>주차장 추가++</p>
       </div>
     ),
     icon: FaParking,
@@ -53,7 +54,7 @@ export default function InfoSection() {
   return (
     <div>
       <Container>
-        <ul className="flex justify-evenly py-20">
+        <ul className="flex justify-evenly pb-20">
           {INFOS.map((info) => (
             <InfoCard
               description={info.description}

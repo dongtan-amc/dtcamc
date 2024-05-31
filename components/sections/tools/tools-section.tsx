@@ -8,11 +8,8 @@ import ToolCard from "./tool-card";
 export default function ToolsSection() {
   return (
     <SectionLayout hash="tools" className="bg-olive-drab-50/40">
-      <SectionTitle subtitle="대학병원급 이상의 의료기기를 구비하여 보다 빠른 증상 완화 및 치료 효과를 기대할 수 있습니다.">
-        국내 대형·대학병원에서도 사용하는 <br />
-        <span className="text-primary font-bold">{`${NAME.slice(
-          3
-        )} 첨단장비`}</span>
+      <SectionTitle subtitle="동탄시티동물의료센터의 대학병원급 의료기기들을 소개합니다.">
+        보유장비
       </SectionTitle>
 
       <Container>

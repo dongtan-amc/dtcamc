@@ -1,16 +1,24 @@
-import { NAME } from "@/constants/general-info";
 import image from "@/public/placeholder.jpg";
+import { GiKidneys } from "react-icons/gi";
 import ExpertSection from "../expert-section";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
 
-export default function OrthopedicSection() {
+export default function DialysisSection() {
   return (
     <SectionLayout hash="dialysis">
-      <SectionTitle>
-        {NAME} <span className="text-primary font-bold">신장투석클리닉</span>
+      <SectionTitle
+        subtitle={
+          <>간담도계 질병은 수술뿐만 아니라, 수술 후 관리도 매우 중요합니다.</>
+        }
+      >
+        <div className="flex flex-col items-center gap-4">
+          <div className="w-16 h-16 bg-olive-drab-400 rounded-full flex items-center justify-center">
+            <GiKidneys className="text-white" size={40} />
+          </div>
+          신장투석클리닉
+        </div>
       </SectionTitle>
-
       <ExpertSection
         image={image}
         points={[

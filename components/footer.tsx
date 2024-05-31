@@ -16,8 +16,8 @@ export default function Footer() {
     <footer className="bg-olive-drab-950 text-olive-drab-50 py-8 sm:pb-24 lg:pb-10">
       <Container>
         <div className="flex flex-col sm:flex-row sm:items-center gap-10 h-full justify-between">
-          <div className="w-48 h-w-48 bg-white mx-auto flex items-center justify-center shrink-0">
-            <Image alt="logo" src={logo} width={160} height={160} unoptimized />
+          <div className="rounded-2xl p-5 w-40 h-40 bg-white flex justify-center items-center">
+            <Image alt="logo" src={logo} unoptimized width={320} height={320} />
           </div>
 
           <div className="hidden sm:block flex-1 text-lg">

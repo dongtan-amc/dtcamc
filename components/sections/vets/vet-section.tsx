@@ -134,14 +134,10 @@ export default function VetSection() {
     <SectionLayout hash="vets">
       <div className="flex flex-col items-center">
         <div className="w-full pb-[90px] bg-olive-drab-50">
-          <SectionTitle>
-            <span className="text-primary font-bold">USA, POST-DOC</span> 출신
-            대표 원장!
-            <br />
-            <span className="text-primary font-bold">석박사 출신</span> 의료진!
-            <br />
-            <span className="text-primary font-bold">최고 실력</span>의 의료진을
-            소개합니다!
+          <SectionTitle
+            subtitle={"동탄시티동물의료센터 수의사팀을 소개합니다."}
+          >
+            수의사 소개
           </SectionTitle>
           <ul className="space-y-20">
             {VETS.map((vet) => (

@@ -10,9 +10,9 @@ export default function SectionTitle({
   subtitle?: React.ReactNode;
 }) {
   return (
-    <div className="flex flex-col items-center gap-10 py-[60px]">
+    <div className="flex flex-col items-center gap-6 py-[60px] z-30 relative">
       <motion.h2
-        className="text-center text-4xl"
+        className="text-center text-4xl text-slate-950 font-bold text-primary"
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 20 }}
         transition={{ duration: 0.5, delay: 0.2 }}
@@ -20,16 +20,16 @@ export default function SectionTitle({
       >
         {children}
       </motion.h2>
-      {/* 
+
       <motion.p
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 20 }}
         transition={{ duration: 0.5, delay: 0.4 }}
         viewport={{ once: false }}
-        className="text-[20px] text-center"
+        className="text-xl text-center text-gray-700"
       >
         {subtitle}
-      </motion.p> */}
+      </motion.p>
     </div>
   );
 }

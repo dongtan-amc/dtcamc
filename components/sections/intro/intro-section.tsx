@@ -74,37 +74,28 @@ const INTRODUCCTION = [
 export default function IntroSection() {
   return (
     <SectionLayout hash="intro">
-      <SectionTitle>
-        안녕하세요! <span className="text-primary font-bold">{NAME} </span>{" "}
-        입니다.
+      <SectionTitle
+        subtitle={
+          <>24시 동탄시티동물의료센터 홈페이지를 방문해주셔서 감사합니다.</>
+        }
+      >
+        인사말
       </SectionTitle>
 
       <Container>
-        <div className="flex gap-20 items-center pb-40">
-          <Image alt="원장님 사진" src={vet1} className="w-1/3" />
-          <div className="w-2/3 space-y-10 text-2xl">
-            <p>
-              <span className="text-primary font-bold ">
-                24시 동탄시티동물의료센터
-              </span>{" "}
-              홈페이지를 방문해주셔서 감사합니다.
-            </p>
+        <div className="flex gap-10 items-end pb-40">
+          <Image alt="원장님 사진" src={vet1} className="w-1/4" />
+
+          <div className="w-3/4 space-y-10 text-xl">
             <p>
               저희 24시동탄시티동물의료센터에서는 반려동물과 보호자에게 최선을
-              다하여{" "}
-              <span className="underline underline-offset-4">
-                진실되게 치료하는 것
-              </span>
-              을 공통의 목표로 나아가고 있습니다.
+              다하여 진실되게 치료하는 것 을 공통의 목표로 나아가고 있습니다.
             </p>
             <p>
               대학 병원 및 2차 동물 병원에서 많은 경험을 갖고 계신 수의사
               선생님들로 구성된 의료진들이 내과/외과 진료를 진행하고 있으며,
-              복합적인 질환을 갖는 환자의 경우,{" "}
-              <span className="underline underline-offset-4">
-                내과와 외과의 협진 시스템
-              </span>
-              이 효율적으로 구축되어 있습니다.
+              복합적인 질환을 갖는 환자의 경우, 내과와 외과의 협진 시스템 이
+              효율적으로 구축되어 있습니다.
             </p>
             <p>
               더 나아가 신장/혈액투석 클리닉과 심화 수술 센터를 운영하여, 타
@@ -116,7 +107,7 @@ export default function IntroSection() {
               다시한번 감사드리며 본원에 내원하는 환자의 빠른 쾌유를 위하여
               최선을 다하겠습니다.
             </p>
-            <p className="text-right text-lg">
+            <p className="text-lg">
               {NAME} 대표원장{" "}
               <span className="text-primary font-bold ">고재진</span>
             </p>
@@ -124,23 +115,11 @@ export default function IntroSection() {
         </div>
       </Container>
 
-      <ul className="relative w-[1160px] h-[320px] mb-10 mx-auto">
+      <ul className="relative w-[1160px] h-[320px] mb-[120px] mx-auto">
         {INTRODUCCTION.map(({ title, icon }, index) => (
           <IntroCircle key={index} title={title} icon={icon} index={index} />
         ))}
       </ul>
-
-      {/* <ul className="flex flex-col gap-20 w-full">
-        {INTRODUCCTION.map(({ image, title, subtitle }, index) => (
-          <IntroCard
-            key={index}
-            index={index}
-            image={image}
-            title={title}
-            subtitle={subtitle}
-          />
-        ))}
-      </ul> */}
     </SectionLayout>
   );
 }

@@ -1,16 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { ADDRESS, KAKAO_MAP, NAME, NAVER_MAP } from "@/constants/general-info";
 import Link from "next/link";
-import { Map, MapMarker } from "react-kakao-maps-sdk";
+import { CustomOverlayMap, Map, MapMarker } from "react-kakao-maps-sdk";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
+import place from "@/public/placeholder.jpg";
+import { FaParking } from "react-icons/fa";
+import { LuParkingCircle, LuParkingSquare } from "react-icons/lu";
+import { RiParkingBoxFill } from "react-icons/ri";
 
 export default function MapSection() {
   return (
     <SectionLayout hash="info">
-      <SectionTitle subtitle={`${ADDRESS} (동일 건물 주차 가능)`}>
-        {NAME.slice(3)} <span className="text-primary font-bold">오시는길</span>
-      </SectionTitle>
+      <SectionTitle subtitle={`오시는 길 - ${ADDRESS}`}>진료안내</SectionTitle>
 
       <div className="flex justify-center mb-6 gap-2">
         <Button
@@ -43,6 +45,17 @@ export default function MapSection() {
             {NAME.slice(3)}
           </p>
         </MapMarker>
+
+        <CustomOverlayMap position={{ lat: 37.209231, lng: 127.061823 }}>
+          <div>
+            <RiParkingBoxFill className="text-rose-600" size={36} />
+          </div>
+        </CustomOverlayMap>
+        <CustomOverlayMap position={{ lat: 37.209431, lng: 127.062823 }}>
+          <div>
+            <RiParkingBoxFill className="text-rose-600" size={36} />
+          </div>
+        </CustomOverlayMap>
       </Map>
     </SectionLayout>
   );
