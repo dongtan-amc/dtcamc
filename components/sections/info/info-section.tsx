@@ -8,6 +8,7 @@ import {
 import { FaClock, FaParking } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import InfoCard from "./info-card";
+import { RiParkingBoxFill } from "react-icons/ri";
 
 const INFOS = [
   {
@@ -43,11 +44,28 @@ const INFOS = [
     title: "주차안내",
     description: (
       <div className="space-y-2">
-        <p>병원 건물 주차장 무료</p>
-        <p>주차장 추가++</p>
+        <div>
+          <p>화성시 동탄지성로 126, 정일프라자 2F</p>
+          <p>은행사거리 (구)기업은행 위치</p>
+        </div>
+        <div>
+          <p className="font-bold flex items-center gap-1">
+            <RiParkingBoxFill className="text-rose-600" size={24} />
+            건물주차장
+          </p>
+          - 건물 지하 1층 (SUV 불가)
+        </div>
+        <div>
+          <p className="font-bold flex items-center gap-1">
+            <RiParkingBoxFill className="text-rose-600" size={24} />
+            패밀리타운주차장(뒷편 주차빌딩)
+          </p>
+          - 1시간 주차 무료입니다.
+          <br />- 수납시 주차권을 꼭 받아가시기 바랍니다.
+        </div>
       </div>
     ),
-    icon: FaParking,
+    icon: RiParkingBoxFill,
   },
 ];
 export default function InfoSection() {

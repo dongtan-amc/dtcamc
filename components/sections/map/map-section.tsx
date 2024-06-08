@@ -1,13 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ADDRESS, KAKAO_MAP, NAME, NAVER_MAP } from "@/constants/general-info";
 import Link from "next/link";
+import { RiParkingBoxFill } from "react-icons/ri";
 import { CustomOverlayMap, Map, MapMarker } from "react-kakao-maps-sdk";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
-import place from "@/public/placeholder.jpg";
-import { FaParking } from "react-icons/fa";
-import { LuParkingCircle, LuParkingSquare } from "react-icons/lu";
-import { RiParkingBoxFill } from "react-icons/ri";
 
 export default function MapSection() {
   return (
@@ -46,14 +43,14 @@ export default function MapSection() {
           </p>
         </MapMarker>
 
-        <CustomOverlayMap position={{ lat: 37.209231, lng: 127.061823 }}>
+        <CustomOverlayMap position={{ lat: 37.20936, lng: 127.06171 }}>
           <div>
-            <RiParkingBoxFill className="text-rose-600" size={36} />
+            <RiParkingBoxFill className="text-rose-600" size={24} />
           </div>
         </CustomOverlayMap>
-        <CustomOverlayMap position={{ lat: 37.209431, lng: 127.062823 }}>
+        <CustomOverlayMap position={{ lat: 37.209361, lng: 127.062823 }}>
           <div>
-            <RiParkingBoxFill className="text-rose-600" size={36} />
+            <RiParkingBoxFill className="text-rose-600" size={24} />
           </div>
         </CustomOverlayMap>
       </Map>

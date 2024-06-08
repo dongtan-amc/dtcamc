@@ -10,7 +10,7 @@ export default function InfoCard({
   description: React.ReactNode;
 }) {
   return (
-    <li className="flex flex-col items-center">
+    <li className="flex flex-col items-center flex-1">
       <div className="w-[180px] h-[180px] flex items-center justify-center  rounded-full border border-primary mb-[60px] ">
         <Icon size={60} className="text-primary" />
       </div>
