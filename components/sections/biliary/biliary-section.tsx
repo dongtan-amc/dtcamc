@@ -7,7 +7,7 @@ import { GiLiver } from "react-icons/gi";
 
 export default function OrthopedicSection() {
   return (
-    <SectionLayout hash="biliary" className="bg-olive-drab-50">
+    <SectionLayout hash="biliary">
       <SectionTitle
         subtitle={
           <>간담도계 질병은 수술뿐만 아니라, 수술 후 관리도 매우 중요합니다.</>

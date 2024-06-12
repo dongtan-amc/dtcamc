@@ -67,6 +67,7 @@ const VETS = [
       " NAVER 고양이 질병백과 감수 : 고양이 만성 치은 구내염, 고양이 장염, 고양이 상상 임신",
       " SBS 세상에 이런일이 ‘누워서 먹는 신기한 강아지 모카’ 방송 출연",
       "PennHIP 인증 수의사",
+      "Kim, K., Song, B., Kim, D., Kim, D. H., Lee, H. J., & Kim, G. (2024). Effect of leash walking on weight loss and assessment of hair cortisol in overweight dogs. Comparative Exercise Physiology, 1(aop), 1-9.",
     ],
     education: [
       "2021 춘계 대한수의사회 학회 포스터 발표 : Postoperative Application of Fentanyl Transdermal Patch in Lynx with Tibial Fracture",

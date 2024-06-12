@@ -8,7 +8,7 @@ import cancerIcon from "@/public/icons/onco.svg";
 
 export default function OnncologySection() {
   return (
-    <SectionLayout hash="oncology" className="bg-olive-drab-50">
+    <SectionLayout hash="oncology">
       <SectionTitle subtitle={<>종양치료클리닉 부제목</>}>
         <div className="flex flex-col items-center gap-4">
           <div className="w-16 h-16 bg-olive-drab-400 rounded-full flex items-center justify-center">
