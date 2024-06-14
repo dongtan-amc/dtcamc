@@ -59,7 +59,7 @@ const CAROUSEL_ITEMS = [
     tags: [
       {
         label: "종양치료 클리닉",
-        hash: "?",
+        hash: "oncology",
       },
     ],
   },
