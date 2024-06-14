@@ -1,10 +1,12 @@
+"use client";
+
 import Container from "@/components/common/container";
 import { NAME } from "@/constants/general-info";
 import icu1 from "@/public/photo/icu1.jpeg";
 import covidien from "@/public/tools/covidien.png";
 import hr from "@/public/vets/24hr.png";
 import vet1 from "@/public/vets/crop-vet1.png";
-import Image from "next/image";
+import { motion } from "framer-motion";
 import { FaBed, FaMicroscope, FaUserDoctor } from "react-icons/fa6";
 import { Ri24HoursFill } from "react-icons/ri";
 import SectionLayout from "../section-layout";
@@ -83,8 +85,14 @@ export default function IntroSection() {
       </SectionTitle>
 
       <Container>
-        <div className="flex flex-col gap-10 pb-40 text-2xl px-20">
-          <p className="text-4xl">
+        <motion.div
+          className="flex flex-col gap-10 pb-40 text-2xl px-20"
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 40 }}
+          transition={{ duration: 1, delay: 0.6 }}
+          viewport={{ once: false }}
+        >
+          <p className="text-4xl font-bold">
             안녕하세요. 저희{" "}
             <span className="text-primary">동탄시티동물의료센터</span>를
             찾아주셔서 감사합니다.
@@ -113,7 +121,7 @@ export default function IntroSection() {
             {NAME} 대표원장{" "}
             <span className="text-primary font-bold ">고재진</span>
           </p>
-        </div>
+        </motion.div>
       </Container>
 
       <ul className="relative w-[1160px] h-[320px] mb-[120px] mx-auto">

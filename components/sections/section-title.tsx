@@ -21,7 +21,7 @@ export default function SectionTitle({
         {children}
       </motion.h2>
 
-      <motion.p
+      <motion.div
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 20 }}
         transition={{ duration: 0.5, delay: 0.4 }}
@@ -29,7 +29,7 @@ export default function SectionTitle({
         className="text-xl text-center text-gray-700"
       >
         {subtitle}
-      </motion.p>
+      </motion.div>
     </div>
   );
 }

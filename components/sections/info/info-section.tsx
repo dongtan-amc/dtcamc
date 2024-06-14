@@ -72,7 +72,7 @@ export default function InfoSection() {
   return (
     <div>
       <Container>
-        <ul className="flex justify-evenly pb-20">
+        <ul className="flex justify-evenly py-10">
           {INFOS.map((info) => (
             <InfoCard
               description={info.description}

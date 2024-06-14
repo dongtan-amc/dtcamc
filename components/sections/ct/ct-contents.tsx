@@ -9,9 +9,9 @@ export default function CtContents() {
     <Container>
       <div>
         <h5 className="text-2xl font-bold px-2 pt-5 pb-3">
-          Orthopedic Services
+          동탄시티 영상진단센터는
         </h5>
-        <p className="text-base px-2 pt-1 pb-3">
+        <p className="text-xl px-2 pt-1 pb-3">
           A CT scanner is a powerful diagnostic tool that provides detailed
           information about the internal structures of your pet&lsquo;s body.
           This technology is especially useful for diagnosing complex medical
@@ -23,10 +23,8 @@ export default function CtContents() {
       </div>
 
       <div>
-        <h5 className="text-2xl font-bold px-2 pt-5 pb-3">
-          Why choose our CT Clinic?
-        </h5>
-        <p className="text-base px-2 pt-1 pb-3">
+        <h5 className="text-2xl font-bold px-2 pt-5 pb-3">영상장비 소개</h5>
+        <p className="text-xl px-2 pt-1 pb-3">
           Our CT Clinic is staffed by experienced radiologists who specialize in
           interpreting CT images. We use advanced imaging technology to provide
           precise, high-quality diagnostic information for your pet&lsquo;s

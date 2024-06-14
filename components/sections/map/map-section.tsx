@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { ADDRESS, KAKAO_MAP, NAME, NAVER_MAP } from "@/constants/general-info";
+import {
+  ADDRESS,
+  KAKAO_MAP,
+  NAME,
+  NAVER_MAP,
+  PHONE,
+} from "@/constants/general-info";
 import Link from "next/link";
 import { RiParkingBoxFill } from "react-icons/ri";
 import { CustomOverlayMap, Map, MapMarker } from "react-kakao-maps-sdk";
@@ -9,7 +15,16 @@ import SectionTitle from "../section-title";
 export default function MapSection() {
   return (
     <SectionLayout hash="info">
-      <SectionTitle subtitle={`오시는 길 - ${ADDRESS}`}>진료안내</SectionTitle>
+      <SectionTitle
+        subtitle={
+          <div className="space-y-2">
+            <div>오시는 길 : {ADDRESS}</div>
+            <div>전화번호 : {PHONE}</div>
+          </div>
+        }
+      >
+        진료안내
+      </SectionTitle>
 
       <div className="flex justify-center mb-6 gap-2">
         <Button
@@ -38,9 +53,9 @@ export default function MapSection() {
         scrollwheel={false}
       >
         <MapMarker position={{ lat: 37.209311, lng: 127.061813 }}>
-          <p className="text-center pl-1 text-[14px] font-bold text-primary z-20">
+          <div className="text-center pl-1 text-[14px] font-bold text-primary z-20">
             {NAME.slice(3)}
-          </p>
+          </div>
         </MapMarker>
 
         <CustomOverlayMap position={{ lat: 37.20936, lng: 127.06171 }}>

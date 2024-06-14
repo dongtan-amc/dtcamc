@@ -14,7 +14,7 @@ export default function CTSection() {
     <SectionLayout hash="ct">
       <SectionImage
         image={ctSection}
-        title="CT 및 영상진단센터"
+        title="영상진단센터"
         subtitle="Accurate Diagnosis for your pet, fast."
       />
 

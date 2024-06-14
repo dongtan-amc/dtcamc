@@ -1,5 +1,4 @@
 import Container from "@/components/common/container";
-import { NAME } from "@/constants/general-info";
 import { TOOLS } from "@/constants/tools";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
@@ -7,7 +6,7 @@ import ToolCard from "./tool-card";
 
 export default function ToolsSection() {
   return (
-    <SectionLayout hash="tools" className="bg-olive-drab-50/40">
+    <SectionLayout hash="tools">
       <SectionTitle subtitle="동탄시티동물의료센터의 대학병원급 의료기기들을 소개합니다.">
         보유장비
       </SectionTitle>

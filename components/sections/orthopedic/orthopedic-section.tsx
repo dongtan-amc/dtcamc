@@ -1,7 +1,7 @@
 import orthoSectionImage from "@/public/sections/orthopedics/ortho-section-image.png";
 import SectionImage from "../section-image";
 import SectionLayout from "../section-layout";
-import OrhopedicContents from "./orthopedic-contents";
+import OrthopedicContents from "./orthopedic-contents";
 
 export default function OrthopedicSection() {
   return (
@@ -9,10 +9,10 @@ export default function OrthopedicSection() {
       <SectionImage
         image={orthoSectionImage}
         title="정형외과 클리닉"
-        subtitle="When your pet needs advanced orthopedic care, our board-certified veterinary surgeons are here to help."
+        subtitle="정형외과 관련된 설명 간단하게 20글자정도로 ~~"
       />
 
-      <OrhopedicContents />
+      <OrthopedicContents />
     </SectionLayout>
   );
 }
