@@ -1,5 +1,3 @@
-"use client";
-
 import { CarouselItem } from "@/components/ui/carousel";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -40,7 +38,7 @@ export default function CarouselCard({
           className="flex gap-5"
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 20 }}
-          transition={{ duration: 0.5, delay: 1.2 }}
+          transition={{ duration: 0.5, delay: 1.1 }}
           viewport={{ once: false }}
         >
           {tags.map((tag) => (

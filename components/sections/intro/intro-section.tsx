@@ -89,8 +89,8 @@ export default function IntroSection() {
           className="flex flex-col gap-10 pb-40 text-2xl px-20"
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 40 }}
-          transition={{ duration: 1, delay: 0.6 }}
-          viewport={{ once: false }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          viewport={{ once: true }}
         >
           <p className="text-4xl font-bold">
             안녕하세요. 저희{" "}

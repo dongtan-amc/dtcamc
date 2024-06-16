@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import {
   ADDRESS,
@@ -11,6 +13,7 @@ import { RiParkingBoxFill } from "react-icons/ri";
 import { CustomOverlayMap, Map, MapMarker } from "react-kakao-maps-sdk";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
+import { motion } from "framer-motion";
 
 export default function MapSection() {
   return (
@@ -26,7 +29,13 @@ export default function MapSection() {
         진료안내
       </SectionTitle>
 
-      <div className="flex justify-center mb-6 gap-2">
+      <motion.div
+        className="flex justify-center mb-6 gap-2"
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 40 }}
+        transition={{ duration: 0.6, delay: 0.6 }}
+        viewport={{ once: true }}
+      >
         <Button
           className="text-white bg-[#03C75A] hover:bg-[hsla(147,97%,40%,0.9)] w-32"
           asChild
@@ -40,35 +49,42 @@ export default function MapSection() {
             카카오맵
           </Link>
         </Button>
-      </div>
+      </motion.div>
 
-      <Map
-        center={{ lat: 37.209311, lng: 127.061813 }}
-        style={{
-          width: "1280px",
-          height: "480px",
-          margin: "0 auto",
-        }} // 지도 크기
-        level={2}
-        scrollwheel={false}
+      <motion.div
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 40 }}
+        transition={{ duration: 0.6, delay: 0.8 }}
+        viewport={{ once: true }}
       >
-        <MapMarker position={{ lat: 37.209311, lng: 127.061813 }}>
-          <div className="text-center pl-1 text-[14px] font-bold text-primary z-20">
-            {NAME.slice(3)}
-          </div>
-        </MapMarker>
+        <Map
+          center={{ lat: 37.209311, lng: 127.061813 }}
+          style={{
+            width: "1280px",
+            height: "480px",
+            margin: "0 auto",
+          }} // 지도 크기
+          level={2}
+          scrollwheel={false}
+        >
+          <MapMarker position={{ lat: 37.209311, lng: 127.061813 }}>
+            <div className="text-center pl-1 text-[14px] font-bold text-primary z-20">
+              {NAME.slice(3)}
+            </div>
+          </MapMarker>
 
-        <CustomOverlayMap position={{ lat: 37.20936, lng: 127.06171 }}>
-          <div>
-            <RiParkingBoxFill className="text-rose-600" size={24} />
-          </div>
-        </CustomOverlayMap>
-        <CustomOverlayMap position={{ lat: 37.209361, lng: 127.062823 }}>
-          <div>
-            <RiParkingBoxFill className="text-rose-600" size={24} />
-          </div>
-        </CustomOverlayMap>
-      </Map>
+          <CustomOverlayMap position={{ lat: 37.20936, lng: 127.06171 }}>
+            <div>
+              <RiParkingBoxFill className="text-rose-600" size={24} />
+            </div>
+          </CustomOverlayMap>
+          <CustomOverlayMap position={{ lat: 37.209361, lng: 127.062823 }}>
+            <div>
+              <RiParkingBoxFill className="text-rose-600" size={24} />
+            </div>
+          </CustomOverlayMap>
+        </Map>
+      </motion.div>
     </SectionLayout>
   );
 }

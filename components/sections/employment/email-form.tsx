@@ -22,6 +22,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { AREA, employmentFormSchema } from "@/constants/employment";
 import emailLottie from "@/public/email-lottie.json";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuSend } from "react-icons/lu";
@@ -80,9 +81,13 @@ export default function EmailForm() {
   };
   return (
     <Container>
-      <div className="flex flex-col md:flex-row items-center gap-10">
-        {/* <Lottie loop animationData={emailLottie} play /> */}
-
+      <motion.div
+        className="flex flex-col md:flex-row items-center gap-10"
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 40 }}
+        transition={{ duration: 0.6, delay: 0.5 }}
+        viewport={{ once: true }}
+      >
         <div className="w-1/2 text-xl">
           <p>
             24시 동탄시티동물의료센터는 반려동물의 질환에 대해서 전문적으로
@@ -225,7 +230,7 @@ export default function EmailForm() {
             </Button>
           </form>
         </Form>
-      </div>
+      </motion.div>
     </Container>
   );
 }

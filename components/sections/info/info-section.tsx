@@ -1,3 +1,5 @@
+"use client";
+
 import Container from "@/components/common/container";
 import {
   DAY_TIME,
@@ -73,12 +75,13 @@ export default function InfoSection() {
     <div>
       <Container>
         <ul className="flex justify-evenly py-10">
-          {INFOS.map((info) => (
+          {INFOS.map((info, index) => (
             <InfoCard
               description={info.description}
               icon={info.icon}
               key={info.title}
               title={info.title}
+              index={index}
             />
           ))}
         </ul>
