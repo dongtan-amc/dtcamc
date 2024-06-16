@@ -14,8 +14,14 @@ export default function SectionImage({
 }) {
   return (
     <Container>
-      <div className="relative w-full h-[440px] overflow-hidden rounded-xl mt-10 bg-slate-800">
-        <Image alt="section image" src={image} className="object-cover" fill />
+      <div className="relative w-full h-[480px] overflow-hidden rounded-xl mt-10">
+        <Image
+          alt="section image"
+          src={image}
+          className="object-cover"
+          fill
+          placeholder="blur"
+        />
 
         <div className="text-white absolute bottom-10 left-14 flex flex-col gap-8">
           <div>

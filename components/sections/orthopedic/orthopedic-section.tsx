@@ -1,4 +1,4 @@
-import orthoSectionImage from "@/public/sections/orthopedics/ortho-section-image.png";
+import orthoSectionImage from "@/public/sections/orthopedics/section.jpg";
 import SectionImage from "../section-image";
 import SectionLayout from "../section-layout";
 import OrthopedicContents from "./orthopedic-contents";

@@ -1,6 +1,6 @@
 import SectionImage from "../section-image";
 import SectionLayout from "../section-layout";
-import dialysisSectionImage from "@/public/sections/dialysis/1.png";
+import dialysisSectionImage from "@/public/sections/dialysis/section.webp";
 import DialysisContents from "./dialysis-contents";
 
 export default function DialysisSection() {

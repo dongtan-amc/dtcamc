@@ -1,4 +1,4 @@
-import biliarySectionImage from "@/public/sections/biliary/4.png";
+import biliarySectionImage from "@/public/sections/biliary/section.webp";
 import SectionImage from "../section-image";
 import SectionLayout from "../section-layout";
 import BiliaryContents from "./biliary-contents";

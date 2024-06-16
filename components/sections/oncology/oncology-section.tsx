@@ -1,4 +1,4 @@
-import oncologySectionImage from "@/public/sections/onocology/1.png";
+import oncologySectionImage from "@/public/sections/onocology/section.webp";
 import SectionImage from "../section-image";
 import SectionLayout from "../section-layout";
 import OncologyContents from "./oncology-contents";
