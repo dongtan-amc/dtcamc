@@ -1,13 +1,14 @@
+import { NAME } from "@/constants/general-info";
+import type { Metadata } from "next";
+import localFont from "next/font/local";
+import Script from "next/script";
+import "./globals.css";
+
 import Footer from "@/components/footer";
 import MobileBottomButtons from "@/components/mobile-bottom-buttons";
 import Navbar from "@/components/navbar/navbar";
 import ScrollTopButton from "@/components/scroll-top-button";
-import { NAME } from "@/constants/general-info";
-import type { Metadata } from "next";
-import "./globals.css";
-import Script from "next/script";
 import { Toaster } from "@/components/ui/toaster";
-import localFont from "next/font/local";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.dtctamc.com"),
@@ -87,7 +88,6 @@ export default function RootLayout({
   return (
     <html lang="ko" suppressHydrationWarning className="!scroll-smooth">
       <body className={`${scdream.className} antialiased`}>
-        {/* 카카오맵  */}
         <Script
           src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.KAKAO_APP_JS_KEY}&libraries=services,clusterer&autoload=false`}
           strategy="beforeInteractive"
