@@ -14,8 +14,9 @@ import VetSection from "@/components/sections/vets/vet-section";
 export default function Home() {
   return (
     <>
-      <LandingSection />
-      <IntroSection />
+      <div className="w-full h-screen bg-slate-700">dd</div>
+      {/* <LandingSection /> */}
+      {/* <IntroSection />
       <VetSection />
       <OrthopedicSection />
       <BiliarySection />
@@ -25,7 +26,7 @@ export default function Home() {
       <ToolsSection />
       <MapSection />
       <InfoSection />
-      <EmploymentSection />
+      <EmploymentSection /> */}
     </>
   );
 }
