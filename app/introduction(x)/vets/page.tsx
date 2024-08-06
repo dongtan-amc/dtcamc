@@ -1,4 +1,4 @@
-import Vet from "@/app/introduction/vets/vet";
+import Vet from "@/app/introduction(x)/vets/vet";
 import Banner from "@/components/common/banner";
 import Container from "@/components/common/container";
 import SubBanner from "@/components/common/sub-banner";
