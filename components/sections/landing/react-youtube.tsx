@@ -6,7 +6,6 @@ import YouTube, { YouTubeProps } from "react-youtube";
 
 export default function ReactYoutube() {
   const { height, width } = useWindowSize();
-  const currentScreenSize = useBreakpoint();
 
   const opts: YouTubeProps["opts"] = {
     width: "200",
