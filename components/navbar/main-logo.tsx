@@ -4,20 +4,20 @@ import Link from "next/link";
 
 export default function MainLogo() {
   return (
-    <Link href="/#home" className="flex gap-2 items-center xl:items-end">
+    <Link href="/#home" className="flex items-center gap-2 xl:items-end">
       <Image
         alt="logo"
         src={mainLogoWhite}
-        unoptimized
-        className="h-10 xl:h-14 w-auto"
+        className="h-8 w-auto xl:h-14"
         priority
+        unoptimized
       />
 
-      <div className="text-white flex flex-col gap-2">
-        <p className="text-base 2xl:leading-7 xl:text-[30px] font-bold">
+      <div className="flex flex-col gap-2 text-white">
+        <p className="text-base font-bold xl:text-[30px] xl:leading-7">
           24시동탄시티 동물의료센터
         </p>
-        <p className="text-xs hidden xl:block xl:text-[20px] tracking-[0.03em]">
+        <p className="hidden text-xs tracking-[0.03em] xl:block xl:text-[20px]">
           Dongtan City Animal Medical Center
         </p>
       </div>

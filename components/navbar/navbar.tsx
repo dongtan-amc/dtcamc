@@ -25,7 +25,7 @@ export default function Navbar() {
       }
     >
       <Container>
-        <div className="px-2 flex items-center justify-between w-full  h-16 xl:h-32">
+        <div className="flex h-16 w-full items-center justify-between xl:h-24">
           <MainLogo />
 
           <Menu />

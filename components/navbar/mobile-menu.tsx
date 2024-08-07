@@ -8,6 +8,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { RiKakaoTalkFill } from "react-icons/ri";
 import { Button } from "../ui/button";
+import { DialogDescription, DialogTitle } from "../ui/dialog";
 
 export default function MobileMenu() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -18,18 +19,22 @@ export default function MobileMenu() {
         <Button
           size="icon"
           variant="ghost"
-          className="w-8 h-8 hover:bg-transparent"
+          className="h-8 w-8 hover:bg-transparent"
         >
-          <HamburgerMenuIcon className="w-8 h-8 text-white" />
+          <HamburgerMenuIcon className="h-8 w-8 text-white" />
         </Button>
       </SheetTrigger>
 
-      <SheetContent side="right" className="">
-        <ul className="flex h-full flex-col justify-center text-xl items-center gap-4">
+      <SheetContent side="right">
+        {/* browser waring */}
+        <DialogTitle />
+        <DialogDescription />
+
+        <ul className="flex h-full flex-col items-center justify-center gap-4 text-xl">
           <li className="">
             <Link
               href="/#home"
-              className="hover:text-olive-drab-400 transition"
+              className="transition hover:text-olive-drab-400"
               onClick={() => setIsDrawerOpen(false)}
             >
               홈
@@ -40,7 +45,7 @@ export default function MobileMenu() {
             <li key={section.sectionTitle}>
               <Link
                 href={`/${section.hash}`}
-                className="hover:text-olive-drab-400 transition"
+                className="transition hover:text-olive-drab-400"
                 onClick={() => setIsDrawerOpen(false)}
               >
                 {section.sectionTitle}
@@ -52,10 +57,10 @@ export default function MobileMenu() {
             <Link
               href={KAKAO}
               target="_blank"
-              className="text-[#191919] bg-[#FEE500] hover:bg-[#FEE500] hover:opacity-70 rounded-md py-1 px-4 flex items-center gap-2"
+              className="flex items-center gap-2 rounded-md bg-[#FEE500] px-4 py-1 text-lg text-[#191919] hover:bg-[#FEE500] hover:opacity-70"
               onClick={() => setIsDrawerOpen(false)}
             >
-              <RiKakaoTalkFill className="w-6 h-6" />
+              <RiKakaoTalkFill className="h-6 w-6" />
               카카오톡
             </Link>
           </li>

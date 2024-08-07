@@ -1,3 +1,7 @@
 export default function Container({ children }: { children: React.ReactNode }) {
-  return <div className="max-w-[1360px] mx-auto h-full">{children}</div>;
+  return (
+    <div className="mx-auto h-full max-w-screen-xl px-4 xl:px-0">
+      {children}
+    </div>
+  );
 }
