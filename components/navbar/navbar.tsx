@@ -11,18 +11,18 @@ export default function Navbar() {
 
   return (
     <header
-      className="fixed z-50 w-full"
-      style={
-        isScrollTop
-          ? {
-              backgroundColor: "transparent",
-              transition: "all ease-in-out 500ms",
-            }
-          : {
-              backgroundColor: "rgba(0, 0, 0, 0.8)",
-              transition: "all ease-in-out 500ms",
-            }
-      }
+      className="fixed z-50 w-full bg-black/80"
+      // style={
+      //   isScrollTop
+      //     ? {
+      //         backgroundColor: "transparent",
+      //         transition: "all ease-in-out 500ms",
+      //       }
+      //     : {
+      //         backgroundColor: "rgba(0, 0, 0, 0.8)",
+      //         transition: "all ease-in-out 500ms",
+      //       }
+      // }
     >
       <Container>
         <div className="flex h-16 w-full items-center justify-between xl:h-24">

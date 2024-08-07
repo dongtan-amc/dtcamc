@@ -14,10 +14,7 @@ import VetSection from "@/components/sections/vets/vet-section";
 export default function Home() {
   return (
     <>
-      <div className="flex h-screen w-full items-center justify-center bg-slate-700 text-white">
-        동영상 혹은 슬라이드
-      </div>
-      {/* <LandingSection /> */}
+      <LandingSection />
       <IntroSection />
       {/* <VetSection /> */}
       {/* <OrthopedicSection /> */}

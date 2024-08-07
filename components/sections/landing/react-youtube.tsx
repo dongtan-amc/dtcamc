@@ -1,32 +1,26 @@
 "use client";
 
-import useBreakpoint from "@/hooks/useBreakPoint";
-import useWindowSize from "@/hooks/useWindowSize";
 import YouTube, { YouTubeProps } from "react-youtube";
 
 export default function ReactYoutube() {
-  const { height, width } = useWindowSize();
-
   const opts: YouTubeProps["opts"] = {
-    width: "200",
-    height: "100",
     playerVars: {
       rel: 0,
       autoplay: 0,
       modestbranding: 1,
       loop: 1,
-      playlist: "BlzbRNfgcVU",
+      playlist: "ItWaJwVQ3vI",
     },
   };
   return (
     <YouTube
-      videoId="BlzbRNfgcVU"
+      videoId="ItWaJwVQ3vI"
       onReady={(e: any) => {
         e.target.mute();
-        // e.target.playVideo();
+        e.target.playVideo();
       }}
       opts={opts}
-      iframeClassName="relative w-full h-full h-screen ring aspect-video"
+      iframeClassName="h-[calc(100vh-96px)] aspect-video w-full"
     />
   );
 }

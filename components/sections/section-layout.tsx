@@ -13,7 +13,7 @@ export default function SectionLayout({
   return (
     <section
       className={cn(
-        "min-h-[calc(100vh-96px)] scroll-mt-[64px] pb-24 xl:scroll-mt-[96px]",
+        "min-h-[calc(100vh-96px)] scroll-mt-[64px] pb-12 xl:scroll-mt-[96px] xl:pb-24",
         className,
       )}
       id={hash}
