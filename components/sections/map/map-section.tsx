@@ -63,7 +63,7 @@ export default function MapSection() {
             width: "1280px",
             height: "480px",
             margin: "0 auto",
-          }} // 지도 크기
+          }}
           level={2}
           scrollwheel={false}
         >

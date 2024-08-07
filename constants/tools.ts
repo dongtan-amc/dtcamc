@@ -1,11 +1,9 @@
-import placeholder from "@/public/placeholder.jpg";
 import catalystOne from "@/public/tools/catalystOne.png";
 import dentalUnit from "@/public/tools/dental-unit.png";
 import dentalXray from "@/public/tools/dental-xray.jpg";
 import drill from "@/public/tools/drill.jpeg";
 import elctrovet from "@/public/tools/electrovet.jpeg";
 import fixin from "@/public/tools/fixin.png";
-import gas from "@/public/tools/gas.png";
 import ligasure2 from "@/public/tools/ligasure2.jpeg";
 import masimo from "@/public/tools/masimo.png";
 import myvetray from "@/public/tools/myvetray.png";
@@ -18,22 +16,30 @@ import ultrasound from "@/public/tools/ultrasound.png";
 import urine from "@/public/tools/urine.png";
 import vetChroma from "@/public/tools/vet-chroma.jpeg";
 import xray from "@/public/tools/xray.jpeg";
+import ct from "@/public/tools/ct.bmp";
+import carm from "@/public/tools/carm.bmp";
+import dya from "@/public/tools/dy.bmp";
+import gas2 from "@/public/tools/gas.bmp";
+import abl9 from "@/public/tools/abl-9.png";
 
 export const TOOLS = [
   {
-    image: placeholder,
-    name: "CT 이름",
-    description: "CT 간단한 설명",
+    image: ct,
+    name: "Aquilion CX/64 채널/128 slice",
+    description:
+      "64 채널 CT 촬영을 통해서 신속하게 고화질 영상을 얻어, 종양 유래 확인 및 전이 평가, 간문맥단락증(PSS), 선천적 뼈 기형과 같은 심화된 진단을 할 수 있습니다.",
   },
   {
-    image: placeholder,
-    name: "C-Arm 이름",
-    description: "C-Arm 간단한 설명",
+    image: carm,
+    name: "Zen-2090 ",
+    description:
+      "C-arm을 통해서 좀 더 섬세한 정형외과 수술을 진행하고, 본원에서는 외과적 침습을 최소화 하는 중재적 시술 (기관 협착, 동맥관개존증(PDA), SUB 등)을 진행하고 있습니다. ",
   },
   {
-    image: placeholder,
-    name: "투석기 이름",
-    description: "투석기 간단한 설명",
+    image: dya,
+    name: "FMC multfiltrate Pro",
+    description:
+      "본원에서는 CRRT(지속적신대체요법)를 이용하여 신장의 비가역적 손상을 막는 궁극적인 치료가 가능합니다.",
   },
   {
     image: xray,
@@ -60,7 +66,7 @@ export const TOOLS = [
       "24시간 93%이상의 산소를 공급할수 있는 장치로 보다 안전한 수술 가능",
   },
   {
-    image: placeholder,
+    image: gas2,
     name: "호흡마취기",
     description: "주사마취와 다르게 보다 안전하고 빠른 회복이 가능한 마취기",
   },
@@ -113,7 +119,7 @@ export const TOOLS = [
     description: "수술과정에서의 환자감시장치",
   },
   {
-    image: gas,
+    image: abl9,
     name: "혈액가스분석기 ABL9",
     description:
       "1분내 산/염기, 전해질 및 이온화 칼륨수치 확인 정확,신속한 상태 평가 가능",

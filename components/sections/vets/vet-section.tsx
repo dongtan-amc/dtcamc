@@ -46,7 +46,7 @@ const VETS = [
   },
   {
     name: "김경채",
-    title: "정형외과 과장",
+    title: "외과과장",
     subjects: ["정형외과", "일반외과"],
     image: vet2,
     schedule: [1, 1, 1, 1, 1, 0, 0],
@@ -78,7 +78,7 @@ const VETS = [
   },
   {
     name: "김준희",
-    title: "내과수의사",
+    title: "내과과장",
     subjects: ["내과", "신장투석"],
     image: vet3,
     schedule: [0, 0, 1, 1, 1, 1, 1],

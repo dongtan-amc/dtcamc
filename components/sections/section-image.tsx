@@ -6,15 +6,13 @@ import Link from "next/link";
 export default function SectionImage({
   image,
   title,
-  subtitle,
 }: {
   image: StaticImageData;
   title: string;
-  subtitle: string;
 }) {
   return (
     <Container>
-      <div className="relative w-full h-[480px] overflow-hidden rounded-xl mt-10">
+      <div className="relative mt-10 h-[480px] w-full overflow-hidden rounded-xl">
         <Image
           alt="section image"
           src={image}
@@ -23,14 +21,13 @@ export default function SectionImage({
           placeholder="blur"
         />
 
-        <div className="text-white absolute bottom-10 left-14 flex flex-col gap-8">
+        <div className="absolute bottom-10 left-14 flex flex-col gap-8 text-white">
           <div>
-            <h4 className="text-5xl font-bold pb-2 leading-[60px]">{title}</h4>
-            <p className="text-lg">{subtitle}</p>
+            <h4 className="pb-2 text-5xl font-bold leading-[60px]">{title}</h4>
           </div>
           <Button
             asChild
-            className="text-black bg-[#A3C433] w-32 rounded-xl tracking-wide"
+            className="w-32 rounded-xl bg-[#A3C433] tracking-wide text-black"
           >
             <Link href="#info" className="font-bold">
               상담하기

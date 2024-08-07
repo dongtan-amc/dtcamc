@@ -12,23 +12,17 @@ export default function ToolCard({
   index: number;
 }) {
   return (
-    <li className="flex flex-col items-center rounded-2xl p-10 bg-white shadow-md">
-      <p className="font-bold pb-4">
+    <li className="flex flex-col items-center rounded-2xl bg-white p-10 shadow-md">
+      <p className="pb-4 font-bold">
         {index < 9 ? `0${index + 1}` : index + 1}
       </p>
 
-      <h3 className="text-[24px] font-bold pb-[25px]">{name}</h3>
+      <h3 className="pb-[25px] text-[24px] font-bold">{name}</h3>
 
-      <div className="text-[18px] text-center pb-4">{description}</div>
+      <div className="pb-4 text-center text-[18px]">{description}</div>
 
-      <div className="w-[240px] h-[240px] relative ">
-        <Image
-          src={image}
-          alt="image"
-          fill
-          className="object-cover"
-          placeholder="blur"
-        />
+      <div className="relative mx-auto">
+        <Image src={image} alt="image" />
       </div>
     </li>
   );
