@@ -37,7 +37,7 @@ const INTRODUCTION = [
 
 export default function IntroSection() {
   return (
-    <SectionLayout hash="intro" className="bg-gray-50">
+    <SectionLayout hash="intro">
       <Container>
         <SectionTitle subtitle="24시 동탄시티동물의료센터 홈페이지를 방문해주셔서 감사합니다.">
           인사말

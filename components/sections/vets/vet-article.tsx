@@ -1,8 +1,8 @@
-import { NAME } from "@/constants/general-info";
 import Image from "next/image";
 import Badges from "./badges";
+import Career from "./career";
 import ProfileDetailDialog from "./profile-detail-dialog";
-import { Schdule } from "./schedule";
+import { Schedule } from "./schedule";
 import { Vet } from "./vet-section";
 
 export default function VetArticle({
@@ -16,67 +16,46 @@ export default function VetArticle({
   schedule,
 }: Vet) {
   return (
-    <article className="min-h-screen">
-      <div className="flex gap-10 bg-white p-12 pb-0">
-        <div className="relative w-1/2 tracking-tight">
-          <p className="text-[32px]">{NAME.slice(3)}</p>
+    <article className="overflow-hidden rounded-lg bg-white shadow-lg">
+      <div className="flex flex-col-reverse gap-8 px-4 pb-4 pt-4 lg:flex-row lg:px-12 lg:pb-0 lg:pt-12">
+        <div className="lg:w-1/2">
+          <header className="relative mb-6">
+            <div className="flex items-end gap-2">
+              <h2 className="text-4xl font-extrabold text-olive-drab-600">
+                {name}
+              </h2>
+              <h3 className="text-2xl text-olive-drab-400">{title}</h3>
+            </div>
+            <Badges subjects={subjects} />
+          </header>
 
-          <div className="pt-[10px] text-olive-drab-400">
-            <span className="text-[60px] font-bold">{name}</span>{" "}
-            <span className="text-[43px]">{title}</span>
+          <div className="space-y-6">
+            <Career title="약력" items={history} />
+            <Career title="전문활동사항" items={expert} />
           </div>
 
-          <Badges subjects={subjects} />
-
-          <div className="flex flex-col gap-[35px] pt-[45px]">
-            <div>
-              <p className="pb-2 text-[20px] font-bold text-olive-drab-600">
-                약력
-              </p>
-              <ul className="space-y-1 text-sm">
-                {history.map((his) => (
-                  <li key={his} className="list-disc text-[20px] leading-6">
-                    {his}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <p className="pb-2 text-[20px] font-bold text-olive-drab-600">
-                전문활동사항
-              </p>
-              <ul className="space-y-1 text-sm">
-                {expert.map((his) => (
-                  <li key={his} className="list-disc text-[20px] leading-6">
-                    {his}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <ProfileDetailDialog
-              name={name}
-              title={title}
-              history={history}
-              expert={expert}
-              education={education}
-              subjects={subjects}
-            />
-          </div>
+          <ProfileDetailDialog
+            name={name}
+            title={title}
+            history={history}
+            expert={expert}
+            education={education}
+            subjects={subjects}
+          />
         </div>
 
-        <div className="w-1/2">
+        <div className="lg:w-1/2">
           <Image
             src={image}
-            alt={`${name} image`}
+            alt={`${name} profile`}
             placeholder="blur"
-            sizes="612px"
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="h-auto w-full object-cover"
           />
         </div>
       </div>
 
-      <Schdule schedule={schedule} />
+      <Schedule schedule={schedule} />
     </article>
   );
 }

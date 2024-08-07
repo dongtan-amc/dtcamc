@@ -6,57 +6,43 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { cn } from "@/lib/utils";
 
-export function Schdule({ schedule }: { schedule: number[] }) {
+export function Schedule({ schedule }: { schedule: number[] }) {
   return (
-    <Table>
-      <TableHeader className="bg-olive-drab-500">
-        <TableRow>
-          <TableHead className="w-[14.2%] py-8 text-center text-[30px] font-bold text-white">
-            월
-          </TableHead>
-          <TableHead className="w-[14.2%] py-8 text-center text-[30px] font-bold text-white">
-            화
-          </TableHead>
-          <TableHead className="w-[14.2%] py-8 text-center text-[30px] font-bold text-white">
-            수
-          </TableHead>
-          <TableHead className="w-[14.2%] py-8 text-center text-[30px] font-bold text-white">
-            목
-          </TableHead>
-          <TableHead className="w-[14.2%] py-8 text-center text-[30px] font-bold text-white">
-            금
-          </TableHead>
-          <TableHead className="w-[14.2%] py-8 text-center text-[30px] font-bold text-white">
-            토
-          </TableHead>
-          <TableHead className="w-[14.2%] py-8 text-center text-[30px] font-bold text-white">
-            일
-          </TableHead>
-        </TableRow>
-      </TableHeader>
+    <div className="overflow-x-auto">
+      <Table className="min-w-full">
+        <TableHeader className="bg-olive-drab-500">
+          <TableRow>
+            {["월", "화", "수", "목", "금", "토", "일"].map((day) => (
+              <TableHead
+                key={day}
+                className="w-[14.2%] py-4 text-center text-lg font-bold text-white md:py-6 md:text-2xl"
+              >
+                {day}
+              </TableHead>
+            ))}
+          </TableRow>
+        </TableHeader>
 
-      <TableBody>
-        <TableRow>
-          {schedule.map((element, index) => (
-            <TableCell
-              className={cn(
-                "overflow-hidden bg-white text-center text-[30px] font-bold text-primary",
-              )}
-              key={index}
-            >
-              <div className="flex justify-center py-6">
-                {element ? (
-                  <div className="h-6 w-6 rounded-full bg-olive-drab-500" />
-                ) : (
-                  "휴진"
-                )}
-              </div>
-            </TableCell>
-          ))}
-        </TableRow>
-      </TableBody>
-    </Table>
+        <TableBody>
+          <TableRow>
+            {schedule.map((element, index) => (
+              <TableCell
+                className="overflow-hidden bg-white text-center text-lg font-bold text-primary md:text-2xl"
+                key={index}
+              >
+                <div className="flex justify-center py-4 md:py-6">
+                  {element ? (
+                    <div className="h-4 w-4 rounded-full bg-olive-drab-500 md:h-6 md:w-6" />
+                  ) : (
+                    "휴진"
+                  )}
+                </div>
+              </TableCell>
+            ))}
+          </TableRow>
+        </TableBody>
+      </Table>
+    </div>
   );
 }

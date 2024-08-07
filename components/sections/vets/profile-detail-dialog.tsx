@@ -8,6 +8,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import Badges from "./badges";
+import Career from "./career";
 
 export default function ProfileDetailDialog({
   name,
@@ -26,59 +27,32 @@ export default function ProfileDetailDialog({
 }) {
   return (
     <Dialog>
-      <DialogTrigger asChild className="absolute top-1 right-0">
-        <Button>자세히</Button>
+      <DialogTrigger asChild className="my-4 ml-5">
+        <Button
+          className="bg-olive-drab-500 text-white hover:bg-olive-drab-600"
+          size="sm"
+        >
+          자세히
+        </Button>
       </DialogTrigger>
-      <DialogContent className="h-[70vh] max-w-4xl  px-10 overflow-y-auto ">
+      <DialogContent className="h-[80vh] max-w-4xl overflow-y-auto px-6 md:px-10">
         <DialogHeader>
           <DialogTitle className="pb-3">
-            <div className="pt-[10px] text-olive-drab-400">
-              <span className="text-[60px] font-bold">{name}</span>{" "}
-              <span className="text-[43px] font-normal">{title}</span>
-            </div>
+            <header className="relative mb-6">
+              <div className="flex items-end gap-2">
+                <h2 className="text-4xl font-extrabold text-olive-drab-600">
+                  {name}
+                </h2>
+                <h3 className="text-2xl text-olive-drab-400">{title}</h3>
+              </div>
+              <Badges subjects={subjects} />
+            </header>
           </DialogTitle>
-          <DialogDescription className="space-y-6 text-slate-800">
-            <Badges subjects={subjects} />
-
-            <div className="pt-[45px] flex flex-col gap-[35px]">
-              <div>
-                <p className="text-olive-drab-600 text-[21px] font-bold pb-2">
-                  약력
-                </p>
-                <ul className="space-y-2 text-sm">
-                  {history.map((his) => (
-                    <li key={his} className="text-[21px] list-disc leading-6">
-                      {his}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div>
-                <p className="text-olive-drab-600 text-[21px] font-bold pb-2">
-                  전문활동사항
-                </p>
-                <ul className="space-y-2 text-sm">
-                  {expert.map((his) => (
-                    <li key={his} className="text-[21px] list-disc leading-6">
-                      {his}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div>
-                <p className="text-olive-drab-600 text-[21px] font-bold pb-2">
-                  학술활동사항
-                </p>
-                <ul className="space-y-2 text-sm">
-                  {education.map((his) => (
-                    <li key={his} className="text-[21px] list-disc leading-6">
-                      {his}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+          <DialogDescription>
+            <div className="space-y-4 text-start">
+              <Career title="약력" items={history} />
+              <Career title="전문활동사항" items={expert} />
+              <Career title="학술활동사항" items={education} />
             </div>
           </DialogDescription>
         </DialogHeader>

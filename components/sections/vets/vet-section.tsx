@@ -14,8 +14,8 @@ const VETS = [
     image: vet1,
     schedule: [1, 1, 1, 0, 1, 1, 1],
     history: [
-      "전북대학교 수의과대학 대학원 외과학박사 졸업",
       "전북대학교 수의과대학 대학원 외과학석사 졸업",
+      "전북대학교 수의과대학 대학원 외과학박사 졸업",
       "북미수의사면허시험 BCSE/NAVLE 합격",
       "전북대학교 외과임상조교",
       "전북대학교 외과연구원",
@@ -106,19 +106,19 @@ export type Vet = (typeof VETS)[number];
 export default function VetSection() {
   return (
     <SectionLayout hash="vets">
-      <div className="flex flex-col items-center">
-        <div className="w-full bg-gray-50 pb-[90px]">
+      <div className="flex w-full flex-col items-center">
+        <div className="w-full py-16 md:py-24">
           <SectionTitle
             subtitle={"동탄시티동물의료센터 수의사팀을 소개합니다."}
           >
             수의사 소개
           </SectionTitle>
           <Container>
-            <ul className="space-y-20">
+            <ul className="space-y-12 md:space-y-20">
               {VETS.map((vet) => (
                 <li
                   key={vet.name}
-                  className="overflow-hidden rounded-lg shadow-lg"
+                  className="overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
                 >
                   <VetArticle {...vet} />
                 </li>
