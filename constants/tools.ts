@@ -16,11 +16,13 @@ import ultrasound from "@/public/tools/ultrasound.png";
 import urine from "@/public/tools/urine.png";
 import vetChroma from "@/public/tools/vet-chroma.jpeg";
 import xray from "@/public/tools/xray.jpeg";
-import ct from "@/public/tools/ct.bmp";
-import carm from "@/public/tools/carm.bmp";
-import dya from "@/public/tools/dy.bmp";
-import gas2 from "@/public/tools/gas.bmp";
+import ct from "@/public/tools/ct.jpg";
+import carm from "@/public/tools/cart.png";
+import dya from "@/public/tools/dy.png";
+import gas from "@/public/tools/gas.png";
 import abl9 from "@/public/tools/abl-9.png";
+import vetc from "@/public/tools/vet-c.png";
+import quick from "@/public/tools/quick.png";
 
 export const TOOLS = [
   {
@@ -66,7 +68,7 @@ export const TOOLS = [
       "24시간 93%이상의 산소를 공급할수 있는 장치로 보다 안전한 수술 가능",
   },
   {
-    image: gas2,
+    image: gas,
     name: "호흡마취기",
     description: "주사마취와 다르게 보다 안전하고 빠른 회복이 가능한 마취기",
   },
@@ -139,7 +141,7 @@ export const TOOLS = [
   },
 
   {
-    image: vetChroma,
+    image: vetc,
     name: "혈청화학분석기",
     description: "일반 혈청화학분석기에서는 어려운 고급검사 진행가능",
   },
@@ -150,7 +152,7 @@ export const TOOLS = [
     description: "뇨검사를 검사장비가 측정하여 보다 정확한 검사수치를 확보",
   },
   {
-    image: quickvet,
+    image: quick,
     name: "혈액응고분석기 Quickvet",
     description:
       "혈액의 응고장애와 관련된 질환의 여부를 평가, 중환자 및 수술의 안정성을 확인 가능",

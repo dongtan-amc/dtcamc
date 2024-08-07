@@ -12,18 +12,23 @@ export default function ToolCard({
   index: number;
 }) {
   return (
-    <li className="flex flex-col items-center rounded-2xl bg-white p-10 shadow-md">
-      <p className="pb-4 font-bold">
-        {index < 9 ? `0${index + 1}` : index + 1}
-      </p>
-
-      <h3 className="pb-[25px] text-[24px] font-bold">{name}</h3>
-
-      <div className="pb-4 text-center text-[18px]">{description}</div>
-
-      <div className="relative mx-auto">
-        <Image src={image} alt="image" />
+    <div className="overflow-hidden rounded-lg bg-white p-4 shadow-md transition-transform hover:scale-[1.01]">
+      <div className="relative h-60">
+        <Image
+          src={image}
+          alt={name}
+          layout="fill"
+          className="object-contain transition-opacity hover:opacity-90"
+        />
+        <span className="absolute rounded-full bg-gray-900 px-2 py-1 text-xs font-semibold text-white">
+          {index < 9 ? `0${index + 1}` : index + 1}
+        </span>
       </div>
-    </li>
+
+      <div>
+        <h3 className="mb-2 text-xl font-bold text-gray-800">{name}</h3>
+        <p className="text-sm leading-relaxed text-gray-600">{description}</p>
+      </div>
+    </div>
   );
 }
