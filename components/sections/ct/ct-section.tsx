@@ -6,11 +6,7 @@ import CtContents from "./ct-contents";
 export default function CTSection() {
   return (
     <SectionLayout hash="ct">
-      <SectionImage
-        image={ctSection}
-        title="영상진단센터"
-        subtitle="Accurate Diagnosis for your pet, fast."
-      />
+      <SectionImage image={ctSection} title="영상진단센터" />
 
       <CtContents />
     </SectionLayout>
