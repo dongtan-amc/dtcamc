@@ -13,25 +13,25 @@ export function Schdule({ schedule }: { schedule: number[] }) {
     <Table>
       <TableHeader className="bg-olive-drab-500">
         <TableRow>
-          <TableHead className="text-white text-center text-[30px] font-bold py-8 w-[14.2%]">
+          <TableHead className="w-[14.2%] py-8 text-center text-[30px] font-bold text-white">
             월
           </TableHead>
-          <TableHead className="text-white text-center text-[30px] font-bold py-8 w-[14.2%]">
+          <TableHead className="w-[14.2%] py-8 text-center text-[30px] font-bold text-white">
             화
           </TableHead>
-          <TableHead className="text-white text-center text-[30px] font-bold py-8 w-[14.2%]">
+          <TableHead className="w-[14.2%] py-8 text-center text-[30px] font-bold text-white">
             수
           </TableHead>
-          <TableHead className="text-white text-center text-[30px] font-bold py-8 w-[14.2%]">
+          <TableHead className="w-[14.2%] py-8 text-center text-[30px] font-bold text-white">
             목
           </TableHead>
-          <TableHead className="text-white text-center text-[30px] font-bold py-8 w-[14.2%]">
+          <TableHead className="w-[14.2%] py-8 text-center text-[30px] font-bold text-white">
             금
           </TableHead>
-          <TableHead className="text-white text-center text-[30px] font-bold py-8 w-[14.2%]">
+          <TableHead className="w-[14.2%] py-8 text-center text-[30px] font-bold text-white">
             토
           </TableHead>
-          <TableHead className="text-white text-center text-[30px] font-bold py-8 w-[14.2%]">
+          <TableHead className="w-[14.2%] py-8 text-center text-[30px] font-bold text-white">
             일
           </TableHead>
         </TableRow>
@@ -42,15 +42,13 @@ export function Schdule({ schedule }: { schedule: number[] }) {
           {schedule.map((element, index) => (
             <TableCell
               className={cn(
-                "text-center text-[30px] text-primary font-bold bg-white overflow-hidden",
-                index === 0 && "rounded-bl-2xl",
-                index === 6 && "rounded-br-2xl"
+                "overflow-hidden bg-white text-center text-[30px] font-bold text-primary",
               )}
               key={index}
             >
               <div className="flex justify-center py-6">
                 {element ? (
-                  <div className="w-6 h-6 rounded-full bg-olive-drab-500" />
+                  <div className="h-6 w-6 rounded-full bg-olive-drab-500" />
                 ) : (
                   "휴진"
                 )}

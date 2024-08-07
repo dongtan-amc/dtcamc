@@ -1,10 +1,9 @@
-import SectionLayout from "../section-layout";
-import SectionTitle from "../section-title";
-// vet infos
+import Container from "@/components/common/container";
 import vet1 from "@/public/vets/crop-vet1.png";
 import vet2 from "@/public/vets/crop-vet2.png";
 import vet3 from "@/public/vets/crop-vet3.png";
-import vet4 from "@/public/vets/crop-vet4.png";
+import SectionLayout from "../section-layout";
+import SectionTitle from "../section-title";
 import VetArticle from "./vet-article";
 
 const VETS = [
@@ -67,7 +66,6 @@ const VETS = [
       " NAVER 고양이 질병백과 감수 : 고양이 만성 치은 구내염, 고양이 장염, 고양이 상상 임신",
       " SBS 세상에 이런일이 ‘누워서 먹는 신기한 강아지 모카’ 방송 출연",
       "PennHIP 인증 수의사",
-      "Kim, K., Song, B., Kim, D., Kim, D. H., Lee, H. J., & Kim, G. (2024). Effect of leash walking on weight loss and assessment of hair cortisol in overweight dogs. Comparative Exercise Physiology, 1(aop), 1-9.",
     ],
     education: [
       "2021 춘계 대한수의사회 학회 포스터 발표 : Postoperative Application of Fentanyl Transdermal Patch in Lynx with Tibial Fracture",
@@ -75,6 +73,7 @@ const VETS = [
       "VETHONORS 증례 발표 : TTA rapid를 활용한 강아지 십자인대 단열 및 슬개골 탈구의 교정",
       "석사 졸업 논문 : 과체중 개에서 산책이 체중 감량에 미치는 영향 그리고 헤어 코티솔의 평가",
       "세종 충북대학교 동물병원 중재적 시술 세미나 및 실습 참가 (강사 : 장동우 교수님)",
+      "Kim, K., Song, B., Kim, D., Kim, D. H., Lee, H. J., & Kim, G. (2024). Effect of leash walking on weight loss and assessment of hair cortisol in overweight dogs. Comparative Exercise Physiology, 1(aop), 1-9.",
     ],
   },
   {
@@ -100,53 +99,32 @@ const VETS = [
       "FMC CRRT(신대체요법) Hands on course 이수",
     ],
   },
-  {
-    name: "최한일",
-    title: "일반외과 과장",
-    subjects: ["일반외과", "정형외과"],
-    image: vet4,
-    schedule: [1, 1, 1, 0, 1, 1, 0],
-    history: [
-      "강원대학교 수의학과 학사 졸업",
-      "강원대학교 심장내과 실험실, 동물병원 근무",
-      "신촌 웨스턴 의료센터 인턴 수료",
-      "용인 이리온 의료센터 진료의",
-      "송파 바로 의료센터 진료의",
-      "건국대학교 외과대학원 석사 졸업",
-      "건국대학교 외과대학원 박사과정",
-      "現 24시동탄시티동물의료센터 외과 과장",
-    ],
-    expert: ["한국 수의외과 학회 (정회원)"],
-    education: [
-      "졸업논문 : PDA 진단에 있어 심장초음파 마커의 유용성",
-      "2023 한국임상수의학회 발표",
-      "석사 논문 : Biomechanical comparison of a technique using Sonntag with Fiberwire and wire for surgical management of Atlantoaxial subluxation : 3D printed study",
-      "아시아 수의외과학회 2023 나고야 참석",
-      "스킨앤이어 피부과 전문가 과정 수료",
-      "해마루 골절 세미나 수료",
-      "KAHA 동물 행동학 intermeate 수료",
-      "웨스턴 인턴 세미나 수료",
-    ],
-  },
 ];
+
+export type Vet = (typeof VETS)[number];
 
 export default function VetSection() {
   return (
     <SectionLayout hash="vets">
       <div className="flex flex-col items-center">
-        <div className="w-full pb-[90px] bg-olive-drab-50">
+        <div className="w-full bg-gray-50 pb-[90px]">
           <SectionTitle
             subtitle={"동탄시티동물의료센터 수의사팀을 소개합니다."}
           >
             수의사 소개
           </SectionTitle>
-          <ul className="space-y-20">
-            {VETS.map((vet) => (
-              <li key={vet.name}>
-                <VetArticle {...vet} />
-              </li>
-            ))}
-          </ul>
+          <Container>
+            <ul className="space-y-20">
+              {VETS.map((vet) => (
+                <li
+                  key={vet.name}
+                  className="overflow-hidden rounded-lg shadow-lg"
+                >
+                  <VetArticle {...vet} />
+                </li>
+              ))}
+            </ul>
+          </Container>
         </div>
       </div>
     </SectionLayout>
