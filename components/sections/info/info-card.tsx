@@ -14,17 +14,17 @@ export default function InfoCard({
 }) {
   return (
     <motion.li
-      className="flex flex-col items-center flex-1"
+      className="flex flex-1 flex-col items-center"
       whileInView={{ opacity: 1, y: 0 }}
       initial={{ opacity: 0, y: 40 }}
       transition={{ duration: 0.6, delay: (index + 1) * 0.2 }}
       viewport={{ once: true }}
     >
-      <div className="w-[180px] h-[180px] flex items-center justify-center  rounded-full border border-primary mb-[60px] ">
+      <div className="mb-[60px] flex h-[160px] w-[160px] items-center justify-center rounded-full border border-primary">
         <Icon size={60} className="text-primary" />
       </div>
 
-      <h3 className="text-3xl font-bold text-primary border-b pb-4 text-center mb-10">
+      <h3 className="mb-10 border-b pb-4 text-center text-3xl font-bold text-primary">
         {title}
       </h3>
 

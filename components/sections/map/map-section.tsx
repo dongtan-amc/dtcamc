@@ -30,21 +30,21 @@ export default function MapSection() {
       </SectionTitle>
 
       <motion.div
-        className="flex justify-center mb-6 gap-2"
+        className="mb-6 flex justify-center gap-2"
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 40 }}
         transition={{ duration: 0.6, delay: 0.6 }}
         viewport={{ once: true }}
       >
         <Button
-          className="text-white bg-[#03C75A] hover:bg-[hsla(147,97%,40%,0.9)] w-32"
+          className="w-32 bg-[#03C75A] text-white hover:bg-[hsla(147,97%,40%,0.9)]"
           asChild
         >
           <Link href={NAVER_MAP} target="_blank">
             네이버지도
           </Link>
         </Button>
-        <Button className="text-black bg-[#FAE200] hover:bg-[hsla(54,100%,49%,0.9)] w-32">
+        <Button className="w-32 bg-[#FAE200] text-black hover:bg-[hsla(54,100%,49%,0.9)]">
           <Link href={KAKAO_MAP} target="_blank">
             카카오맵
           </Link>
@@ -60,7 +60,7 @@ export default function MapSection() {
         <Map
           center={{ lat: 37.209311, lng: 127.061813 }}
           style={{
-            width: "1280px",
+            width: "100%",
             height: "480px",
             margin: "0 auto",
           }}
@@ -68,7 +68,7 @@ export default function MapSection() {
           scrollwheel={false}
         >
           <MapMarker position={{ lat: 37.209311, lng: 127.061813 }}>
-            <div className="text-center pl-1 text-[14px] font-bold text-primary z-20">
+            <div className="z-20 pl-1 text-center text-[14px] font-bold text-primary">
               {NAME.slice(3)}
             </div>
           </MapMarker>

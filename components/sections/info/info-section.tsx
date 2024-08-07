@@ -22,7 +22,7 @@ const INFOS = [
           예약상담을 위해 항시 대기하여
           <br /> 친절히 상담해 드립니다.
         </p>
-        <p className="text-primary font-bold text-4xl pt-[35px]">{PHONE}</p>
+        <p className="pt-[35px] text-4xl font-bold text-primary">{PHONE}</p>
       </div>
     ),
     icon: FaPhone,
@@ -34,7 +34,7 @@ const INFOS = [
         <p>주간 : {DAY_TIME}</p>
         <p>야간 : {NIGHT_TIME}</p>
         <p>일요일 : {SUNDAY_TIME}</p>
-        <p className="text-base pt-[35px]">
+        <p className="pt-[35px] text-base">
           ※ 야간 진료 시간 이후에는 <br />
           입원환자 관리에 집중하기 위해 <br /> 진료를 제한합니다.
         </p>
@@ -51,14 +51,14 @@ const INFOS = [
           <p>은행사거리 (구)기업은행 위치</p>
         </div>
         <div>
-          <p className="font-bold flex items-center gap-1">
+          <p className="flex items-center gap-1 font-bold">
             <RiParkingBoxFill className="text-rose-600" size={24} />
             건물주차장
           </p>
           - 건물 지하 1층 (SUV 불가)
         </div>
         <div>
-          <p className="font-bold flex items-center gap-1">
+          <p className="flex items-center gap-1 font-bold">
             <RiParkingBoxFill className="text-rose-600" size={24} />
             패밀리타운주차장(뒷편 주차빌딩)
           </p>
@@ -72,7 +72,7 @@ const INFOS = [
 ];
 export default function InfoSection() {
   return (
-    <div>
+    <div className="bg-gray-50">
       <Container>
         <ul className="flex justify-evenly py-10">
           {INFOS.map((info, index) => (
