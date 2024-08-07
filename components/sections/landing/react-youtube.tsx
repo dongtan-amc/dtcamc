@@ -10,6 +10,7 @@ export default function ReactYoutube() {
       modestbranding: 1,
       loop: 1,
       playlist: "ItWaJwVQ3vI",
+      vq: "hd1080",
     },
   };
   return (
