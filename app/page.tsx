@@ -2,6 +2,7 @@ import BiliarySection from "@/components/sections/biliary/biliary-section";
 import CTSection from "@/components/sections/ct/ct-section";
 import DialysisSection from "@/components/sections/dialysis/dialysis-section";
 import EmploymentSection from "@/components/sections/employment/employment-section";
+import FacilitiesSection from "@/components/sections/facilities/facilities-section";
 import InfoSection from "@/components/sections/info/info-section";
 import IntroSection from "@/components/sections/intro/intro-section";
 import LandingSection from "@/components/sections/landing/landing-section";
@@ -15,8 +16,12 @@ export default function Home() {
   return (
     <>
       <LandingSection />
+
+      <FacilitiesSection />
+
       <IntroSection />
       <VetSection />
+
       <OrthopedicSection />
       <BiliarySection />
       <DialysisSection />

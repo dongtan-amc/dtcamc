@@ -10,14 +10,14 @@ export default function CarouselIndex({
   setCurrent: Dispatch<SetStateAction<number>>;
 }) {
   return (
-    <div className="absolute bottom-5 left-[calc(50%-40px)] flex gap-2 w-full mx-auto">
+    <div className="absolute bottom-5 left-[calc(50%-40px)] mx-auto flex w-full gap-2">
       {new Array(count).fill(0).map((_, index) => (
         <div
           className={cn(
             index + 1 === current
               ? "w-10 bg-olive-drab-600"
               : "w-2 bg-olive-drab-500",
-            " h-2 rounded-full"
+            "h-2 rounded-full",
           )}
           key={index}
         />

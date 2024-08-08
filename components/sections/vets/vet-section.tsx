@@ -5,6 +5,8 @@ import vet3 from "@/public/vets/crop-vet3.png";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
 import VetArticle from "./vet-article";
+import DividerBottom from "@/components/common/divider-bottom";
+import DividerTop from "@/components/common/divider-top";
 
 const VETS = [
   {
@@ -105,7 +107,7 @@ export type Vet = (typeof VETS)[number];
 
 export default function VetSection() {
   return (
-    <SectionLayout hash="vets">
+    <SectionLayout hash="vets" className="bg-olive-drab-50/80">
       <div className="flex w-full flex-col items-center">
         <div className="w-full py-16 md:py-24">
           <SectionTitle

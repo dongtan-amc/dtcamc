@@ -22,35 +22,35 @@ export default function Posts({
   const postsMetadata = getPostsMetadata(folderPath);
   const importantPosts = useMemo(
     () => postsMetadata.filter((post) => post.important),
-    [postsMetadata]
+    [postsMetadata],
   );
   const normalPosts = useMemo(
     () => postsMetadata.filter((post) => !post.important),
-    [postsMetadata]
+    [postsMetadata],
   );
 
   return (
     <div className="min-h-[50vh]">
-      <Table className="mt-10 mb-12">
+      <Table className="mb-12 mt-10">
         <TableHeader>
           <TableRow>
-            <TableHead className="text-center text-primary font-bold text-nowrap">
+            <TableHead className="text-nowrap text-center font-bold text-primary">
               번호
             </TableHead>
-            <TableHead className="text-center text-primary font-bold text-nowrap">
+            <TableHead className="text-nowrap text-center font-bold text-primary">
               제목
             </TableHead>
-            <TableHead className="text-center text-primary font-bold text-nowrap">
+            <TableHead className="text-nowrap text-center font-bold text-primary">
               작성자
             </TableHead>
-            <TableHead className="text-center text-primary font-bold text-nowrap">
+            <TableHead className="text-nowrap text-center font-bold text-primary">
               등록일
             </TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
           {importantPosts.map((post) => (
-            <TableRow key={post.title} className="font-bold bg-olive-drab-50">
+            <TableRow key={post.title} className="bg-olive-drab-50 font-bold">
               <TableCell className="text-center">중요</TableCell>
               <TableCell>
                 <Link href={`${type}/${post.slug}`}>{post.title}</Link>
@@ -66,7 +66,7 @@ export default function Posts({
                 <Link href={`${type}/${post.slug}`}>{post.title}</Link>
               </TableCell>
               <TableCell className="text-center">{post.author}</TableCell>
-              <TableCell className="text-center text-nowrap">
+              <TableCell className="text-nowrap text-center">
                 {post.date}
               </TableCell>
             </TableRow>

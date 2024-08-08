@@ -7,6 +7,8 @@ import { FaBed, FaMicroscope, FaUserDoctor } from "react-icons/fa6";
 import { Ri24HoursFill } from "react-icons/ri";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
+import DividerBottom from "@/components/common/divider-bottom";
+import DividerTop from "@/components/common/divider-top";
 
 const INTRODUCTION = [
   {
@@ -98,6 +100,7 @@ export default function IntroSection() {
           ))}
         </div>
       </Container>
+      <DividerBottom />
     </SectionLayout>
   );
 }

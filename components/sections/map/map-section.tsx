@@ -8,21 +8,41 @@ import {
   NAVER_MAP,
   PHONE,
 } from "@/constants/general-info";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { RiParkingBoxFill } from "react-icons/ri";
 import { CustomOverlayMap, Map, MapMarker } from "react-kakao-maps-sdk";
-import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
-import { motion } from "framer-motion";
+import DividerTop from "@/components/common/divider-top";
+import DividerBottom from "@/components/common/divider-bottom";
 
 export default function MapSection() {
   return (
-    <SectionLayout hash="info">
+    <div
+      id="info"
+      className="relative scroll-mt-[64px] bg-white xl:scroll-mt-[96px]"
+    >
+      <DividerTop />
       <SectionTitle
         subtitle={
           <div className="space-y-2">
             <div>오시는 길 : {ADDRESS}</div>
             <div>전화번호 : {PHONE}</div>
+            <div className="flex justify-center gap-2">
+              <Button
+                className="w-32 bg-[#03C75A] text-white hover:bg-[hsla(147,97%,40%,0.9)]"
+                asChild
+              >
+                <Link href={NAVER_MAP} target="_blank">
+                  네이버지도
+                </Link>
+              </Button>
+              <Button className="w-32 bg-[#FAE200] text-black hover:bg-[hsla(54,100%,49%,0.9)]">
+                <Link href={KAKAO_MAP} target="_blank">
+                  카카오맵
+                </Link>
+              </Button>
+            </div>
           </div>
         }
       >
@@ -35,21 +55,7 @@ export default function MapSection() {
         initial={{ opacity: 0, y: 40 }}
         transition={{ duration: 0.6, delay: 0.6 }}
         viewport={{ once: true }}
-      >
-        <Button
-          className="w-32 bg-[#03C75A] text-white hover:bg-[hsla(147,97%,40%,0.9)]"
-          asChild
-        >
-          <Link href={NAVER_MAP} target="_blank">
-            네이버지도
-          </Link>
-        </Button>
-        <Button className="w-32 bg-[#FAE200] text-black hover:bg-[hsla(54,100%,49%,0.9)]">
-          <Link href={KAKAO_MAP} target="_blank">
-            카카오맵
-          </Link>
-        </Button>
-      </motion.div>
+      ></motion.div>
 
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}
@@ -85,6 +91,6 @@ export default function MapSection() {
           </CustomOverlayMap>
         </Map>
       </motion.div>
-    </SectionLayout>
+    </div>
   );
 }

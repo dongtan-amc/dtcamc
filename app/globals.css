@@ -137,3 +137,44 @@
 /* .device_height {
   min-height: 100dvh;
 } */
+
+.custom-shape-divider-bottom-1723077323 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1723077323 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 86px;
+}
+
+.custom-shape-divider-bottom-1723077323 .shape-fill {
+  fill: #f5f9eccc;
+}
+
+.custom-shape-divider-top-1723079121 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1723079121 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 86px;
+}
+
+.custom-shape-divider-top-1723079121 .shape-fill {
+  fill: #f5f9eccc;
+}

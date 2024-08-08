@@ -18,14 +18,14 @@ import {
 
 export default function TimeTable() {
   return (
-    <div className="space-y-12 leading-8 pb-12 pt-10">
+    <div className="space-y-12 pb-12 pt-10 leading-8">
       <div className="w-full">
-        <h3 className="text-slate-950 font-bold text-xl">
+        <h3 className="text-xl font-bold text-slate-950">
           {NAME}는 365일 연중 무휴입니다.
         </h3>
         <Table className="mt-8 border text-base lg:text-lg">
           <TableCaption className="text-xs lg:text-base">
-            <div className="text-left text-slate-950 space-y-2">
+            <div className="space-y-2 text-left text-slate-950">
               <p className="bg-olive-drab-50 px-4 py-2">
                 ※ 진료시간이 변경될 경우 홈페이지를 통해 공지하겠습니다.
               </p>
@@ -44,13 +44,13 @@ export default function TimeTable() {
           </TableCaption>
           <TableHeader className="bg-olive-drab-700">
             <TableRow>
-              <TableHead className="text-white text-center">구분</TableHead>
-              <TableHead className="text-white text-center">시간</TableHead>
+              <TableHead className="text-center text-white">구분</TableHead>
+              <TableHead className="text-center text-white">시간</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             <TableRow>
-              <TableCell className="text-center text-nowrap">
+              <TableCell className="text-nowrap text-center">
                 주간진료
               </TableCell>
               <TableCell className="text-center">{DAY_TIME}</TableCell>

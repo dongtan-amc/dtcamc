@@ -11,6 +11,8 @@ import { FaClock, FaParking } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import InfoCard from "./info-card";
 import { RiParkingBoxFill } from "react-icons/ri";
+import DividerTop from "@/components/common/divider-top";
+import DividerBottom from "@/components/common/divider-bottom";
 
 const INFOS = [
   {
@@ -72,7 +74,7 @@ const INFOS = [
 ];
 export default function InfoSection() {
   return (
-    <div className="bg-gray-50">
+    <div className="relative bg-white pb-28">
       <Container>
         <ul className="flex justify-evenly py-10">
           {INFOS.map((info, index) => (
@@ -86,6 +88,7 @@ export default function InfoSection() {
           ))}
         </ul>
       </Container>
+      <DividerBottom />
     </div>
   );
 }

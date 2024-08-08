@@ -12,7 +12,7 @@ export default function SectionImage({
 }) {
   return (
     <Container>
-      <div className="relative mt-10 h-[480px] w-full overflow-hidden rounded-xl">
+      <div className="relative h-[480px] w-full overflow-hidden rounded-xl">
         <Image
           alt="section image"
           src={image}
