@@ -16,12 +16,9 @@ export default function Home() {
   return (
     <>
       <LandingSection />
-
       <FacilitiesSection />
-
       <IntroSection />
       <VetSection />
-
       <OrthopedicSection />
       <BiliarySection />
       <DialysisSection />

@@ -7,14 +7,12 @@ import DividerBottom from "@/components/common/divider-bottom";
 
 export default function DialysisSection() {
   return (
-    <SectionLayout hash="dialysis">
+    <SectionLayout hash="dialysis" className="py-20">
       <DividerTop />
 
-      <div className="py-28">
-        <SectionImage image={dialysisSectionImage} title="신장투석 클리닉" />
+      <SectionImage image={dialysisSectionImage} title="신장투석 클리닉" />
 
-        <DialysisContents />
-      </div>
+      <DialysisContents />
 
       <DividerBottom />
     </SectionLayout>

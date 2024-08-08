@@ -7,12 +7,10 @@ import DividerBottom from "@/components/common/divider-bottom";
 
 export default function CTSection() {
   return (
-    <SectionLayout hash="ct">
+    <SectionLayout hash="ct" className="py-20">
       <DividerTop />
-      <div className="py-28">
-        <SectionImage image={ctSection} title="영상진단센터" />
-        <CtContents />
-      </div>
+      <SectionImage image={ctSection} title="영상진단센터" />
+      <CtContents />
       <DividerBottom />
     </SectionLayout>
   );

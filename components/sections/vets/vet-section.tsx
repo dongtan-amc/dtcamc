@@ -107,27 +107,23 @@ export type Vet = (typeof VETS)[number];
 
 export default function VetSection() {
   return (
-    <SectionLayout hash="vets" className="bg-olive-drab-50/80">
+    <SectionLayout hash="vets" className="bg-olive-drab-50/80 pb-20">
       <div className="flex w-full flex-col items-center">
-        <div className="w-full py-16 md:py-24">
-          <SectionTitle
-            subtitle={"동탄시티동물의료센터 수의사팀을 소개합니다."}
-          >
-            수의사 소개
-          </SectionTitle>
-          <Container>
-            <ul className="space-y-12 md:space-y-20">
-              {VETS.map((vet) => (
-                <li
-                  key={vet.name}
-                  className="overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
-                >
-                  <VetArticle {...vet} />
-                </li>
-              ))}
-            </ul>
-          </Container>
-        </div>
+        <SectionTitle subtitle={"동탄시티동물의료센터 수의사팀을 소개합니다."}>
+          수의사 소개
+        </SectionTitle>
+        <Container>
+          <ul className="space-y-12 md:space-y-20">
+            {VETS.map((vet) => (
+              <li
+                key={vet.name}
+                className="overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
+              >
+                <VetArticle {...vet} />
+              </li>
+            ))}
+          </ul>
+        </Container>
       </div>
     </SectionLayout>
   );

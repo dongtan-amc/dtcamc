@@ -1,28 +1,26 @@
+import abl9 from "@/public/tools/abl-9.png";
+import carm from "@/public/tools/cart.png";
 import catalystOne from "@/public/tools/catalystOne.png";
+import ct from "@/public/tools/ct.jpg";
 import dentalUnit from "@/public/tools/dental-unit.png";
 import dentalXray from "@/public/tools/dental-xray.jpg";
 import drill from "@/public/tools/drill.jpeg";
+import dya from "@/public/tools/dia.jpg";
 import elctrovet from "@/public/tools/electrovet.jpeg";
 import fixin from "@/public/tools/fixin.png";
+import gas from "@/public/tools/gas.png";
 import ligasure2 from "@/public/tools/ligasure2.jpeg";
 import masimo from "@/public/tools/masimo.png";
 import myvetray from "@/public/tools/myvetray.png";
 import oxus from "@/public/tools/oxus.png";
 import plasma from "@/public/tools/plasma.png";
 import procyte from "@/public/tools/procyte.png";
-import quickvet from "@/public/tools/quickvet.jpeg";
+import quick from "@/public/tools/quick.png";
 import sonocure from "@/public/tools/sonocure.png";
 import ultrasound from "@/public/tools/ultrasound.png";
 import urine from "@/public/tools/urine.png";
-import vetChroma from "@/public/tools/vet-chroma.jpeg";
-import xray from "@/public/tools/xray.jpeg";
-import ct from "@/public/tools/ct.jpg";
-import carm from "@/public/tools/cart.png";
-import dya from "@/public/tools/dy.png";
-import gas from "@/public/tools/gas.png";
-import abl9 from "@/public/tools/abl-9.png";
 import vetc from "@/public/tools/vet-c.png";
-import quick from "@/public/tools/quick.png";
+import xray from "@/public/tools/xray.jpeg";
 
 export const TOOLS = [
   {

@@ -21,13 +21,15 @@ export default function SectionImage({
           placeholder="blur"
         />
 
-        <div className="absolute bottom-10 left-14 flex flex-col gap-8 text-white">
+        <div className="absolute bottom-5 left-5 flex flex-col text-white md:bottom-10 md:left-14 md:gap-4">
           <div>
-            <h4 className="pb-2 text-5xl font-bold leading-[60px]">{title}</h4>
+            <h4 className="text-3xl font-bold leading-[60px] xl:text-5xl">
+              {title}
+            </h4>
           </div>
           <Button
             asChild
-            className="w-32 rounded-xl bg-[#A3C433] tracking-wide text-black"
+            className="w-32 rounded-md bg-[#A3C433] text-lg text-white"
           >
             <Link href="#info" className="font-bold">
               상담하기

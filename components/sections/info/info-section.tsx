@@ -76,7 +76,7 @@ export default function InfoSection() {
   return (
     <div className="relative bg-white pb-28">
       <Container>
-        <ul className="flex justify-evenly py-10">
+        <ul className="grid grid-cols-1 justify-evenly gap-5 py-10 md:grid-cols-3">
           {INFOS.map((info, index) => (
             <InfoCard
               description={info.description}

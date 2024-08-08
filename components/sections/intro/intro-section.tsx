@@ -1,14 +1,13 @@
 "use client";
 
 import Container from "@/components/common/container";
+import DividerBottom from "@/components/common/divider-bottom";
 import { NAME } from "@/constants/general-info";
 import { motion } from "framer-motion";
 import { FaBed, FaMicroscope, FaUserDoctor } from "react-icons/fa6";
 import { Ri24HoursFill } from "react-icons/ri";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
-import DividerBottom from "@/components/common/divider-bottom";
-import DividerTop from "@/components/common/divider-top";
 
 const INTRODUCTION = [
   {
@@ -39,14 +38,14 @@ const INTRODUCTION = [
 
 export default function IntroSection() {
   return (
-    <SectionLayout hash="intro">
+    <SectionLayout hash="intro" className="pb-20">
       <Container>
         <SectionTitle subtitle="24시 동탄시티동물의료센터 홈페이지를 방문해주셔서 감사합니다.">
           인사말
         </SectionTitle>
 
         <motion.div
-          className="mb-16 mt-8 flex flex-col gap-6 text-base leading-relaxed text-gray-700 sm:mb-20 sm:mt-12 sm:gap-8 sm:text-lg md:mb-24 md:mt-16"
+          className="mb-12 flex flex-col gap-6 rounded-md bg-white p-4 text-base leading-relaxed text-gray-700 shadow-md sm:gap-8 sm:text-lg xl:p-6"
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 40 }}
           transition={{ duration: 0.6, delay: 0.6 }}

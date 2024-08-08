@@ -20,13 +20,11 @@ const CAROUSEL_ITEMS = [slide1, slide2, slide3, slide4, slide5, slide6];
 export default function LandingCarousel() {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
-  const [count, setCount] = useState(0);
 
   useEffect(() => {
     if (!api) {
       return;
     }
-    setCount(api.scrollSnapList().length);
     setCurrent(api.selectedScrollSnap() + 1);
 
     api.on("select", () => {
@@ -61,7 +59,7 @@ export default function LandingCarousel() {
         {CAROUSEL_ITEMS.map((_, index) => (
           <button
             key={index}
-            className={`h-2 w-6 transition-colors duration-200 ${
+            className={`h-4 w-4 rounded-full transition-colors duration-200 ${
               current === index + 1 ? "bg-primary" : "bg-gray-200"
             }`}
             onClick={() => handleDotClick(index)}

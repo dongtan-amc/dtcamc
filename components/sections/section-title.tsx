@@ -21,7 +21,7 @@ export default function SectionTitle({
 
   return (
     <div
-      className={`relative z-30 flex flex-col gap-3 py-8 sm:gap-4 sm:py-12 ${alignmentClasses[align]} ${className}`}
+      className={`relative z-30 flex flex-col gap-3 py-8 sm:gap-4 xl:py-12 ${alignmentClasses[align]} ${className}`}
     >
       <motion.h2
         className="text-2xl font-bold text-gray-900 sm:text-3xl lg:text-4xl"

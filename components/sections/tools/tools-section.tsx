@@ -3,7 +3,6 @@ import { TOOLS } from "@/constants/tools";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
 import ToolCard from "./tool-card";
-import DividerBottom from "@/components/common/divider-bottom";
 
 export default function ToolsSection() {
   return (

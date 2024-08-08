@@ -9,7 +9,9 @@ import {
 import { SlChemistry } from "react-icons/sl";
 import { TbRadioactive, TbTargetArrow } from "react-icons/tb";
 import { MdOutlineBiotech } from "react-icons/md";
-import on1 from "@/public/sections/onocology/1.png";
+import on1 from "@/public/subjects/cancer.png";
+import on2 from "@/public/subjects/skincancer.jpg";
+import on3 from "@/public/sections/onocology/can.png";
 
 export default function OncologyContents() {
   return (
@@ -19,7 +21,7 @@ export default function OncologyContents() {
           동탄시티의 종양치료 클리닉은
         </h5>
 
-        <div className="px-2 pb-3 pt-1 text-xl">
+        <div className="px-2 pb-3 pt-1 text-base xl:text-xl">
           종양진단, 수술, 항암치료 모든 것을 원스탑으로 진행 맞춤형 상담을 통해
           환자에게 알맞은 최적의 치료계획을 정하게 됩니다. 최신종양치료,
           화학요법(CHOP), 메트로놈항암, 표적항암, 전기화학치료(ECT;
@@ -27,7 +29,7 @@ export default function OncologyContents() {
         </div>
       </div>
 
-      <div className="flex justify-between gap-3 py-4">
+      <div className="md: grid grid-cols-1 justify-between gap-3 py-4 md:grid-cols-4">
         <div className="w-full rounded-[8px] bg-white p-4 shadow-md">
           <SlChemistry size={24} />
           <h6 className="pt-3 font-bold">Chemotherapy</h6>
@@ -61,15 +63,15 @@ export default function OncologyContents() {
         </div>
       </div>
 
-      <div className="flex justify-between gap-4 py-4">
+      <div className="grid grid-cols-1 justify-between gap-4 py-4 md:grid-cols-3">
         <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
           <Image src={on1} alt="ct image" fill className="object-cover" />
         </div>
         <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-          <Image src={on1} alt="ct image" fill className="object-cover" />
+          <Image src={on2} alt="ct image" fill className="object-cover" />
         </div>
         <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-          <Image src={on1} alt="ct image" fill className="object-cover" />
+          <Image src={on3} alt="ct image" fill className="object-cover" />
         </div>
       </div>
     </Container>
