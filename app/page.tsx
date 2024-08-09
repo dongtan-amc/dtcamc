@@ -16,8 +16,8 @@ import Building from "./building";
 export default function Home() {
   return (
     <>
-      {/* <Building /> */}
-      <LandingSection />
+      <Building />
+      {/* <LandingSection />
       <IntroSection />
       <VetSection />
       <OrthopedicSection />
@@ -28,7 +28,7 @@ export default function Home() {
       <ToolsSection />
       <MapSection />
       <InfoSection />
-      <EmploymentSection />
+      <EmploymentSection /> */}
     </>
   );
 }
