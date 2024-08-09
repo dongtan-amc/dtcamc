@@ -46,7 +46,7 @@ export default function LandingCarousel() {
       }}
       plugins={[
         Autoplay({
-          delay: 5000,
+          delay: 4000,
         }),
       ]}
     >
@@ -55,11 +55,11 @@ export default function LandingCarousel() {
           <CarouselCard key={index} image={item} />
         ))}
       </CarouselContent>
-      <div className="absolute -bottom-10 left-1/2 flex -translate-x-1/2 transform space-x-4">
+      <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 transform space-x-4 md:bottom-10">
         {CAROUSEL_ITEMS.map((_, index) => (
           <button
             key={index}
-            className={`h-4 w-4 rounded-full transition-colors duration-200 ${
+            className={`h-2 w-2 rounded-full transition-colors duration-200 md:h-4 md:w-4 ${
               current === index + 1 ? "bg-primary" : "bg-gray-200"
             }`}
             onClick={() => handleDotClick(index)}
