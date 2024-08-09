@@ -20,7 +20,7 @@ export default function MapSection() {
   return (
     <div
       id="info"
-      className="relative scroll-mt-[64px] bg-white xl:scroll-mt-[96px]"
+      className="relative scroll-mt-[64px] bg-white py-10 xl:scroll-mt-[96px]"
     >
       <DividerTop />
       <SectionTitle
@@ -48,14 +48,6 @@ export default function MapSection() {
       >
         진료안내
       </SectionTitle>
-
-      <motion.div
-        className="mb-6 flex justify-center gap-2"
-        whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: 40 }}
-        transition={{ duration: 0.6, delay: 0.6 }}
-        viewport={{ once: true }}
-      ></motion.div>
 
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}

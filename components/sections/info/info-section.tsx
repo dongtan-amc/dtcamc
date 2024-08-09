@@ -1,30 +1,32 @@
 "use client";
 
 import Container from "@/components/common/container";
+import DividerBottom from "@/components/common/divider-bottom";
 import {
   DAY_TIME,
   NIGHT_TIME,
   PHONE,
   SUNDAY_TIME,
 } from "@/constants/general-info";
-import { FaClock, FaParking } from "react-icons/fa";
+import { FaClock } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
-import InfoCard from "./info-card";
 import { RiParkingBoxFill } from "react-icons/ri";
-import DividerTop from "@/components/common/divider-top";
-import DividerBottom from "@/components/common/divider-bottom";
+import InfoCard from "./info-card";
+import { Separator } from "@/components/ui/separator";
 
 const INFOS = [
   {
     title: "대표전화",
     description: (
       <div className="space-y-2">
-        <p className="text-[22px]">
+        <p>
           진료에 대한 문의 및<br />
           예약상담을 위해 항시 대기하여
           <br /> 친절히 상담해 드립니다.
         </p>
-        <p className="pt-[35px] text-4xl font-bold text-primary">{PHONE}</p>
+        <p className="pt-2 text-2xl font-bold text-primary md:pt-[35px] md:text-4xl">
+          {PHONE}
+        </p>
       </div>
     ),
     icon: FaPhone,
@@ -32,7 +34,7 @@ const INFOS = [
   {
     title: "진료시간",
     description: (
-      <div className="">
+      <div>
         <p>주간 : {DAY_TIME}</p>
         <p>야간 : {NIGHT_TIME}</p>
         <p>일요일 : {SUNDAY_TIME}</p>
@@ -76,15 +78,18 @@ export default function InfoSection() {
   return (
     <div className="relative bg-white pb-28">
       <Container>
-        <ul className="grid grid-cols-1 justify-evenly gap-5 py-10 md:grid-cols-3">
+        <ul className="grid grid-cols-1 justify-evenly gap-10 py-10 md:grid-cols-3 md:gap-5">
           {INFOS.map((info, index) => (
-            <InfoCard
-              description={info.description}
-              icon={info.icon}
-              key={info.title}
-              title={info.title}
-              index={index}
-            />
+            <>
+              <Separator className="block md:hidden" />
+              <InfoCard
+                description={info.description}
+                icon={info.icon}
+                key={info.title}
+                title={info.title}
+                index={index}
+              />
+            </>
           ))}
         </ul>
       </Container>

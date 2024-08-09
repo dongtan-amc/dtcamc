@@ -77,8 +77,7 @@ export default function IntroSection() {
             최선을 다하겠습니다.
           </p>
           <p className="mt-6 text-right sm:mt-8">
-            {NAME} 대표원장{" "}
-            <span className="font-bold text-primary">고재진</span>
+            대표원장 <span className="font-bold text-primary">고재진</span>
           </p>
         </motion.div>
 
