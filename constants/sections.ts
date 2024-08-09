@@ -30,7 +30,7 @@ export const SECTIONS = [
   },
   {
     sectionTitle: "진료안내",
-    hash: "#info",
+    hash: "#time",
   },
   {
     sectionTitle: "채용안내",

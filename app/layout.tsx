@@ -90,9 +90,9 @@ export default function RootLayout({
           strategy="beforeInteractive"
         />
 
-        {/* <Navbar /> */}
+        <Navbar />
         <main className="min-h-screen break-keep">{children}</main>
-        {/* <Footer /> */}
+        <Footer />
 
         <ScrollTopButton />
 

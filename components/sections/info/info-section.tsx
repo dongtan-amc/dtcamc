@@ -13,6 +13,8 @@ import { FaPhone } from "react-icons/fa6";
 import { RiParkingBoxFill } from "react-icons/ri";
 import InfoCard from "./info-card";
 import { Separator } from "@/components/ui/separator";
+import Image from "next/image";
+import map from "@/public/map.png";
 
 const INFOS = [
   {
@@ -50,19 +52,17 @@ const INFOS = [
     title: "주차안내",
     description: (
       <div className="space-y-2">
+        <Image alt="map" src={map} width={400} />
+
         <div>
-          <p>화성시 동탄지성로 126, 정일프라자 2F</p>
-          <p>은행사거리 (구)기업은행 위치</p>
-        </div>
-        <div>
-          <p className="flex items-center gap-1 font-bold">
+          <p className="flex gap-1 font-bold">
             <RiParkingBoxFill className="text-rose-600" size={24} />
             건물주차장
           </p>
           - 건물 지하 1층 (SUV 불가)
         </div>
         <div>
-          <p className="flex items-center gap-1 font-bold">
+          <p className="flex gap-1 font-bold">
             <RiParkingBoxFill className="text-rose-600" size={24} />
             패밀리타운주차장(뒷편 주차빌딩)
           </p>
