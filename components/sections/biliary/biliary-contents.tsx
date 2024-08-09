@@ -1,6 +1,6 @@
 import Container from "@/components/common/container";
-import cancer from "@/public/sections/biliary/livercancer.png";
 import stone from "@/public/sections/biliary/gbstone.png";
+import cancer from "@/public/sections/biliary/livercancer.png";
 import mucocle from "@/public/sections/biliary/mucocele.png";
 import { CheckIcon } from "@radix-ui/react-icons";
 import Image from "next/image";

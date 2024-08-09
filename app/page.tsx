@@ -11,10 +11,12 @@ import OnncologySection from "@/components/sections/oncology/oncology-section";
 import OrthopedicSection from "@/components/sections/orthopedic/orthopedic-section";
 import ToolsSection from "@/components/sections/tools/tools-section";
 import VetSection from "@/components/sections/vets/vet-section";
+import Building from "./building";
 
 export default function Home() {
   return (
     <>
+      {/* <Building /> */}
       <LandingSection />
       <IntroSection />
       <VetSection />

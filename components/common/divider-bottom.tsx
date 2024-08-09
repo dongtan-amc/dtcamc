@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function DividerBottom() {
   return (
     <div className="custom-shape-divider-bottom-1723088424">

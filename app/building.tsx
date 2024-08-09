@@ -32,23 +32,23 @@ const CONTACTS = [
 
 export default function Building() {
   return (
-    <main className="bg-slate-950 text-white h-screen flex flex-col items-center justify-center">
-      <h1 className="text-2xl sm:text-3xl font-semibold mb-10">
+    <main className="flex h-screen flex-col items-center justify-center bg-slate-950 text-white">
+      <h1 className="mb-10 text-2xl font-semibold sm:text-3xl">
         24시 동탄시티동물의료센터입니다.
       </h1>
       <div className="flex flex-col items-center gap-2">
-        <p className="mb-10 font-semibold text-base sm:text-xl">
+        <p className="mb-10 text-base font-semibold sm:text-xl">
           죄송합니다. 현재 저희 홈페이지는 준비 중에 있습니다.
         </p>
-        <ul className="grid grid-cols-2 sm:grid-cols-4 gap-10">
+        <ul className="grid grid-cols-2 gap-10 sm:grid-cols-4">
           {CONTACTS.map((contact) => (
             <li key={contact.title} className="">
               <Link
                 href={contact.value}
                 target="_blank"
-                className="flex flex-col items-center gap-2 hover:scale-110 transition"
+                className="flex flex-col items-center gap-2 transition hover:scale-110"
               >
-                <div className="relative w-10 h-10">
+                <div className="relative h-10 w-10">
                   <Image
                     src={contact.icon}
                     alt={contact.title}
