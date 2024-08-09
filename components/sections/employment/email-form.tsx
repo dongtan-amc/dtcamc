@@ -82,13 +82,13 @@ export default function EmailForm() {
   return (
     <Container>
       <motion.div
-        className="flex flex-col md:flex-row items-center gap-10"
+        className="flex flex-col items-center gap-10 md:flex-row"
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 40 }}
         transition={{ duration: 0.6, delay: 0.5 }}
         viewport={{ once: true }}
       >
-        <div className="w-1/2 text-xl">
+        <div className="text-lg md:w-1/2 md:text-xl">
           <p>
             24시 동탄시티동물의료센터는 반려동물의 질환에 대해서 전문적으로
             치료하는 병원으로 구성되어 있습니다.
@@ -112,13 +112,13 @@ export default function EmailForm() {
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="grid grid-cols-2 gap-4 w-1/2"
+            className="grid grid-cols-2 gap-4 md:w-1/2"
           >
             <FormField
               control={form.control}
               name="name"
               render={({ field }) => (
-                <FormItem>
+                <FormItem className="col-span-2 md:col-span-1">
                   <FormLabel>성함</FormLabel>
                   <FormControl>
                     <Input {...field} />
@@ -131,7 +131,7 @@ export default function EmailForm() {
               control={form.control}
               name="email"
               render={({ field }) => (
-                <FormItem>
+                <FormItem className="col-span-2 md:col-span-1">
                   <FormLabel>이메일 주소</FormLabel>
                   <FormControl>
                     <Input {...field} />
@@ -144,7 +144,7 @@ export default function EmailForm() {
               control={form.control}
               name="area"
               render={({ field }) => (
-                <FormItem>
+                <FormItem className="col-span-2 md:col-span-1">
                   <FormLabel>지원분야</FormLabel>
                   <Select
                     onValueChange={field.onChange}
@@ -172,7 +172,7 @@ export default function EmailForm() {
               control={form.control}
               name="phone"
               render={({ field }) => (
-                <FormItem>
+                <FormItem className="col-span-2 md:col-span-1">
                   <FormLabel>연락처</FormLabel>
                   <FormControl>
                     <Input {...field} />
@@ -199,9 +199,9 @@ export default function EmailForm() {
                             Array.from(files).map(async (file) => ({
                               filename: file.name,
                               content: Buffer.from(
-                                await file.arrayBuffer()
+                                await file.arrayBuffer(),
                               ).toString("base64"),
-                            }))
+                            })),
                           ).then((filesArray) => {
                             field.onChange(filesArray);
                           });
@@ -216,7 +216,7 @@ export default function EmailForm() {
 
             <Button
               type="submit"
-              className="col-span-2 mt-10"
+              className="col-span-2 mt-4 md:mt-10"
               disabled={isSending}
             >
               {isSending ? (
