@@ -1,9 +1,7 @@
 import Container from "@/components/common/container";
 import ct from "@/public/tools/ct.jpg";
-import ctImage2 from "@/public/sections/ct/2.png";
-import ctImage3 from "@/public/sections/ct/3.png";
-import Image from "next/image";
 import { CheckIcon } from "@radix-ui/react-icons";
+import Image from "next/image";
 
 export default function CtContents() {
   return (

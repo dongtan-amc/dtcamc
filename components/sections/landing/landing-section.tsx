@@ -1,4 +1,5 @@
 import LandingCarousel from "./landing-carousel";
+
 export default function LandingSection() {
   return (
     <div id="home" className="pt-[60px] xl:pt-0">

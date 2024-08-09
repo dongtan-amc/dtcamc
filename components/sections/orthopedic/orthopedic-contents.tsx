@@ -1,8 +1,8 @@
 import Container from "@/components/common/container";
-import ortho1 from "@/public/sections/orthopedics/patella.png";
 import ortho2 from "@/public/sections/orthopedics/cclr.png";
 import ortho3 from "@/public/sections/orthopedics/fhno.png";
 import ortho4 from "@/public/sections/orthopedics/fracture.png";
+import ortho1 from "@/public/sections/orthopedics/patella.png";
 import Image from "next/image";
 import {
   LuActivity,
