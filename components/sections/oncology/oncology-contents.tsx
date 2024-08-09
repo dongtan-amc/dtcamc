@@ -1,6 +1,6 @@
 import Container from "@/components/common/container";
-import on1 from "@/public/sections/onocology/livercancer.png";
 import on3 from "@/public/sections/onocology/spleencancer.png";
+import on1 from "@/public/sections/onocology/livercancer.png";
 import on2 from "@/public/sections/onocology/spleenx.png";
 import Image from "next/image";
 import { LuScissors } from "react-icons/lu";

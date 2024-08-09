@@ -1,7 +1,8 @@
 import Container from "@/components/common/container";
+import Image from "next/image";
+import React from "react";
 import dialysis from "@/public/tools/dia.jpg";
 import { CheckIcon } from "@radix-ui/react-icons";
-import Image from "next/image";
 
 export default function DialysisContents() {
   return (

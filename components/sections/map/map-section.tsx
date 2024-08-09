@@ -1,6 +1,5 @@
 "use client";
 
-import DividerTop from "@/components/common/divider-top";
 import { Button } from "@/components/ui/button";
 import {
   ADDRESS,
@@ -14,6 +13,8 @@ import Link from "next/link";
 import { RiParkingBoxFill } from "react-icons/ri";
 import { CustomOverlayMap, Map, MapMarker } from "react-kakao-maps-sdk";
 import SectionTitle from "../section-title";
+import DividerTop from "@/components/common/divider-top";
+import DividerBottom from "@/components/common/divider-bottom";
 
 export default function MapSection() {
   return (

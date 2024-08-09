@@ -12,8 +12,11 @@ import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.dtctamc.com"),
-  title: NAME,
-  description: "24시동탄시티동물의료센터",
+  title: {
+    default: `${NAME} 홈페이지`,
+    template: `%s - ${NAME} `,
+  },
+  description: "동탄시티동물병원",
   keywords: [
     "동탄시티동물병원",
     "동탄동물병원",
@@ -91,7 +94,7 @@ export default function RootLayout({
         />
 
         <Navbar />
-        <main className="min-h-screen break-keep">{children}</main>
+        <main className="break-keep min-h-screen">{children}</main>
         <Footer />
 
         <ScrollTopButton />
