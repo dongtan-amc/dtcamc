@@ -2,7 +2,6 @@
 
 import Container from "@/components/common/container";
 import DividerBottom from "@/components/common/divider-bottom";
-import { NAME } from "@/constants/general-info";
 import { motion } from "framer-motion";
 import { FaBed, FaMicroscope, FaUserDoctor } from "react-icons/fa6";
 import { Ri24HoursFill } from "react-icons/ri";
@@ -45,7 +44,7 @@ export default function IntroSection() {
         </SectionTitle>
 
         <motion.div
-          className="mb-12 flex flex-col gap-6 rounded-md bg-white p-4 text-base leading-relaxed text-gray-700 shadow-md sm:gap-8 sm:text-lg xl:p-6"
+          className="mb-12 flex flex-col gap-6 rounded-md bg-white p-6 text-base leading-relaxed text-gray-700 shadow-md sm:gap-8 sm:text-lg xl:p-10"
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 40 }}
           transition={{ duration: 0.6, delay: 0.6 }}
@@ -81,7 +80,7 @@ export default function IntroSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
           {INTRODUCTION.map(({ title, icon: Icon, subtitle }, index) => (
             <motion.div
               key={index}
