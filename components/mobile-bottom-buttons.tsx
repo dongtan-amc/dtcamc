@@ -23,22 +23,22 @@ export default function MobileBottomButtons() {
         "fixed bottom-0 z-50 flex w-full items-center justify-around border-t bg-white lg:hidden"
       }
     >
-      <Link href="/introduction/time" className="p-3 flex items-center gap-2">
+      <Link href="/#time" className="flex items-center gap-2 p-3">
         <RiTimer2Fill size={30} />
         <p className="hidden sm:block">진료시간</p>
       </Link>
-      <Link href="/introduction/map" className="p-3 flex items-center gap-2">
+      <Link href="/#info" className="flex items-center gap-2 p-3">
         <RiMapPin2Fill size={30} />
         <p className="hidden sm:block">오시는길</p>
       </Link>
-      <Link href={`tel:${PHONE}`} className="p-3 flex items-center gap-2">
+      <Link href={`tel:${PHONE}`} className="flex items-center gap-2 p-3">
         <RiPhoneFill size={30} />
         <p className="hidden sm:block">전화안내</p>
       </Link>
       <Link
         href={KAKAO}
         target="_blank"
-        className="p-3 flex items-center gap-2"
+        className="flex items-center gap-2 p-3"
       >
         <RiKakaoTalkFill size={30} />
         <p className="hidden sm:block">카카오톡</p>

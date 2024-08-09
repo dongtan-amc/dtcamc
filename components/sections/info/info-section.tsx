@@ -76,7 +76,7 @@ const INFOS = [
 ];
 export default function InfoSection() {
   return (
-    <div className="relative bg-white pb-28">
+    <div className="relative bg-white pb-28" id="time">
       <Container>
         <ul className="grid grid-cols-1 justify-evenly gap-10 py-10 md:grid-cols-3 md:gap-5">
           {INFOS.map((info, index) => (

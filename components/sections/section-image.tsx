@@ -21,7 +21,7 @@ export default function SectionImage({
           placeholder="blur"
         />
 
-        <div className="absolute bottom-5 left-5 flex flex-col text-white md:bottom-10 md:left-14 md:gap-4">
+        <div className="absolute bottom-5 left-5 flex flex-col text-white md:bottom-10 md:left-10 md:gap-4">
           <div>
             <h4 className="text-3xl font-bold leading-[60px] xl:text-5xl">
               {title}

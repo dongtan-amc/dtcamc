@@ -15,7 +15,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { useEffect, useState } from "react";
 import CarouselCard from "./carousel-card";
 
-const CAROUSEL_ITEMS = [slide1, slide2, slide3, slide4, slide5, slide6];
+const CAROUSEL_SLIDES = [slide1, slide2, slide3, slide4, slide5, slide6];
 
 export default function LandingCarousel() {
   const [api, setApi] = useState<CarouselApi>();
@@ -51,12 +51,13 @@ export default function LandingCarousel() {
       ]}
     >
       <CarouselContent>
-        {CAROUSEL_ITEMS.map((item, index) => (
-          <CarouselCard key={index} image={item} />
+        {CAROUSEL_SLIDES.map((item, index) => (
+          <CarouselCard key={index} image={item} index={index} />
         ))}
       </CarouselContent>
+
       <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 transform space-x-4 md:bottom-10">
-        {CAROUSEL_ITEMS.map((_, index) => (
+        {CAROUSEL_SLIDES.map((_, index) => (
           <button
             key={index}
             className={`h-2 w-2 rounded-full transition-colors duration-200 md:h-4 md:w-4 ${
