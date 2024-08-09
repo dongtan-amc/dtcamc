@@ -33,24 +33,35 @@ export default function DialysisContents() {
 
           <div className="w-full md:w-2/3">
             <div className="text-base text-[#7D8266] xl:text-lg">
-              신장 기능에 문제가 있는 동물들의 혈액을 정화하는 데 사용됩니다.
+              본원의 Multifiltrate pro는 대학병원에서 사용하는 독일 FMC사의
+              최첨단 투석 기계 입니다.
               <br /> <br />
               <p className="flex items-center gap-1">
                 <CheckIcon />
-                다양한 CRRT 치료 모드 지원
+                간단한 진정만으로도 혈액투석 가능
               </p>
+              <br />
               <p className="flex items-center gap-1">
                 <CheckIcon />
-                사용자 친화적인 터치스크린 인터페이스
+                기존의 투석시스템에 비해 다양한 치료 모드로(CCVHDF)) 안정성 및
+                치료율 향상
               </p>
+              <br />
               <p className="flex items-center gap-1">
                 <CheckIcon />
-                다양한 CRRT 치료 모드 지원
+                필요혈액량을 최소화 하여 소형견/고양이 투석가능(2kg) 이상
               </p>
+              <br />
               <p className="flex items-center gap-1">
                 <CheckIcon />
                 정확한 체액 균형 조절 기능
               </p>
+              <br />
+              <p className="flex items-center gap-1">
+                <CheckIcon />
+                최신 모니터링 기능 장착하여 부작용 최소화
+              </p>
+              <br />
               <p className="flex items-center gap-1">
                 <CheckIcon />
                 내장된 안전 알람 시스템
