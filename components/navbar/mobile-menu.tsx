@@ -1,5 +1,3 @@
-"use client";
-
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { KAKAO } from "@/constants/general-info";
 import { SECTIONS } from "@/constants/sections";
@@ -31,12 +29,8 @@ export default function MobileMenu() {
         <DialogDescription />
 
         <ul className="flex h-full flex-col items-center justify-center gap-4 text-xl">
-          <li className="">
-            <Link
-              href="/#home"
-              className="transition hover:text-olive-drab-400"
-              onClick={() => setIsDrawerOpen(false)}
-            >
+          <li>
+            <Link href="/#home" onClick={() => setIsDrawerOpen(false)}>
               홈
             </Link>
           </li>
@@ -45,7 +39,6 @@ export default function MobileMenu() {
             <li key={section.sectionTitle}>
               <Link
                 href={`/${section.hash}`}
-                className="transition hover:text-olive-drab-400"
                 onClick={() => setIsDrawerOpen(false)}
               >
                 {section.sectionTitle}
@@ -57,7 +50,7 @@ export default function MobileMenu() {
             <Link
               href={KAKAO}
               target="_blank"
-              className="flex items-center gap-2 rounded-md bg-[#FEE500] px-4 py-1 text-lg text-[#191919] hover:bg-[#FEE500] hover:opacity-70"
+              className="flex items-center gap-2 rounded-lg bg-[#FEE500] px-4 py-1 text-lg text-[#191919]"
               onClick={() => setIsDrawerOpen(false)}
             >
               <RiKakaoTalkFill className="h-6 w-6" />

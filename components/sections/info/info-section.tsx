@@ -76,12 +76,15 @@ const INFOS = [
 ];
 export default function InfoSection() {
   return (
-    <div className="relative bg-white pb-28" id="time">
+    <div
+      className="b relative scroll-mt-[64px] bg-white pb-28 xl:scroll-mt-[96px]"
+      id="time"
+    >
       <Container>
         <ul className="grid grid-cols-1 justify-evenly gap-10 py-10 md:grid-cols-3 md:gap-5">
           {INFOS.map((info, index) => (
-            <>
-              <Separator className="block md:hidden" />
+            <div key={info.title}>
+              <Separator className="mb-10 block md:hidden" />
               <InfoCard
                 description={info.description}
                 icon={info.icon}
@@ -89,7 +92,7 @@ export default function InfoSection() {
                 title={info.title}
                 index={index}
               />
-            </>
+            </div>
           ))}
         </ul>
       </Container>

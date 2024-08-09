@@ -1,9 +1,7 @@
 "use client";
 
 import { KAKAO, PHONE } from "@/constants/general-info";
-import useScrollPosition from "@/hooks/useScrollPosition";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import {
   RiKakaoTalkFill,
   RiMapPin2Fill,
@@ -12,11 +10,6 @@ import {
 } from "react-icons/ri";
 
 export default function MobileBottomButtons() {
-  const { isScrollTop } = useScrollPosition();
-
-  const path = usePathname();
-  const isRoot = path === "/";
-
   return (
     <div
       className={

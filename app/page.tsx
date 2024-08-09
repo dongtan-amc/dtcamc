@@ -23,7 +23,7 @@ export default function Home() {
       <DialysisSection />
       <OnncologySection />
       <CTSection />
-      <ToolsSection />
+      {/* <ToolsSection /> */}
       <MapSection />
       <InfoSection />
       <EmploymentSection />
