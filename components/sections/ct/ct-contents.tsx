@@ -1,14 +1,15 @@
 import Container from "@/components/common/container";
-import ctImage1 from "@/public/sections/ct/1.png";
+import ct from "@/public/tools/ct.jpg";
 import ctImage2 from "@/public/sections/ct/2.png";
 import ctImage3 from "@/public/sections/ct/3.png";
 import Image from "next/image";
+import { CheckIcon } from "@radix-ui/react-icons";
 
 export default function CtContents() {
   return (
     <Container>
       <div>
-        <h5 className="px-2 pb-3 pt-5 text-2xl font-bold">
+        <h5 className="px-2 pb-3 pt-5 text-xl font-bold md:text-2xl">
           동탄시티 영상진단센터는
         </h5>
         <p className="px-2 pb-3 pt-1 text-base xl:text-xl">
@@ -25,22 +26,36 @@ export default function CtContents() {
         </p>
       </div>
 
-      <div>
-        <h5 className="px-2 pb-3 pt-5 text-2xl font-bold">영상장비 소개</h5>
-        <p className="px-2 pb-3 pt-1 text-xl">
-          Aquilion CX/64 채널/128 slice... 추가
-        </p>
-      </div>
+      <h5 className="px-2 pb-3 pt-5 text-xl font-bold md:text-2xl">
+        CT Aquilion CX/64 소개
+      </h5>
 
-      <div className="flex justify-between gap-4">
-        <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-          <Image src={ctImage1} alt="ct image" fill className="object-cover" />
-        </div>
-        <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-          <Image src={ctImage2} alt="ct image" fill className="object-cover" />
-        </div>
-        <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-          <Image src={ctImage3} alt="ct image" fill className="object-cover" />
+      <div className="flex flex-col gap-4 md:flex-row">
+        <Image src={ct} alt="ct image" className="md:w-1/3" />
+        <div className="text-base text-[#7D8266] md:text-lg">
+          Aquilion CX는 도시바의 고급 CT 스캐너 라인업 중 하나입니다.
+          <br />
+          <br />
+          <p className="flex items-center gap-1">
+            <CheckIcon />
+            64채널 검출기 시스템 128
+          </p>
+          <br />
+          <p className="flex items-center gap-1">
+            <CheckIcon />
+            슬라이스 이미징 능력
+          </p>
+          <br />
+          <p className="flex items-center gap-1">
+            <CheckIcon />
+            고속 스캔 및 높은 해상도 제공
+          </p>
+          <br />
+          <p className="flex items-center gap-1">
+            <CheckIcon />
+            저선량 기술 적용으로 환자 방사선 노출 감소
+          </p>
+          <br />
         </div>
       </div>
     </Container>

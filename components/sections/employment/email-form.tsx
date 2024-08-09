@@ -20,7 +20,6 @@ import {
 } from "@/components/ui/select";
 import { useToast } from "@/components/ui/use-toast";
 import { AREA, employmentFormSchema } from "@/constants/employment";
-import emailLottie from "@/public/email-lottie.json";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -88,7 +87,7 @@ export default function EmailForm() {
         transition={{ duration: 0.6, delay: 0.5 }}
         viewport={{ once: true }}
       >
-        <div className="text-lg md:w-1/2 md:text-xl">
+        <div className="w-full md:w-1/2 lg:text-lg">
           <p>
             24시 동탄시티동물의료센터는 반려동물의 질환에 대해서 전문적으로
             치료하는 병원으로 구성되어 있습니다.
@@ -112,13 +111,13 @@ export default function EmailForm() {
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="grid grid-cols-2 gap-4 md:w-1/2"
+            className="grid grid-cols-2 gap-4 lg:w-1/2"
           >
             <FormField
               control={form.control}
               name="name"
               render={({ field }) => (
-                <FormItem className="col-span-2 md:col-span-1">
+                <FormItem className="col-span-2 lg:col-span-1">
                   <FormLabel>성함</FormLabel>
                   <FormControl>
                     <Input {...field} />
@@ -131,7 +130,7 @@ export default function EmailForm() {
               control={form.control}
               name="email"
               render={({ field }) => (
-                <FormItem className="col-span-2 md:col-span-1">
+                <FormItem className="col-span-2 lg:col-span-1">
                   <FormLabel>이메일 주소</FormLabel>
                   <FormControl>
                     <Input {...field} />
@@ -144,7 +143,7 @@ export default function EmailForm() {
               control={form.control}
               name="area"
               render={({ field }) => (
-                <FormItem className="col-span-2 md:col-span-1">
+                <FormItem className="col-span-2 lg:col-span-1">
                   <FormLabel>지원분야</FormLabel>
                   <Select
                     onValueChange={field.onChange}
@@ -172,7 +171,7 @@ export default function EmailForm() {
               control={form.control}
               name="phone"
               render={({ field }) => (
-                <FormItem className="col-span-2 md:col-span-1">
+                <FormItem className="col-span-2 lg:col-span-1">
                   <FormLabel>연락처</FormLabel>
                   <FormControl>
                     <Input {...field} />

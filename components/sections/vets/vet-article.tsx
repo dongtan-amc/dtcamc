@@ -49,7 +49,7 @@ export default function VetArticle({
             src={image}
             alt={`${name} profile`}
             placeholder="blur"
-            sizes="(max-width: 1024px) 100vw, 50vw"
+            sizes="(min-width: 1360px) 576px, (min-width: 1040px) calc(45.33vw - 31px), calc(98.75vw - 51px)"
             className="h-auto w-full object-cover"
           />
         </div>

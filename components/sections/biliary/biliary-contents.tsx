@@ -9,7 +9,7 @@ export default function BiliaryContents() {
   return (
     <Container>
       <div>
-        <h5 className="px-2 pb-3 pt-5 text-2xl font-bold">
+        <h5 className="px-2 pb-3 pt-5 text-xl font-bold md:text-2xl">
           동탄시티 간담도계 클리닉은
         </h5>
         <p className="px-2 pb-3 pt-1 text-base xl:text-xl">
@@ -22,15 +22,33 @@ export default function BiliaryContents() {
 
       <div className="grid grid-cols-1 justify-between gap-4 py-4 md:grid-cols-3">
         <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-          <Image src={cancer} alt="ct image" fill className="object-cover" />
+          <Image
+            src={cancer}
+            alt="ct image"
+            fill
+            className="object-cover"
+            sizes="(min-width: 1360px) 416px, (min-width: 780px) 31.61vw, calc(100vw - 32px)"
+          />
           <p className="absolute left-2 top-0 font-bold text-white">간종양</p>
         </div>
         <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-          <Image src={stone} alt="ct image" fill className="object-cover" />
+          <Image
+            src={stone}
+            alt="ct image"
+            fill
+            className="object-cover"
+            sizes="(min-width: 1360px) 416px, (min-width: 780px) 31.61vw, calc(100vw - 32px)"
+          />
           <p className="absolute left-2 top-0 font-bold text-white">담석</p>
         </div>
         <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-          <Image src={mucocle} alt="ct image" fill className="object-cover" />
+          <Image
+            src={mucocle}
+            alt="ct image"
+            fill
+            className="object-cover"
+            sizes="(min-width: 1360px) 416px, (min-width: 780px) 31.61vw, calc(100vw - 32px)"
+          />
           <p className="absolute left-2 top-0 font-bold text-white">
             담낭점액종
           </p>
@@ -38,7 +56,7 @@ export default function BiliaryContents() {
       </div>
 
       <div>
-        <h5 className="px-2 pb-3 pt-5 text-2xl font-bold">
+        <h5 className="px-2 pb-3 pt-5 text-xl font-bold md:text-2xl">
           간담도계 전문 수술
         </h5>
 

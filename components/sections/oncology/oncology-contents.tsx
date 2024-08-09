@@ -17,7 +17,7 @@ export default function OncologyContents() {
   return (
     <Container>
       <div>
-        <h5 className="px-2 pb-3 pt-5 text-2xl font-bold">
+        <h5 className="px-2 pb-3 pt-5 text-xl font-bold md:text-2xl">
           동탄시티의 종양치료 클리닉은
         </h5>
 
@@ -65,13 +65,31 @@ export default function OncologyContents() {
 
       <div className="grid grid-cols-1 justify-between gap-4 py-4 md:grid-cols-3">
         <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-          <Image src={on1} alt="ct image" fill className="object-cover" />
+          <Image
+            src={on1}
+            alt="ct image"
+            fill
+            className="object-cover"
+            sizes="(min-width: 1360px) 416px, (min-width: 780px) 31.61vw, calc(100vw - 32px)"
+          />
         </div>
         <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-          <Image src={on2} alt="ct image" fill className="object-cover" />
+          <Image
+            src={on2}
+            alt="ct image"
+            fill
+            className="object-cover"
+            sizes="(min-width: 1360px) 416px, (min-width: 780px) 31.61vw, calc(100vw - 32px)"
+          />
         </div>
         <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-          <Image src={on3} alt="ct image" fill className="object-cover" />
+          <Image
+            src={on3}
+            alt="ct image"
+            fill
+            className="object-cover"
+            sizes="(min-width: 1360px) 416px, (min-width: 780px) 31.61vw, calc(100vw - 32px)"
+          />
         </div>
       </div>
     </Container>

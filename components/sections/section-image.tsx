@@ -18,18 +18,15 @@ export default function SectionImage({
           src={image}
           className="object-cover"
           fill
+          sizes="(min-width: 1360px) 1280px, calc(97.31vw - 24px)"
           placeholder="blur"
         />
 
-        <div className="absolute bottom-5 left-5 flex flex-col text-white md:bottom-10 md:left-10 md:gap-4">
-          <div>
-            <h4 className="text-3xl font-bold leading-[60px] xl:text-5xl">
-              {title}
-            </h4>
-          </div>
+        <div className="absolute bottom-5 left-5 text-white md:bottom-10 md:left-10">
+          <h4 className="text-2xl font-bold xl:text-5xl">{title}</h4>
           <Button
             asChild
-            className="w-32 rounded-md bg-[#A3C433] text-lg text-white"
+            className="mt-2 rounded-full bg-[#A3C433] text-base text-white md:mt-4 md:text-lg"
           >
             <Link href="#info" className="font-bold">
               상담하기

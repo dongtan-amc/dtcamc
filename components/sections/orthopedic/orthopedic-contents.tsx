@@ -16,7 +16,7 @@ export default function OrthopedicContents() {
   return (
     <Container>
       <div>
-        <h5 className="px-2 pb-3 pt-5 text-2xl font-bold">
+        <h5 className="px-2 pb-3 pt-5 text-xl font-bold md:text-2xl">
           동탄시티의 정형외과클리닉은
         </h5>
 
@@ -25,9 +25,10 @@ export default function OrthopedicContents() {
           선생님들이 진료를 보시고, 직접 상담 및 수술을 진행하고 있습니다. Fixin
           System, Arthrex 장비 등 최신 수술 장비들의 도입으로 정확한 정형외과
           수술이 가능합니다. 우리 아이에게 가장 적합하고 좋은 수술 방법을
-          제시해주는 병원을 선택해주세요. 십자인대 교정, 슬개골 탈구(재탈구
-          교정, DFO, PGR), 고관절 (PennHIP, FHNO), 골절 (다리, 골반, 복합&개방
-          골절) 등
+          제시해주는 병원을 선택해주세요. <br />
+          <br />
+          본원 진행 수술 : 십자인대 교정, 슬개골 탈구(재탈구 교정, DFO, PGR),
+          고관절 (PennHIP, FHNO), 골절 (다리, 골반, 복합&개방 골절) 등
         </div>
 
         <div className="grid grid-cols-2 justify-between gap-3 py-4 xl:grid-cols-4">
@@ -61,10 +62,18 @@ export default function OrthopedicContents() {
           </div>
         </div>
 
-        <h5 className="px-2 pb-3 pt-5 text-2xl font-bold">정형외과 수술</h5>
+        <h5 className="px-2 pb-3 pt-5 text-xl font-bold md:text-2xl">
+          정형외과 수술
+        </h5>
         <div className="grid grid-cols-2 justify-between gap-3 xl:grid-cols-4">
           <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-            <Image src={ortho1} alt="ct image" fill className="object-cover" />
+            <Image
+              src={ortho1}
+              alt="ct image"
+              fill
+              className="object-cover"
+              sizes="(min-width: 1280px) 311px, calc(50vw - 22px)"
+            />
             <p className="absolute left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 text-center text-2xl font-bold text-white">
               슬개골탈구
               <br />
@@ -74,7 +83,13 @@ export default function OrthopedicContents() {
           </div>
 
           <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-            <Image src={ortho2} alt="ct image" fill className="object-cover" />
+            <Image
+              src={ortho2}
+              alt="ct image"
+              fill
+              className="object-cover"
+              sizes="(min-width: 1280px) 311px, calc(50vw - 22px)"
+            />
             <p className="absolute left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 text-center text-2xl font-bold text-white">
               십자인대교정
               <br />
@@ -83,7 +98,13 @@ export default function OrthopedicContents() {
             <div className="absolute inset-0 bg-black opacity-60" />
           </div>
           <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-            <Image src={ortho3} alt="ct image" fill className="object-cover" />
+            <Image
+              src={ortho3}
+              alt="ct image"
+              fill
+              className="object-cover"
+              sizes="(min-width: 1280px) 311px, calc(50vw - 22px)"
+            />
             <p className="absolute left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 text-center text-2xl font-bold text-white">
               십자인대교정
               <br />
@@ -93,7 +114,13 @@ export default function OrthopedicContents() {
           </div>
 
           <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-            <Image src={ortho4} alt="ct image" fill className="object-cover" />
+            <Image
+              src={ortho4}
+              alt="ct image"
+              fill
+              className="object-cover"
+              sizes="(min-width: 1280px) 311px, calc(50vw - 22px)"
+            />
             <p className="absolute left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 text-center text-2xl font-bold text-white">
               골절
               <br />
