@@ -1,17 +1,11 @@
 import Container from "@/components/common/container";
+import on3 from "@/public/sections/onocology/spleencancer.png";
+import on1 from "@/public/sections/onocology/livercancer.png";
+import on2 from "@/public/sections/onocology/spleenx.png";
 import Image from "next/image";
-import {
-  LuActivity,
-  LuCalendarDays,
-  LuHelpingHand,
-  LuScissors,
-} from "react-icons/lu";
+import { LuScissors } from "react-icons/lu";
 import { SlChemistry } from "react-icons/sl";
 import { TbRadioactive, TbTargetArrow } from "react-icons/tb";
-import { MdOutlineBiotech } from "react-icons/md";
-import on1 from "@/public/subjects/cancer.png";
-import on2 from "@/public/subjects/skincancer.jpg";
-import on3 from "@/public/sections/onocology/can.png";
 
 export default function OncologyContents() {
   return (
@@ -22,43 +16,41 @@ export default function OncologyContents() {
         </h5>
 
         <div className="px-2 pb-3 pt-1 text-base xl:text-xl">
-          종양진단, 수술, 항암치료 모든 것을 원스탑으로 진행 맞춤형 상담을 통해
-          환자에게 알맞은 최적의 치료계획을 정하게 됩니다. 최신종양치료,
-          화학요법(CHOP), 메트로놈항암, 표적항암, 전기화학치료(ECT;
-          Electrochemotherapy LEROY Biotech)
+          종양 치료 클리닉은 기본적인 신체 검사부터 시작하여 종양 진단, 전이
+          평가, 종양 수술, 조직 검사 결과에 따른 항암 치료를 통해 환자에게 가장
+          알맞은 최적의 치료 계획을 설정합니다. 최신 개발된 항암제부터,
+          화학요법(L-CHOP), 메트로놈 항암치료, 전기 화학 치료 등 다양한 종양
+          치료를 위해서 저희 의료진이 최선을 다해 노력하고 있습니다.
         </div>
       </div>
 
       <div className="md: grid grid-cols-1 justify-between gap-3 py-4 md:grid-cols-4">
         <div className="w-full rounded-[8px] bg-white p-4 shadow-md">
-          <SlChemistry size={24} />
-          <h6 className="pt-3 font-bold">Chemotherapy</h6>
-          <p className="pt-1 text-[14px] text-[#7D8266]">
-            Customized chemotherapy protocols for effective cancer treatment.
-          </p>
-        </div>
-        <div className="w-full rounded-[8px] bg-white p-4 shadow-md">
           <TbRadioactive size={24} />
-          <h6 className="pt-3 font-bold">Radiation Therapy</h6>
+          <h6 className="pt-3 font-bold">영상장비</h6>
           <p className="pt-1 text-[14px] text-[#7D8266]">
-            Precise radiation therapy targeting tumors while minimizing damage
-            to healthy tissue.
+            최고 사양 영상 장비를 활용한 정밀한 전이 평가
           </p>
         </div>
         <div className="w-full rounded-[8px] bg-white p-4 shadow-md">
-          <MdOutlineBiotech size={24} />
-          <h6 className="pt-3 font-bold">Immunotherapy</h6>
+          <LuScissors size={24} />
+          <h6 className="pt-3 font-bold">외과 협진</h6>
           <p className="pt-1 text-[14px] text-[#7D8266]">
-            Cutting-edge immunotherapies to boost your pet`&apos;`s immune
-            system and fight cancer.
+            외과 협진 시스템을 통한 신속한 종양 수술
+          </p>
+        </div>
+        <div className="w-full rounded-[8px] bg-white p-4 shadow-md">
+          <SlChemistry size={24} />
+          <h6 className="pt-3 font-bold">전기 화학치료</h6>
+          <p className="pt-1 text-[14px] text-[#7D8266]">
+            조직 검사 후 종양의 특성에 맞는 항암 치료 및 전기 화학 치료
           </p>
         </div>
         <div className="w-full rounded-[8px] bg-white p-4 shadow-md">
           <TbTargetArrow size={24} />
-          <h6 className="pt-3 font-bold">Targeted Therapy</h6>
+          <h6 className="pt-3 font-bold">환자 맞춤형 치료</h6>
           <p className="pt-1 text-[14px] text-[#7D8266]">
-            Therapies that specifically target cancer cells while sparing
-            healthy cells.
+            환자와 보호자의 삶의 질을 고려한 진통 관리 및 치료 방향 설정
           </p>
         </div>
       </div>

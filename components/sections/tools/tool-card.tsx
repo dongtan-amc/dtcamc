@@ -19,6 +19,7 @@ export default function ToolCard({
           alt={name}
           layout="fill"
           className="object-contain transition-opacity hover:opacity-90"
+          sizes="(min-width: 1280px) 379px, (min-width: 780px) calc(50vw - 60px), calc(100vw - 64px)"
         />
         <span className="absolute rounded-full bg-gray-900 px-2 py-1 text-xs font-semibold text-white">
           {index < 9 ? `0${index + 1}` : index + 1}
