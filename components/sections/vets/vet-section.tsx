@@ -5,8 +5,6 @@ import vet3 from "@/public/vets/crop-vet3.png";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
 import VetArticle from "./vet-article";
-import DividerBottom from "@/components/common/divider-bottom";
-import DividerTop from "@/components/common/divider-top";
 
 const VETS = [
   {
@@ -107,7 +105,7 @@ export type Vet = (typeof VETS)[number];
 
 export default function VetSection() {
   return (
-    <SectionLayout hash="vets" className="bg-olive-drab-50/80 pb-20">
+    <SectionLayout hash="vets" className="bg-olive-drab-50/80 pb-10">
       <div className="flex w-full flex-col items-center">
         <SectionTitle subtitle={"동탄시티동물의료센터 수의사팀을 소개합니다."}>
           수의사 소개
