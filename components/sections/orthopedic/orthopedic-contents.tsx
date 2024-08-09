@@ -1,16 +1,15 @@
 import Container from "@/components/common/container";
-
-import {
-  LuScissors,
-  LuActivity,
-  LuCalendarDays,
-  LuHelpingHand,
-} from "react-icons/lu";
-import Image from "next/image";
-import ortho1 from "@/public/sections/orthopedics/1.png";
+import ortho1 from "@/public/sections/orthopedics/patella.png";
 import ortho2 from "@/public/sections/orthopedics/2.png";
 import ortho3 from "@/public/sections/orthopedics/3.png";
 import ortho4 from "@/public/sections/orthopedics/4.png";
+import Image from "next/image";
+import {
+  LuActivity,
+  LuCalendarDays,
+  LuHelpingHand,
+  LuScissors,
+} from "react-icons/lu";
 
 export default function OrthopedicContents() {
   return (
@@ -79,7 +78,6 @@ export default function OrthopedicContents() {
               <br />
               <span className="text-sm">재탈구 교정, DFO, PGR</span>
             </p>
-            <div className="absolute inset-0 bg-black opacity-60" />
           </div>
 
           <div className="relative h-[240px] w-full overflow-hidden rounded-xl">

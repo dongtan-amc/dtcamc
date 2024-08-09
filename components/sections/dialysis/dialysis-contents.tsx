@@ -2,6 +2,7 @@ import Container from "@/components/common/container";
 import Image from "next/image";
 import React from "react";
 import dialysis from "@/public/tools/dia.jpg";
+import { CheckIcon } from "@radix-ui/react-icons";
 
 export default function DialysisContents() {
   return (
@@ -34,14 +35,26 @@ export default function DialysisContents() {
             <div className="text-base text-[#7D8266] xl:text-lg">
               신장 기능에 문제가 있는 동물들의 혈액을 정화하는 데 사용됩니다.
               <br /> <br />
-              동물의 혈액을 체외로 추출하여 기계 내부의 특수 필터를 통과시킨 후
-              다시 몸 안으로 되돌려 보냅니다. <br /> <br />
-              혈액이 필터를 통과하면서 노폐물, 과도한 수분, 전해질 등이
-              제거됩니다. <br /> <br />
-              급성 또는 만성 신부전, 중독, 또는 특정 대사 질환을 가진 동물들에게
-              주로 사용됩니다. <br /> <br />
-              첨단 기술을 적용하여 치료 중 발생할 수 있는 합병증을 최소화하도록
-              설계되었습니다.
+              <p className="flex items-center gap-1">
+                <CheckIcon />
+                다양한 CRRT 치료 모드 지원
+              </p>
+              <p className="flex items-center gap-1">
+                <CheckIcon />
+                사용자 친화적인 터치스크린 인터페이스
+              </p>
+              <p className="flex items-center gap-1">
+                <CheckIcon />
+                다양한 CRRT 치료 모드 지원
+              </p>
+              <p className="flex items-center gap-1">
+                <CheckIcon />
+                정확한 체액 균형 조절 기능
+              </p>
+              <p className="flex items-center gap-1">
+                <CheckIcon />
+                내장된 안전 알람 시스템
+              </p>
             </div>
           </div>
         </div>

@@ -17,7 +17,7 @@ export default function ToolCard({
         <Image
           src={image}
           alt={name}
-          layout="fill"
+          fill
           className="object-contain transition-opacity hover:opacity-90"
           sizes="(min-width: 1280px) 379px, (min-width: 780px) calc(50vw - 60px), calc(100vw - 64px)"
         />
