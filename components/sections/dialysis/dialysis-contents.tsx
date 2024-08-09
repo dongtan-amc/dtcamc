@@ -43,7 +43,7 @@ export default function DialysisContents() {
               <br />
               <p className="flex items-center gap-1">
                 <CheckIcon />
-                기존의 투석시스템에 비해 다양한 치료 모드로(CCVHDF)) 안정성 및
+                기존의 투석시스템에 비해 다양한 치료 모드로(CCVHDF) 안정성 및
                 치료율 향상
               </p>
               <br />

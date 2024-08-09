@@ -1,6 +1,6 @@
 import Container from "@/components/common/container";
 import cancer from "@/public/sections/biliary/livercancer.png";
-import stone from "@/public/sections/biliary/strone.png";
+import stone from "@/public/sections/biliary/gbstone.png";
 import mucocle from "@/public/sections/biliary/mucocele.png";
 import { CheckIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
@@ -29,7 +29,7 @@ export default function BiliaryContents() {
             className="object-cover"
             sizes="(min-width: 1360px) 416px, (min-width: 780px) 31.61vw, calc(100vw - 32px)"
           />
-          <p className="absolute left-2 top-0 font-bold text-white">간종양</p>
+          <p className="absolute left-2 top-1 font-bold text-white">간종양</p>
         </div>
         <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
           <Image
@@ -39,7 +39,7 @@ export default function BiliaryContents() {
             className="object-cover"
             sizes="(min-width: 1360px) 416px, (min-width: 780px) 31.61vw, calc(100vw - 32px)"
           />
-          <p className="absolute left-2 top-0 font-bold text-white">담석</p>
+          <p className="absolute left-2 top-1 font-bold text-white">담석</p>
         </div>
         <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
           <Image
@@ -49,7 +49,7 @@ export default function BiliaryContents() {
             className="object-cover"
             sizes="(min-width: 1360px) 416px, (min-width: 780px) 31.61vw, calc(100vw - 32px)"
           />
-          <p className="absolute left-2 top-0 font-bold text-white">
+          <p className="absolute left-2 top-1 font-bold text-white">
             담낭점액종
           </p>
         </div>
