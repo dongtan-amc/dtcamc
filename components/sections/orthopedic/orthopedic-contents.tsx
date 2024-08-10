@@ -25,6 +25,7 @@ export default function OrthopedicContents() {
           정확한 정형외과 수술이 가능합니다. 우리 아이에게 가장 적합하고 좋은
           수술 방법을 제시해주는 병원을 선택해주세요.
           <br />
+          <br />
           본원 진행 수술 : 십자인대 교정, 슬개골 탈구(재탈구 교정, DFO, PGR),
           고관절 (PennHIP, FHNO), 골절 (다리, 골반, 복합&개방 골절) 등
         </div>

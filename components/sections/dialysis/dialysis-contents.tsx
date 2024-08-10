@@ -24,7 +24,7 @@ export default function DialysisContents() {
 
       <div>
         <h5 className="px-2 pb-3 pt-5 text-xl font-bold md:text-2xl">
-          FMC multfiltrate Pro 신장투석기
+          FMC multfiltrate Pro 신장투석기 소개
         </h5>
 
         <div className="flex w-full flex-col gap-10 md:flex-row">
