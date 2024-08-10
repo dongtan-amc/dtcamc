@@ -1,4 +1,3 @@
-import mainLogoWhite from "@/public/main-logo-white.png";
 import mainLogo from "@/public/main-logo.png";
 import Image from "next/image";
 import Link from "next/link";
