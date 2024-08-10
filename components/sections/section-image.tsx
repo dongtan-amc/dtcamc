@@ -2,6 +2,7 @@ import Image, { type StaticImageData } from "next/image";
 import { Button } from "../ui/button";
 import Container from "../common/container";
 import Link from "next/link";
+import { KAKAO } from "@/constants/general-info";
 
 export default function SectionImage({
   image,
@@ -28,7 +29,7 @@ export default function SectionImage({
             asChild
             className="mt-2 rounded-full bg-[#A3C433] text-base text-white md:mt-4 md:text-lg"
           >
-            <Link href="#info" className="font-bold">
+            <Link href={KAKAO} target="_blank" className="font-bold">
               상담하기
             </Link>
           </Button>

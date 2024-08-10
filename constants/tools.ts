@@ -25,19 +25,19 @@ import xray from "@/public/tools/xray.jpeg";
 export const TOOLS = [
   {
     image: ct,
-    name: "Aquilion CX/64 채널/128 slice",
+    name: "Aquilion CX/128 slice CT",
     description:
       "64 채널 CT 촬영을 통해서 신속하게 고화질 영상을 얻어, 종양 유래 확인 및 전이 평가, 간문맥단락증(PSS), 선천적 뼈 기형과 같은 심화된 진단을 할 수 있습니다.",
   },
   {
     image: carm,
-    name: "Zen-2090 ",
+    name: "Zen-2090(C-arm)",
     description:
       "C-arm을 통해서 좀 더 섬세한 정형외과 수술을 진행하고, 본원에서는 외과적 침습을 최소화 하는 중재적 시술 (기관 협착, 동맥관개존증(PDA), SUB 등)을 진행하고 있습니다. ",
   },
   {
     image: dya,
-    name: "FMC multfiltrate Pro",
+    name: "혈액투석 FMC multfiltrate Pro",
     description:
       "본원에서는 CRRT(지속적신대체요법)를 이용하여 신장의 비가역적 손상을 막는 궁극적인 치료가 가능합니다.",
   },
@@ -60,10 +60,15 @@ export const TOOLS = [
       "전세계적으로 전기종양치료(ECT)치료가 가능한 장비중 임상적 증명이 확보된 장비",
   },
   {
-    image: oxus,
-    name: "OXUS 산소발생기",
+    image: sonocure,
+    name: "소노큐어 Sonocure",
     description:
-      "24시간 93%이상의 산소를 공급할수 있는 장치로 보다 안전한 수술 가능",
+      "초음파로 탄력 있는 혈관 및 신경 조직을 남기고, 조직을 절제하여 출혈을 최소화하고 정교한 수술을 가능하게 하는 수술 장비 ",
+  },
+  {
+    image: ligasure2,
+    name: "리가셔 FT10",
+    description: "LF1212 보다 빠르고 간결한 수술을 가능하도록 함",
   },
   {
     image: gas,
@@ -71,16 +76,12 @@ export const TOOLS = [
     description: "주사마취와 다르게 보다 안전하고 빠른 회복이 가능한 마취기",
   },
   {
-    image: sonocure,
-    name: "SonoCure",
+    image: oxus,
+    name: "OXUS 산소발생기",
     description:
-      "초음파로 탄력 있는 혈관 및 신경 조직을 남기고, 조직을 절제하여 출혈을 최소화하고 정교한 수술을 가능하게 하는 수술 장비 ",
+      "24시간 93%이상의 산소를 공급할수 있는 장치로 보다 안전한 수술 가능",
   },
-  {
-    image: ligasure2,
-    name: "리가슈어 LigaSure Impact",
-    description: "LF1212 보다 빠르고 간결한 수술을 가능하도록 함",
-  },
+
   {
     image: drill,
     name: "Styker core drillset",
