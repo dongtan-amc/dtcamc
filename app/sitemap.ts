@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: `${BASE_URL}`,
-      changeFrequency: "yearly",
+      changeFrequency: "always",
       priority: 1,
     },
   ];
