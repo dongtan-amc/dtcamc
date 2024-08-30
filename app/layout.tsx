@@ -47,7 +47,6 @@ export const metadata: Metadata = {
     "고양이안과",
     "고양이녹내장",
     "강아지수혈",
-    "고양이수혈",
     "강아지재활센터",
   ],
   applicationName: `24시${NAME} 홈페이지`,
