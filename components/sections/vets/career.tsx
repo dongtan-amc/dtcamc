@@ -12,7 +12,7 @@ export default function Career({
       </h4>
       <ul className="space-y-2">
         {items.map((item) => (
-          <li key={item} className="flex items-start">
+          <li key={item} className="flex items-start text-xl">
             <span className="mr-2 text-olive-drab-500">•</span>
             <span className="text-gray-700">{item}</span>
           </li>
