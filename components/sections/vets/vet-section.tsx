@@ -1,10 +1,10 @@
 import Container from "@/components/common/container";
-import vet1 from "@/public/vets/고재진 원장님.jpg";
-import vet2 from "@/public/vets/김경채.jpg";
-import vet3 from "@/public/vets/김준희.jpg";
-import vet4 from "@/public/vets/안인근.jpg";
-import vet5 from "@/public/vets/박정현.jpg";
-import vet6 from "@/public/vets/최대성.jpg";
+import vet1 from "@/public/vets/vet1.jpg";
+import vet2 from "@/public/vets/vet2.jpg";
+import vet3 from "@/public/vets/vet3.jpg";
+import vet4 from "@/public/vets/vet4.jpg";
+import vet5 from "@/public/vets/vet5.jpg";
+import vet6 from "@/public/vets/vet6.jpg";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
 import VetArticle from "./vet-article";
