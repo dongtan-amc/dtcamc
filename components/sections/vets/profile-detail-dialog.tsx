@@ -33,26 +33,23 @@ export default function ProfileDetailDialog({
           자세히
         </Button>
       </DialogTrigger>
-      <DialogContent className="h-[80vh] max-w-4xl overflow-y-auto px-6 md:px-10">
+      <DialogContent className="flex h-[80vh] max-w-4xl flex-col overflow-y-auto px-6 md:px-10">
         <DialogHeader>
-          <DialogTitle className="pb-3">
-            <header className="relative mb-6">
-              <div className="flex items-end gap-2">
-                <h2 className="text-4xl font-extrabold text-olive-drab-600">
-                  {name}
-                </h2>
-                <h3 className="text-2xl text-olive-drab-400">{title}</h3>
-              </div>
-              <Badges subjects={subjects} />
-            </header>
-          </DialogTitle>
-          <DialogDescription>
-            <div className="space-y-4 text-start">
-              <Career title="약력" items={history} />
-              {expert && <Career title="활동사항 및 학술연수" items={expert} />}
+          <DialogTitle>
+            <div className="flex items-end gap-2">
+              <h2 className="text-4xl font-extrabold text-olive-drab-600">
+                {name}
+              </h2>
+              <h3 className="text-2xl text-olive-drab-400">{title}</h3>
             </div>
-          </DialogDescription>
+            <Badges subjects={subjects} />
+          </DialogTitle>
         </DialogHeader>
+
+        <div className="space-y-4 text-start">
+          <Career title="약력" items={history} />
+          {expert && <Career title="활동사항 및 학술연수" items={expert} />}
+        </div>
       </DialogContent>
     </Dialog>
   );
