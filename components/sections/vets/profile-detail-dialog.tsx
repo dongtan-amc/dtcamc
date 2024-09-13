@@ -15,14 +15,12 @@ export default function ProfileDetailDialog({
   title,
   history,
   expert,
-  education,
   subjects,
 }: {
   name: string;
   title: string;
   history: string[];
-  expert: string[];
-  education: string[];
+  expert?: string[];
   subjects: string[];
 }) {
   return (
@@ -51,8 +49,7 @@ export default function ProfileDetailDialog({
           <DialogDescription>
             <div className="space-y-4 text-start">
               <Career title="약력" items={history} />
-              <Career title="전문활동사항" items={expert} />
-              <Career title="학술활동사항" items={education} />
+              {expert && <Career title="활동사항 및 학술연수" items={expert} />}
             </div>
           </DialogDescription>
         </DialogHeader>
