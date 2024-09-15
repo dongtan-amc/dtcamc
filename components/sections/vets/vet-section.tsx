@@ -111,21 +111,6 @@ const VETS = [
   },
 
   {
-    name: "박정현",
-    title: "진료수의사",
-    subjects: ["내과"],
-    image: vet5,
-    history: [
-      "충북대 수의과대학 학사 졸업",
-      "現 동탄시티동물의료센터 진료수의사",
-    ],
-    expert: [
-      "복부초음파 및 심장초음파 수의영상아카데미 (Aurebio, 2024)",
-      "Veterinary Dentistry Specialists Dental wet lab (VDS, Sandiego, USA, 2024)",
-    ],
-  },
-
-  {
     name: "최대성",
     title: "응급과장",
     subjects: ["응급의학과"],
