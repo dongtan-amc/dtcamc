@@ -10,6 +10,24 @@ import {
   LuHelpingHand,
   LuScissors,
 } from "react-icons/lu";
+const CONTENTS = [
+  { title: "슬개골탈구", subtitle: "재탈구 교정, DFO, PGR", image: ortho1 },
+  {
+    title: "십자인대교정",
+    subtitle: "TPLO, CBLO, TTA rapid, SwiveLock",
+    image: ortho2,
+  },
+  {
+    title: "고관절수술",
+    subtitle: "PennHIP, FHNO",
+    image: ortho3,
+  },
+  {
+    title: "골절수술",
+    subtitle: "다리, 골반, 복합&개방",
+    image: ortho4,
+  },
+];
 
 export default function OrthopedicContents() {
   return (
@@ -65,67 +83,27 @@ export default function OrthopedicContents() {
           정형외과 수술
         </h5>
         <div className="grid grid-cols-2 justify-between gap-3 xl:grid-cols-4">
-          <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-            <Image
-              src={ortho1}
-              alt="ct image"
-              fill
-              className="object-cover"
-              sizes="(min-width: 1280px) 311px, calc(50vw - 22px)"
-            />
-            <p className="absolute left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 text-center text-2xl font-bold text-white">
-              슬개골탈구
-              <br />
-              <span className="text-sm">재탈구 교정, DFO, PGR</span>
-            </p>
-          </div>
-
-          <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-            <Image
-              src={ortho2}
-              alt="ct image"
-              fill
-              className="object-cover"
-              sizes="(min-width: 1280px) 311px, calc(50vw - 22px)"
-            />
-            <p className="absolute left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 text-center text-2xl font-bold text-white">
-              십자인대교정
-              <br />
-              <span className="text-sm">TPLO, CBLO, TTA rapid, SwiveLock</span>
-            </p>
-            <div className="absolute inset-0 bg-black opacity-60" />
-          </div>
-          <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-            <Image
-              src={ortho3}
-              alt="ct image"
-              fill
-              className="object-cover"
-              sizes="(min-width: 1280px) 311px, calc(50vw - 22px)"
-            />
-            <p className="absolute left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 text-center text-2xl font-bold text-white">
-              십자인대교정
-              <br />
-              <span className="text-sm">PennHIP, FHNO</span>
-            </p>
-            <div className="absolute inset-0 bg-black opacity-60" />
-          </div>
-
-          <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-            <Image
-              src={ortho4}
-              alt="ct image"
-              fill
-              className="object-cover"
-              sizes="(min-width: 1280px) 311px, calc(50vw - 22px)"
-            />
-            <p className="absolute left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 text-center text-2xl font-bold text-white">
-              골절
-              <br />
-              <span className="text-sm">다리, 골반, 복합&개방</span>
-            </p>
-            <div className="absolute inset-0 bg-black opacity-60" />
-          </div>
+          {CONTENTS.map((content) => (
+            <div key={content.title}>
+              <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
+                <Image
+                  src={content.image}
+                  alt="ct image"
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1280px) 311px, calc(50vw - 22px)"
+                />
+              </div>
+              <div className="mt-2 text-center">
+                <div className="text-base font-semibold text-olive-drab-950 lg:text-2xl">
+                  {content.title}
+                </div>
+                <div className="text-sm text-slate-950 lg:text-base">
+                  {content.subtitle}
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </Container>
