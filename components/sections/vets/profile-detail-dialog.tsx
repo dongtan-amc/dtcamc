@@ -44,7 +44,9 @@ export default function ProfileDetailDialog({
                 {title}
               </h3>
             </div>
-            <Badges subjects={subjects} />
+            <div className="flex">
+              <Badges subjects={subjects} />
+            </div>
           </DialogTitle>
         </DialogHeader>
 

@@ -13,15 +13,15 @@ export default function VetArticle({
   subjects,
 }: Vet) {
   return (
-    <article className="h-full overflow-hidden rounded-lg bg-white shadow-lg lg:min-h-[600px]">
-      <div className="flex h-[600px] flex-col-reverse gap-8 lg:flex-row">
-        <div className="relative h-full p-10 lg:w-2/3">
+    <article className="h-full overflow-hidden rounded-lg bg-white py-4 shadow-lg lg:min-h-[600px] lg:py-0">
+      <div className="flex flex-col-reverse lg:h-[600px] lg:flex-row">
+        <div className="relative h-full p-4 lg:w-2/3 lg:p-10">
           <header className="relative mb-6">
             <div className="flex items-end gap-2">
-              <h2 className="text-5xl font-black text-olive-drab-950">
+              <h2 className="text-3xl font-black text-olive-drab-950 lg:text-5xl">
                 {name}
               </h2>
-              <h3 className="text-2xl font-black leading-none text-olive-drab-950">
+              <h3 className="text-lg font-black text-olive-drab-950 lg:text-2xl lg:leading-none">
                 {title}
               </h3>
               <ProfileDetailDialog
@@ -40,7 +40,7 @@ export default function VetArticle({
           </div>
         </div>
 
-        <div className="flex h-[600px] lg:w-1/3">
+        <div className="flex lg:h-[600px] lg:w-1/3">
           <Image
             src={image}
             alt={`${name} profile`}
