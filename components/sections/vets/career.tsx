@@ -6,15 +6,14 @@ export default function Career({
   items: string[];
 }) {
   return (
-    <div>
-      <h4 className="mb-3 text-xl font-semibold text-olive-drab-700">
+    <div className="ml-8">
+      <h4 className="mb-3 text-2xl font-extrabold text-olive-drab-950">
         {title}
       </h4>
-      <div className="space-y-2">
+      <div className="space-y-3">
         {items.map((item) => (
-          <div key={item} className="flex items-start text-xl">
-            <span className="mr-2 text-olive-drab-500">•</span>
-            <span className="text-gray-700">{item}</span>
+          <div key={item} className="flex">
+            <span className="text-2xl text-gray-950">{item}</span>
           </div>
         ))}
       </div>

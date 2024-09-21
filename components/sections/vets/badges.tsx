@@ -1,11 +1,9 @@
-import { Badge } from "@/components/ui/badge";
-
 export default function Badges({ subjects }: { subjects: string[] }) {
   return (
-    <ul className="mt-1 flex gap-1">
+    <ul className="mt-2 flex gap-2">
       {subjects.map((subject) => (
         <li key={subject}>
-          <Badge className="bg-primary hover:bg-primary">{subject}</Badge>
+          <p className="text-xl font-extrabold">{subject}</p>
         </li>
       ))}
     </ul>

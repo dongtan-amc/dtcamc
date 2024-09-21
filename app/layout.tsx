@@ -65,12 +65,32 @@ const scdream = localFont({
   src: [
     {
       path: "./SCDream4.otf",
-      weight: "400",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "./SCDream5.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./SCDream6.otf",
+      weight: "600",
       style: "normal",
     },
     {
       path: "./SCDream7.otf",
       weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./SCDream8.otf",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "./SCDream9.otf",
+      weight: "900",
       style: "normal",
     },
   ],
