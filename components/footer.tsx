@@ -13,7 +13,7 @@ import Container from "./common/container";
 
 export default function Footer() {
   return (
-    <footer className="bg-olive-drab-950 px-4 py-8 text-olive-drab-50 sm:pb-24 lg:pb-10">
+    <footer className="bg-black/80 px-4 py-8 text-olive-drab-50 sm:pb-24 lg:pb-10">
       <Container>
         <div className="flex h-full flex-col justify-between gap-10 sm:flex-row sm:items-center">
           <div className="mx-auto flex h-40 w-40 items-center justify-center rounded-2xl bg-white p-5">
