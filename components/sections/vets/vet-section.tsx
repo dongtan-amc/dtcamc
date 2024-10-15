@@ -3,7 +3,7 @@ import vet1 from "@/public/vets/vet1_bg_removed.png";
 import vet2 from "@/public/vets/vet2_bg_removed.png";
 import vet3 from "@/public/vets/vet3_bg_removed.png";
 import vet4 from "@/public/vets/vet4_bg_removed.png";
-import vet6 from "@/public/vets/vet6_bg_removed.png";
+import vet5 from "@/public/vets/vet5_bg_removed.png";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
 import VetArticle from "./vet-article";
@@ -107,20 +107,20 @@ const VETS = [
       "Differentiation between benign and malignant hepatic masses using CT malignancy score (대한수의사회 임상컨퍼런스, 2024)",
     ],
   },
-
-  // {
-  //   name: "박정현",
-  //   title: "진료수의사",
-  //   subjects: ["중환자치료(Critical care)", "치과(Dentistry)"],
-  //   image: vet6,
-  //   history: [
-  //     "건국대 수의과대학 졸업",
-  //     "H동물병원 원장",
-  //     "서울 J동물병원 응급수의사",
-  //     "평택 B동물병원 응급과장",
-  //     "동탄시티동물의료센터 응급과장",
-  //   ],
-  // },
+  {
+    name: "박정현",
+    title: "진료수의사",
+    subjects: ["중환자치료(Critical care)", "치과(Dentistry)"],
+    image: vet5,
+    history: [
+      "충북대 수의과대학 학사 졸업",
+      "24시동탄시티동물의료센터 진료수의사",
+    ],
+    expert: [
+      "Abdominal Ultrasonogarphy & Echocaridiogram (Aurebio, 2024)",
+      "Veterinary Dentistry Specialists Dental wet lab (VDS, Sandiego, USA, 2024)",
+    ],
+  },
 ];
 
 export type Vet = (typeof VETS)[number];
