@@ -108,19 +108,19 @@ const VETS = [
     ],
   },
 
-  {
-    name: "최대성",
-    title: "응급과장",
-    subjects: ["응급진료(Emergency & Critical Care)"],
-    image: vet6,
-    history: [
-      "건국대 수의과대학 졸업",
-      "H동물병원 원장",
-      "서울 J동물병원 응급수의사",
-      "평택 B동물병원 응급과장",
-      "동탄시티동물의료센터 응급과장",
-    ],
-  },
+  // {
+  //   name: "박정현",
+  //   title: "진료수의사",
+  //   subjects: ["중환자치료(Critical care)", "치과(Dentistry)"],
+  //   image: vet6,
+  //   history: [
+  //     "건국대 수의과대학 졸업",
+  //     "H동물병원 원장",
+  //     "서울 J동물병원 응급수의사",
+  //     "평택 B동물병원 응급과장",
+  //     "동탄시티동물의료센터 응급과장",
+  //   ],
+  // },
 ];
 
 export type Vet = (typeof VETS)[number];
