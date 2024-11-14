@@ -83,8 +83,8 @@ export default function OrthopedicContents() {
           정형외과 수술
         </h5>
         <div className="grid grid-cols-2 justify-between gap-3 xl:grid-cols-4">
-          {CONTENTS.map((content) => (
-            <div key={content.title}>
+          {CONTENTS.map((content, index) => (
+            <div key={index}>
               <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
                 <Image
                   src={content.image}

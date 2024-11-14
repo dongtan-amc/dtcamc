@@ -41,8 +41,8 @@ export default function Building() {
           죄송합니다. 현재 저희 홈페이지는 준비 중에 있습니다.
         </p>
         <ul className="grid grid-cols-2 gap-10 sm:grid-cols-4">
-          {CONTACTS.map((contact) => (
-            <li key={contact.title} className="">
+          {CONTACTS.map((contact, index) => (
+            <li key={index} className="">
               <Link
                 href={contact.value}
                 target="_blank"

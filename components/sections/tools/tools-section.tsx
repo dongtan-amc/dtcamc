@@ -16,7 +16,7 @@ export default function ToolsSection() {
           {TOOLS.map((tool, index) => (
             <ToolCard
               index={index}
-              key={tool.name}
+              key={index}
               description={tool.description}
               image={tool.image}
               name={tool.name}

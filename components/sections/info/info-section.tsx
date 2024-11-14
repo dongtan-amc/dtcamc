@@ -83,12 +83,11 @@ export default function InfoSection() {
       <Container>
         <ul className="grid grid-cols-1 justify-evenly gap-10 py-10 md:grid-cols-3 md:gap-5">
           {INFOS.map((info, index) => (
-            <div key={info.title}>
+            <div key={index}>
               <Separator className="mb-10 block md:hidden" />
               <InfoCard
                 description={info.description}
                 icon={info.icon}
-                key={info.title}
                 title={info.title}
                 index={index}
               />

@@ -35,8 +35,8 @@ export default function MobileMenu() {
             </Link>
           </li>
 
-          {SECTIONS.map((section) => (
-            <li key={section.sectionTitle}>
+          {SECTIONS.map((section, index) => (
+            <li key={index}>
               <Link
                 href={`/${section.hash}`}
                 onClick={() => setIsDrawerOpen(false)}

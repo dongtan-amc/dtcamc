@@ -6,8 +6,8 @@ import { RiKakaoTalkFill } from "react-icons/ri";
 export default function Menu() {
   return (
     <ul className="hidden grid-cols-5 items-center justify-center gap-1.5 xl:grid">
-      {SECTIONS.map((section) => (
-        <li key={section.sectionTitle} className="text-center">
+      {SECTIONS.map((section, index) => (
+        <li key={index} className="text-center">
           <Link
             href={`/${section.hash}`}
             className="px-4 text-lg text-white transition hover:text-olive-drab-400"

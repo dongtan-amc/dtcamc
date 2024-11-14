@@ -155,8 +155,8 @@ export default function EmailForm() {
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      {AREA.map((element) => (
-                        <SelectItem value={element} key={element}>
+                      {AREA.map((element, index) => (
+                        <SelectItem value={element} key={index}>
                           {element}
                         </SelectItem>
                       ))}

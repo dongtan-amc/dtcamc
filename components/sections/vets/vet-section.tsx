@@ -57,7 +57,7 @@ const VETS = [
       "24시동탄시티동물의료센터 외과 과장",
       "",
       "",
-      "한국 수의회과 학회 정회원",
+      "한국 수의외과 학회 정회원",
       "NAVER 동물질병백과 감수, PennHIP 인증 수의사",
       "고양이 전십자인대 단열 및 치료과정 / TTA rapid를 활용한 강아지",
       "십자인대 단열 및 슬개골 탈구의 교정(VETHONORS,2023)",
@@ -135,9 +135,9 @@ export default function VetSection() {
 
         <Container>
           <ul className="space-y-12 md:space-y-20">
-            {VETS.map((vet) => (
+            {VETS.map((vet, index) => (
               <li
-                key={vet.name}
+                key={index}
                 className="overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
               >
                 <VetArticle {...vet} />
