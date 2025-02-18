@@ -108,6 +108,18 @@ export default function RootLayout({
           src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.KAKAO_APP_JS_KEY}&libraries=services,clusterer&autoload=false`}
           strategy="beforeInteractive"
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-RWR6CGRP6V"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RWR6CGRP6V');
+          `}
+        </Script>
 
         <Navbar />
         <main className="min-h-screen break-keep">{children}</main>
