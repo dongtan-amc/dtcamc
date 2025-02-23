@@ -56,6 +56,25 @@ export default function CtContents() {
           <br />
         </div>
       </div>
+
+      <div>
+        <div className="grid grid-cols-1 justify-between gap-4 py-4 md:grid-cols-4">
+          {[
+            "/sections/ct/1.jpg",
+            "/sections/ct/2.jpg",
+            "/sections/ct/3.jpg",
+            "/sections/ct/4.jpg",
+          ].map((image, index) => (
+            <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
+              <img
+                src={image}
+                alt="ct image"
+                className="h-full w-full object-cover"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
     </Container>
   );
 }

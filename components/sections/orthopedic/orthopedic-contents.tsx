@@ -10,24 +10,6 @@ import {
   LuHelpingHand,
   LuScissors,
 } from "react-icons/lu";
-const CONTENTS = [
-  { title: "슬개골탈구", subtitle: "재탈구 교정, DFO, PGR", image: ortho1 },
-  {
-    title: "십자인대교정",
-    subtitle: "TPLO, CBLO, TTA rapid, SwiveLock",
-    image: ortho2,
-  },
-  {
-    title: "고관절수술",
-    subtitle: "PennHIP, FHNO",
-    image: ortho3,
-  },
-  {
-    title: "골절수술",
-    subtitle: "다리, 골반, 복합&개방",
-    image: ortho4,
-  },
-];
 
 export default function OrthopedicContents() {
   return (
@@ -79,10 +61,133 @@ export default function OrthopedicContents() {
           </div>
         </div>
 
-        <h5 className="px-2 pb-3 pt-5 text-xl font-bold md:text-2xl">
-          정형외과 수술
-        </h5>
-        <div className="grid grid-cols-2 justify-between gap-3 xl:grid-cols-4">
+        <div className="space-y-10">
+          <div>
+            <h5 className="px-2 pb-3 pt-5 text-xl font-bold md:text-2xl">
+              정형외과 수술
+            </h5>
+            <h6 className="px-2 pb-3 pt-5 text-xl font-bold text-olive-drab-950 md:text-2xl">
+              십자인대교정
+            </h6>
+            <div className="space-y-4">
+              <div className="grid grid-cols-4 gap-3">
+                <div className="relative h-[480px] w-full overflow-hidden rounded-xl">
+                  <img
+                    src="/sections/orthopedics/cblo1.png"
+                    alt="십자인대교정-CBLO1"
+                    className="h-full w-full rounded-xl object-cover"
+                  />
+                </div>
+                <div className="relative h-[480px] w-full overflow-hidden rounded-xl">
+                  <img
+                    src="/sections/orthopedics/cblo2.png"
+                    alt="십자인대교정-CBLO2"
+                    className="h-full w-full rounded-xl object-cover"
+                  />
+                </div>
+                <div className="relative h-[480px] w-full overflow-hidden rounded-xl">
+                  <img
+                    src="/sections/orthopedics/tlpo.jpg"
+                    alt="십자인대교정-tlpo"
+                    className="h-full w-full rounded-xl object-cover"
+                  />
+                </div>
+                <div className="relative h-[480px] w-full overflow-hidden rounded-xl">
+                  <img
+                    src="/sections/orthopedics/double-tlpo.jpg"
+                    alt="십자인대교정-double-tlpo"
+                    className="h-full w-full rounded-xl object-cover"
+                  />
+                </div>
+              </div>
+              <div className="grid grid-cols-4 gap-3">
+                <div className="col-span-2 text-center text-2xl">CBLO</div>
+                <div className="text-center text-2xl">TPLO</div>
+                <div className="text-center text-2xl">Double TPLO</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h6 className="px-2 pb-3 pt-5 text-xl font-bold text-olive-drab-950 md:text-2xl">
+              슬개골탈구, 슬개골대탈구 및 만족증교정
+            </h6>
+            <div className="space-y-4">
+              <div className="grid grid-cols-4 gap-3">
+                <div className="relative h-[480px] w-full overflow-hidden rounded-xl">
+                  <img
+                    src="/sections/orthopedics/a2-1.jpg"
+                    alt="십자인대교정-CBLO1"
+                    className="h-full w-full rounded-xl object-cover"
+                  />
+                </div>
+                <div className="relative h-[480px] w-full overflow-hidden rounded-xl">
+                  <img
+                    src="/sections/orthopedics/a2-2.jpg"
+                    alt="십자인대교정-CBLO2"
+                    className="h-full w-full rounded-xl object-cover"
+                  />
+                </div>
+                <div className="relative h-[480px] w-full overflow-hidden rounded-xl">
+                  <img
+                    src="/sections/orthopedics/a2-3.jpg"
+                    alt="십자인대교정-tlpo"
+                    className="h-full w-full rounded-xl object-cover"
+                  />
+                </div>
+                <div className="relative h-[480px] w-full overflow-hidden rounded-xl">
+                  <img
+                    src="/sections/orthopedics/a2-4.jpg"
+                    alt="십자인대교정-double-tlpo"
+                    className="h-full w-full rounded-xl object-cover"
+                  />
+                </div>
+              </div>
+              <div className="grid grid-cols-4 gap-3">
+                <div className="col-span-2 text-center text-2xl">
+                  슬개골 탈구
+                </div>
+                <div className="col-span-2 text-center text-2xl">DFO</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h6 className="px-2 pb-3 pt-5 text-xl font-bold text-olive-drab-950 md:text-2xl">
+              복합골절, 고관절진단/치료
+            </h6>
+            <div className="space-y-4">
+              <div className="grid grid-cols-5 gap-3">
+                <div className="relative h-[480px] w-full overflow-hidden rounded-xl">
+                  <img
+                    src="/sections/orthopedics/a3-1.jpg"
+                    alt="복합골절, 고관절진단/치료-a3-1"
+                    className="h-full w-full rounded-xl object-cover"
+                  />
+                </div>
+                <div className="relative col-span-2 h-[480px] w-full overflow-hidden rounded-xl">
+                  <img
+                    src="/sections/orthopedics/a3-2.jpg"
+                    alt="복합골절, 고관절진단/치료-a3-2"
+                    className="h-full w-full rounded-xl object-cover"
+                  />
+                </div>
+                <div className="relative col-span-2 h-[480px] w-full overflow-hidden rounded-xl">
+                  <img
+                    src="/sections/orthopedics/a3-3.jpg"
+                    alt="복합골절, 고관절진단/치료-a3-3"
+                    className="h-full w-full rounded-xl object-cover"
+                  />
+                </div>
+              </div>
+              <div className="grid grid-cols-5 gap-3">
+                <div className="col-span-3 text-center text-2xl">
+                  다리, 골반, 복합 & 개방
+                </div>
+                <div className="col-span-2 text-center text-2xl">FHNO</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div className="grid grid-cols-2 justify-between gap-3 xl:grid-cols-4">
           {CONTENTS.map((content, index) => (
             <div key={index}>
               <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
@@ -104,7 +209,7 @@ export default function OrthopedicContents() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </Container>
   );

@@ -55,34 +55,21 @@ export default function OncologyContents() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 justify-between gap-4 py-4 md:grid-cols-3">
-        <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-          <Image
-            src={on1}
-            alt="ct image"
-            fill
-            className="object-cover"
-            sizes="(min-width: 1360px) 416px, (min-width: 780px) 31.61vw, calc(100vw - 32px)"
-          />
-        </div>
-        <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-          <Image
-            src={on2}
-            alt="ct image"
-            fill
-            className="object-cover"
-            sizes="(min-width: 1360px) 416px, (min-width: 780px) 31.61vw, calc(100vw - 32px)"
-          />
-        </div>
-        <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
-          <Image
-            src={on3}
-            alt="ct image"
-            fill
-            className="object-cover"
-            sizes="(min-width: 1360px) 416px, (min-width: 780px) 31.61vw, calc(100vw - 32px)"
-          />
-        </div>
+      <div className="grid grid-cols-1 justify-between gap-4 py-4 md:grid-cols-4">
+        {[
+          "/sections/onocology/1.jpg",
+          "/sections/onocology/2.png",
+          "/sections/onocology/3.png",
+          "/sections/onocology/4.png",
+        ].map((image, index) => (
+          <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
+            <img
+              src={image}
+              alt="ct image"
+              className="h-full w-full object-cover"
+            />
+          </div>
+        ))}
       </div>
     </Container>
   );
