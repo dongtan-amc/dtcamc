@@ -65,7 +65,10 @@ export default function CtContents() {
             "/sections/ct/3.jpg",
             "/sections/ct/4.jpg",
           ].map((image, index) => (
-            <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
+            <div
+              className="relative h-[240px] w-full overflow-hidden rounded-xl"
+              key={image}
+            >
               <img
                 src={image}
                 alt="ct image"

@@ -62,7 +62,10 @@ export default function OncologyContents() {
           "/sections/onocology/3.png",
           "/sections/onocology/4.png",
         ].map((image, index) => (
-          <div className="relative h-[240px] w-full overflow-hidden rounded-xl">
+          <div
+            className="relative h-[240px] w-full overflow-hidden rounded-xl"
+            key={image}
+          >
             <img
               src={image}
               alt="ct image"
