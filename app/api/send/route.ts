@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: `Acme <noreply@resend.dev>`,
+      from: `동탄시티AMC채용 <noreply@resend.dev>`,
       // TODO: use real email
       to: "dtctamc3@gmail.com",
       subject: `[DTCT 채용] ${area} / ${name}`,
