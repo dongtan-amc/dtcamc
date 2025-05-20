@@ -103,6 +103,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" suppressHydrationWarning className="!scroll-smooth">
+      <head>
+        <title>
+          동탄 24시 시티동물병원 - CT·MRI·응급 진료 (24시동탄시티동물의료센터)
+        </title>
+        <meta
+          name="description"
+          content="동탄 최초 24시 진료 ‘시티동물병원’. CT·MRI·신장투석·정형외과 등 대학병원급 장비와 전문의 상주로 반려동물 응급·중증 케어를 제공합니다. 온라인 예약·카톡 상담."
+        />
+        <meta
+          name="keywords"
+          content="24시 동물병원,동탄 동물병원,시티동물병원,응급 동물병원,CT,MRI,투석,정형외과"
+        ></meta>
+      </head>
       <body className={`${scdream.className} antialiased`}>
         <Script
           src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.KAKAO_APP_JS_KEY}&libraries=services,clusterer&autoload=false`}

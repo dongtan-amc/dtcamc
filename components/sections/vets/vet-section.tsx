@@ -3,7 +3,8 @@ import vet1 from "@/public/vets/vet1_bg_removed.png";
 import vet2 from "@/public/vets/vet2_bg_removed.png";
 import vet3 from "@/public/vets/vet3_bg_removed.png";
 import vet4 from "@/public/vets/vet4_bg_removed.png";
-import vet5 from "@/public/vets/vet5_bg_removed.png";
+import vet7 from "@/public/vets/vet7_bg_removed.png";
+import vet8 from "@/public/vets/vet8_bg_removed.png";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
 import VetArticle from "./vet-article";
@@ -95,19 +96,52 @@ const VETS = [
     ],
   },
   {
-    name: "박정현",
-    title: "진료수의사",
-    subjects: ["중환자치료(Critical care)", "치과(Dentistry)"],
-    image: vet5,
+    name: "심화용",
+    title: "외과과장",
+    subjects: [
+      "정형외과(Orthopedic Surgery)",
+      "연부조직외과(Soft Tissue Surgery)",
+    ],
+    image: vet7,
     history: [
-      "충북대 수의과대학 학사 졸업",
-      "24시동탄시티동물의료센터 진료수의사",
+      "경북대 수의과대학 학사 졸업",
+      "경북대 수의외과학 석사 졸업",
+      "경북대 임상외과 조교",
+      "24시동탄시티동물의료센터 외과과장",
     ],
     expert: [
-      "Abdominal Ultrasonogarphy & Echocaridiogram (Aurebio, 2024)",
-      "Veterinary Dentistry Specialists Dental wet lab (VDS, Sandiego, USA, 2024)",
+      '"Prognostic Values of NLR, PLR, and SIl in Dogs with Mammary Gland Tumor" Oral Presentation (23rd Federation of Asian Veterinary Associations Congress, 2024)',
+      "Principles in Small Animal Fracture Management (AOVET, 2023)",
+      "CPR BLS & ALS Certification Course (RECOVER, 2023)",
+      "Certified Veterinary Acupuncture (Chi University, 2022)",
     ],
   },
+  {
+    name: "조원상",
+    title: "내과과장",
+    subjects: ["내과(심장/신장) 중환자치료(Critical care)"],
+    image: vet8,
+    history: [
+      "전북대 수의학과대학 졸업",
+      "전)돌봄동물의료센터 진료수의사",
+      "24시동탄시티동물의료센터 내과과장",
+    ],
+    expert: ["웨스턴 동물의료센터 23년도 소동물 임상수의학과정 수료"],
+  },
+  // {
+  //   name: "박정현",
+  //   title: "진료수의사",
+  //   subjects: ["중환자치료(Critical care)", "치과(Dentistry)"],
+  //   image: vet5,
+  //   history: [
+  //     "충북대 수의과대학 학사 졸업",
+  //     "24시동탄시티동물의료센터 진료수의사",
+  //   ],
+  //   expert: [
+  //     "Abdominal Ultrasonogarphy & Echocaridiogram (Aurebio, 2024)",
+  //     "Veterinary Dentistry Specialists Dental wet lab (VDS, Sandiego, USA, 2024)",
+  //   ],
+  // },
   {
     name: "구재훈",
     title: "응급과장",
