@@ -2,7 +2,7 @@ import Container from "@/components/common/container";
 import vet1 from "@/public/vets/vet1_bg_removed.png";
 import vet2 from "@/public/vets/vet2_bg_removed.png";
 import vet3 from "@/public/vets/vet3_bg_removed.png";
-// import vet4 from "@/public/vets/vet4_bg_removed.png";
+// import vet4 from "@/public/vets/vet4_bg_removed.png"; 지워
 // import vet7 from "@/public/vets/vet7_bg_removed.png";
 import vet8 from "@/public/vets/vet8_bg_removed.png";
 import vet9 from "@/public/vets/vet_gojongchan.png";
