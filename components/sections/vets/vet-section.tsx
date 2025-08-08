@@ -2,9 +2,10 @@ import Container from "@/components/common/container";
 import vet1 from "@/public/vets/vet1_bg_removed.png";
 import vet2 from "@/public/vets/vet2_bg_removed.png";
 import vet3 from "@/public/vets/vet3_bg_removed.png";
-import vet4 from "@/public/vets/vet4_bg_removed.png";
-import vet7 from "@/public/vets/vet7_bg_removed.png";
+// import vet4 from "@/public/vets/vet4_bg_removed.png";
+// import vet7 from "@/public/vets/vet7_bg_removed.png";
 import vet8 from "@/public/vets/vet8_bg_removed.png";
+import vet_gojongchan from "@/public/vets/vet_gojongchan.png";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
 import VetArticle from "./vet-article";
@@ -96,24 +97,25 @@ const VETS = [
     ],
   },
   {
-    name: "심화용",
+    name: "고종찬",
     title: "외과과장",
     subjects: [
       "정형외과(Orthopedic Surgery)",
       "연부조직외과(Soft Tissue Surgery)",
     ],
-    image: vet7,
+    image: vet_gojongchan,
     history: [
-      "경북대 수의과대학 학사 졸업",
-      "경북대 수의외과학 석사 졸업",
-      "경북대 임상외과 조교",
-      "24시동탄시티동물의료센터 외과과장",
+      "전북대 수의과대학 학사 졸업",
+      "전북대 수의외과학 석사 졸업",
+      "전북동물의료센터 진료수의사",
     ],
     expert: [
-      '"Prognostic Values of NLR, PLR, and SIl in Dogs with Mammary Gland Tumor" Oral Presentation (23rd Federation of Asian Veterinary Associations Congress, 2024)',
-      "Principles in Small Animal Fracture Management (AOVET, 2023)",
-      "CPR BLS & ALS Certification Course (RECOVER, 2023)",
-      "Certified Veterinary Acupuncture (Chi University, 2022)",
+      "한국임상수의학회 춘계학술대회 발표(2023)",
+      "제11회 소동물임상 평생교육원 복강경 코스(2024)",
+      "소동물임상 평생교육원 관절경/TPLO 워크샵(2024)",
+      "제12회 소동물임상 평생교육원 소동물 복강경 및 흉강경 워크샵(2024)",
+      "ARIX VET Hands-On Course in Gwangju(2024)",
+      "AO VET Principles in Pheonix, AZ(2024)",
     ],
   },
   {
@@ -142,24 +144,6 @@ const VETS = [
   //     "Veterinary Dentistry Specialists Dental wet lab (VDS, Sandiego, USA, 2024)",
   //   ],
   // },
-  {
-    name: "구재훈",
-    title: "응급과장",
-    subjects: ["응급진료(Emergency & Critical Care)"],
-    image: vet4,
-    history: [
-      "경상대 수의과대학 학사 졸업",
-      "24시동탄시티동물의료센터 응급과장",
-      "",
-      "",
-      "한국수의외과학회 정회원",
-    ],
-    expert: [
-      "Principles in small animal fracture management (AOVET, 2022)",
-      "Veterinary Ophthalmology by Ahn jae sang (2023)",
-      "TPLO basic course by Dr. koreeda (2023)",
-    ],
-  },
 ];
 
 export type Vet = (typeof VETS)[number];
