@@ -5,7 +5,7 @@ import vet3 from "@/public/vets/vet3_bg_removed.png";
 // import vet4 from "@/public/vets/vet4_bg_removed.png";
 // import vet7 from "@/public/vets/vet7_bg_removed.png";
 import vet8 from "@/public/vets/vet8_bg_removed.png";
-import vet_gojongchan from "@/public/vets/vet_gojongchan.png";
+import vet9 from "@/public/vets/vet_gojongchan.png";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
 import VetArticle from "./vet-article";
@@ -103,7 +103,7 @@ const VETS = [
       "정형외과(Orthopedic Surgery)",
       "연부조직외과(Soft Tissue Surgery)",
     ],
-    image: vet_gojongchan,
+    image: vet9,
     history: [
       "전북대 수의과대학 학사 졸업",
       "전북대 수의외과학 석사 졸업",
