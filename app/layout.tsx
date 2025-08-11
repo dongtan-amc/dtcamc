@@ -133,6 +133,16 @@ export default function RootLayout({
             gtag('config', 'G-RWR6CGRP6V');
           `}
         </Script>
+        <script type="text/javascript" src="//wcs.naver.net/wcslog.js"> </script> 
+<script type="text/javascript"> 
+if (!wcs_add) var wcs_add={};
+wcs_add["wa"] = "s_5203609c9751";
+if (!_nasa) var _nasa={};
+if(window.wcs){
+wcs.inflow();
+wcs_do();
+}
+</script>
 
         <Navbar />
         <main className="min-h-screen break-keep">{children}</main>
