@@ -115,6 +115,23 @@ export default function RootLayout({
           name="keywords"
           content="24시 동물병원,동탄 동물병원,시티동물병원,응급 동물병원,CT,투석,정형외과"
         ></meta>
+{/* --- Naver Premium Log (WCS) --- */}
+        <Script
+          id="naver-wcs-lib"
+          src="https://wcs.naver.net/wcslog.js"
+          strategy="afterInteractive"
+        />
+        <Script id="naver-wcs-init" strategy="afterInteractive">
+          {`
+            window.wcs_add = window.wcs_add || {};
+            window.wcs_add["wa"] = "s_5203609c9751";
+            if (typeof window.wcs !== "undefined") {
+              if (typeof window.wcs.inflow === "function") window.wcs.inflow();
+              if (typeof window.wcs_do === "function") window.wcs_do();
+            }
+          `}
+        </Script>
+        {/* --- /Naver Premium Log --- */}
       </head>
       <body className={`${scdream.className} antialiased`}>
         <Script
