@@ -6,6 +6,7 @@ import vet3 from "@/public/vets/vet3_bg_removed.png";
 // import vet7 from "@/public/vets/vet7_bg_removed.png";
 import vet8 from "@/public/vets/vet8_bg_removed.png";
 import vet9 from "@/public/vets/vet_gojongchan.png";
+import vet10 from "@/public/vets/vet_hwangth.png";
 import SectionLayout from "../section-layout";
 import SectionTitle from "../section-title";
 import VetArticle from "./vet-article";
@@ -82,8 +83,8 @@ const VETS = [
     history: [
       "충남대 수의외과학 박사 졸업",
       "전)경기도 수의사회 부회장",
-      "전)경기동물메디컬센터 대표원장",
-      "전)탑케어동물의료원 대표원장",
+      "전)G 동물메디컬센터 대표원장",
+      "전)T 동물의료원 대표원장",
       "24시동탄시티동물의료센터 외과과장",
     ],
     expert: [
@@ -125,25 +126,27 @@ const VETS = [
     image: vet8,
     history: [
       "전북대 수의학과대학 졸업",
-      "전)돌봄동물의료센터 진료수의사",
+      "전)D 동물의료센터 진료수의사",
       "24시동탄시티동물의료센터 내과과장",
     ],
-    expert: ["웨스턴 동물의료센터 23년도 소동물 임상수의학과정 수료"],
+    expert: [
+      "웨스턴 동물의료센터 소동물 임상수의학과정 수료(2023)",
+      "Veterinary Imaging Academy of Aurebio Company(2025)",
+    ],
   },
-  // {
-  //   name: "박정현",
-  //   title: "진료수의사",
-  //   subjects: ["중환자치료(Critical care)", "치과(Dentistry)"],
-  //   image: vet5,
-  //   history: [
-  //     "충북대 수의과대학 학사 졸업",
-  //     "24시동탄시티동물의료센터 진료수의사",
-  //   ],
-  //   expert: [
-  //     "Abdominal Ultrasonogarphy & Echocaridiogram (Aurebio, 2024)",
-  //     "Veterinary Dentistry Specialists Dental wet lab (VDS, Sandiego, USA, 2024)",
-  //   ],
-  // },
+ {
+     name: "황태하",
+     title: "응급과장",
+     subjects: ["응급진료(Emergency & Critical Care"],
+     image: vet10,
+     history: [
+       "경북대학교 수의학졸업",
+       "전)N 동물병원 진료수의사",
+       "전)L 동물병원 내과 원장",
+       "24시동탄시티동물의료센터 응급과장"  
+     ],
+     expert: [ "한국동물병원협회 KAHA 정회원)",],
+   },
 ];
 
 export type Vet = (typeof VETS)[number];
