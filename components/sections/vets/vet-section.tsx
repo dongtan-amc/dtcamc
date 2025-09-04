@@ -125,7 +125,7 @@ const VETS = [
     subjects: ["내과(심장/신장) 중환자치료(Critical care)"],
     image: vet8,
     history: [
-      "전북대 수의학과대학 졸업",
+      "전북대 수의과대학 졸업",
       "전)D 동물의료센터 진료수의사",
       "24시동탄시티동물의료센터 내과과장",
     ],
@@ -140,7 +140,7 @@ const VETS = [
      subjects: ["응급진료(Emergency & Critical Care"],
      image: vet10,
      history: [
-       "경북대학교 수의학졸업",
+       "경북대 수의과대학 졸업",
        "전)N 동물병원 진료수의사",
        "전)L 동물병원 내과 원장",
        "24시동탄시티동물의료센터 응급과장",
