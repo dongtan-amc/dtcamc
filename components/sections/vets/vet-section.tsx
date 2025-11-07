@@ -111,7 +111,7 @@ const VETS = [
  {
      name: "장영욱",
      title: "응급과장",
-     subjects: ["응급진료(Emergency & Critical Care"],
+     subjects: ["응급진료(Emergency & Critical Care)"],
      image: vet10,
      history: [
        "전남대 수의과대학 졸업",
