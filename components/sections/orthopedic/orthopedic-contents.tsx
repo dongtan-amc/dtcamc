@@ -7,7 +7,7 @@ import Image from "next/image";
 import {
   LuActivity,
   LuCalendarDays,
-  LuHelpingHand,
+  LuHandHelping,
   LuScissors,
 } from "react-icons/lu";
 
@@ -53,7 +53,7 @@ export default function OrthopedicContents() {
             </p>
           </div>
           <div className="w-full rounded-lg bg-white p-4 shadow-md">
-            <LuHelpingHand size={24} />
+            <LuHandHelping size={24} />
             <h6 className="pt-3 text-lg font-bold">수술 후 재활케어</h6>
             <p className="pt-1 text-[#7D8266]">
               수술의 연장선상에 있는 재활 역시 최선을 다합니다.

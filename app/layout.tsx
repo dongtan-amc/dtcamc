@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import Script from "next/script";
 import "./globals.css";
 
+import FeeInfoPopup from "@/components/fee-info-popup";
 import Footer from "@/components/footer";
 import MobileBottomButtons from "@/components/mobile-bottom-buttons";
 import Navbar from "@/components/navbar/navbar";
@@ -115,7 +116,7 @@ export default function RootLayout({
           name="keywords"
           content="24시 동물병원,동탄 동물병원,시티동물병원,응급 동물병원,CT,투석,정형외과"
         ></meta>
-{/* --- Naver Premium Log (WCS) --- */}
+        {/* --- Naver Premium Log (WCS) --- */}
         <Script
           id="naver-wcs-lib"
           src="https://wcs.naver.net/wcslog.js"
@@ -160,6 +161,8 @@ export default function RootLayout({
         <MobileBottomButtons />
 
         <Toaster />
+
+        <FeeInfoPopup />
       </body>
     </html>
   );

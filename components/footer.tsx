@@ -9,6 +9,7 @@ import {
 } from "@/constants/general-info";
 import logo from "@/public/logo.png";
 import Image from "next/image";
+import Link from "next/link";
 import Container from "./common/container";
 
 export default function Footer() {
@@ -27,6 +28,14 @@ export default function Footer() {
               <br />
               Email : {EMAIL}
             </p>
+            <p className="pb-2">
+              <Link
+                href="/fee-info"
+                className="underline underline-offset-2 hover:text-white transition-colors"
+              >
+                진료비 안내
+              </Link>
+            </p>
             <p>{COPY_RIGHTS}</p>
           </div>
 
@@ -37,6 +46,14 @@ export default function Footer() {
             <p>대표자 : {BOSS}</p>
             <p>사업자등록번호 : {BUSINESS_NUMBER} </p>
             <p>E-mail : {EMAIL}</p>
+            <p>
+              <Link
+                href="/fee-info"
+                className="underline underline-offset-2 hover:text-white transition-colors"
+              >
+                진료비 안내
+              </Link>
+            </p>
             <p>{COPY_RIGHTS}</p>
           </div>
 
