@@ -141,7 +141,7 @@ const feeData = [
     {
         id: 17,
         category: "투약·조제비용",
-        item: "광범위 구충비 (1회당)\n파나큐어",
+        item: "광범위 구충비 (1회당)\n파나쿠어",
         minFee: "2,000원",
         maxFee: "2,000원",
         note: "",
